@@ -46,5 +46,5 @@ Thanks for reading about me. You can connect with me on ..
 * [Twitter](https://www.twitter.com/AkashWhoCodes/)
 
 <p align="center">
-  <img align='center' src="https://visitor-badge.glitch.me/badge?page_id=akashrajpurohit.visitor-badge">
+  <img align='center' src="https://visitor-badge.laobi.icu/badge?page_id=akashrajpurohit.visitor-badge">
 </p>
