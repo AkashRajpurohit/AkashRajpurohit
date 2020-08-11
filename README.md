@@ -33,6 +33,9 @@ Docker • Amazon Web Services • Heroku • Vercel • Netlify
 
 * [Learn JavaScript Array .reduce() method with code examples](https://akashwho.codes/blog/learn-reduce-method-in-javascript-with-code-examples/)
 
+## Stats on Github 📈
+![Akash Rajpurohit](https://github-readme-stats.vercel.app/api?username=AkashRajpurohit&show_icons=true&hide_border=true)
+
 ## Thank you and नमस्ते ! 🙏
 
 Thanks for reading about me. You can connect with me on ..
