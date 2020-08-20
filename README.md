@@ -1,16 +1,21 @@
-## 💖 to Build Softwares — Software Developer & Enthusiast!
+### <div align="center">Hi, I'm Akash Rajpurohit — a software engineer building some real stuff.</div>  
+  
 
-Hi, I'm Akash Rajpurohit — a **software engineer** building some real stuff. Software Engineering is something which coincides with my passion and hobby. Always up for a discussion on softwares, business and other opportunity. ✌💖
+*Software Engineering is something which coincides with my passion and hobby. Always up for a discussion on softwares, business and other opportunity. ✌💖*  
+  
 
-## I work on .. 💻
+- 💻 I’m currently doing [leetcode-august-challenge](https://github.com/AkashRajpurohit/leetcode-august-2020-challenge) 
 
-Node.js • React.js • GraphQL • Flutter • Ionic Framework • Electron.js • Flask
 
-MongoDB • MySQL • Redis • Postgresql
+- 🌱 I'm exploring GraphQL for query processing.
 
-JavaScript • Python • C++ 
 
-Docker • Amazon Web Services • Heroku • Vercel • Netlify
+- ❓ Ask me about things related to MERN stack and related technologies  
+  
+
+- ⚡ Fun fact: I use tabs over spaces 
+
+<br />
 
 ## My Absolute Favorites .. 💖
 
@@ -19,35 +24,95 @@ Docker • Amazon Web Services • Heroku • Vercel • Netlify
 📰 Reading & writing _TECH BLOGS_
 
 🍕 _HACKATHONS_ & coding competitions
+  
 
-## Some recent blogs ✨
-* [API Rate Limit for Small Size to Large Production Ready Applications in Node.js](https://akashwho.codes/blog/api-rate-limit-in-nodejs-and-expressjs/)
+<br/>  
 
-* [New Features in ES2020 with code examples](https://akashwho.codes/blog/new-features-in-es2020-with-sample-examples/)
 
-* [5 Basic Git Commands Every Developer Must Know](https://akashwho.codes/blog/5-basic-git-commands-every-developer-must-know/)
+## My Skill Set  
+<table><tr><td valign="top" width="33%">
 
-* [Learn JavaScript Array .map() method under 5 minutes with code examples](https://akashwho.codes/blog/learn-map-method-in-javascript-with-code-examples/)
+### Frontend  
+<p align="center">
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/react/react-original-wordmark.svg" alt="React" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/redux/redux-original.svg" alt="Redux" height="50" />  
+<img style="margin: 10px" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="Flutter" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/angularjs/angularjs-original.svg" alt="AngularJS" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/html5/html5-original-wordmark.svg" alt="HTML5" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/css3/css3-original-wordmark.svg" alt="CSS3" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/sass/sass-original.svg" alt="Sass" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/electron/electron-original.svg" alt="Electron" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="JavaScript" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/typescript/typescript-original.svg" alt="TypeScript" height="50" />  
+</p></td><td valign="top" width="33%">
 
-* [Learn JavaScript Array .filter() method with code examples](https://akashwho.codes/blog/learn-filter-method-in-javascript-with-code-examples/)
+### Backend  
+<p align="center">
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/html5/html5-original-wordmark.svg" alt="HTML5" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="JavaScript" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/typescript/typescript-original.svg" alt="TypeScript" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/express/express-original-wordmark.svg" alt="Express.js" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/redis/redis-original-wordmark.svg" alt="Redis" height="50" />
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/python/python-original.svg" alt="Python" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL" height="50" />  
+</p></td><td valign="top" width="33%">
 
-* [Learn JavaScript Array .reduce() method with code examples](https://akashwho.codes/blog/learn-reduce-method-in-javascript-with-code-examples/)
+### DevOps  
+<p align="center">
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" height="50" />  
+<img style="margin: 10px" src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="GCP" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/linux/linux-original.svg" alt="Linux" height="50" />  
+<img style="margin: 10px" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" height="50" />  
+<img style="margin: 10px" src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="Bash" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/nginx/nginx-original.svg" alt="Nginx" height="50" />  
+<img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/docker/docker-original-wordmark.svg" alt="Docker" height="50" />  
+</p></td></tr></table>  
 
-## Stats on Github 📈
-![Akash Rajpurohit](https://github-readme-stats.vercel.app/api?username=AkashRajpurohit&show_icons=true&hide_border=true)
+<br/>  
 
-## Thank you and नमस्ते ! 🙏
 
-Thanks for reading about me. You can connect with me on ..
+## Connect with me  
+<p align="center">
+  <a href="https://github.com/AkashRajpurohit" target="_blank">
+  <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
+  </a>
+  <a href="https://twitter.com/AkashWhoCodes" target="_blank">
+  <img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 5px;" />
+  </a>
+  <a href="https://linkedin.com/in/AkashRajpurohit" target="_blank">
+  <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
+  </a>
+  <a href="https://instagram.com/akashwho.codes" target="_blank">
+  <img src=https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white alt=instagram style="margin-bottom: 5px;" />
+  </a>  
+</p>  
+  
 
-* [Website](https://akashwho.codes/)
+<br/>  
 
-* [Linkedin](https://www.linkedin.com/in/AkashRajpurohit/)
 
-* [Instagram](https://www.instagram.com/akashwho.codes/)
+## Github Stats  
+<p align="center"><img src="https://github-readme-stats.vercel.app/api?username=AkashRajpurohit&show_icons=true&count_private=true" align="center" /></p>  
 
-* [Twitter](https://www.twitter.com/AkashWhoCodes/)
+<br/>  
+
+
+## Recent Blog Posts  
+<!-- BLOG-POST-LIST:START -->  
+If things goes well, this section should automatically be replaced by a list of your blog posts after you commit your readme file. 
+<!-- BLOG-POST-LIST:END -->  
+
+<br/>
+
+<br/>  
 
 <p align="center">
   <img align='center' src="https://visitor-badge.laobi.icu/badge?page_id=akashrajpurohit.visitor-badge">
 </p>
+
+<br />
+
+----
+<div align="center">Generated using <a href="https://profilinator.rishav.dev/" target="_blank">Github Profilinator</a></div>
