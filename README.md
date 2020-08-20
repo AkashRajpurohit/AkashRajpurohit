@@ -1,4 +1,4 @@
-### <div align="center">Hi, I'm Akash Rajpurohit — a software engineer building some real stuff.</div>  
+## <div align="center">Hi, I'm Akash Rajpurohit — a software engineer building some real stuff.</div>  
   
 
 *Software Engineering is something which coincides with my passion and hobby. Always up for a discussion on softwares, business and other opportunity. ✌💖*  
