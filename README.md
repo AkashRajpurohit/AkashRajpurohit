@@ -4,10 +4,10 @@
 *Software Engineering is something which coincides with my passion and hobby. Always up for a discussion on softwares, business and other opportunity. ✌💖*  
   
 
-- 💻 I’m currently doing [leetcode-august-challenge](https://github.com/AkashRajpurohit/leetcode-august-2020-challenge) 
+- 💻 I’m currently doing [leetcode-september-challenge](https://github.com/AkashRajpurohit/leetcode-september-2020-challenge) 
 
 
-- 🌱 I'm exploring GraphQL for query processing.
+- 🌱 I'm learning [GraphQL](https://graphql.org/), [Apollo](https://www.apollographql.com/) & [Next.js](https://nextjs.org/)
 
 
 - ❓ Ask me about things related to MERN stack and related technologies  
