@@ -1,7 +1,7 @@
-## <div align="center">Hi, I'm Akash Rajpurohit — a software engineer building some real stuff.</div>  
+## <div align="center">👋🏼 Hi, I'm Akash Rajpurohit — a Software Engineer 👨‍💻</div>  
   
 
-*Software Engineering is something which coincides with my passion and hobby. Always up for a discussion on softwares, business and other opportunity. ✌💖*  
+*Software Engineering is something which coincides with my passion and hobby. Always up for a discussion on softwares, business and other opportunity. ✌*  
   
 
 - 💻 I’m currently doing [leetcode-september-challenge](https://github.com/AkashRajpurohit/leetcode-september-2020-challenge) 
@@ -115,8 +115,3 @@
 <p align="center">
   <img align='center' src="https://visitor-badge.laobi.icu/badge?page_id=akashrajpurohit.visitor-badge">
 </p>
-
-<br />
-
-----
-<div align="center">Generated using <a href="https://profilinator.rishav.dev/" target="_blank">Github Profilinator</a></div>
