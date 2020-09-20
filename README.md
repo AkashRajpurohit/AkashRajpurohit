@@ -101,11 +101,11 @@
 
 ## Recent Blog Posts  
 <!-- BLOG-POST-LIST:START -->
+- [Top Free Services To Deploy Full-Stack Applications (Back-end, Front-end, Databases)](https://akashwho.codes/blog/top-free-services-to-deploy-full-stack-applications/)
 - [LNT Infotech (LTI) Interview Experience.](https://akashwho.codes/blog/lti-interview-experience/)
 - [API Rate Limit for Small Size to Large Production Ready Applications in Node.js](https://akashwho.codes/blog/api-rate-limit-in-nodejs-and-expressjs/)
 - [HackWithInfy 2019 Round 2 Experience with Questions.](https://akashwho.codes/blog/hackwithinfy-round-2-experience-with-questions/)
 - [HackWithInfy 2019 Round 1 Experience with Questions.](https://akashwho.codes/blog/hackwithinfy-round-1-experience-with-questions/)
-- [Github CLI ready for your terminal.](https://akashwho.codes/blog/github-cli-tool/)
 <!-- BLOG-POST-LIST:END -->  
 
 <br/>
