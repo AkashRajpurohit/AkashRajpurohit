@@ -106,6 +106,11 @@
 - [API Rate Limit for Small Size to Large Production Ready Applications in Node.js](https://akashwho.codes/blog/api-rate-limit-in-nodejs-and-expressjs/)
 - [HackWithInfy 2019 Round 2 Experience with Questions.](https://akashwho.codes/blog/hackwithinfy-round-2-experience-with-questions/)
 - [HackWithInfy 2019 Round 1 Experience with Questions.](https://akashwho.codes/blog/hackwithinfy-round-1-experience-with-questions/)
+- [Github CLI ready for your terminal.](https://akashwho.codes/blog/github-cli-tool/)
+- [New Features in ES2020 with code examples.](https://akashwho.codes/blog/new-features-in-es2020-with-sample-examples/)
+- [5 Basic Git Commands Every Developer Must Know](https://akashwho.codes/blog/5-basic-git-commands-every-developer-must-know/)
+- [TCS Codevita Interview Experience](https://akashwho.codes/blog/tcs-codevita-interview-experience/)
+- [Learn JavaScript Array .reduce() method with code examples](https://akashwho.codes/blog/learn-reduce-method-in-javascript-with-code-examples/)
 <!-- BLOG-POST-LIST:END -->  
 
 <br/>
