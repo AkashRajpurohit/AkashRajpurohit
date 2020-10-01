@@ -4,7 +4,7 @@
 *Software Engineering is something which coincides with my passion and hobby. Always up for a discussion on softwares, business and other opportunity. ✌*  
   
 
-- 💻 I’m currently doing [leetcode-september-challenge](https://github.com/AkashRajpurohit/leetcode-september-2020-challenge) 
+- 💻 I’m currently doing [leetcode-october-challenge](https://github.com/AkashRajpurohit/leetcode-october-2020-challenge) 
 
 
 - 🌱 I'm learning [GraphQL](https://graphql.org/), [Apollo](https://www.apollographql.com/) & [Next.js](https://nextjs.org/)
