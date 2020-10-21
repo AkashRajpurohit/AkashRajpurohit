@@ -1,122 +1,139 @@
-## <div align="center">👋🏼 Hi, I'm Akash Rajpurohit — a Software Engineer 👨‍💻</div>  
+## Hey 👋🏼, I'm Akash Rajpurohit — a Software Engineer 👨‍💻
+
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://linkedin.com/in/AkashRajpurohit)
+[![Website Badge](https://img.shields.io/badge/Website-3b5998?style=flat-square&logo=google-chrome&logoColor=white)](https://akashrajpurohit.cf/)
+[![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/AkashWhoCodes)
+[![Instagram Badge](https://img.shields.io/badge/-Instagram-e4405f?style=flat-square&logo=Instagram&logoColor=white)](https://instagram.com/akashwho.codes/)
+[![Telegram Badge](https://img.shields.io/badge/-Telegram-0088cc?style=flat-square&logo=Telegram&logoColor=white)](https://t.me/AkashRajpurohit)
   
+### Glad to see you here! &nbsp; ![](https://visitor-badge.laobi.icu/badge?page_id=akashrajpurohit.visitor-badge&style=flat-square&color=0088cc)
 
-*Software Engineering is something which coincides with my passion and hobby. Always up for a discussion on softwares, business and other opportunity. ✌*  
+Software Engineering is something which coincides with my passion and hobby. Always up for a discussion on softwares, business and other opportunity. I'm currently into Web Development 🕸️ and working on my Data Structures and Algorithms.
   
+<img align="right" alt="Coding Cat" src="./images/coding.webp" />
 
-- 💻 I’m currently doing [leetcode-october-challenge](https://github.com/AkashRajpurohit/leetcode-october-2020-challenge) 
+### Talking about Personal Stuffs:
 
+- 🛠 &nbsp; I’m currently working with JavaScript/TypeScript, Nodejs, Express, React, <br /> Mongodb, PostgreSQL etc.
+- 🚀 &nbsp; I’m currently learning [GraphQL](https://graphql.org/), [Apollo](https://www.apollographql.com/) & [Next.js](https://nextjs.org/)
+- 👨🏻‍💻 &nbsp; Most of my projects are available on [Github](https://github.com/AkashRajpurohit).
+- 💬 &nbsp; Read my blogs which I publish [here](https://akashrajpurohit.cf/blogs/)!
+- 👾 &nbsp; Fun fact: I use tabs over spaces.
+- 📫 &nbsp; How to reach me: akash009.dev@gmail.com
+- 💡 &nbsp; I’m currently doing [leetcode-october-challenge](https://github.com/AkashRajpurohit/leetcode-october-2020-challenge) 
 
-- 🌱 I'm learning [GraphQL](https://graphql.org/), [Apollo](https://www.apollographql.com/) & [Next.js](https://nextjs.org/)
+### My Absolute Favorites:
 
+- 💻 &nbsp; I love exploring new tech stack and developing new stuffs
+- 📰 &nbsp; Reading & writing tech blogs whenever possible
+- 🍕 &nbsp; Hackathons & coding competitions
 
-- ❓ Ask me about things related to MERN stack and related technologies  
-  
+### Languages and Tools:
 
-- ⚡ Fun fact: I use tabs over spaces 
+<code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="javascript"></code>
+<code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png" alt="typescript"></code>
+<code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" alt="nodejs"></code>
+<code><img height="35" src="https://devicons.github.io/devicon/devicon.git/icons/express/express-original.svg" alt="expressjs"></code>
+<code><img height="35" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSTTzPAw-55ssm1Im594xYZ9eRQu2JylrkYLg&usqp=CAU" alt="mongodb"></code>
+<code><img height="35" src="https://devicons.github.io/devicon/devicon.git/icons/git/git-original.svg" alt="git"></code>
+<code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="react"></code>
+<code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/graphql/graphql.png" alt="graphql"></code>
+<code><img height="35" src="https://raw.githubusercontent.com/github/explore/e94815998e4e0713912fed477a1f346ec04c3da2/topics/gatsby/gatsby.png" alt="gatsbyjs"></code>
+<code><img height="35" src="https://raw.githubusercontent.com/github/explore/cebd63002168a05a6a642f309227eefeccd92950/topics/flutter/flutter.png" alt="flutter"></code>
+<code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="python"></code>
+<code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" alt="sql"></code>
+<code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png" alt="postgresql"></code>
+<code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redis/redis.png" alt="redis"></code> 
+<code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png" alt="docker"></code> 
+<code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" alt="terminal"></code> 
 
-<br />
+### Projects and Dev Stuffs: 
+<details>	
+  <summary><b>⚡ Github Stats</b></summary>
 
-## My Absolute Favorites .. 💖
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=AkashRajpurohit&show_icons=true&hide_border=true&count_private=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AkashRajpurohit&hide=html,Jupyter%20Notebook&show_icons=true&hide_border=true&layout=compact&langs_count=8"/>
+</details>
 
-💻 I love _Programming_ and developing new stuffs
+<details>
+  <summary><b>🧑‍🚀 Open Source Projects</b></summary>
 
-📰 Reading & writing _TECH BLOGS_
+  <br />
+  <table>
+    <thead align="center">
+      <tr border: none;>
+        <td><b>💻 Projects</b></td>
+        <td><b>🌟 Stars</b></td>
+        <td><b>🍴 Forks</b></td>
+        <td><b>🐛 Issues</b></td>
+        <td><b>🔔 Pull Requests</b></td>
+        <td><b>👨‍💻 Language</b></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	      <td><a href="https://github.com/AkashRajpurohit/clipper"><b>📋 Clipper</b></a></td>
+        <td><img alt="Stars" src="https://img.shields.io/github/stars/AkashRajpurohit/clipper?style=flat-square&labelColor=343b41"/></td>
+        <td><img alt="Forks" src="https://img.shields.io/github/forks/AkashRajpurohit/clipper?style=flat-square&labelColor=343b41"/></td>
+        <td><img alt="Issues" src="https://img.shields.io/github/issues/AkashRajpurohit/clipper?style=flat-square"/></td>
+        <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/AkashRajpurohit/clipper?style=flat-square"/></td>
+        <td><img alt="Language" src="https://img.shields.io/github/languages/top/AkashRajpurohit/clipper?style=flat-square"/></td>
+      </tr>
+      <tr>
+	      <td><a href="https://github.com/AkashRajpurohit/github-emojis"><b>🚀 Github Emojis</b></a></td>
+        <td><img alt="Stars" src="https://img.shields.io/github/stars/AkashRajpurohit/github-emojis?style=flat-square&labelColor=343b41"/></td>
+        <td><img alt="Forks" src="https://img.shields.io/github/forks/AkashRajpurohit/github-emojis?style=flat-square&labelColor=343b41"/></td>
+        <td><img alt="Issues" src="https://img.shields.io/github/issues/AkashRajpurohit/github-emojis?style=flat-square"/></td>
+        <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/AkashRajpurohit/github-emojis?style=flat-square"/></td>
+        <td><img alt="Language" src="https://img.shields.io/github/languages/top/AkashRajpurohit/github-emojis?style=flat-square"/></td>
+      </tr>
+      <tr>
+	      <td><a href="https://github.com/AkashRajpurohit/Spell-IT"><b>👨🏻‍💻 Spell-IT</b></a></td>
+        <td><img alt="Stars" src="https://img.shields.io/github/stars/AkashRajpurohit/Spell-IT?style=flat-square&labelColor=343b41"/></td>
+        <td><img alt="Forks" src="https://img.shields.io/github/forks/AkashRajpurohit/Spell-IT?style=flat-square&labelColor=343b41"/></td>
+        <td><img alt="Issues" src="https://img.shields.io/github/issues/AkashRajpurohit/Spell-IT?style=flat-square"/></td>
+        <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/AkashRajpurohit/Spell-IT?style=flat-square"/></td>
+        <td><img alt="Language" src="https://img.shields.io/github/languages/top/AkashRajpurohit/Spell-IT?style=flat-square"/></td> 
+      </tr>
+    </tbody>
+  </table>
+  <br />
+</details>
+ 
+<details>	
+  <br />
+  <summary><b>⚙️ Things I use to get stuff done</b></summary>
+  	<ul>
+  	  <li><b>OS:</b> Fedora 32 KDE</li>
+  	  <li><b>Browser: </b> Firefox / Brave Browser</li>
+	    <li><b>Code Editor:</b> VSCode - The best editor out there</li>
+	    <li><b>To Stay Updated:</b> Dev.to, Medium, Twitter and Tech YouTube Channels</li>
+	</ul>	
+</details> 
 
-🍕 _HACKATHONS_ & coding competitions
-  
+<details>	
+  <br />
+  <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
-<br/>  
+  <!-- BLOG-POST-LIST:START -->
+  - [Top Free Services To Deploy Full-Stack Applications (Back-end, Front-end, Databases)](https://akashwho.codes/blog/top-free-services-to-deploy-full-stack-applications/)
+  - [LNT Infotech (LTI) Interview Experience.](https://akashwho.codes/blog/lti-interview-experience/)
+  - [API Rate Limit for Small Size to Large Production Ready Applications in Node.js](https://akashwho.codes/blog/api-rate-limit-in-nodejs-and-expressjs/)
+  - [HackWithInfy 2019 Round 2 Experience with Questions.](https://akashwho.codes/blog/hackwithinfy-round-2-experience-with-questions/)
+  - [HackWithInfy 2019 Round 1 Experience with Questions.](https://akashwho.codes/blog/hackwithinfy-round-1-experience-with-questions/)
+  - [Github CLI ready for your terminal.](https://akashwho.codes/blog/github-cli-tool/)
+  - [New Features in ES2020 with code examples.](https://akashwho.codes/blog/new-features-in-es2020-with-sample-examples/)
+  - [5 Basic Git Commands Every Developer Must Know](https://akashwho.codes/blog/5-basic-git-commands-every-developer-must-know/)
+  - [TCS Codevita Interview Experience](https://akashwho.codes/blog/tcs-codevita-interview-experience/)
+  - [Learn JavaScript Array .reduce() method with code examples](https://akashwho.codes/blog/learn-reduce-method-in-javascript-with-code-examples/)
+  <!-- BLOG-POST-LIST:END -->  
 
+</details>  
 
-## My Skill Set  
-<table><tr><td valign="top" width="33%">
+---
 
-### Frontend  
-<p align="center">
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/react/react-original-wordmark.svg" alt="React" height="50" />  
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/redux/redux-original.svg" alt="Redux" height="50" />  
-  <img style="margin: 10px" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="Flutter" height="50" />  
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/angularjs/angularjs-original.svg" alt="AngularJS" height="50" />  
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/html5/html5-original-wordmark.svg" alt="HTML5" height="50" />  
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/css3/css3-original-wordmark.svg" alt="CSS3" height="50" />  
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/sass/sass-original.svg" alt="Sass" height="50" />  
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/electron/electron-original.svg" alt="Electron" height="50" /> 
-  <img style="margin: 10px" src="https://www.gatsbyjs.com/Gatsby-Logo.svg" alt="Gatsby JS" height="50" /> 
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="JavaScript" height="50" />  
-</p></td><td valign="top" width="33%">
+<div align="center">
 
-### Backend  
-<p align="center">  
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="JavaScript" height="50" />  
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/typescript/typescript-original.svg" alt="TypeScript" height="50" />  
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" height="50" />  
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" height="50" />  
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/express/express-original-wordmark.svg" alt="Express.js" height="50" />  
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/redis/redis-original-wordmark.svg" alt="Redis" height="50" />
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/python/python-original.svg" alt="Python" height="50" />  
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL" height="50" /> 
-  <img style="margin: 10px" src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg" alt="GraphQL" height="50" /> 
-</p></td><td valign="top" width="33%">
+### Thank you for reading, Share your ❤️ by starring some of the repositories! 🌟
 
-### DevOps  
-<p align="center">
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" height="50" />  
-  <img style="margin: 10px" src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="GCP" height="50" />  
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/linux/linux-original.svg" alt="Linux" height="50" />  
-  <img style="margin: 10px" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" height="50" />  
-  <img style="margin: 10px" src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="Bash" height="50" />  
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/nginx/nginx-original.svg" alt="Nginx" height="50" />  
-  <img style="margin: 10px" src="https://devicons.github.io/devicon/devicon.git/icons/docker/docker-original-wordmark.svg" alt="Docker" height="50" />  
-</p></td></tr></table>  
-
-<br/>  
-
-
-## Connect with me  
-<p align="center">
-  <a href="https://github.com/AkashRajpurohit" target="_blank">
-  <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
-  </a>
-  <a href="https://twitter.com/AkashWhoCodes" target="_blank">
-  <img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 5px;" />
-  </a>
-  <a href="https://linkedin.com/in/AkashRajpurohit" target="_blank">
-  <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
-  </a>
-  <a href="https://instagram.com/akashwho.codes" target="_blank">
-  <img src=https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white alt=instagram style="margin-bottom: 5px;" />
-  </a>  
-</p>  
-  
-
-<br/>  
-
-
-## Github Stats  
-<p align="center"><img src="https://github-readme-stats.vercel.app/api?username=AkashRajpurohit&show_icons=true&count_private=true" align="center" /></p>  
-
-<br/>  
-
-
-## Recent Blog Posts  
-<!-- BLOG-POST-LIST:START -->
-- [Top Free Services To Deploy Full-Stack Applications (Back-end, Front-end, Databases)](https://akashwho.codes/blog/top-free-services-to-deploy-full-stack-applications/)
-- [LNT Infotech (LTI) Interview Experience.](https://akashwho.codes/blog/lti-interview-experience/)
-- [API Rate Limit for Small Size to Large Production Ready Applications in Node.js](https://akashwho.codes/blog/api-rate-limit-in-nodejs-and-expressjs/)
-- [HackWithInfy 2019 Round 2 Experience with Questions.](https://akashwho.codes/blog/hackwithinfy-round-2-experience-with-questions/)
-- [HackWithInfy 2019 Round 1 Experience with Questions.](https://akashwho.codes/blog/hackwithinfy-round-1-experience-with-questions/)
-- [Github CLI ready for your terminal.](https://akashwho.codes/blog/github-cli-tool/)
-- [New Features in ES2020 with code examples.](https://akashwho.codes/blog/new-features-in-es2020-with-sample-examples/)
-- [5 Basic Git Commands Every Developer Must Know](https://akashwho.codes/blog/5-basic-git-commands-every-developer-must-know/)
-- [TCS Codevita Interview Experience](https://akashwho.codes/blog/tcs-codevita-interview-experience/)
-- [Learn JavaScript Array .reduce() method with code examples](https://akashwho.codes/blog/learn-reduce-method-in-javascript-with-code-examples/)
-<!-- BLOG-POST-LIST:END -->  
-
-<br/>
-
-<br/>  
-
-<p align="center">
-  <img align='center' src="https://visitor-badge.laobi.icu/badge?page_id=akashrajpurohit.visitor-badge">
-</p>
+</div>
