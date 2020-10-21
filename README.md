@@ -35,7 +35,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 <code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" alt="nodejs"></code>
 <code><img height="35" src="https://devicons.github.io/devicon/devicon.git/icons/express/express-original.svg" alt="expressjs"></code>
 <code><img height="35" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSTTzPAw-55ssm1Im594xYZ9eRQu2JylrkYLg&usqp=CAU" alt="mongodb"></code>
-<code><img height="35" src="https://devicons.github.io/devicon/devicon.git/icons/git/git-original.svg" alt="git"></code>
 <code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="react"></code>
 <code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/graphql/graphql.png" alt="graphql"></code>
 <code><img height="35" src="https://raw.githubusercontent.com/github/explore/e94815998e4e0713912fed477a1f346ec04c3da2/topics/gatsby/gatsby.png" alt="gatsbyjs"></code>
@@ -45,14 +44,15 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 <code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png" alt="postgresql"></code>
 <code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redis/redis.png" alt="redis"></code> 
 <code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png" alt="docker"></code> 
+<code><img height="35" src="https://devicons.github.io/devicon/devicon.git/icons/git/git-original.svg" alt="git"></code>
 <code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" alt="terminal"></code> 
 
 ### Projects and Dev Stuffs: 
 <details>	
   <summary><b>⚡ Github Stats</b></summary>
 
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=AkashRajpurohit&show_icons=false&hide_border=true&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AkashRajpurohit&hide=html,Jupyter%20Notebook&show_icons=true&hide_border=true&layout=compact&langs_count=8"/>
+  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=AkashRajpurohit&show_icons=false&hide_border=true&count_private=true&show_icons=true" />
+  <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AkashRajpurohit&hide=html,Jupyter%20Notebook&show_icons=true&hide_border=true&layout=compact&langs_count=8"/>
 </details>
 
 <details>
