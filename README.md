@@ -38,6 +38,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 <code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="react"></code>
 <code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/graphql/graphql.png" alt="graphql"></code>
 <code><img height="35" src="https://raw.githubusercontent.com/github/explore/e94815998e4e0713912fed477a1f346ec04c3da2/topics/gatsby/gatsby.png" alt="gatsbyjs"></code>
+<code><img height="35" src="https://nextjs.org/static/favicon/favicon-32x32.png" alt="nextjs"></code>
 <code><img height="35" src="https://raw.githubusercontent.com/github/explore/cebd63002168a05a6a642f309227eefeccd92950/topics/flutter/flutter.png" alt="flutter"></code>
 <code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="python"></code>
 <code><img height="35" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" alt="sql"></code>
@@ -72,7 +73,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
     </thead>
     <tbody>
       <tr>
-	      <td><a href="https://github.com/AkashRajpurohit/clipper"><b>📋 Clipper</b></a></td>
+	<td><a href="https://github.com/AkashRajpurohit/clipper"><b>📋 Clipper</b></a></td>
         <td><img alt="Stars" src="https://img.shields.io/github/stars/AkashRajpurohit/clipper?style=flat-square&labelColor=343b41"/></td>
         <td><img alt="Forks" src="https://img.shields.io/github/forks/AkashRajpurohit/clipper?style=flat-square&labelColor=343b41"/></td>
         <td><img alt="Issues" src="https://img.shields.io/github/issues/AkashRajpurohit/clipper?style=flat-square"/></td>
@@ -80,7 +81,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
         <td><img alt="Language" src="https://img.shields.io/github/languages/top/AkashRajpurohit/clipper?style=flat-square"/></td>
       </tr>
       <tr>
-	      <td><a href="https://github.com/AkashRajpurohit/github-emojis"><b>🚀 Github Emojis</b></a></td>
+	<td><a href="https://github.com/AkashRajpurohit/github-emojis"><b>🚀 Github Emojis</b></a></td>
         <td><img alt="Stars" src="https://img.shields.io/github/stars/AkashRajpurohit/github-emojis?style=flat-square&labelColor=343b41"/></td>
         <td><img alt="Forks" src="https://img.shields.io/github/forks/AkashRajpurohit/github-emojis?style=flat-square&labelColor=343b41"/></td>
         <td><img alt="Issues" src="https://img.shields.io/github/issues/AkashRajpurohit/github-emojis?style=flat-square"/></td>
@@ -88,7 +89,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
         <td><img alt="Language" src="https://img.shields.io/github/languages/top/AkashRajpurohit/github-emojis?style=flat-square"/></td>
       </tr>
       <tr>
-	      <td><a href="https://github.com/AkashRajpurohit/Spell-IT"><b>👨🏻‍💻 Spell-IT</b></a></td>
+	<td><a href="https://github.com/AkashRajpurohit/Spell-IT"><b>👨🏻‍💻 Spell-IT</b></a></td>
         <td><img alt="Stars" src="https://img.shields.io/github/stars/AkashRajpurohit/Spell-IT?style=flat-square&labelColor=343b41"/></td>
         <td><img alt="Forks" src="https://img.shields.io/github/forks/AkashRajpurohit/Spell-IT?style=flat-square&labelColor=343b41"/></td>
         <td><img alt="Issues" src="https://img.shields.io/github/issues/AkashRajpurohit/Spell-IT?style=flat-square"/></td>
