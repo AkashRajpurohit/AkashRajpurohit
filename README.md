@@ -20,7 +20,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - 💬 &nbsp; Read my blogs which I publish [here](https://akashrajpurohit.cf/blogs/)!
 - 👾 &nbsp; Fun fact: I use tabs over spaces.
 - 📫 &nbsp; How to reach me: akash009.dev@gmail.com
-- 💡 &nbsp; I’m currently doing [leetcode-october-challenge](https://github.com/AkashRajpurohit/leetcode-october-2020-challenge) 
+- 💡 &nbsp; I’m currently doing [leetcode-november-challenge](https://github.com/AkashRajpurohit/leetcode-november-2020-challenge) 
 
 ### My Absolute Favorites:
 
