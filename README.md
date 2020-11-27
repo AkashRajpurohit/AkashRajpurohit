@@ -17,9 +17,9 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - 🛠 &nbsp; I’m currently working with JavaScript/TypeScript, Nodejs, Express, React, <br /> Mongodb, PostgreSQL etc.
 - 🚀 &nbsp; I’m currently learning [GraphQL](https://graphql.org/), [Apollo](https://www.apollographql.com/) & [Next.js](https://nextjs.org/)
 - 👨🏻‍💻 &nbsp; Most of my projects are available on [Github](https://github.com/AkashRajpurohit).
-- 💬 &nbsp; Read my blogs which I publish [here](https://akashrajpurohit.cf/blogs/)!
+- 💬 &nbsp; Read my blogs which I publish [here](https://akashrajpurohit.com/blogs/)!
 - 👾 &nbsp; Fun fact: I use tabs over spaces.
-- 📫 &nbsp; How to reach me: akash009.dev@gmail.com
+- 📫 &nbsp; How to reach me: me@akashrajpurohit.com
 - 💡 &nbsp; I’m currently doing [leetcode-november-challenge](https://github.com/AkashRajpurohit/leetcode-november-2020-challenge) 
 
 ### My Absolute Favorites:
