@@ -19,8 +19,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - 👨🏻‍💻 &nbsp; Most of my projects are available on [Github](https://github.com/AkashRajpurohit).
 - 💬 &nbsp; Read my blogs which I publish [here](https://akashrajpurohit.com/blogs/)!
 - 👾 &nbsp; Fun fact: I use tabs over spaces.
-- 📫 &nbsp; How to reach me: me@akashrajpurohit.com
-- 💡 &nbsp; I’m currently doing [leetcode-november-challenge](https://github.com/AkashRajpurohit/leetcode-november-2020-challenge) 
+- 📫 &nbsp; How to reach me: me@akashrajpurohit.com 
 
 ### My Absolute Favorites:
 
