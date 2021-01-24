@@ -116,6 +116,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Infosys Power Programmer Interview Experience](https://akashrajpurohit.com/blog/infosys-power-programmer-interview-experience)
 - [How to manage multiple Node.js versions on your system](https://akashrajpurohit.com/blog/how-to-manage-multiple-nodejs-versions-on-your-system/)
 - [Top Free Services To Deploy Full-Stack Applications (Back-end, Front-end, Databases)](https://akashrajpurohit.com/blog/top-free-services-to-deploy-full-stack-applications/)
 - [LNT Infotech (LTI) Interview Experience.](https://akashrajpurohit.com/blog/lti-interview-experience/)
@@ -125,7 +126,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Github CLI ready for your terminal.](https://akashrajpurohit.com/blog/github-cli-tool/)
 - [New Features in ES2020 with code examples.](https://akashrajpurohit.com/blog/new-features-in-es2020-with-sample-examples/)
 - [5 Basic Git Commands Every Developer Must Know](https://akashrajpurohit.com/blog/5-basic-git-commands-every-developer-must-know/)
-- [TCS Codevita Interview Experience](https://akashrajpurohit.com/blog/tcs-codevita-interview-experience/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
