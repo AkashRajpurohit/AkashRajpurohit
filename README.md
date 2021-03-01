@@ -116,6 +116,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Backup Users Home Directory In Linux Using Tar Command](https://akashrajpurohit.com/blog/backup-users-home-directory-in-linux-using-tar-command)
 - [Disable Source Maps in GatsbyJs V2 for Production.](https://akashrajpurohit.com/blog/disable-source-maps-in-gatsbyjs-v2)
 - [Infosys Power Programmer Interview Experience](https://akashrajpurohit.com/blog/infosys-power-programmer-interview-experience)
 - [How to manage multiple Node.js versions on your system](https://akashrajpurohit.com/blog/how-to-manage-multiple-nodejs-versions-on-your-system/)
@@ -125,7 +126,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [HackWithInfy 2019 Round 2 Experience with Questions.](https://akashrajpurohit.com/blog/hackwithinfy-round-2-experience-with-questions/)
 - [HackWithInfy 2019 Round 1 Experience with Questions.](https://akashrajpurohit.com/blog/hackwithinfy-round-1-experience-with-questions/)
 - [Github CLI ready for your terminal.](https://akashrajpurohit.com/blog/github-cli-tool/)
-- [New Features in ES2020 with code examples.](https://akashrajpurohit.com/blog/new-features-in-es2020-with-sample-examples/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
