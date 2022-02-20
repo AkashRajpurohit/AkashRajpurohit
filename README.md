@@ -110,16 +110,16 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
-- [How to use ES6 import syntax in Node.js](https://akashrajpurohit.com/blog/how-to-use-es6-import-syntax-in-nodejs)
-- [Increase Root Partition Size On Fedora](https://akashrajpurohit.com/blog/increase-root-partition-size-on-fedora)
-- [Backup Users Home Directory In Linux Using Tar Command](https://akashrajpurohit.com/blog/backup-users-home-directory-in-linux-using-tar-command)
-- [Disable Source Maps in GatsbyJs V2 for Production.](https://akashrajpurohit.com/blog/disable-source-maps-in-gatsbyjs-v2)
-- [Infosys Power Programmer Interview Experience](https://akashrajpurohit.com/blog/infosys-power-programmer-interview-experience)
+- [How to use ES6 import syntax in Node.js](https://akashrajpurohit.com/blog/how-to-use-es6-import-syntax-in-nodejs/)
+- [Increase Root Partition Size On Fedora](https://akashrajpurohit.com/blog/increase-root-partition-size-on-fedora/)
+- [Backup Users Home Directory In Linux Using Tar Command](https://akashrajpurohit.com/blog/backup-users-home-directory-in-linux-using-tar-command/)
+- [Disable Source Maps in GatsbyJs V2 for Production.](https://akashrajpurohit.com/blog/disable-source-maps-in-gatsbyjs-v2/)
+- [Infosys Power Programmer Interview Experience](https://akashrajpurohit.com/blog/infosys-power-programmer-interview-experience/)
 - [How to manage multiple Node.js versions on your system](https://akashrajpurohit.com/blog/how-to-manage-multiple-nodejs-versions-on-your-system/)
 - [Top Free Services To Deploy Full-Stack Applications &lpar;Back-end, Front-end, Databases&rpar;](https://akashrajpurohit.com/blog/top-free-services-to-deploy-full-stack-applications/)
 - [LNT Infotech &lpar;LTI&rpar; Interview Experience.](https://akashrajpurohit.com/blog/lti-interview-experience/)
 - [API Rate Limit for Small Size to Large Production Ready Applications in Node.js](https://akashrajpurohit.com/blog/api-rate-limit-in-nodejs-and-expressjs/)
-- [HackWithInfy 2019 Round 2 Experience with Questions.](https://akashrajpurohit.com/blog/hackwithinfy-round-2-experience-with-questions/)
+- [HackWithInfy 2019 Round 2 Experience.](https://akashrajpurohit.com/blog/hackwithinfy-round-2-experience/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
