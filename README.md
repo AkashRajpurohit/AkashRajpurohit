@@ -14,8 +14,8 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 
 ### Talking about Personal Stuffs:
 
-- 🛠 &nbsp; I’m currently working with JavaScript/TypeScript, Nodejs, Express, React, <br /> Mongodb, PostgreSQL etc.
-- 🚀 &nbsp; I’m currently learning [GraphQL](https://graphql.org/), [Apollo](https://www.apollographql.com/) & [Next.js](https://nextjs.org/)
+- 🛠 &nbsp; I'm currently developing stuff with JavaScript/TypeScript, Node.js, React, Next.js, Mongodb, PostgreSQL, AWS, Vercel.
+- 🚀 &nbsp; I’m currently learning [Remix](https://remix.run), [Go](https://go.dev/) and [Serverless framework](https://www.serverless.com/)
 - 👨🏻‍💻 &nbsp; Most of my projects are available on [Github](https://github.com/AkashRajpurohit).
 - 💬 &nbsp; Read my blogs which I publish [here](https://akashrajpurohit.com/blogs/)!
 - 👾 &nbsp; Fun fact: I use tabs over spaces.
