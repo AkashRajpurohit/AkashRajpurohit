@@ -66,6 +66,14 @@ Software Engineering is something which coincides with my passion and hobby. Alw
     </thead>
     <tbody>
       <tr>
+	<td><a href="github.com/AkashRajpurohit/howtoprofessionallysay/"><b>🧍 How to professionally say</b></a></td>
+        <td><img alt="Stars" src="https://img.shields.io/github/stars/AkashRajpurohit/howtoprofessionallysay?style=flat-square&labelColor=343b41"/></td>
+        <td><img alt="Forks" src="https://img.shields.io/github/forks/AkashRajpurohit/howtoprofessionallysay?style=flat-square&labelColor=343b41"/></td>
+        <td><img alt="Issues" src="https://img.shields.io/github/issues/AkashRajpurohit/howtoprofessionallysay?style=flat-square"/></td>
+        <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/AkashRajpurohit/howtoprofessionallysay?style=flat-square"/></td>
+        <td><img alt="Language" src="https://img.shields.io/github/languages/top/AkashRajpurohit/howtoprofessionallysay?style=flat-square"/></td>
+      </tr>
+      <tr>
 	<td><a href="https://github.com/AkashRajpurohit/clipper"><b>📋 Clipper</b></a></td>
         <td><img alt="Stars" src="https://img.shields.io/github/stars/AkashRajpurohit/clipper?style=flat-square&labelColor=343b41"/></td>
         <td><img alt="Forks" src="https://img.shields.io/github/forks/AkashRajpurohit/clipper?style=flat-square&labelColor=343b41"/></td>
