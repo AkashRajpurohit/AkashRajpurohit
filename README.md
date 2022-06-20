@@ -106,11 +106,12 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <br />
   <summary><b>⚙️ Things I use to get stuff done</b></summary>
   	<ul>
-  	  <li><b>OS:</b> Fedora 32 KDE</li>
+  	  <li><b>OS:</b> MacOS / Linux</li>
   	  <li><b>Browser: </b> Firefox / Brave Browser</li>
-	    <li><b>Code Editor:</b> VSCode - The best editor out there</li>
-	    <li><b>To Stay Updated:</b> Dev.to, Medium, Twitter and Tech YouTube Channels</li>
-	</ul>	
+	  <li><b>Code Editor:</b> Visual Studio Code</li>
+	  <li><b>To Stay Updated:</b> Dev.to, Medium, Twitter and Tech YouTube Channels</li>
+	</ul>
+	<b>Read more about it <a target="_blank" rel="norefferer noopener" href="https://akashrajpurohit.com/uses/">here</a></b>
 </details> 
 
 <details>	
