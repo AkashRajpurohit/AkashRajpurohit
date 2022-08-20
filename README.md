@@ -119,6 +119,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [How to add fuzzy search to your React app using Fuse.js](https://akashrajpurohit.com/blog/how-to-add-fuzzy-search-to-your-react-app-using-fusejs/)
 - [Open Source alternatives you must try - Part 2](https://akashrajpurohit.com/blog/open-source-alternatives-you-must-try-part-2/)
 - [Open Source alternatives you must try - Part 1](https://akashrajpurohit.com/blog/open-source-alternatives-you-must-try-part-1/)
 - [Journey into &quot;how to professionally say&quot; project](https://akashrajpurohit.com/blog/journey-into-how-to-professionally-say-project/)
@@ -128,7 +129,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Disable Source Maps in GatsbyJs V2 for Production.](https://akashrajpurohit.com/blog/disable-source-maps-in-gatsbyjs-v2/)
 - [Infosys Power Programmer Interview Experience](https://akashrajpurohit.com/blog/infosys-power-programmer-interview-experience/)
 - [How to manage multiple Node.js versions on your system](https://akashrajpurohit.com/blog/how-to-manage-multiple-nodejs-versions-on-your-system/)
-- [Top Free Services To Deploy Full-Stack Applications](https://akashrajpurohit.com/blog/top-free-services-to-deploy-full-stack-applications/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
