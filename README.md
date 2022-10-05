@@ -119,6 +119,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [3 simple steps to create a local backup of Postgres database using Bash script](https://akashrajpurohit.com/blog/how-i-locally-backup-my-postgres-database-using-bash/)
 - [Add a Honeypot in your Forms to avoid Spam Submissions](https://akashrajpurohit.com/blog/add-honeypot-in-your-forms-to-avoid-spam-submissions/)
 - [How to add fuzzy search to your React app using Fuse.js](https://akashrajpurohit.com/blog/how-to-add-fuzzy-search-to-your-react-app-using-fusejs/)
 - [Open Source alternatives you must try - Part 2](https://akashrajpurohit.com/blog/open-source-alternatives-you-must-try-part-2/)
@@ -128,7 +129,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Increase Root Partition Size On Fedora](https://akashrajpurohit.com/blog/increase-root-partition-size-on-fedora/)
 - [Backup Users Home Directory In Linux Using Tar Command](https://akashrajpurohit.com/blog/backup-users-home-directory-in-linux-using-tar-command/)
 - [Disable Source Maps in GatsbyJs V2 for Production.](https://akashrajpurohit.com/blog/disable-source-maps-in-gatsbyjs-v2/)
-- [Infosys Power Programmer Interview Experience](https://akashrajpurohit.com/blog/infosys-power-programmer-interview-experience/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
