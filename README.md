@@ -119,6 +119,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [How I automatically generate a dynamic sitemap in Next.js](https://akashrajpurohit.com/blog/how-i-automatically-generate-dynamic-sitemap-in-nextjs/)
 - [3 simple steps to create a local backup of Postgres database using Bash script](https://akashrajpurohit.com/blog/how-i-locally-backup-my-postgres-database-using-bash/)
 - [Add a Honeypot in your Forms to avoid Spam Submissions](https://akashrajpurohit.com/blog/add-honeypot-in-your-forms-to-avoid-spam-submissions/)
 - [How to add fuzzy search to your React app using Fuse.js](https://akashrajpurohit.com/blog/how-to-add-fuzzy-search-to-your-react-app-using-fusejs/)
@@ -128,7 +129,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [How to use ES6 import syntax in Node.js](https://akashrajpurohit.com/blog/how-to-use-es6-import-syntax-in-nodejs/)
 - [Increase Root Partition Size On Fedora](https://akashrajpurohit.com/blog/increase-root-partition-size-on-fedora/)
 - [Backup Users Home Directory In Linux Using Tar Command](https://akashrajpurohit.com/blog/backup-users-home-directory-in-linux-using-tar-command/)
-- [Disable Source Maps in GatsbyJs V2 for Production.](https://akashrajpurohit.com/blog/disable-source-maps-in-gatsbyjs-v2/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
