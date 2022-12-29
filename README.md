@@ -1,16 +1,19 @@
-## Hey <img alt="Hi" src="./images/Hi.gif" width="30px" height="30px" />, I'm Akash Rajpurohit — a Software Engineer 👨‍💻
+## Hey <img alt="Hi" src="./assets/Hi.gif" width="30px" height="30px" />, I'm Akash Rajpurohit — a Software Engineer 👨‍💻
 
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://linkedin.com/in/AkashRajpurohit)
-[![Website Badge](https://img.shields.io/badge/Website-3b5998?style=flat-square&logo=google-chrome&logoColor=white)](https://akashrajpurohit.com/)
-[![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/AkashWhoCodes)
-[![Instagram Badge](https://img.shields.io/badge/-Instagram-e4405f?style=flat-square&logo=Instagram&logoColor=white)](https://instagram.com/akashwho.codes/)
-[![Telegram Badge](https://img.shields.io/badge/-Telegram-0088cc?style=flat-square&logo=Telegram&logoColor=white)](https://t.me/AkashRajpurohit)
+[![Linkedin Badge](https://img.shields.io/badge/-@AkashRajpurohit-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://linkedin.com/in/AkashRajpurohit)
+[![Website Badge](https://img.shields.io/badge/-akashrajpurohit.com-3b5998?style=flat-square&logo=google-chrome&logoColor=white)](https://akashrajpurohit.com/)
+[![Twitter Badge](https://img.shields.io/badge/-@akashwhocodes-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/AkashWhoCodes)
+[![Instagram Badge](https://img.shields.io/badge/-@akashwho.codes-e4405f?style=flat-square&logo=Instagram&logoColor=white)](https://instagram.com/akashwho.codes/)
+[![Telegram Badge](https://img.shields.io/badge/-@AkashRajpurohit-0088cc?style=flat-square&logo=Telegram&logoColor=white)](https://t.me/AkashRajpurohit)
+![](https://visitor-badge.laobi.icu/badge?page_id=akashrajpurohit.visitor-badge&style=flat-square&color=0088cc)
+
+<img src="https://raw.githubusercontent.com/AkashRajpurohit/AkashRajpurohit/master/assets/github-snake.svg" />
   
-### Glad to see you here! &nbsp; ![](https://visitor-badge.laobi.icu/badge?page_id=akashrajpurohit.visitor-badge&style=flat-square&color=0088cc)
+### Glad to see you here!
 
 Software Engineering is something which coincides with my passion and hobby. Always up for a discussion on softwares, business and other opportunity. I'm currently into Web Development 🕸️ and working on my Data Structures and Algorithms.
   
-<img align="right" alt="Coding Cat" src="./images/coding.webp" />
+<img align="right" alt="Coding Cat" src="./assets/coding.webp" />
 
 ### Talking about Personal Stuffs:
 
