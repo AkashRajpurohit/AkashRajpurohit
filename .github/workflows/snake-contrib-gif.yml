@@ -23,7 +23,7 @@ jobs:
           git config user.name "FollowingAkash"
           git add .
           git pull
-          git commit -m ":snake: Updates Snake Contribution Animation"
+          git commit -m ":snake: Updates Snake Contribution Animation" || echo "Nothing to update"
       # Push the changes
       - name: Push
         uses: ad-m/github-push-action@master
