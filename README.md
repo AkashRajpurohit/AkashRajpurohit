@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Building My First Home Lab](https://akashrajpurohit.com/blog/building-my-first-home-lab/)
 - [How to protect your website from attacks using Cloudflare WAF and Rate Limiting](https://akashrajpurohit.com/blog/how-to-protect-your-website-from-attacks-using-cloudflare-waf-and-rate-limiting/)
 - [How to setup Cloudflare proxy for your website hosted on Vercel or Netlify](https://akashrajpurohit.com/blog/how-to-setup-cloudflare-proxy-for-your-website-hosted-on-vercel-or-netlify/)
 - [How I automatically generate a dynamic sitemap in Next.js](https://akashrajpurohit.com/blog/how-i-automatically-generate-dynamic-sitemap-in-nextjs/)
@@ -131,7 +132,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Open Source alternatives you must try - Part 2](https://akashrajpurohit.com/blog/open-source-alternatives-you-must-try-part-2/)
 - [Open Source alternatives you must try - Part 1](https://akashrajpurohit.com/blog/open-source-alternatives-you-must-try-part-1/)
 - [Journey into &quot;how to professionally say&quot; project](https://akashrajpurohit.com/blog/journey-into-how-to-professionally-say-project/)
-- [How to use ES6 import syntax in Node.js](https://akashrajpurohit.com/blog/how-to-use-es6-import-syntax-in-nodejs/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
