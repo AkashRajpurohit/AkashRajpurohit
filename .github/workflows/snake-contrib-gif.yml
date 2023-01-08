@@ -11,11 +11,12 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
       - name: Generate Snake
-        uses: Platane/snk@master
+        uses: Platane/snk/svg-only@v2
         with:
           github_user_name: ${{ github.repository_owner }}
-          gif_out_path: assets/github-snake.gif
-          svg_out_path: assets/github-snake.svg          
+          outputs: |
+            assets/github-snake.svg
+            assets/github-snake-dark.svg?palette=github-dark        
       # Commit the changes
       - name: Commit files
         run: |
