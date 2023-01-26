@@ -11,14 +11,14 @@
   
 ### Glad to see you here!
 
-Software Engineering is something which coincides with my passion and hobby. Always up for a discussion on softwares, business and other opportunity. I'm currently into Web Development 🕸️ and working on my Data Structures and Algorithms.
+Software Engineering is something which coincides with my passion and hobby. Always up for a discussion on softwares, business and other opportunity. I'm currently into Web Development 🕸️ and building my home lab 🚀.
   
 <img align="right" alt="Coding Cat" src="./assets/coding.webp" />
 
 ### Talking about Personal Stuffs:
 
-- 🛠 &nbsp; I'm currently developing stuff with JavaScript/TypeScript, Node.js, React, Next.js, Mongodb, PostgreSQL, AWS, Vercel.
-- 🚀 &nbsp; I’m currently exploring [Go](https://go.dev/) and [Cloudflare](https://www.cloudflare.com/)
+- 🛠 &nbsp; I'm currently developing stuff with JavaScript/TypeScript, Node.js, React, Next.js, Mongodb, PostgreSQL, MySQL.
+- 🚀 &nbsp; I’m currently exploring [Cloudflare](https://www.cloudflare.com/) services and learning about Linux and networking.
 - 👨🏻‍💻 &nbsp; Most of my projects are available on [Github](https://github.com/AkashRajpurohit).
 - 💬 &nbsp; I occasionally write blogs [here](https://akashrajpurohit.com/blogs/)!
 - 👾 &nbsp; Fun fact: I use tabs over spaces.
