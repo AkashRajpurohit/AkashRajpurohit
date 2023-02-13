@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Init Systems Unveiled: Understanding the Differences between SystemD and SystemV](https://akashrajpurohit.com/blog/init-systems-unveiled-understanding-the-differences-between-systemd-and-systemv/)
 - [Effortlessly Download Torrents on Your Server with Aria2](https://akashrajpurohit.com/blog/effortlessly-download-torrents-on-your-server-with-aria2/)
 - [Protect Your Linux Server with UFW Firewall: A Step-by-Step Guide](https://akashrajpurohit.com/blog/protect-your-linux-server-with-ufw-firewall-a-stepbystep-guide/)
 - [Stay Secure — Essential SSH Security Practices for Linux Servers](https://akashrajpurohit.com/blog/stay-secure-essential-ssh-security-practices-for-linux-servers/)
@@ -131,7 +132,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [How I automatically generate a dynamic sitemap in Next.js](https://akashrajpurohit.com/blog/how-i-automatically-generate-dynamic-sitemap-in-nextjs/)
 - [3 simple steps to create a local backup of Postgres database using Bash script](https://akashrajpurohit.com/blog/how-i-locally-backup-my-postgres-database-using-bash/)
 - [Add a Honeypot in your Forms to avoid Spam Submissions](https://akashrajpurohit.com/blog/add-honeypot-in-your-forms-to-avoid-spam-submissions/)
-- [How to add fuzzy search to your React app using Fuse.js](https://akashrajpurohit.com/blog/how-to-add-fuzzy-search-to-your-react-app-using-fusejs/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
