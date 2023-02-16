@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Running a Service in the Background with SystemV in Linux: A Comprehensive Guide](https://akashrajpurohit.com/blog/running-a-service-in-the-background-with-systemv-in-linux-a-comprehensive-guide/)
 - [Keep Your Services Running in the Background with SystemD](https://akashrajpurohit.com/blog/keep-your-services-running-in-the-background-with-systemd/)
 - [Init Systems Unveiled: Understanding the Differences between SystemD and SystemV](https://akashrajpurohit.com/blog/init-systems-unveiled-understanding-the-differences-between-systemd-and-systemv/)
 - [Effortlessly Download Torrents on Your Server with Aria2](https://akashrajpurohit.com/blog/effortlessly-download-torrents-on-your-server-with-aria2/)
@@ -131,7 +132,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [How to protect your website from attacks using Cloudflare WAF and Rate Limiting](https://akashrajpurohit.com/blog/how-to-protect-your-website-from-attacks-using-cloudflare-waf-and-rate-limiting/)
 - [How to setup Cloudflare proxy for your website hosted on Vercel or Netlify](https://akashrajpurohit.com/blog/how-to-setup-cloudflare-proxy-for-your-website-hosted-on-vercel-or-netlify/)
 - [How I automatically generate a dynamic sitemap in Next.js](https://akashrajpurohit.com/blog/how-i-automatically-generate-dynamic-sitemap-in-nextjs/)
-- [3 simple steps to create a local backup of Postgres database using Bash script](https://akashrajpurohit.com/blog/how-i-locally-backup-my-postgres-database-using-bash/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
