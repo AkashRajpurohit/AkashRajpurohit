@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Mastering Dotfiles Management with GNU Stow](https://akashrajpurohit.com/blog/mastering-dotfiles-management-with-gnu-stow/)
 - [Effortlessly Manage Torrent Downloads with Headless qBittorrent on Linux](https://akashrajpurohit.com/blog/effortlessly-manage-torrent-downloads-with-headless-qbittorrent-on-linux/)
 - [Revamp Your Old Android Phone into a Mini Linux Server](https://akashrajpurohit.com/blog/revamp-your-old-android-phone-into-a-mini-linux-server/)
 - [Running a Service in the Background with SystemV in Linux: A Comprehensive Guide](https://akashrajpurohit.com/blog/running-a-service-in-the-background-with-systemv-in-linux-a-comprehensive-guide/)
@@ -131,7 +132,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Protect Your Linux Server with UFW Firewall: A Step-by-Step Guide](https://akashrajpurohit.com/blog/protect-your-linux-server-with-ufw-firewall-a-stepbystep-guide/)
 - [Stay Secure — Essential SSH Security Practices for Linux Servers](https://akashrajpurohit.com/blog/stay-secure-essential-ssh-security-practices-for-linux-servers/)
 - [Building My First Home Lab](https://akashrajpurohit.com/blog/building-my-first-home-lab/)
-- [How to protect your website from attacks using Cloudflare WAF and Rate Limiting](https://akashrajpurohit.com/blog/how-to-protect-your-website-from-attacks-using-cloudflare-waf-and-rate-limiting/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
