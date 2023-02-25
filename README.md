@@ -122,6 +122,8 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Get Up and Running with the Latest Version of Node.js on Raspberry Pi](https://akashrajpurohit.com/blog/get-up-and-running-with-the-latest-version-of-nodejs-on-raspberry-pi/)
+- [Installing the Latest Version of Golang on Your Raspberry Pi](https://akashrajpurohit.com/blog/installing-the-latest-version-of-golang-on-your-raspberry-pi/)
 - [Mastering Dotfiles Management with GNU Stow](https://akashrajpurohit.com/blog/mastering-dotfiles-management-with-gnu-stow/)
 - [Effortlessly Manage Torrent Downloads with Headless qBittorrent on Linux](https://akashrajpurohit.com/blog/effortlessly-manage-torrent-downloads-with-headless-qbittorrent-on-linux/)
 - [Revamp Your Old Android Phone into a Mini Linux Server](https://akashrajpurohit.com/blog/revamp-your-old-android-phone-into-a-mini-linux-server/)
@@ -130,8 +132,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Init Systems Unveiled: Understanding the Differences between SystemD and SystemV](https://akashrajpurohit.com/blog/init-systems-unveiled-understanding-the-differences-between-systemd-and-systemv/)
 - [Effortlessly Download Torrents on Your Server with Aria2](https://akashrajpurohit.com/blog/effortlessly-download-torrents-on-your-server-with-aria2/)
 - [Protect Your Linux Server with UFW Firewall: A Step-by-Step Guide](https://akashrajpurohit.com/blog/protect-your-linux-server-with-ufw-firewall-a-stepbystep-guide/)
-- [Stay Secure — Essential SSH Security Practices for Linux Servers](https://akashrajpurohit.com/blog/stay-secure-essential-ssh-security-practices-for-linux-servers/)
-- [Building My First Home Lab](https://akashrajpurohit.com/blog/building-my-first-home-lab/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
