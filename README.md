@@ -132,6 +132,11 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Keep Your Services Running in the Background with SystemD](https://akashrajpurohit.com/blog/keep-your-services-running-in-the-background-with-systemd/)
 - [Init Systems Unveiled: Understanding the Differences between SystemD and SystemV](https://akashrajpurohit.com/blog/init-systems-unveiled-understanding-the-differences-between-systemd-and-systemv/)
 - [Effortlessly Download Torrents on Your Server with Aria2](https://akashrajpurohit.com/blog/effortlessly-download-torrents-on-your-server-with-aria2/)
+- [Protect Your Linux Server with UFW Firewall: A Step-by-Step Guide](https://akashrajpurohit.com/blog/protect-your-linux-server-with-ufw-firewall-a-stepbystep-guide/)
+- [Stay Secure — Essential SSH Security Practices for Linux Servers](https://akashrajpurohit.com/blog/stay-secure-essential-ssh-security-practices-for-linux-servers/)
+- [Building My First Home Lab](https://akashrajpurohit.com/blog/building-my-first-home-lab/)
+- [How to protect your website from attacks using Cloudflare WAF and Rate Limiting](https://akashrajpurohit.com/blog/how-to-protect-your-website-from-attacks-using-cloudflare-waf-and-rate-limiting/)
+- [How to setup Cloudflare proxy for your website hosted on Vercel or Netlify](https://akashrajpurohit.com/blog/how-to-setup-cloudflare-proxy-for-your-website-hosted-on-vercel-or-netlify/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
