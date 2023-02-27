@@ -13,4 +13,7 @@ jobs:
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
           feed_list: "http://akashrajpurohit.com/rss.xml"
-          max_post_count: 10
+          max_post_count: 15
+          committer_username: FollowingAkash
+          committer_email: bot@akashrajpurohit.com
+          commit_message: "chore: :memo: update blog list"
