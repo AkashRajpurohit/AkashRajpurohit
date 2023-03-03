@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Concurrency vs. Parallelism: Understanding the Key Differences](https://akashrajpurohit.com/blog/concurrency-vs-parallelism-understanding-the-key-differences/)
 - [Navigating Your Database Efficiently: Cursor Based Pagination vs Offset Based](https://akashrajpurohit.com/blog/navigating-your-database-efficiently-cursor-based-pagination-vs-offset-based/)
 - [The Importance of 99th Percentile Latency in System Performance](https://akashrajpurohit.com/blog/the-importance-of-99th-percentile-latency-in-system-performance/)
 - [Get Up and Running with the Latest Version of Node.js on Raspberry Pi](https://akashrajpurohit.com/blog/get-up-and-running-with-the-latest-version-of-nodejs-on-raspberry-pi/)
@@ -136,7 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Protect Your Linux Server with UFW Firewall: A Step-by-Step Guide](https://akashrajpurohit.com/blog/protect-your-linux-server-with-ufw-firewall-a-stepbystep-guide/)
 - [Stay Secure — Essential SSH Security Practices for Linux Servers](https://akashrajpurohit.com/blog/stay-secure-essential-ssh-security-practices-for-linux-servers/)
 - [Building My First Home Lab](https://akashrajpurohit.com/blog/building-my-first-home-lab/)
-- [How to protect your website from attacks using Cloudflare WAF and Rate Limiting](https://akashrajpurohit.com/blog/how-to-protect-your-website-from-attacks-using-cloudflare-waf-and-rate-limiting/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
