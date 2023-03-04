@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Dynamic DNS Made Easy with Cloudflare API](https://akashrajpurohit.com/blog/dynamic-dns-made-easy-with-cloudflare-api/)
 - [Concurrency vs. Parallelism: Understanding the Key Differences](https://akashrajpurohit.com/blog/concurrency-vs-parallelism-understanding-the-key-differences/)
 - [Navigating Your Database Efficiently: Cursor Based Pagination vs Offset Based](https://akashrajpurohit.com/blog/navigating-your-database-efficiently-cursor-based-pagination-vs-offset-based/)
 - [The Importance of 99th Percentile Latency in System Performance](https://akashrajpurohit.com/blog/the-importance-of-99th-percentile-latency-in-system-performance/)
@@ -136,7 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Effortlessly Download Torrents on Your Server with Aria2](https://akashrajpurohit.com/blog/effortlessly-download-torrents-on-your-server-with-aria2/)
 - [Protect Your Linux Server with UFW Firewall: A Step-by-Step Guide](https://akashrajpurohit.com/blog/protect-your-linux-server-with-ufw-firewall-a-stepbystep-guide/)
 - [Stay Secure — Essential SSH Security Practices for Linux Servers](https://akashrajpurohit.com/blog/stay-secure-essential-ssh-security-practices-for-linux-servers/)
-- [Building My First Home Lab](https://akashrajpurohit.com/blog/building-my-first-home-lab/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
