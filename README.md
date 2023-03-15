@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Understanding DHCP Server - The Essential Guide](https://akashrajpurohit.com/blog/understanding-dhcp-server-the-essential-guide/)
 - [Understanding Recursive DNS: A Comprehensive Guide](https://akashrajpurohit.com/blog/understanding-recursive-dns-a-comprehensive-guide/)
 - [Unleash the Power of Self-Hosted Services with Cloudflare Tunnels](https://akashrajpurohit.com/blog/unleash-the-power-of-selfhosted-services-with-cloudflare-tunnels/)
 - [Dynamic DNS Made Easy with Cloudflare API](https://akashrajpurohit.com/blog/dynamic-dns-made-easy-with-cloudflare-api/)
@@ -136,7 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Running a Service in the Background with SystemV in Linux: A Comprehensive Guide](https://akashrajpurohit.com/blog/running-a-service-in-the-background-with-systemv-in-linux-a-comprehensive-guide/)
 - [Keep Your Services Running in the Background with SystemD](https://akashrajpurohit.com/blog/keep-your-services-running-in-the-background-with-systemd/)
 - [Init Systems Unveiled — Understanding the Differences between SystemD and SystemV](https://akashrajpurohit.com/blog/init-systems-unveiled-understanding-the-differences-between-systemd-and-systemv/)
-- [Effortlessly Download Torrents on Your Server with Aria2](https://akashrajpurohit.com/blog/effortlessly-download-torrents-on-your-server-with-aria2/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
