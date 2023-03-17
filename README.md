@@ -122,6 +122,8 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Denial of Service Attacks: What They Are and How to Protect Against Them](https://akashrajpurohit.com/blog/denial-of-service-attacks-what-they-are-and-how-to-protect-against-them/)
+- [Zero Day Attacks: Understanding the Unannounced Threats](https://akashrajpurohit.com/blog/zero-day-attacks-understanding-the-unannounced-threats/)
 - [Understanding DHCP Server - The Essential Guide](https://akashrajpurohit.com/blog/understanding-dhcp-server-the-essential-guide/)
 - [Understanding Recursive DNS: A Comprehensive Guide](https://akashrajpurohit.com/blog/understanding-recursive-dns-a-comprehensive-guide/)
 - [Unleash the Power of Self-Hosted Services with Cloudflare Tunnels](https://akashrajpurohit.com/blog/unleash-the-power-of-selfhosted-services-with-cloudflare-tunnels/)
@@ -135,8 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Effortlessly Manage Torrent Downloads with Headless qBittorrent on Linux](https://akashrajpurohit.com/blog/effortlessly-manage-torrent-downloads-with-headless-qbittorrent-on-linux/)
 - [Revamp Your Old Android Phone into a Mini Linux Server](https://akashrajpurohit.com/blog/revamp-your-old-android-phone-into-a-mini-linux-server/)
 - [Running a Service in the Background with SystemV in Linux: A Comprehensive Guide](https://akashrajpurohit.com/blog/running-a-service-in-the-background-with-systemv-in-linux-a-comprehensive-guide/)
-- [Keep Your Services Running in the Background with SystemD](https://akashrajpurohit.com/blog/keep-your-services-running-in-the-background-with-systemd/)
-- [Init Systems Unveiled — Understanding the Differences between SystemD and SystemV](https://akashrajpurohit.com/blog/init-systems-unveiled-understanding-the-differences-between-systemd-and-systemv/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
