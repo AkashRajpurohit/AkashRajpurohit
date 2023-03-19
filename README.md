@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Performance vs Scalability: Understanding the Key Differences](https://akashrajpurohit.com/blog/performance-vs-scalability-understanding-the-key-differences/)
 - [Denial of Service Attacks: What They Are and How to Protect Against Them](https://akashrajpurohit.com/blog/denial-of-service-attacks-what-they-are-and-how-to-protect-against-them/)
 - [Zero Day Attacks: Understanding the Unannounced Threats](https://akashrajpurohit.com/blog/zero-day-attacks-understanding-the-unannounced-threats/)
 - [Understanding DHCP Server - The Essential Guide](https://akashrajpurohit.com/blog/understanding-dhcp-server-the-essential-guide/)
@@ -136,7 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Mastering Dotfiles Management with GNU Stow](https://akashrajpurohit.com/blog/mastering-dotfiles-management-with-gnu-stow/)
 - [Effortlessly Manage Torrent Downloads with Headless qBittorrent on Linux](https://akashrajpurohit.com/blog/effortlessly-manage-torrent-downloads-with-headless-qbittorrent-on-linux/)
 - [Revamp Your Old Android Phone into a Mini Linux Server](https://akashrajpurohit.com/blog/revamp-your-old-android-phone-into-a-mini-linux-server/)
-- [Running a Service in the Background with SystemV in Linux: A Comprehensive Guide](https://akashrajpurohit.com/blog/running-a-service-in-the-background-with-systemv-in-linux-a-comprehensive-guide/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
