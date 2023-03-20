@@ -122,6 +122,8 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Balancing the Tradeoff: Availability vs Consistency](https://akashrajpurohit.com/blog/balancing-the-tradeoff-availability-vs-consistency/)
+- [Latency vs Throughput: Balancing the Two Sides of System Performance](https://akashrajpurohit.com/blog/latency-vs-throughput-balancing-the-two-sides-of-system-performance/)
 - [Performance vs Scalability: Understanding the Key Differences](https://akashrajpurohit.com/blog/performance-vs-scalability-understanding-the-key-differences/)
 - [Denial of Service Attacks: What They Are and How to Protect Against Them](https://akashrajpurohit.com/blog/denial-of-service-attacks-what-they-are-and-how-to-protect-against-them/)
 - [Zero Day Attacks: Understanding the Unannounced Threats](https://akashrajpurohit.com/blog/zero-day-attacks-understanding-the-unannounced-threats/)
@@ -135,8 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Get Up and Running with the Latest Version of Node.js on Raspberry Pi](https://akashrajpurohit.com/blog/get-up-and-running-with-the-latest-version-of-nodejs-on-raspberry-pi/)
 - [Installing the Latest Version of Golang on Your Raspberry Pi](https://akashrajpurohit.com/blog/installing-the-latest-version-of-golang-on-your-raspberry-pi/)
 - [Mastering Dotfiles Management with GNU Stow](https://akashrajpurohit.com/blog/mastering-dotfiles-management-with-gnu-stow/)
-- [Effortlessly Manage Torrent Downloads with Headless qBittorrent on Linux](https://akashrajpurohit.com/blog/effortlessly-manage-torrent-downloads-with-headless-qbittorrent-on-linux/)
-- [Revamp Your Old Android Phone into a Mini Linux Server](https://akashrajpurohit.com/blog/revamp-your-old-android-phone-into-a-mini-linux-server/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
