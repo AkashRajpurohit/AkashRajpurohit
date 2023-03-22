@@ -122,6 +122,8 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Reverse Proxies: A Beginner&#39;s Guide to Unlocking Their Power](https://akashrajpurohit.com/blog/reverse-proxies-a-beginners-guide-to-unlocking-their-power/)
+- [Unlocking the Power of Forward Proxies: Simplified](https://akashrajpurohit.com/blog/unlocking-the-power-of-forward-proxies-simplified/)
 - [Balancing the Tradeoff: Availability vs Consistency](https://akashrajpurohit.com/blog/balancing-the-tradeoff-availability-vs-consistency/)
 - [Latency vs Throughput: Balancing the Two Sides of System Performance](https://akashrajpurohit.com/blog/latency-vs-throughput-balancing-the-two-sides-of-system-performance/)
 - [Performance vs Scalability: Understanding the Key Differences](https://akashrajpurohit.com/blog/performance-vs-scalability-understanding-the-key-differences/)
@@ -135,8 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Navigating Your Database Efficiently: Cursor Based Pagination vs Offset Based](https://akashrajpurohit.com/blog/navigating-your-database-efficiently-cursor-based-pagination-vs-offset-based/)
 - [The Importance of 99th Percentile Latency in System Performance](https://akashrajpurohit.com/blog/the-importance-of-99th-percentile-latency-in-system-performance/)
 - [Get Up and Running with the Latest Version of Node.js on Raspberry Pi](https://akashrajpurohit.com/blog/get-up-and-running-with-the-latest-version-of-nodejs-on-raspberry-pi/)
-- [Installing the Latest Version of Golang on Your Raspberry Pi](https://akashrajpurohit.com/blog/installing-the-latest-version-of-golang-on-your-raspberry-pi/)
-- [Mastering Dotfiles Management with GNU Stow](https://akashrajpurohit.com/blog/mastering-dotfiles-management-with-gnu-stow/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
