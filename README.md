@@ -122,6 +122,8 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Unlocking the Secrets of SSL Certificates: How They Keep Your Data Safe Online](https://akashrajpurohit.com/blog/unlocking-the-secrets-of-ssl-certificates-how-they-keep-your-data-safe-online/)
+- [VPN Explained: Understanding Virtual Private Networks](https://akashrajpurohit.com/blog/vpn-explained-understanding-virtual-private-networks/)
 - [Reverse Proxies: A Beginner&#39;s Guide to Unlocking Their Power](https://akashrajpurohit.com/blog/reverse-proxies-a-beginners-guide-to-unlocking-their-power/)
 - [Unlocking the Power of Forward Proxies: Simplified](https://akashrajpurohit.com/blog/unlocking-the-power-of-forward-proxies-simplified/)
 - [Balancing the Tradeoff: Availability vs Consistency](https://akashrajpurohit.com/blog/balancing-the-tradeoff-availability-vs-consistency/)
@@ -135,8 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Dynamic DNS Made Easy with Cloudflare API](https://akashrajpurohit.com/blog/dynamic-dns-made-easy-with-cloudflare-api/)
 - [Concurrency vs. Parallelism: Understanding the Key Differences](https://akashrajpurohit.com/blog/concurrency-vs-parallelism-understanding-the-key-differences/)
 - [Navigating Your Database Efficiently: Cursor Based Pagination vs Offset Based](https://akashrajpurohit.com/blog/navigating-your-database-efficiently-cursor-based-pagination-vs-offset-based/)
-- [The Importance of 99th Percentile Latency in System Performance](https://akashrajpurohit.com/blog/the-importance-of-99th-percentile-latency-in-system-performance/)
-- [Get Up and Running with the Latest Version of Node.js on Raspberry Pi](https://akashrajpurohit.com/blog/get-up-and-running-with-the-latest-version-of-nodejs-on-raspberry-pi/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
