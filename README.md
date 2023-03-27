@@ -122,6 +122,8 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Exploring Master-Master Replication in Databases: How It Works and Its Benefits](https://akashrajpurohit.com/blog/exploring-master-master-replication-in-databases-how-it-works-and-its-benefits/)
+- [Master-Slave Replication: Scaling Your Database for High Availability](https://akashrajpurohit.com/blog/master-slave-replication-scaling-your-database-for-high-availability/)
 - [The Power of a CDN: Delivering Lightning-Fast Content](https://akashrajpurohit.com/blog/the-power-of-a-cdn-delivering-lightningfast-content/)
 - [Balancing the Load: Understanding Load Balancers and Their Types](https://akashrajpurohit.com/blog/balancing-the-load-understanding-load-balancers-and-their-types/)
 - [Unlocking the Secrets of SSL Certificates: How They Keep Your Data Safe Online](https://akashrajpurohit.com/blog/unlocking-the-secrets-of-ssl-certificates-how-they-keep-your-data-safe-online/)
@@ -135,8 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Zero Day Attacks: Understanding the Unannounced Threats](https://akashrajpurohit.com/blog/zero-day-attacks-understanding-the-unannounced-threats/)
 - [Understanding DHCP Server - The Essential Guide](https://akashrajpurohit.com/blog/understanding-dhcp-server-the-essential-guide/)
 - [Understanding Recursive DNS: A Comprehensive Guide](https://akashrajpurohit.com/blog/understanding-recursive-dns-a-comprehensive-guide/)
-- [Unleash the Power of Self-Hosted Services with Cloudflare Tunnels](https://akashrajpurohit.com/blog/unleash-the-power-of-selfhosted-services-with-cloudflare-tunnels/)
-- [Dynamic DNS Made Easy with Cloudflare API](https://akashrajpurohit.com/blog/dynamic-dns-made-easy-with-cloudflare-api/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
