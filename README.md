@@ -122,6 +122,8 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Exploring Sharding in Databases: Partitioning Your Data for Better Scalability](https://akashrajpurohit.com/blog/exploring-sharding-in-databases-partitioning-your-data-for-better-scalability/)
+- [Understanding Federation in Databases: Definition, Types and Use Cases](https://akashrajpurohit.com/blog/understanding-federation-in-databases-definition-types-and-use-cases/)
 - [Exploring Master-Master Replication in Databases: How It Works and Its Benefits](https://akashrajpurohit.com/blog/exploring-master-master-replication-in-databases-how-it-works-and-its-benefits/)
 - [Master-Slave Replication: Scaling Your Database for High Availability](https://akashrajpurohit.com/blog/master-slave-replication-scaling-your-database-for-high-availability/)
 - [The Power of a CDN: Delivering Lightning-Fast Content](https://akashrajpurohit.com/blog/the-power-of-a-cdn-delivering-lightningfast-content/)
@@ -135,8 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Performance vs Scalability: Understanding the Key Differences](https://akashrajpurohit.com/blog/performance-vs-scalability-understanding-the-key-differences/)
 - [Denial of Service Attacks: What They Are and How to Protect Against Them](https://akashrajpurohit.com/blog/denial-of-service-attacks-what-they-are-and-how-to-protect-against-them/)
 - [Zero Day Attacks: Understanding the Unannounced Threats](https://akashrajpurohit.com/blog/zero-day-attacks-understanding-the-unannounced-threats/)
-- [Understanding DHCP Server - The Essential Guide](https://akashrajpurohit.com/blog/understanding-dhcp-server-the-essential-guide/)
-- [Understanding Recursive DNS: A Comprehensive Guide](https://akashrajpurohit.com/blog/understanding-recursive-dns-a-comprehensive-guide/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
