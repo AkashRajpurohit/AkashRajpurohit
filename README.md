@@ -122,6 +122,8 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Demystifying TCP: A Comprehensive Guide to Transmission Control Protocol](https://akashrajpurohit.com/blog/demystifying-tcp-a-comprehensive-guide-to-transmission-control-protocol/)
+- [What is UDP and When to Use it? A Comprehensive Guide](https://akashrajpurohit.com/blog/what-is-udp-and-when-to-use-it-a-comprehensive-guide/)
 - [Exploring Sharding in Databases: Partitioning Your Data for Better Scalability](https://akashrajpurohit.com/blog/exploring-sharding-in-databases-partitioning-your-data-for-better-scalability/)
 - [Understanding Federation in Databases: Definition, Types and Use Cases](https://akashrajpurohit.com/blog/understanding-federation-in-databases-definition-types-and-use-cases/)
 - [Exploring Master-Master Replication in Databases: How It Works and Its Benefits](https://akashrajpurohit.com/blog/exploring-master-master-replication-in-databases-how-it-works-and-its-benefits/)
@@ -135,8 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Balancing the Tradeoff: Availability vs Consistency](https://akashrajpurohit.com/blog/balancing-the-tradeoff-availability-vs-consistency/)
 - [Latency vs Throughput: Balancing the Two Sides of System Performance](https://akashrajpurohit.com/blog/latency-vs-throughput-balancing-the-two-sides-of-system-performance/)
 - [Performance vs Scalability: Understanding the Key Differences](https://akashrajpurohit.com/blog/performance-vs-scalability-understanding-the-key-differences/)
-- [Denial of Service Attacks: What They Are and How to Protect Against Them](https://akashrajpurohit.com/blog/denial-of-service-attacks-what-they-are-and-how-to-protect-against-them/)
-- [Zero Day Attacks: Understanding the Unannounced Threats](https://akashrajpurohit.com/blog/zero-day-attacks-understanding-the-unannounced-threats/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
