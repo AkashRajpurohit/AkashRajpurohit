@@ -122,6 +122,10 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Race Conditions: Understanding and Avoiding Them](https://akashrajpurohit.com/blog/race-conditions-understanding-and-avoiding-them/)
+- [What is a Cache and How Does it Speed Up Your Applications?](https://akashrajpurohit.com/blog/what-is-a-cache-and-how-does-it-speed-up-your-applications/)
+- [Understanding Remote Procedure Call &lpar;RPC&rpar; in Distributed Computing](https://akashrajpurohit.com/blog/understanding-remote-procedure-call-rpc-in-distributed-computing/)
+- [Understanding Representational State Transfer &lpar;REST&rpar;](https://akashrajpurohit.com/blog/understanding-representational-state-transfer-rest/)
 - [Demystifying TCP: A Comprehensive Guide to Transmission Control Protocol](https://akashrajpurohit.com/blog/demystifying-tcp-a-comprehensive-guide-to-transmission-control-protocol/)
 - [What is UDP and When to Use it? A Comprehensive Guide](https://akashrajpurohit.com/blog/what-is-udp-and-when-to-use-it-a-comprehensive-guide/)
 - [Exploring Sharding in Databases: Partitioning Your Data for Better Scalability](https://akashrajpurohit.com/blog/exploring-sharding-in-databases-partitioning-your-data-for-better-scalability/)
@@ -133,10 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Unlocking the Secrets of SSL Certificates: How They Keep Your Data Safe Online](https://akashrajpurohit.com/blog/unlocking-the-secrets-of-ssl-certificates-how-they-keep-your-data-safe-online/)
 - [VPN Explained: Understanding Virtual Private Networks](https://akashrajpurohit.com/blog/vpn-explained-understanding-virtual-private-networks/)
 - [Reverse Proxies: A Beginner&#39;s Guide to Unlocking Their Power](https://akashrajpurohit.com/blog/reverse-proxies-a-beginners-guide-to-unlocking-their-power/)
-- [Unlocking the Power of Forward Proxies: Simplified](https://akashrajpurohit.com/blog/unlocking-the-power-of-forward-proxies-simplified/)
-- [Balancing the Tradeoff: Availability vs Consistency](https://akashrajpurohit.com/blog/balancing-the-tradeoff-availability-vs-consistency/)
-- [Latency vs Throughput: Balancing the Two Sides of System Performance](https://akashrajpurohit.com/blog/latency-vs-throughput-balancing-the-two-sides-of-system-performance/)
-- [Performance vs Scalability: Understanding the Key Differences](https://akashrajpurohit.com/blog/performance-vs-scalability-understanding-the-key-differences/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
