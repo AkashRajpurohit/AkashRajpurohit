@@ -122,6 +122,8 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Understanding Back Pressure in Message Queues: A Guide for Developers](https://akashrajpurohit.com/blog/understanding-back-pressure-in-message-queues-a-guide-for-developers/)
+- [Understanding Message Queues: The Key to Building Reliable and Scalable Systems](https://akashrajpurohit.com/blog/understanding-message-queues-the-key-to-building-reliable-and-scalable-systems/)
 - [Race Conditions: Understanding and Avoiding Them](https://akashrajpurohit.com/blog/race-conditions-understanding-and-avoiding-them/)
 - [What is a Cache and How Does it Speed Up Your Applications?](https://akashrajpurohit.com/blog/what-is-a-cache-and-how-does-it-speed-up-your-applications/)
 - [Understanding Remote Procedure Call &lpar;RPC&rpar; in Distributed Computing](https://akashrajpurohit.com/blog/understanding-remote-procedure-call-rpc-in-distributed-computing/)
@@ -135,8 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [The Power of a CDN: Delivering Lightning-Fast Content](https://akashrajpurohit.com/blog/the-power-of-a-cdn-delivering-lightningfast-content/)
 - [Balancing the Load: Understanding Load Balancers and Their Types](https://akashrajpurohit.com/blog/balancing-the-load-understanding-load-balancers-and-their-types/)
 - [Unlocking the Secrets of SSL Certificates: How They Keep Your Data Safe Online](https://akashrajpurohit.com/blog/unlocking-the-secrets-of-ssl-certificates-how-they-keep-your-data-safe-online/)
-- [VPN Explained: Understanding Virtual Private Networks](https://akashrajpurohit.com/blog/vpn-explained-understanding-virtual-private-networks/)
-- [Reverse Proxies: A Beginner&#39;s Guide to Unlocking Their Power](https://akashrajpurohit.com/blog/reverse-proxies-a-beginners-guide-to-unlocking-their-power/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
