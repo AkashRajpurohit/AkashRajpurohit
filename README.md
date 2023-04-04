@@ -122,6 +122,9 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Exploring HTTP/2 Server Push: An Efficient Way to Speed Up Your Web Applications](https://akashrajpurohit.com/blog/exploring-http2-server-push-an-efficient-way-to-speed-up-your-web-applications/)
+- [Exploring the Differences Between HTTP/2 and HTTP/3](https://akashrajpurohit.com/blog/exploring-the-differences-between-http2-and-http3/)
+- [WebSocket: Real-time Communication Made Easy](https://akashrajpurohit.com/blog/websocket-realtime-communication-made-easy/)
 - [Understanding Back Pressure in Message Queues: A Guide for Developers](https://akashrajpurohit.com/blog/understanding-back-pressure-in-message-queues-a-guide-for-developers/)
 - [Understanding Message Queues: The Key to Building Reliable and Scalable Systems](https://akashrajpurohit.com/blog/understanding-message-queues-the-key-to-building-reliable-and-scalable-systems/)
 - [Race Conditions: Understanding and Avoiding Them](https://akashrajpurohit.com/blog/race-conditions-understanding-and-avoiding-them/)
@@ -134,9 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Understanding Federation in Databases: Definition, Types and Use Cases](https://akashrajpurohit.com/blog/understanding-federation-in-databases-definition-types-and-use-cases/)
 - [Exploring Master-Master Replication in Databases: How It Works and Its Benefits](https://akashrajpurohit.com/blog/exploring-master-master-replication-in-databases-how-it-works-and-its-benefits/)
 - [Master-Slave Replication: Scaling Your Database for High Availability](https://akashrajpurohit.com/blog/master-slave-replication-scaling-your-database-for-high-availability/)
-- [The Power of a CDN: Delivering Lightning-Fast Content](https://akashrajpurohit.com/blog/the-power-of-a-cdn-delivering-lightningfast-content/)
-- [Balancing the Load: Understanding Load Balancers and Their Types](https://akashrajpurohit.com/blog/balancing-the-load-understanding-load-balancers-and-their-types/)
-- [Unlocking the Secrets of SSL Certificates: How They Keep Your Data Safe Online](https://akashrajpurohit.com/blog/unlocking-the-secrets-of-ssl-certificates-how-they-keep-your-data-safe-online/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
