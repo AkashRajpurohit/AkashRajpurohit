@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Discover the Power of Subnets: The Ultimate Guide](https://akashrajpurohit.com/blog/discover-the-power-of-subnets-the-ultimate-guide/)
 - [Exploring HTTP/2 Server Push: An Efficient Way to Speed Up Your Web Applications](https://akashrajpurohit.com/blog/exploring-http2-server-push-an-efficient-way-to-speed-up-your-web-applications/)
 - [Exploring the Differences Between HTTP/2 and HTTP/3](https://akashrajpurohit.com/blog/exploring-the-differences-between-http2-and-http3/)
 - [WebSocket: Real-time Communication Made Easy](https://akashrajpurohit.com/blog/websocket-realtime-communication-made-easy/)
@@ -136,7 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Exploring Sharding in Databases: Partitioning Your Data for Better Scalability](https://akashrajpurohit.com/blog/exploring-sharding-in-databases-partitioning-your-data-for-better-scalability/)
 - [Understanding Federation in Databases: Definition, Types and Use Cases](https://akashrajpurohit.com/blog/understanding-federation-in-databases-definition-types-and-use-cases/)
 - [Exploring Master-Master Replication in Databases: How It Works and Its Benefits](https://akashrajpurohit.com/blog/exploring-master-master-replication-in-databases-how-it-works-and-its-benefits/)
-- [Master-Slave Replication: Scaling Your Database for High Availability](https://akashrajpurohit.com/blog/master-slave-replication-scaling-your-database-for-high-availability/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
