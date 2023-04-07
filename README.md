@@ -122,6 +122,8 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Simplify Your File Synchronization and Backup with Linux Rsync Command](https://akashrajpurohit.com/blog/simplify-your-file-synchronization-and-backup-with-linux-rsync-command/)
+- [Mastering Process Monitoring and Management with htop Command in Linux](https://akashrajpurohit.com/blog/mastering-process-monitoring-and-management-with-htop-command-in-linux/)
 - [Discover the Power of Subnets: The Ultimate Guide](https://akashrajpurohit.com/blog/discover-the-power-of-subnets-the-ultimate-guide/)
 - [Exploring HTTP/2 Server Push: An Efficient Way to Speed Up Your Web Applications](https://akashrajpurohit.com/blog/exploring-http2-server-push-an-efficient-way-to-speed-up-your-web-applications/)
 - [Exploring the Differences Between HTTP/2 and HTTP/3](https://akashrajpurohit.com/blog/exploring-the-differences-between-http2-and-http3/)
@@ -135,8 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Demystifying TCP: A Comprehensive Guide to Transmission Control Protocol](https://akashrajpurohit.com/blog/demystifying-tcp-a-comprehensive-guide-to-transmission-control-protocol/)
 - [What is UDP and When to Use it? A Comprehensive Guide](https://akashrajpurohit.com/blog/what-is-udp-and-when-to-use-it-a-comprehensive-guide/)
 - [Exploring Sharding in Databases: Partitioning Your Data for Better Scalability](https://akashrajpurohit.com/blog/exploring-sharding-in-databases-partitioning-your-data-for-better-scalability/)
-- [Understanding Federation in Databases: Definition, Types and Use Cases](https://akashrajpurohit.com/blog/understanding-federation-in-databases-definition-types-and-use-cases/)
-- [Exploring Master-Master Replication in Databases: How It Works and Its Benefits](https://akashrajpurohit.com/blog/exploring-master-master-replication-in-databases-how-it-works-and-its-benefits/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
