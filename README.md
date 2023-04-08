@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Mastering Linux grep Command for Searching Text Files and Directories](https://akashrajpurohit.com/blog/mastering-linux-grep-command-for-searching-text-files-and-directories/)
 - [Simplify Your File Synchronization and Backup with Linux Rsync Command](https://akashrajpurohit.com/blog/simplify-your-file-synchronization-and-backup-with-linux-rsync-command/)
 - [Mastering Process Monitoring and Management with htop Command in Linux](https://akashrajpurohit.com/blog/mastering-process-monitoring-and-management-with-htop-command-in-linux/)
 - [Discover the Power of Subnets: The Ultimate Guide](https://akashrajpurohit.com/blog/discover-the-power-of-subnets-the-ultimate-guide/)
@@ -136,7 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Understanding Representational State Transfer &lpar;REST&rpar;](https://akashrajpurohit.com/blog/understanding-representational-state-transfer-rest/)
 - [Demystifying TCP: A Comprehensive Guide to Transmission Control Protocol](https://akashrajpurohit.com/blog/demystifying-tcp-a-comprehensive-guide-to-transmission-control-protocol/)
 - [What is UDP and When to Use it? A Comprehensive Guide](https://akashrajpurohit.com/blog/what-is-udp-and-when-to-use-it-a-comprehensive-guide/)
-- [Exploring Sharding in Databases: Partitioning Your Data for Better Scalability](https://akashrajpurohit.com/blog/exploring-sharding-in-databases-partitioning-your-data-for-better-scalability/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
