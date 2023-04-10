@@ -122,6 +122,8 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Mastering Text Manipulation with the Linux sed Command](https://akashrajpurohit.com/blog/mastering-text-manipulation-with-the-linux-sed-command/)
+- [Simplify Text Processing with the Linux Awk Command](https://akashrajpurohit.com/blog/simplify-text-processing-with-the-linux-awk-command/)
 - [Mastering the Linux Tar Command: A Guide to Archive Creation and Extraction](https://akashrajpurohit.com/blog/mastering-the-linux-tar-command-a-guide-to-archive-creation-and-extraction/)
 - [Streamline Your Linux Output with the Tee Command](https://akashrajpurohit.com/blog/streamline-your-linux-output-with-the-tee-command/)
 - [Mastering Linux grep Command for Searching Text Files and Directories](https://akashrajpurohit.com/blog/mastering-linux-grep-command-for-searching-text-files-and-directories/)
@@ -135,8 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Understanding Back Pressure in Message Queues: A Guide for Developers](https://akashrajpurohit.com/blog/understanding-back-pressure-in-message-queues-a-guide-for-developers/)
 - [Understanding Message Queues: The Key to Building Reliable and Scalable Systems](https://akashrajpurohit.com/blog/understanding-message-queues-the-key-to-building-reliable-and-scalable-systems/)
 - [Race Conditions: Understanding and Avoiding Them](https://akashrajpurohit.com/blog/race-conditions-understanding-and-avoiding-them/)
-- [What is a Cache and How Does it Speed Up Your Applications?](https://akashrajpurohit.com/blog/what-is-a-cache-and-how-does-it-speed-up-your-applications/)
-- [Understanding Remote Procedure Call &lpar;RPC&rpar; in Distributed Computing](https://akashrajpurohit.com/blog/understanding-remote-procedure-call-rpc-in-distributed-computing/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
