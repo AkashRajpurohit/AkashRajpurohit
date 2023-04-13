@@ -122,6 +122,8 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Tracing the Network Path with the Linux Traceroute Command](https://akashrajpurohit.com/blog/tracing-the-network-path-with-the-linux-traceroute-command/)
+- [Mastering Disk Imaging and Cloning with Linux&#39;s dd Command](https://akashrajpurohit.com/blog/mastering-disk-imaging-and-cloning-with-linuxs-dd-command/)
 - [Mastering Batch Processing with Linux xargs Command](https://akashrajpurohit.com/blog/mastering-batch-processing-with-linux-xargs-command/)
 - [Mastering Text Manipulation with the Linux sed Command](https://akashrajpurohit.com/blog/mastering-text-manipulation-with-the-linux-sed-command/)
 - [Simplify Text Processing with the Linux Awk Command](https://akashrajpurohit.com/blog/simplify-text-processing-with-the-linux-awk-command/)
@@ -135,8 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Exploring HTTP/2 Server Push: An Efficient Way to Speed Up Your Web Applications](https://akashrajpurohit.com/blog/exploring-http2-server-push-an-efficient-way-to-speed-up-your-web-applications/)
 - [Exploring the Differences Between HTTP/2 and HTTP/3](https://akashrajpurohit.com/blog/exploring-the-differences-between-http2-and-http3/)
 - [WebSocket: Real-time Communication Made Easy](https://akashrajpurohit.com/blog/websocket-realtime-communication-made-easy/)
-- [Understanding Back Pressure in Message Queues: A Guide for Developers](https://akashrajpurohit.com/blog/understanding-back-pressure-in-message-queues-a-guide-for-developers/)
-- [Understanding Message Queues: The Key to Building Reliable and Scalable Systems](https://akashrajpurohit.com/blog/understanding-message-queues-the-key-to-building-reliable-and-scalable-systems/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
