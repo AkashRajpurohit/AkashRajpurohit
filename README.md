@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [How to Use the Linux lsof Command for Listing Open Files and Processes](https://akashrajpurohit.com/blog/how-to-use-the-linux-lsof-command-for-listing-open-files-and-processes/)
 - [Tracing the Network Path with the Linux Traceroute Command](https://akashrajpurohit.com/blog/tracing-the-network-path-with-the-linux-traceroute-command/)
 - [Mastering Disk Imaging and Cloning with Linux&#39;s dd Command](https://akashrajpurohit.com/blog/mastering-disk-imaging-and-cloning-with-linuxs-dd-command/)
 - [Mastering Batch Processing with Linux xargs Command](https://akashrajpurohit.com/blog/mastering-batch-processing-with-linux-xargs-command/)
@@ -136,7 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Discover the Power of Subnets: The Ultimate Guide](https://akashrajpurohit.com/blog/discover-the-power-of-subnets-the-ultimate-guide/)
 - [Exploring HTTP/2 Server Push: An Efficient Way to Speed Up Your Web Applications](https://akashrajpurohit.com/blog/exploring-http2-server-push-an-efficient-way-to-speed-up-your-web-applications/)
 - [Exploring the Differences Between HTTP/2 and HTTP/3](https://akashrajpurohit.com/blog/exploring-the-differences-between-http2-and-http3/)
-- [WebSocket: Real-time Communication Made Easy](https://akashrajpurohit.com/blog/websocket-realtime-communication-made-easy/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
