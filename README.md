@@ -122,6 +122,9 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [How to Use the Linux Socat Command for Bidirectional Data Transfer Between Network Connections](https://akashrajpurohit.com/blog/how-to-use-the-linux-socat-command-for-bidirectional-data-transfer-between-network-connections/)
+- [How to Use the Linux Shred Command for Secure File Deletion](https://akashrajpurohit.com/blog/how-to-use-the-linux-shred-command-for-secure-file-deletion/)
+- [How to Use the Linux Netcat Command for Network Communication and Testing](https://akashrajpurohit.com/blog/how-to-use-the-linux-netcat-command-for-network-communication-and-testing/)
 - [A Beginner&#39;s Guide to Using the Linux Mount Command for File System Management](https://akashrajpurohit.com/blog/a-beginners-guide-to-using-the-linux-mount-command-for-file-system-management/)
 - [Splitting and Concatenating Files on Linux Made Easy with the split Command](https://akashrajpurohit.com/blog/splitting-and-concatenating-files-on-linux-made-easy-with-the-split-command/)
 - [How to Use the Linux lsof Command for Listing Open Files and Processes](https://akashrajpurohit.com/blog/how-to-use-the-linux-lsof-command-for-listing-open-files-and-processes/)
@@ -134,9 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Streamline Your Linux Output with the Tee Command](https://akashrajpurohit.com/blog/streamline-your-linux-output-with-the-tee-command/)
 - [Mastering Linux grep Command for Searching Text Files and Directories](https://akashrajpurohit.com/blog/mastering-linux-grep-command-for-searching-text-files-and-directories/)
 - [Mastering the Art of File and Directory Search with Linux&#39;s Find Command](https://akashrajpurohit.com/blog/mastering-the-art-of-file-and-directory-search-with-linuxs-find-command/)
-- [Simplify Your File Synchronization and Backup with Linux Rsync Command](https://akashrajpurohit.com/blog/simplify-your-file-synchronization-and-backup-with-linux-rsync-command/)
-- [Mastering Process Monitoring and Management with htop Command in Linux](https://akashrajpurohit.com/blog/mastering-process-monitoring-and-management-with-htop-command-in-linux/)
-- [Discover the Power of Subnets: The Ultimate Guide](https://akashrajpurohit.com/blog/discover-the-power-of-subnets-the-ultimate-guide/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
