@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Demystifying Closures and Lexical Scopes in JavaScript](https://akashrajpurohit.com/blog/demystifying-closures-and-lexical-scopes-in-javascript/)
 - [How to Use the Linux Socat Command for Bidirectional Data Transfer Between Network Connections](https://akashrajpurohit.com/blog/how-to-use-the-linux-socat-command-for-bidirectional-data-transfer-between-network-connections/)
 - [How to Use the Linux Shred Command for Secure File Deletion](https://akashrajpurohit.com/blog/how-to-use-the-linux-shred-command-for-secure-file-deletion/)
 - [How to Use the Linux Netcat Command for Network Communication and Testing](https://akashrajpurohit.com/blog/how-to-use-the-linux-netcat-command-for-network-communication-and-testing/)
@@ -136,7 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Mastering the Linux Tar Command: A Guide to Archive Creation and Extraction](https://akashrajpurohit.com/blog/mastering-the-linux-tar-command-a-guide-to-archive-creation-and-extraction/)
 - [Streamline Your Linux Output with the Tee Command](https://akashrajpurohit.com/blog/streamline-your-linux-output-with-the-tee-command/)
 - [Mastering Linux grep Command for Searching Text Files and Directories](https://akashrajpurohit.com/blog/mastering-linux-grep-command-for-searching-text-files-and-directories/)
-- [Mastering the Art of File and Directory Search with Linux&#39;s Find Command](https://akashrajpurohit.com/blog/mastering-the-art-of-file-and-directory-search-with-linuxs-find-command/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
