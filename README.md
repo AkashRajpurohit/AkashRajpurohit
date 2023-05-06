@@ -122,6 +122,8 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [The Power of Immutability in JavaScript](https://akashrajpurohit.com/blog/the-power-of-immutability-in-javascript/)
+- [Understanding Pure Functions in JavaScript: A Comprehensive Guide](https://akashrajpurohit.com/blog/understanding-pure-functions-in-javascript-a-comprehensive-guide/)
 - [Demystifying Higher Order Functions in JavaScript](https://akashrajpurohit.com/blog/demystifying-higher-order-functions-in-javascript/)
 - [Demystifying Closures and Lexical Scopes in JavaScript](https://akashrajpurohit.com/blog/demystifying-closures-and-lexical-scopes-in-javascript/)
 - [How to Use the Linux Socat Command for Bidirectional Data Transfer Between Network Connections](https://akashrajpurohit.com/blog/how-to-use-the-linux-socat-command-for-bidirectional-data-transfer-between-network-connections/)
@@ -135,8 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Mastering Batch Processing with Linux xargs Command](https://akashrajpurohit.com/blog/mastering-batch-processing-with-linux-xargs-command/)
 - [Mastering Text Manipulation with the Linux sed Command](https://akashrajpurohit.com/blog/mastering-text-manipulation-with-the-linux-sed-command/)
 - [Simplify Text Processing with the Linux Awk Command](https://akashrajpurohit.com/blog/simplify-text-processing-with-the-linux-awk-command/)
-- [Mastering the Linux Tar Command: A Guide to Archive Creation and Extraction](https://akashrajpurohit.com/blog/mastering-the-linux-tar-command-a-guide-to-archive-creation-and-extraction/)
-- [Streamline Your Linux Output with the Tee Command](https://akashrajpurohit.com/blog/streamline-your-linux-output-with-the-tee-command/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
