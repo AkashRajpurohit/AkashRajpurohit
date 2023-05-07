@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Functional Programming in JavaScript: An Introduction](https://akashrajpurohit.com/blog/functional-programming-in-javascript-an-introduction/)
 - [The Power of Immutability in JavaScript](https://akashrajpurohit.com/blog/the-power-of-immutability-in-javascript/)
 - [Understanding Pure Functions in JavaScript: A Comprehensive Guide](https://akashrajpurohit.com/blog/understanding-pure-functions-in-javascript-a-comprehensive-guide/)
 - [Demystifying Higher Order Functions in JavaScript](https://akashrajpurohit.com/blog/demystifying-higher-order-functions-in-javascript/)
@@ -136,7 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Mastering Disk Imaging and Cloning with Linux&#39;s dd Command](https://akashrajpurohit.com/blog/mastering-disk-imaging-and-cloning-with-linuxs-dd-command/)
 - [Mastering Batch Processing with Linux xargs Command](https://akashrajpurohit.com/blog/mastering-batch-processing-with-linux-xargs-command/)
 - [Mastering Text Manipulation with the Linux sed Command](https://akashrajpurohit.com/blog/mastering-text-manipulation-with-the-linux-sed-command/)
-- [Simplify Text Processing with the Linux Awk Command](https://akashrajpurohit.com/blog/simplify-text-processing-with-the-linux-awk-command/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
