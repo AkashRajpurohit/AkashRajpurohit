@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Mastering Iterators and Generators in JavaScript: A Beginner&#39;s Guide](https://akashrajpurohit.com/blog/mastering-iterators-and-generators-in-javascript-a-beginners-guide/)
 - [Mastering the Art of Currying in JavaScript: A Beginner&#39;s Guide](https://akashrajpurohit.com/blog/mastering-the-art-of-currying-in-javascript-a-beginners-guide/)
 - [Functional Programming in JavaScript: An Introduction](https://akashrajpurohit.com/blog/functional-programming-in-javascript-an-introduction/)
 - [The Power of Immutability in JavaScript](https://akashrajpurohit.com/blog/the-power-of-immutability-in-javascript/)
@@ -136,7 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [How to Use the Linux lsof Command for Listing Open Files and Processes](https://akashrajpurohit.com/blog/how-to-use-the-linux-lsof-command-for-listing-open-files-and-processes/)
 - [Tracing the Network Path with the Linux Traceroute Command](https://akashrajpurohit.com/blog/tracing-the-network-path-with-the-linux-traceroute-command/)
 - [Mastering Disk Imaging and Cloning with Linux&#39;s dd Command](https://akashrajpurohit.com/blog/mastering-disk-imaging-and-cloning-with-linuxs-dd-command/)
-- [Mastering Batch Processing with Linux xargs Command](https://akashrajpurohit.com/blog/mastering-batch-processing-with-linux-xargs-command/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
