@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Array and Object Manipulation in JavaScript: Advanced Techniques](https://akashrajpurohit.com/blog/array-and-object-manipulation-in-javascript-advanced-techniques/)
 - [Mastering Iterators and Generators in JavaScript: A Beginner&#39;s Guide](https://akashrajpurohit.com/blog/mastering-iterators-and-generators-in-javascript-a-beginners-guide/)
 - [Mastering the Art of Currying in JavaScript: A Beginner&#39;s Guide](https://akashrajpurohit.com/blog/mastering-the-art-of-currying-in-javascript-a-beginners-guide/)
 - [Functional Programming in JavaScript: An Introduction](https://akashrajpurohit.com/blog/functional-programming-in-javascript-an-introduction/)
@@ -136,7 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Splitting and Concatenating Files on Linux Made Easy with the split Command](https://akashrajpurohit.com/blog/splitting-and-concatenating-files-on-linux-made-easy-with-the-split-command/)
 - [How to Use the Linux lsof Command for Listing Open Files and Processes](https://akashrajpurohit.com/blog/how-to-use-the-linux-lsof-command-for-listing-open-files-and-processes/)
 - [Tracing the Network Path with the Linux Traceroute Command](https://akashrajpurohit.com/blog/tracing-the-network-path-with-the-linux-traceroute-command/)
-- [Mastering Disk Imaging and Cloning with Linux&#39;s dd Command](https://akashrajpurohit.com/blog/mastering-disk-imaging-and-cloning-with-linuxs-dd-command/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
