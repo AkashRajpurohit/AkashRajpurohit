@@ -20,7 +20,7 @@
 ## Feature support
 
 - [x] TailwindCSS + Prettier + ESLint
-- [ ] Cloudflare Deployment
+- [x] Cloudflare Deployment -> Facing issue with pre-rendering though -> more [here](https://github.com/withastro/astro/issues/7140)
 - [ ] Dark / Light mode
 - [ ] MDX blogs
 - [ ] Full SEO for blogs
