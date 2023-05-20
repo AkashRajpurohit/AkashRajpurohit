@@ -18,7 +18,7 @@ In this article, we'll explore how Web Workers work, how to create them, and how
 
 To create a Web Worker, we need to create a separate JavaScript file that contains the code we want to run in the worker. Let's create a simple example that calculates the factorial of a number:
 
-```javascript:worker.js
+```javascript
 onmessage = function(e) {
 	const result = factorial(e.data);
 	postMessage(result);
@@ -60,7 +60,7 @@ Web Workers communicate with the main thread using the postMessage method and th
 
 Let's modify our previous example to calculate the factorial of multiple numbers:
 
-```javascript:main.js
+```javascript
 const worker = new Worker('worker.js');
 
 worker.onmessage = function(e) {

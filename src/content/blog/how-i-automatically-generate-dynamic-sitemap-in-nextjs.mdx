@@ -30,7 +30,7 @@ Let's quickly list down the tasks we want to do in this script first.
 
 So first let's create a file `scripts/generate-sitemap.mjs`. I am using `.mjs` extension so I can use import statement over require, you can read more about [es6 import here](/blog/how-to-use-es6-import-syntax-in-nodejs/)
 
-```javascript:scripts/generate-sitemap.mjs
+```javascript
 import { writeFileSync } from 'fs'
 import globby from 'globby'
 import prettier from 'prettier'
@@ -51,7 +51,7 @@ yarn add -D globby prettier
 
 Next, let's now fill up the function by following the steps we laid out above and get all the slugs for the static pages in our app
 
-```javascript:scripts/generate-sitemap.mjs
+```javascript
 import { writeFileSync } from 'fs'
 import globby from 'globby'
 import prettier from 'prettier'
@@ -85,7 +85,7 @@ Since I am using the Contentlayer, it provides a really nice API to get all the 
 
 So we will pull any documentType we would have defined here, for eg let's pull all the blog posts.
 
-```javascript:scripts/generate-sitemap.mjs {4,16}
+```javascript
 import { writeFileSync } from 'fs'
 import globby from 'globby'
 import prettier from 'prettier'
@@ -112,7 +112,7 @@ generateSitemap();
 
 Once we have all the slugs for the website, we will now generate the file contents for the sitemap.xml.
 
-```javascript:scripts/generate-sitemap.mjs
+```javascript
 import { writeFileSync } from 'fs'
 import globby from 'globby'
 import prettier from 'prettier'
@@ -170,7 +170,7 @@ I usually prefer to keep site metadata information inside a separate file so I a
 
 With this we have our XML file ready, now we just need to format it once and we would use prettier to do that.
 
-```javascript:scripts/generate-sitemap.mjs {8,46-49}
+```javascript
 import { writeFileSync } from 'fs'
 import globby from 'globby'
 import prettier from 'prettier'
@@ -232,7 +232,7 @@ Finally, we would write this file to the `public` folder so our final script wou
 
 # Final Script
 
-```javascript:scripts/generate-sitemap.mjs
+```javascript
 import { writeFileSync } from 'fs'
 import globby from 'globby'
 import prettier from 'prettier'
@@ -304,7 +304,7 @@ Since we want to generate the sitemap after we have build our website, we will u
 
 So head over to your `package.json` file and add these additional scripts
 
-```json:package.json
+```json
 {
 	"scripts": {
 		"start": "next start",

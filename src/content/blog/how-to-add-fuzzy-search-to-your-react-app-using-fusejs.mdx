@@ -48,7 +48,7 @@ Now we know which library we are going to use for searching, let's build a reusa
 
 Let's create a file called `useSearch.ts` and lay out the input props and the output for this hook
 
-```javascript:hooks/useSearch.ts
+```javascript
 import { useState } from 'react'
 
 interface IUseSearchProps {
@@ -74,7 +74,7 @@ We are taking the `dataSet` as the prop which is the list of data in which we wa
 
 Next, let's check how we can import the library and instantiate it with our dataSet
 
-```javascript:hooks/useSearch.ts
+```javascript
 import { useMemo } from 'react'
 import Fuse from 'fuse.js'
 // ...
@@ -104,7 +104,7 @@ As an additional tip, we are using `useMemo` hook here so that we do not create 
 
 Now let's use this fuse instance to calculate the results for us based on the searchValue.
 
-```javascript:hooks/useSearch.ts
+```javascript
 import { useState, useMemo } from 'react'
 import Fuse from 'fuse.js'
 
@@ -147,7 +147,7 @@ Once we have filtered out the results, we would map over and return the `item` w
 
 So if we wire it up all together then the file should look like this
 
-```javascript:hooks/useSearch.ts
+```javascript
 import { useState, useMemo } from 'react'
 import Fuse from 'fuse.js'
 
@@ -193,7 +193,7 @@ export default function useSearch({ dataSet, keys }: IUseSearchProps) {
 
 The usage is very easy now, in whichever component we want to add search feature we can import the hook and use it as mentioned below
 
-```javascript:components/PostList.tsx
+```javascript
 import useSearch from 'hooks/useSearch'
 // ...
 
@@ -219,7 +219,7 @@ We'll fix this by using Typescript [Generics](https://www.typescriptlang.org/doc
 
 The type-safe version of this would look like this
 
-```javascript:hooks/useSearch.ts {4,11}
+```javascript
 import { useState, useMemo } from 'react'
 import Fuse from 'fuse.js'
 
@@ -263,7 +263,7 @@ export default function useSearch<T>({ dataSet, keys }: IUseSearchProps<T>) {
 
 Notice how we are using the `T` to typecast the dataSet value in our hook. Now our hook is type-safe and our usage accordingly will change like this
 
-```javascript:components/PostList.tsx {12}
+```javascript
 import useSearch from 'hooks/useSearch'
 // ...
 

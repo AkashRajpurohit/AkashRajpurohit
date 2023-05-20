@@ -26,7 +26,7 @@ We can modify the configuration options for Webpack in gatsby by exporting a fun
 
 Copy the snippet below in the gatsby-node.js file
 
-```javascript:title=gatsby-node.js {3, 6}
+```javascript
 exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
   const config = getConfig();
   if (config.mode === 'production') {
@@ -61,7 +61,7 @@ And that's it, we have successfully disabled source maps for our website in prod
 
 **Note**: GatsbyJS creates the public directory and it is _usually_ not cleared automatically when you are running `gatsby build`, so to check the effects you have to clear the public and .cache directory (use `gatsby clean` command). You can add these scripts to your `package.json` file.
 
-```javascript:title=package.json
+```javascript
 {
 	"scripts": {
 		...

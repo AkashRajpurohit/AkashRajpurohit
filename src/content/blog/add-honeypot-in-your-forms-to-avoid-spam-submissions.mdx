@@ -41,7 +41,7 @@ We will use the concept of Honeypot here where we will add a bot field into our 
 
 Let's check how we would do it in form using code examples in react
 
-```jsx:components/ContactForm.tsx {11}
+```jsx
 // ...
 
 const sendMessage = () => {
@@ -68,7 +68,7 @@ We are leveraging the input type [hidden](https://developer.mozilla.org/en-US/do
 
 The next step is to complete the `sendMessage` function in which we will distinguish between bot user and actual user based on the value of the `bot-field` input element.
 
-```jsx:components/ContactForm.tsx {12-17}
+```jsx
 // ...
 
 const sendMessage = (event) => {

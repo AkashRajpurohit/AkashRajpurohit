@@ -134,7 +134,7 @@ find $BACKUP_DIR/* -mtime +30 -exec rm {} \;
 
 After merging all the steps we saw, our final bash script should look like this.
 
-```bash:db-backup.sh
+```bash
 #!/bin/bash
 
 DATE=$(date +%d-%m-%Y)
