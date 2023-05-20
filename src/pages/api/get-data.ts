@@ -5,7 +5,7 @@ export const prerender = false;
 
 export async function get() {
   const response = {
-    data: new Date().toDateString(),
+    data: new Date().toString(),
   };
 
   return new Response(JSON.stringify(response), {
