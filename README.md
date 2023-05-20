@@ -1,6 +1,6 @@
 # V3 Portfolio
 
-## Pages needs
+## Pages
 
 - [ ] Home
 - [ ] About
@@ -19,7 +19,8 @@
 
 ## Feature support
 
-- [ ] TailwindCSS
+- [x] TailwindCSS + Prettier + ESLint
+- [ ] Cloudflare Deployment
 - [ ] Dark / Light mode
 - [ ] MDX blogs
 - [ ] Full SEO for blogs
