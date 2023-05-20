@@ -1,0 +1,67 @@
+---
+title: Open Source alternatives you must try - Part 2
+date: '2022-05-17'
+tags: ['oss']
+draft: false
+summary: List of open source alternatives for Comment systems and virtual meetings
+---
+
+# Introduction
+
+In the [previous part](/blog/open-source-alternatives-you-must-try-part-1), we saw some open-source alternatives that you can use as a service or self-host.
+
+Today we see a few more of such OSS tools which I have personally used or planning to use in the future. So let's get started.
+
+# Comment Systems
+
+So comment system is one of the most common requirements that you might have on any blogging site or in general any site where you want user input/engagement with your site. The most popular and most used service that I have seen on multiple sites is [Disqus](https://disqus.com/). Let's check out some of these open-source alternatives of Disqus.
+
+## Cusdis
+
+[Cusdis](https://cusdis.com/) is a lightweight, privacy-focused, [open-source](https://github.com/djyde/cusdis) comment system created by [@djyde](https://github.com/djyde). The name itself is a very close anagram of Dis(qus|cus).
+
+Cusdis provides the service as both cloud service and self-host, _although the cloud service is pretty much free **as of now**_. I have tried cusdis myself and it was very to self-host it, just follow the [guide](https://cusdis.com/doc#/self-host/vercel)
+
+It allows anonymous comments so the user does not have to sign in and also does not use any cookies. However, to avoid spam comments, it provides a moderation dashboard and all new comments are not displayed until the moderator approves them.
+
+Since it's not feasible always to open the UI and approve/disapprove any comments, Cusdis also provides the option of adding an email notification that contains the link to approve comments without signing in (this is a pretty awesome approach in my opinion). Also, you can pretty much send this notification to any webhook (including a telegram bot created by the OP itself).
+
+## Utterances
+
+[Utterances](https://utteranc.es/) is a lightweight, [open-source](https://github.com/utterance/utterances) comments system built on GitHub Issues. The idea is pretty awesome and straightforward, it uses Github issues to store all your data. The user has to sign up with Github to create a comment (_which can become a con for a website where you expect non-technical users who might not have a Github account_)
+
+It has no tracking, no ads and will always be free. It is very lightweight and yes, also supports the dark theme.
+
+## Giscus
+
+[Giscus](https://giscus.app/) is another great [open-source](https://github.com/giscus/giscus) comment system (similar and inspired by utterances) that is powered by Github discussions. Instead of using issues, it uses Github discussions to store the comments which I personally liked so I choose Giscus as a comment system for this website.
+
+It also comes with [additional configurations](https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md) which you may or may not need but always good to have an option for that.
+
+You can also (not really needed although) but also [self-host](https://github.com/giscus/giscus/blob/main/SELF-HOSTING.md) the bot yourself. I am not doing this and using the available bot.
+
+# Virtual Meetings
+
+In the era of covid, we learned that virtual meetings can be so helpful when it's not physically possible to meet people. Although we are coming close to the end of that era (hopefully soon), there will still be lots of use-cases for virtual meetings and connecting people in an [async manner](https://en.wikipedia.org/wiki/Asynchronous_communication). Let's see some open-source tools you can switch towards for adapting to this new world.
+
+## Jitsi
+
+[Jitsi](https://jitsi.org/) is a video conferencing tool, which provides an alternative to Google Meet or Zoom. You can use the jitsi cloud to host your meeting or you can also [self-host](https://jitsi.github.io/handbook/docs/devops-guide/) the project using either docker or bare metal on Ubuntu server.
+
+Self-hosting is not as simple as other projects we have seen so far, so using the cloud option makes more sense here. However, they do provide an option for it which is totally awesome and for many use-cases, it would really make sense to have a self-hosted solution.
+
+## Cal.com
+
+Talking about async communications, we often don't know when the other person is available. This problem was nicely solved by [Calendly](https://calendly.com/) but since we are talking about open-source solutions, let's take a look at its alternative which is [Cal.com](https://cal.com).
+
+It is a scheduling infrastructure that provides both [self-hosted](https://developer.cal.com/self-hosting/installation) as well as cloud solutions. The licensing here is a bit tricky, it keeps the [AGPLv3 license](https://snyk.io/learn/agpl-license/), to simply put it, you can fork/clone this repository but cannot keep it private.
+
+It supports lots of configuration options (like team settings, charging people with Stripe for meetings etc) and apps that can make your calendar scheduled meeting experience flawless.
+
+# TL;DR
+
+In this part, we saw some amazing open-source tools around Comment systems and virtual meetings which can make your life easy. You can self-host them and for most of them also use their provided cloud solution.
+
+In the [previous part](/blog/open-source-alternatives-you-must-try-part-1), we covered some more tools so if you are interested to know more about them then head there right now!
+
+See you in another one!

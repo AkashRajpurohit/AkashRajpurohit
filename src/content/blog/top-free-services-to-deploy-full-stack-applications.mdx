@@ -1,0 +1,187 @@
+---
+title: Top Free Services To Deploy Full-Stack Applications
+tags: [devops]
+date: 2020-09-20
+lastmod: 2022-11-19
+summary: Sharing the list of these amazing free services that can help you go online with your app for free.
+draft: false
+---
+
+# Introduction
+
+So you have developed a full-stack web application and now you are wondering how to take it online?
+
+Is it just a side project that you want to showcase or a small scale project to test it out with real users and get some feedback?
+
+One question you must be having is how can I get it done in the least cost possible right? Today we will see a list of amazing top services, using which you can easily go live with your project for <b>FREE!</b>
+
+<Image src={`/static/images/free-hosting-meme.jpg`} width={1296} height={750} />
+
+We will see services for Back-end, Front-end, and even Databases 🤯. In the end, I'll drop in my personal choice and views regarding the same.
+
+<Callout type="info" title="Not a sponsored post">
+  I am not being paid or sponsored by any of these services. This is just advice based on my experience as a freelancer,
+  and on how I host my web applications.
+</Callout>
+
+# Back-End
+
+## 0. Heroku
+
+<Callout type="warning" title="New update!">
+  This section has been updated as per the new updates provided by Heroku
+</Callout>
+
+[Heroku](https://www.heroku.com/) is a PaaS i.e Platform as a Service, you can deploy your backend applications very quickly and easily on Heroku. They ~~have~~ had a [free tier](https://www.heroku.com/pricing) however recently Heroku [announced](https://blog.heroku.com/next-chapter) that they are going to sunset their free services.
+
+Moreover, they won't be grandfathering the existing free instance i.e your existing free services would either have to be upgraded to PRO plan or they would cease to exist post-November 2022.
+
+With this in mind, I have updated this blog to remove Heroku from this list 😔
+
+## 1. Cloudflare Workers
+
+[Workers](https://workers.cloudflare.com/) from Cloudflare allows you to deploy serverless code to global infrastructure within seconds (literally! 🚀).
+
+With the help of [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/), developing and deploying with workers becomes very easy.
+
+You can read more about how Cloudflare workers work [here](https://developers.cloudflare.com/workers/learning/how-workers-works/). A short TL;DR would be that consider Workers like mini browsers running on V8 environment on an edge infrastructure and executing your serverless code using standard Web APIs.
+
+This allows you to essentially have a serverless code running with _~0ms_ of cold starts, which is a pretty crazy thing if you think about it in a serverless world. Also, the pricing plans are way better to prototype on free plans and move to pro plans for serious stuff.
+
+## 2. Vercel
+
+[Vercel or Formerly known as Zeit](https://vercel.com/) is another great option to deploy both Backend and Frontend applications, It uses [serverless architecture](https://en.wikipedia.org/wiki/Serverless_computing) to set up their infrastructure for deployment. Most people use vercel to deploy frontend applications but you can also deploy backend apps with vercel. This guide shows you [how to deploy Node.js API with MongoDB on vercel](https://vercel.com/guides/deploying-a-mongodb-powered-api-with-node-and-vercel).
+
+Vercel has a very [generous free tier](https://vercel.com/pricing) with these specs
+
+| Feature                                     | Free | Pro |
+| ------------------------------------------- | ---- | --- |
+| Serverless Functions Created per Deployment | 12   | 24  |
+| Serverless Functions Created per Month      | 160  | 640 |
+| Serverless Function Duration (Seconds)      | 10   | 60  |
+
+## 3. Firebase
+
+[Firebase](https://firebase.google.com/) is not just a hosting service but a google backed product that provides lots of features along with hosting. Firebase gives you functionality like analytics, databases, messaging and crash reporting, etc.
+
+Along with hosting, many of the other services are also available in [free tier](https://firebase.google.com/pricing) and as you scale up, you can go ahead with their Pay-as-you-Go model.
+
+You can host serverless functions called [Cloud Functions](https://firebase.google.com/docs/functions), however recently google has announced that to create functions that use Node.js version 10 and above, you have to [enable billing](https://support.google.com/googleapi/answer/6158867?hl=en) for the account.
+
+## 4. Fly.io
+
+[Fly.io](https://fly.io/) is a relatively new platform (founded in 2017) which has a [free tier](https://fly.io/docs/about/pricing/#free-for-side-projects) to test out the platform or host small side projects. They give each user \$10/mo of service credit that automatically applies to any paid service.
+
+| Type     | RAM   | Monthly (approx) |
+| -------- | ----- | ---------------- |
+| micro-1x | 128MB | \$2.67           |
+| micro-2x | 512MB | \$8              |
+
+You can easily follow along with their [quickstart guide](https://fly.io/docs/getting-started/installing-flyctl/) to set up the deployment workflow using their CLI tool.
+
+## 5. Railway
+
+[Railway](https://railway.app) is another PaaS service provider in town which have amazing features and generous [free tier](https://railway.app/pricing). You can use Railway pretty much to do anything, be it hosting backend services or frontend applications (_I would still prefer to use the services mentioned below for frontend though_) and even databases.
+
+The most loveable feature about Railway according to me would be the ease at which you can deploy your services. Also, their [starters](https://railway.app/starters) section is an awesome way to have 1-click deployments for well-known services.
+
+## 6. Freemium IaaS
+
+I have clubbed together AWS, GCP, and Azure into this category. All three of these provide a free tier with a basic machine to set up for a year.
+
+Read more about their services in the free tier at
+
+- [Amazon Web Services](https://aws.amazon.com/free/)
+- [Google Cloud Platform](https://cloud.google.com/free/)
+- [Azure](https://azure.microsoft.com/en-us/free)
+
+These all are indeed good but sometimes can become too overwhelming for beginners by looking at their vast number of services and interconnection between them.
+
+# Front-End
+
+## 1. Netlify
+
+[Netlify](https://www.netlify.com/) is an amazing service for hosting you static websites, you can easily **host unlimited projects**, **invoke serverless functions**, **add a custom domain with HTTPS**, **Store large files**, **Preview Deploys** and [many more](https://www.netlify.com/products/) for free.
+
+Recently Netlify also released [Plugins Ecosystem](https://docs.netlify.com/configure-builds/build-plugins/) which allows you to customize your build process.
+
+## 2. Vercel
+
+[Vercel](https://vercel.com/) as mentioned above, not only can be used to deploy backend APIs but in fact has a better ecosystem built to deploy static frontend applications. They have solutions for **Next.js**, **Gatsby**, **React**, **Vue**, **Angular**, **Nuxt** out of the box with **Zero Configuration**.
+
+Vercel also provides Edge Network or [Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network) and has multiple layers of caches to ensure that your Vercel deployments are fast around the world. You can read more about it on their [docs section](https://vercel.com/docs/introduction) which in my opinion is nicely structured for better understanding.
+
+## 3. Cloudflare Pages
+
+[Pages](https://pages.cloudflare.com/) by Cloudflare is another great way to deploy JAMStack applications on Cloudflare infrastructure.
+
+They support a variety of [frameworks](https://developers.cloudflare.com/pages/framework-guides/) so you are pretty much covered on that end.
+
+What I missed the most was deploying Next.js site with server-side code (which was earlier not present). However, very recently Cloudflare announced support for that [next on pages](https://blog.cloudflare.com/next-on-pages/) with the help of the Next.js Edge runtime.
+
+Plus a very big plus point for me was the specs where they provide Unlimited requests and Unlimited bandwidth which was the main reason why I [moved "How to professionally say" app](/blog/journey-into-how-to-professionally-say-project/#using-cloudflare-pages) from Vercel to Cloudflare pages.
+
+## 4. Github Pages
+
+If you are a heavy user of GitHub and just want to quickly have a deployed version of your project then [Github Pages](https://pages.github.com/) is the best choice for you. Github Pages host your code directly from your GitHub repository, so any changes/edits you make and push it to the repository are automatically pushed to your live website.
+
+Follow this [amazing guide by github](https://docs.github.com/en/github/working-with-github-pages) to set up your next project using Github Pages.
+
+## 5. Surge.sh
+
+[Surge.sh](https://surge.sh/) is one of the simplest static site publishing providers. You can use their CLI tool to publish any project directly from the terminal or you could use its integration with various build tools like [Grunt](https://surge.sh/help/deploying-a-grunt-project), [Gulp](https://github.com/surge-sh/gulp-surge), [Travis CI](https://surge.sh/help/integrating-with-travis-ci) and many more.
+
+Try out surge [free tier](https://surge.sh/pricing) which is more than enough for any small to medium size front end application.
+
+## 6. Render
+
+[Render](https://render.com/) is another great service to host your both front end and back end applications and database, Although they don't have any free tier for back end and databases (_as of now_) but they have a really good [free tier for static web hosting](https://render.com/pricing).
+
+The services are more or less similar to the other services mentioned above, so in the end, it all depends on your experience as a developer using these services.
+
+# Database
+
+## 1. MongoDB Atlas
+
+The company [MongoDB](https://www.mongodb.com/) itself created this service called [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) and provides a really good free tier with **512 MB of Storage**, **Shared RAM** and **Highly available replica sets, end-to-end encryption, automated patches, REST API**.
+
+Previously, I was using [mLab](https://mlab.com/) as Database-as-a-Service for most of my projects, but a few months back mLab was [acquired by MongoDB](https://blog.mlab.com/2018/10/mlab-is-becoming-a-part-of-mongodb-inc/) and for the greater good, as MongoDB provides additional services and better security rules for your shared MongoDB Databases. There is no doubt that Atlas is the best Cloud Database you can get for rapid prototyping and small to medium-sized projects.
+
+## 2. Supabase
+
+This is a new addition to the list and I totally love their product. I am using Supabase in production for the self-hosted analytics tool and I've had no troubles with it at all.
+
+[Supabase](https://supabase.com) is basically an open-source firebase alternative. They are jam-packed with loads of features like Postgres Database, Authentication, APIs, Real-time subscriptions and Storage.
+
+I have been using Supabase majorly for the Postgres database as of now but it sure can do a lot of stuff. It is technically an MBaaS (Mobile Backend as a Service) at this point.
+
+<Callout emoji="😂">
+  Off-topic here, reading all these terms like PaaS, IaaS and now MBaaS always reminds me of [this
+  clip](https://www.youtube.com/watch?v=mFwFYo96ZMU) from the Silicon Valley show
+</Callout>
+
+## 3. Elephant SQL
+
+When I am not using a NoSQL database like MongoDB and need an RDBMS database for any project, I mostly use [PostgreSQL](https://www.postgresql.org/). [Elephant SQL](https://www.elephantsql.com/) is a great PostgreSQL as a Service for the cloud. Although they have a variety of plans for their service but their [free tier](https://www.elephantsql.com/plans.html) is great for getting started with the PostgreSQL database in the cloud.
+
+## 4. Redis Lab
+
+Most of my side/client projects involve tasks where I require a fast, in-memory datastore either for caching, [rate limiting](/blog/api-rate-limit-in-nodejs-and-expressjs/) or session management, for that, I mostly go with [Redis](https://redis.io/). For the cloud Redis database, I use [Redis Lab](https://redislabs.com/). You can signup for an account and get 1 database with 30 MB storage for free. This is more than enough for me for prototyping and test things out.
+
+## 5. PlanetScale
+
+[PlanetScale](https://planetscale.com/) is a MySQL compatible serverless database platform. It uses [Vitess](https://vitess.io/) as a database clustering system for horizontal scaling of MySQL.
+
+They have a [dedicated page](https://planetscale.com/vitess) to explain why they choose vitess to scale the MySQL performance at PlanetScale.
+
+I haven't had a chance yet to explore more about PlanetScale myself but I have given it a try once and it definitely has some amazing features like Powerful CLI, Git-based workflow for managing your database and of course the performance offered by Vitess. Once I try it a bit more I'll update this section if new information becomes available.
+
+# Conclusion
+
+So these were most of the services that I have personally used and would recommend to others as well. My final thoughts are
+
+- I mostly use Vercel and AWS for deploying most of my backend applications
+- For the frontend, I mostly choose between Netlify and Vercel from the mentioned options, but all of these options provide very similar kinds of services so in the end, it boils down to our own experience while using them, my suggestion would be to try each one out and choose for yourself which is your preference
+- For Databases, I have laid down all the services I use for different types of databases, there may be other service providers but these are the ones I tend to choose.
+
+Let me know if something is missing in the list which you would've liked to see. 😊

@@ -1,0 +1,51 @@
+---
+title: 'Demystifying Consistent Hashing in System Design'
+date: '2023-03-18'
+tags: ['system design']
+draft: true
+summary: 'Consistent hashing is a technique used in system design for distributed hash tables and cache systems. It helps in achieving a balance between data distribution and scalability. In this article, we will delve into what consistent hashing is and how it works, along with its advantages and disadvantages.'
+---
+
+# Introduction
+
+When designing large-scale distributed systems, it is critical to handle data distribution effectively to ensure optimal performance and scalability.
+
+Hash tables and cache systems are two such systems that depend heavily on efficient data distribution.
+
+In these systems, consistent hashing plays a crucial role in ensuring that the data is distributed evenly and efficiently among the nodes.
+
+# What is Consistent Hashing?
+
+Consistent hashing is a technique that assigns a hash value to each node and each piece of data in a system. It ensures that the distribution of data across the nodes remains relatively balanced, even as nodes are added or removed from the system.
+
+In this technique, nodes and data are placed on a circle, and the hash value of each node and data is used to place them on the circle.
+
+# How does Consistent Hashing work?
+
+In a consistent hashing system, each node is assigned a hash value, and this value is used to place the node on the circle. The hash function used for the nodes should produce a uniform distribution of values across the circle.
+
+The data is also assigned a hash value, and this value is used to place the data on the circle as well. When a new node is added to the system, the data assigned to the previous node is reassigned to the new node. This ensures that the data distribution is not affected much, and the load is balanced.
+
+# Advantages of Consistent Hashing
+
+Consistent hashing has several advantages in system design, including:
+
+- **Scalability:** Consistent hashing makes it easier to add or remove nodes from the system without affecting the data distribution, making the system more scalable.
+
+- **Load balancing:** The load is evenly distributed among the nodes, ensuring that no node is overwhelmed with requests.
+
+- **Fault-tolerance:** When a node fails, only the data assigned to that node needs to be reassigned, ensuring that the system remains operational.
+
+# Disadvantages of Consistent Hashing
+
+While consistent hashing is an effective technique for data distribution in large-scale distributed systems, it also has some disadvantages, including:
+
+- **Increased complexity:** Consistent hashing adds an additional layer of complexity to the system, making it harder to understand and maintain.
+
+- **Data skew:** If the hash function used for data is not uniform, it can lead to data skew, resulting in some nodes being overloaded with data.
+
+# Conclusion
+
+Consistent hashing is a crucial technique in system design, particularly for distributed hash tables and cache systems. It helps in achieving scalability, load balancing, and fault-tolerance.
+
+While it adds some complexity to the system, the advantages it offers make it an essential tool in the arsenal of any system designer.

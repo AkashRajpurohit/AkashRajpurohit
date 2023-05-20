@@ -1,0 +1,72 @@
+---
+title: Increase Root Partition Size On Fedora
+tags: [bash, linux]
+date: 2021-03-02
+summary: Learn how to increase root partition size on fedora in 2 simple steps.
+draft: false
+---
+
+# Introduction
+
+I recently was in the need of extending the root partition size on my system and spent quite some time figuring out the approach to follow in doing so without losing data.
+
+My scenario was I wanted to shrink the /home partition and use that space to increase root partition size. In this blog, I will be sharing how I was able to do the same quickly as possible.
+
+# Backup, Backup, and Backup
+
+Always take a backup before shrinking/expanding or doing any configurations on your partitions. If you already have backups in your place then you are good to go, but If you don't then you can follow along from this tutorial to [create a backup using tar command](https://akashrajpurohit.com/blog/backup-users-home-directory-in-linux-using-tar-command/).
+
+Now if you already have enough space, you can skip the next step of shrinking any partition to get the space available. Although in my case, I did not have extra space, I had to shrink it from the home directory.
+
+# Shrink Home
+
+There are some prerequisites before we start the shrinking process.
+
+To follow along, the first thing that you want to do is to switch yourself to the root user. And by switching means logging out from your non-root user and login in with username as root and your root password.
+
+**Note:** You have to go into root user because your non-root (the current user) would be mounting the home directory, so for shrinking, you would have to unmount the home partition but since some processes might be using this partition it might throw you the error like
+
+```bash
+Do you want to unmount "/home" ? [Y|n] y
+umount: /home: target is busy.
+fsadm: Cannot proceed with mounted filesystem "/home".
+  /usr/sbin/fsadm failed: 1
+  Filesystem resize failed.
+```
+
+You can check if the target is busy or not using the `fuser -mv /dev/mapper/fedora_localhost--live-home`.
+
+Remember you can check where your fedora `root` and `home` partition is mounted using `fdisk -l` command. In my case it is fedora_localhost--live-root and fedora_localhost--live-home)
+
+Now to shrink this partition we will use `lvresize` tool.
+
+```bash
+lvresize -L -20G --resizefs /dev/mapper/fedora_localhost--live-home
+```
+
+This will shrink 20Gb from home.
+
+# Extend Root Partition
+
+Now you can see available space using the `vgs` command.
+
+```bash
+vgs
+```
+
+The output will be like this
+
+```bash
+  VG                    #PV #LV #SN Attr   VSize     VFree
+  fedora_localhost-live   1   3   0 wz--n- 475.35g    20g
+```
+
+Now we can add this extra space into the root using the same `lvresize` tool. But now instead of -20G we will add +20G to root.
+
+```bash
+lvresize -L +20G --resizefs /dev/mapper/fedora_localhost--live-root
+```
+
+And that's it, reboot your system and login with your normal non-root user and you would have your root size increased.
+
+Hope this helped you. See you in the next one.

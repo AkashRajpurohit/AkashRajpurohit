@@ -1,0 +1,89 @@
+---
+title: How to use ES6 import syntax in Node.js
+tags: [javascript, nodejs]
+date: 2021-06-04
+summary: Learn how to quickly start using ES6 import syntax in Node.js
+draft: false
+---
+
+# Introduction
+
+A module is a JavaScript files that can export one or more values. These values can be variables, objects, or even functions.
+
+JavaScript does not have built-in support for modules, but the community has created impressive work-arounds. The two most important standards are:
+
+- **CommonJs Modules** - What we know as the `require()` method for importing modules and `module.exports` for exporting. This is designed for synchronous loading and mainly used for server.
+
+- **Asynchronous Module Definition (AMD)** - The most popular implementation of this standard is [RequireJS](https://requirejs.org/). This is designed for asynchronous loading and mainly used for browsers.
+
+# ES6 Import
+
+The goal for ECMAScript 6 modules was to create a format that both users of CommonJS and of AMD are happy with. The syntax for importing modules looks like this..
+
+```javascript
+import Express from 'express'; // for default imports
+
+import { foo } from 'bar'; // for named imports
+```
+
+and exporting with named and default exports like this..
+
+```javascript
+export const MAX_USERS = 20; // Named exports
+
+function sayHi(name) {
+  console.log(`Hi ${name}!`);
+}
+
+export default sayHi; // Default export
+```
+
+# How to use it
+
+If you try to run this code directly then you would get an error something like
+
+```bash
+SyntaxError: Cannot use import statement outside a module
+```
+
+Now, if you are using Node.js version 14.x.x or above then the simplest fix is to add "type": "module" in your package.json file.
+
+```json
+{
+  "type": "module"
+}
+```
+
+However if you are on any version below 14, you would have to use Babel to compile your code before running it.
+
+**Note: Babel is not framework or platform opinionated. This means that it can be used in any project that is written in JavaScript and thus, in a Node.js project as well.**
+
+Let's start by installing some dev dependencies,
+
+```bash
+yarn add -D @babel/core @babel/preset-env @babel/node
+
+# OR
+
+npm install -D @babel/core @babel/preset-env @babel/node
+```
+
+Next is to create a `babel.config.json` file and add the following config,
+
+```json
+{
+  "presets": ["@babel/preset-env"]
+}
+```
+
+Now you just have to use `babel-node` instead of node, so your start/dev script may look like this now
+
+```json
+{
+  "scripts": {
+    "dev": "nodemon --exec babel-node server.js"
+  }
+}
+```
+
+Hope this was helpful. See you in another one 👋

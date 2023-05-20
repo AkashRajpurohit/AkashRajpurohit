@@ -1,0 +1,250 @@
+---
+title: Infosys Power Programmer Interview Experience
+tags: [interview]
+date: 2021-01-24
+summary: Sharing my Infosys power programmer interview experience
+draft: false
+---
+
+# Introduction
+
+Infosys arranged a national level event called `HackWithInfy` in 2019 in which around **1,20,000** students participated. Among which in Round 1 around **7000** students got selected for round 2.
+
+Both these rounds were conducted on [Hackerrank](https://hackerrank.com) online platform.
+
+Read my experience of HackWithInfy [Round 1](/blog/hackwithinfy-round-1-experience/) and [Round 2](/blog/hackwithinfy-round-2-experience/) here.
+
+From round 2, the top 109 students got selected for the Grand Finale of HackWithInfy which was a hackathon in Pune. All these 109 students were given PPI(Pre Placement Interview) for PP (Power Programmer).
+
+Also, I will be sharing the questions as well which I remember at this point, this might give you insights on what things could be expected from you during the interview.
+
+---
+
+# My Experience
+
+So on 22<sup>nd</sup> August 2019 my PPI for PP was scheduled at [Mukesh Patel School of Technology Management & Engineering](https://engineering.nmims.edu/).
+The interview was remote so it was conducted through [Zoom Meetings](https://zoom.us/).
+
+There were 2 Rounds
+
+- Technical Interview (30-45 mins long)
+- HR Interview
+
+After waiting for good 7 hours my interview started.
+
+---
+
+# Technical Round
+
+So the interviewer was a full stack developer with 8 years of experience. Also for the past 4 years, he was into ML and AI
+
+Let us call the interviewer Mr. X
+
+<Callout emoji="👨🏻‍🏫"> Hello Akash, How are you doing?</Callout>
+
+<Callout emoji="🤵🏻‍♂️"> Hello Sir, I'm doing great. How are you? </Callout>
+
+<Callout emoji="👨🏻‍🏫">I'm good. So let me first introduce myself and then we'll discuss you</Callout>
+
+Then he gave his short introduction which I've mentioned above
+
+<Callout emoji="👨🏻‍🏫"> So now Akash, Tell me something about yourself</Callout>
+
+I gave a brief introduction about myself. Key points I included were Me being a Part-time teacher (the reason behind it), participation in hackathons and other competitions, and why I started doing part-time freelancing.
+
+Make sure you prepare this answer in such a way that it shows your skills and helps the interviewer understand why you are the best fit for the company
+
+<Callout emoji="👨🏻‍🏫">
+  That's great. So Akash I read on your resume that you are a Full Stack Developer. Can you explain any of the project
+  which you have mentioned on your resume?
+</Callout>
+
+For this question, I picked up one of my freelance projects. It was a big project which included an Android/iOS App and Backend Server.
+
+I gave a brief idea about the actual app and explained the challenges that I faced building some of its features. The challenges that came and how I was able to solve them and deliver the product on time.
+
+This discussion continued roughly for around 10-12 minutes and I was satisfied with the positive impact my explanation made.
+
+<Callout emoji="👨🏻‍🏫"> So what is your final year project?</Callout>
+
+<Callout emoji="🤵🏻‍♂️">
+  My final year project is based on Natural Language Processing. We call it LexiContext: Understanding the context
+  between different sentences and provide a confidence score based on the similarity of two sentences
+</Callout>
+
+And then I gave a quick walk-through about the project. He liked the project idea and the use case which we were targeting by implementing this.
+
+<Callout emoji="👨🏻‍🏫"> So Akash, let's quickly assess your code solving skills.</Callout>
+
+He started screen sharing and showed me the question.
+
+And the question was based on strings and regular expressions, According to me, it could be tagged as a leetcode easy/medium level question.
+
+```
+Given a string s1 and a regular expression s2.
+Find if s1 satisfies the regular expression
+without using any inbuilt regular expression methods.
+
+Rules -
+1. * defines zero or more occurrence of the previous character of the regex
+2. . is a wild card i.e it accepts any value but only 1 value
+
+Eg 1 -
+s1 = "aaab"
+s2 = "c*a*"
+
+Output - False
+Explanation - c* will match 0 occurrences of c from s1, a* will match all a,
+but the b is still unmatched from s1. So it returns False
+
+Eg 2 -
+s1 = "aaabbcdd"
+s2 = "a*b.cd*"
+
+Output - True
+Explanation - a* will accept all the a's,
+b. will take the initial b and the next wild card character which is also b,
+cd in s2 will match the cd in s1
+and d* will match the remaining all d.
+```
+
+<Callout emoji="👨🏻‍🏫"> You know about regular expression? Will you be able to solve this?</Callout>
+
+<Image src={`/static/images/i-have-to-do-this.gif`} width={1000} height={900} />
+
+<Callout emoji="👨🏻‍🏫">
+  Don't worry about typos or syntax mistakes, just walk me through your thought process while approaching this problem.
+</Callout>
+
+I switched to my screen and was asked to write on WordPad. I started with the algorithm and it was going well until...
+
+<Image src={`/static/images/terrible.gif`} width={1296} height={600} />
+
+<Callout emoji="👨🏻‍🏫"> Please continue...</Callout>
+
+<Callout emoji="🤵🏻‍♂️"> I cannot see anything on my screen. It's blacked out</Callout>
+
+<Callout emoji="👨🏻‍🏫">
+  But I can see your shared screen as well as you from the webcam. Can you call anyone available there for technical
+  help?
+</Callout>
+
+I called someone from there to look into this and the best possible solution was to continue like this for now and they will fix this before the next interview starts.
+
+<Image src={`/static/images/confusion.gif`} width={1296} height={700} />
+
+Now I was confused as to how will I be able to demonstrate the code if I cannot see anything that I'm typing...
+
+Luckily the interview was already satisfied with my explanation for the algorithm and replied
+
+<Callout emoji="👨🏻‍🏫">Don't worry Akash, you are almost there. Just tell me orally the ending part of it.</Callout>
+
+I was relieved after hearing this and quickly explained the edge case and completed the coding part.
+
+<Callout emoji="👨🏻‍🏫">
+  Coming to the next question. Tell me something, So being a full stack developer, what stack do you prefer the most?
+</Callout>
+
+<Callout emoji="🤵🏻‍♂️">
+  Sir, I am JavaScript Developer so I prefer to use Node.js for the server-side, React.js, or Angular for the frontend
+  with more preference to React.js and MongoDB for Database. I have experience in using Amazon Web Services for
+  deployment. Also, I have a little experience using Docker for containerization and looking forward to learn more
+  in-depth about it.
+</Callout>
+
+<Callout emoji="🤵🏻‍♂️">
+  Apart from this I have worked with Django and Flask which are Python web frameworks with Jinja Templating as well as
+  experimented Django Rest API with integration in React.js
+</Callout>
+
+<Callout emoji="👨🏻‍🏫">
+  That's nice, In your resume I've read that you have used Ionic Framework in some of your projects, any specific reason
+  why?
+</Callout>
+
+<Callout emoji="🤵🏻‍♂️">
+  Yes, Ionic is a hybrid mobile application framework. So basically I can target both Android as well as iOS platforms
+  from a single codebase. But... (_gets interrupted_)
+</Callout>
+
+<Callout emoji="👨🏻‍🏫"> - Sorry, please continue..</Callout>
+
+<Callout emoji="🤵🏻‍♂️">
+  Yeah so I was saying that but recently I have started looking into Flutter for developing cross-platform applications
+</Callout>
+
+<Callout emoji="👨🏻‍🏫">
+  Yes, exactly what I was going to talk about..Flutter.. So you know what programming language is used to build apps in
+  Flutter
+</Callout>
+
+<Callout emoji="🤵🏻‍♂️"> Yes sir, Flutter uses Dart Programming Language</Callout>
+
+<Callout emoji="👨🏻‍🏫">
+  Okay. So moving ahead, I see you have used MongoDB right? Do you know the types of NoSQL Databases?
+</Callout>
+
+<Callout emoji="🤵🏻‍♂️">
+  There are mainly 4 types of NoSQL databases viz Key-value stores, Column stores, Document based and Graph database
+</Callout>
+
+<Callout emoji="👨🏻‍🏫"> Can you give example for all these types?</Callout>
+
+<Callout emoji="🤵🏻‍♂️">
+  Redis which is Key-value store, Cassandra and HBase for Column stores, MongoDB for Document based and Neo4j for Graph
+  Databases
+</Callout>
+
+<Callout emoji="🤵🏻‍♂️">From this, I have tried MongoDB for database and Redis for implementing caching mechanism</Callout>
+
+<Callout emoji="👨🏻‍🏫">Okay. So basically we are done with the interview. Any questions you have for me?</Callout>
+
+I wanted to know more about the work culture and roles and responsibilities of Power Programmer in Infosys so we had a brief talk about that.
+
+And this is how my interview ended. We waited in the waiting room for around half-hour more and then the HR called my name for the HR Interview
+
+---
+
+# HR Interview
+
+This was rather more like getting confirmation about my details than an HR Interview. Let us call the HR person Mr. Y (because why not)
+
+<Callout emoji="👨🏻‍🏫"> So Akash, how was your experience today</Callout>
+
+<Callout emoji="🤵🏻‍♂️"> Great!</Callout>
+
+<Callout emoji="👨🏻‍🏫"> Great so far!</Callout>
+
+<Image src={`/static/images/savage.gif`} width={1296} height={800} />
+
+I was almost under the impression that I am not selected.
+
+He started filling in my details on the form. Made me go through the details that relocation might be done and was okay with it. Asked me for preference for job location (again by saying If you get selected) what would be your preference etc.
+
+HR interview finished and I was asked to wait in the waiting room for the results
+
+---
+
+# Results
+
+So finally it was the time, HR came with the results. Along with me, 5 other people were called outside and told that....
+
+**Congratulations guys you all are selected for the role of Power Programmer at Infosys!**
+
+<Image src={`/static/images/happy.gif`} width={1296} height={600} />
+
+After that, a few questions like training period and bond was discussed with all of us together and we all were asked to leave for the day
+
+I met many amazing people from different colleges there and all of them were also selected for the Power Programmer Role.
+
+---
+
+# Conclusion
+
+- As you might have already deduced, most of the time of my interview revolved around the topics which were from my resume. So make sure you know what exactly you are putting on your resume and don't try to put fake information.
+- If you have done any good projects or any certification or course taken, make sure you know all the in's and out's about it.
+- This is the most common thing but still, I'll repeat. Be calm during the interview. Even though my screen got blacked out and I was quite scared but don't show that on your face. Be confident in what you are saying. This was one of the reasons why the technical assistant said that `You can continue like this for now because I can see you through the webcam`. Because they not only hear your answers but also look for the confidence with which you are answering.
+- And last but not least, keep talking. I mean literally, even while coding, don't just sit and start typing the code. The interviewer usually is not interested in the actual code. He is more interested to see your thought process on how you approach the solution. Another benefit of this is that if you are thinking in the wrong direction they guide you by giving hints. But this would only happen if you let them know what exactly you are thinking by saying out things loud
+  - Tips to work on this is to find yourself an empty room with just a single person. No matter if the person is technically sound or not. Just have a person in a quiet room and get comfortable by speaking out your thought process while approaching any problem. This will help you a lot during an actual interview
+
+So this was my experience and I hope you enjoyed reading it. You can drop your views in the comment section and share the article with other colleagues as well. Have a great day and Good luck with your next interview!

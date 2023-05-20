@@ -1,0 +1,92 @@
+---
+title: Disable Source Maps in GatsbyJs V2 for Production.
+tags: [gatsby]
+date: 2021-02-09
+summary: Quickly disable source maps in gatsbyjs for your production website.
+draft: false
+---
+
+# Introduction
+
+GatsbyJS in version 2 automatically includes source maps when you build your site for production using the `yarn build` command. This is a really handy feature that enables you to debug and view your code in production.
+
+If your website or app is open source then you would not mind people being able to view your code directly when visiting your site, but if your code is a private source or some client projects for which you don't want to explicitly allow others to view your code, you would have to disable the generation of source maps when gatsby builds your site.
+
+In this blog, we will see how to configure source maps settings for your GatsbyJs v2 websites i.e have source maps in development so that your life is a bit easy as a developer but disable them on production builds.
+
+# Customize Webpack
+
+GatsbyJs uses [Webpack](https://webpack.js.org/) for bundling the files, don't worry if you don't know how to configure Webpack because for this task we won't be doing any high-level configurations.
+
+What we have to do is disable the `devtool` flag when we are in the production environment.
+
+So, since now we know what we have to do, let's take a look at how we are going to do it.
+
+We can modify the configuration options for Webpack in gatsby by exporting a function called `onCreateWebpackConfig` in the `gatsby-node.js` file. If you don't have a gatsby-node.js file then create a new one (most likely you would already be having that at the root of your folder).
+
+Copy the snippet below in the gatsby-node.js file
+
+```javascript:title=gatsby-node.js {3, 6}
+exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
+  const config = getConfig();
+  if (config.mode === 'production') {
+    // Turn off source maps in production
+    actions.setWebpackConfig({
+      devtool: false,
+    });
+  }
+};
+```
+
+# What's Happening
+
+So first we are destructing `actions` and `getConfig` from this function from the [list](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/#onCreateWebpackConfig) of available configurations.
+
+We will first get the current config by calling the getConfig function, it has a lot of properties but the ones in which we are interested are `devtool` and `mode`.
+
+```javascript
+{
+	...
+	devtool: 'source-map',
+	mode: 'production',
+	...
+}
+```
+
+when NODE_ENV is set to production, we would get the mode value set to production in the config as well, so we would first check if this mode is production or not.
+
+If it is production then we would call the method `setWebpackConfig` on the actions object and pass the devtool option to false (which is initially set to 'source-map').
+
+And that's it, we have successfully disabled source maps for our website in production.
+
+**Note**: GatsbyJS creates the public directory and it is _usually_ not cleared automatically when you are running `gatsby build`, so to check the effects you have to clear the public and .cache directory (use `gatsby clean` command). You can add these scripts to your `package.json` file.
+
+```javascript:title=package.json
+{
+	"scripts": {
+		...
+		"build": "gatsby build --log-pages",
+		"clean": "gatsby clean",
+		...
+	}
+}
+
+```
+
+# Pro Tip for Netlify
+
+If you are hosting your site on [Netlify](https://www.netlify.com/) then to see the changes, you have to clear the cache and deploy the site again. You can find this option on your dashboard.
+
+<Image alt={`Clear cache on Netlify`} src={`/static/images/netlify-clear-cache.png`} width={1296} height={600} />
+
+# TL;DR
+
+We learn how to disable source maps in production for the GatsbyJS version 2 website.
+
+# More reading
+
+- [What is source maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
+- [Use of source maps](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map)
+- [Should I Use Source Maps in Production?](https://css-tricks.com/should-i-use-source-maps-in-production/)
+
+See you in the next one. 👋

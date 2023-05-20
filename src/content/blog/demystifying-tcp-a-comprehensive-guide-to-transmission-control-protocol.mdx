@@ -1,0 +1,41 @@
+---
+title: 'Demystifying TCP: A Comprehensive Guide to Transmission Control Protocol'
+date: '2023-03-29'
+tags: ['system design', 'networking']
+draft: false
+summary: TCP is a fundamental protocol of the internet, and understanding how it works is essential for anyone who wants to know more about networking. In this article, we will demystify TCP and explain how it works in both technical and layman terms.
+---
+
+# Introduction
+
+TCP is one of the core protocols of the internet. It is responsible for establishing and maintaining a reliable connection between devices over a network.
+
+TCP provides a mechanism for breaking data into packets and then ensuring that those packets are delivered to their destination in the correct order. It is used for a wide variety of applications, including web browsing, email, and file transfer.
+
+# Technical Explanation
+
+TCP is a transport layer protocol that operates on top of the internet protocol (IP). It is responsible for ensuring that data is transferred reliably between two devices on a network.
+
+When data is sent using TCP, it is broken up into smaller packets that are transmitted across the network. Each packet contains a sequence number that identifies its position in the data stream.The receiving device uses these sequence numbers to reassemble the packets in the correct order.
+
+TCP provides several mechanisms to ensure that data is delivered reliably. For example, it uses an acknowledgement system to confirm that packets have been received. If a packet is not acknowledged, TCP will resend it.
+
+TCP also uses a sliding window mechanism to control the flow of data between devices. This mechanism allows the sending device to control the rate at which data is transmitted, based on the receiving device's ability to handle it.
+
+# Layman Explanation
+
+TCP is like a conversation between two people on the phone. Each person takes turns speaking and listening, and they repeat back what they hear to make sure they understand.
+
+If one person doesn't hear the other clearly, they ask them to repeat what they said. This way, they can have a reliable conversation even if the line is a bit fuzzy.
+
+# Real World Example
+
+A real-world example of TCP in action is when you browse the internet. When you request a web page, your browser sends a TCP packet to the server that contains the web page. The server responds with a series of packets that contain the HTML, CSS, and JavaScript that make up the page.
+
+TCP ensures that these packets are delivered reliably and in the correct order, so that your browser can display the web page correctly.
+
+# Conclusion
+
+TCP is a vital protocol for the internet and is used in a wide variety of applications. Its ability to provide reliable data transfer makes it an essential part of modern networking.
+
+Whether you're browsing the web, sending an email, or transferring a file, TCP is working behind the scenes to ensure that your data is delivered reliably and in the correct order.

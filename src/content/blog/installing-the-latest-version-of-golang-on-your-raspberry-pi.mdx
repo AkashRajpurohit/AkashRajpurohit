@@ -1,0 +1,85 @@
+---
+title: Installing the Latest Version of Golang on Your Raspberry Pi
+date: '2023-02-25'
+tags: ['golang', 'homelab']
+draft: false
+summary: Get started with developing in Golang on your Raspberry Pi. This comprehensive guide will show you how to install the latest version of Golang on your Raspberry Pi, making it a powerful development tool.
+---
+
+# Introduction
+
+Golang, or Go, is a modern and efficient programming language used for a variety of applications, including web development, system programming, and network programming. With its simple syntax and high-performance runtime, it's no wonder that it has become a popular choice for developers.
+
+If you have a Raspberry Pi and want to start developing in Go, you'll need to install the latest version of the Golang runtime. In this article, we'll guide you through the installation process, step by step.
+
+# Instructions
+
+The first step is to update your Raspberry Pi's package index and install the dependencies required for the Golang runtime:
+
+```bash
+sudo apt update
+sudo apt install -y wget git build-essential
+```
+
+Next, download the latest version of Golang:
+
+```bash
+wget https://dl.google.com/go/go[version].linux-armv6l.tar.gz
+```
+
+Replace `[version]` with the latest version number of Golang. You can find that on their [downloads](https://go.dev/dl/) page.
+
+Then, extract the archive:
+
+```bash
+tar -xvf go[version].linux-armv6l.tar.gz
+```
+
+Move the extracted folder to /usr/local:
+
+```bash
+sudo mv go /usr/local
+```
+
+Set up the environment variables for Golang:
+
+```bash
+echo 'export GOROOT=/usr/local/go' >> ~/.zshrc
+echo 'export GOPATH=$HOME/go' >> ~/.zshrc
+echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.zshrc
+source ~/.zshrc
+```
+
+If you are using bash or something else, use the rc file for the same (for example `.bashrc`). The above instructions are for zsh.
+
+# One Script for Everything
+
+To summarise, we can put all of this into a single shell script to download and setup golang on armhf architecture.
+
+```bash
+#!/bin/bash
+
+VERSION=1.20
+
+# Download the latest version of Golang
+wget https://dl.google.com/go/go$VERSION.linux-armv6l.tar.gz
+
+# Extract the archive
+tar -C /usr/local -xzf go$VERSION.linux-armv6l.tar.gz
+
+# Set the environment variable for Golang
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.zshrc
+source ~/.zshrc
+
+# Verify the installation
+go version
+
+# Clean up
+rm go$VERSION.linux-armv6l.tar.gz
+```
+
+# Conclusion
+
+By following these simple steps, you should now have the latest version of Golang installed on your Raspberry Pi. Whether you're a seasoned Go developer or just starting out, the Raspberry Pi is a great platform for developing in Golang.
+
+With its low cost, small form factor, and powerful hardware, it provides a great way to learn and experiment with the Go programming language.

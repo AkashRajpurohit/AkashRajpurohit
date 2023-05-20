@@ -1,0 +1,97 @@
+---
+title: 'Protect Your Linux Server with UFW Firewall: A Step-by-Step Guide'
+date: '2023-02-11'
+tags: ['linux', 'security']
+draft: false
+summary: Ensure the security of your Linux server by setting up a firewall. UFW (Uncomplicated Firewall) is a user-friendly firewall that's easy to set up and configure. In this guide, we'll walk you through the process of installing UFW, creating firewall rules, and managing firewall rules in Linux.
+---
+
+# Introduction
+
+A firewall is a security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. By implementing a firewall, you can reduce the risk of unauthorized access to your server.
+
+UFW is a simple and uncomplicated firewall that makes it easy to secure your Linux server.
+
+# Set Up UFW Firewall on Linux
+
+## Install UFW
+
+UFW is already installed on most Linux distributions, but if it's not, you can install it using the package manager for your distribution. For example, on a Debian-based system, you can use the following command:
+
+```bash
+sudo apt-get update
+sudo apt-get install ufw
+```
+
+## Check the Status of UFW
+
+To check the status of UFW, you can use the following command:
+
+```bash
+sudo ufw status
+```
+
+## Allow or Deny Traffic
+
+You can use UFW to allow or deny incoming traffic based on ports and protocols.
+
+For example, to allow incoming SSH traffic, you can use the following command:
+
+```bash
+sudo ufw allow ssh
+```
+
+<Callout>
+  Note that by specifying ssh above, ufw assumes you want to allow port 22 which is the default ssh port, however if you
+  have followed by previous guide on [securing the ssh on your linux
+  servers](/blog/stay-secure-essential-ssh-security-practices-for-linux-servers/) then the above command won't be much
+  of an help because you would've changed your default ssh port to something else
+</Callout>
+
+You can also specify a specific port to allow or deny in ufw by following this command:
+
+```bash
+sudo ufw allow 2222
+```
+
+## Start UFW
+
+Once you have created your firewall rules, you can start UFW using the following command:
+
+```bash
+sudo ufw enable
+```
+
+## Check UFW Status
+
+To verify that UFW is running and your rules are in place, you can use the following command:
+
+```bash
+sudo ufw status verbose
+```
+
+## Best practices
+
+A good practice in terms of security is to deny all incoming traffic and selectively open ports/services using the [allow rule](#allow-or-deny-traffic)
+
+To do this, we will use the following commands:
+
+```bash
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+```
+
+This basically denys all incoming traffic so your servers are not accessible from outside world and allows all outgoing traffic so you can connect to anything on the outside world.
+
+<Callout type="warning" title="Very Important">
+Make sure you allow SSH as incoming traffic else even you won't be able to connect your server via SSH.
+
+So allow the SSH rule before enabling ufw with the above default rules.
+
+</Callout>
+
+# Conclusion
+
+UFW is a user-friendly firewall that makes it easy to secure your Linux server. By following the steps outlined in this guide, you can install and set up UFW, create firewall rules, and manage firewall rules in Linux.
+
+Don't wait – start securing your Linux server with UFW firewall today!

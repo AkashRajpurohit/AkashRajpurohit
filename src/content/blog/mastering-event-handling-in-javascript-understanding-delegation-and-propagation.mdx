@@ -1,0 +1,127 @@
+---
+title: 'Mastering Event Handling in JavaScript: Understanding Delegation and Propagation'
+date: '2023-03-19'
+tags: ['javascript']
+draft: true
+summary: "Event handling is an essential part of JavaScript programming. Whether it's a simple click event or a complex user interface interaction, understanding how events work is crucial to writing effective and efficient code. In this article, we'll explore advanced event handling concepts in JavaScript, including delegation and propagation. By mastering these concepts, you'll be able to write more maintainable and scalable code."
+---
+
+# Introduction
+
+Event handling in JavaScript is the process of capturing and responding to user actions such as mouse clicks, keyboard presses, and touch events.
+
+In the simplest form, you attach an event listener to an element to handle an event when it occurs. However, as applications become more complex, event handling can become more challenging to manage.
+
+Delegation and propagation are two advanced event handling techniques that can help you manage events more effectively.
+
+In this article, we'll take a closer look at these techniques and explain how they can be used in your code.
+
+# Delegation
+
+Delegation is a technique where you attach an event listener to a parent element and handle events that occur on its child elements.
+
+This is useful when you have a large number of child elements that need event handling, and you want to avoid attaching an event listener to each child element.
+
+Example:
+
+```javascript
+const parent = document.querySelector('.parent');
+
+parent.addEventListener('click', (event) => {
+  if (event.target.matches('.child')) {
+    console.log('Child clicked');
+  }
+});
+```
+
+In this example, we attach a click event listener to the parent element and check if the clicked element matches the `".child"` selector. If it does, we handle the event accordingly.
+
+> This technique is useful when you add or remove child elements dynamically, as you don't need to attach or remove event listeners to each child element.
+
+# Propagation
+
+Propagation is the process of an event bubbling up from the element where it occurred to its parent and ancestor elements.
+
+When an event occurs on an element, the event is first handled on that element, and then it propagates up the DOM tree until it reaches the root element.
+
+Example:
+
+```html
+<div class="parent">
+  <div class="child">
+    <button class="button">Click me</button>
+  </div>
+</div>
+```
+
+```javascript
+const parent = document.querySelector('.parent');
+const child = document.querySelector('.child');
+const button = document.querySelector('.button');
+
+parent.addEventListener('click', (event) => {
+  console.log('Parent clicked');
+});
+
+child.addEventListener('click', (event) => {
+  console.log('Child clicked');
+});
+
+button.addEventListener('click', (event) => {
+  console.log('Button clicked');
+});
+```
+
+In this example, we have a parent element with a child element that contains a button element. We attach a click event listener to each element and log a message to the console when the element is clicked.
+
+When we click the button element, the event is first handled on the button, then on the child, and finally on the parent. This is because the event propagates up the DOM tree until it reaches the root element.
+
+# Real World Example
+
+Let's say you have a web page with a large number of images, and you want to implement a feature that displays a message when a user clicks on an image.
+
+You could attach a click event listener to each image individually, but this would be inefficient and could cause performance issues, especially if you have a large number of images.
+
+A better approach would be to use event delegation to attach a single click event listener to a parent element that contains all of the images.
+
+When a user clicks on an image, the event bubbles up to the parent element, which can then handle the event and display the message.
+
+Here's an example:
+
+```html
+<div class="image-container">
+  <img src="image1.jpg" alt="Image 1" />
+  <img src="image2.jpg" alt="Image 2" />
+  <img src="image3.jpg" alt="Image 3" />
+  <!-- more images... -->
+</div>
+```
+
+```javascript
+const imageContainer = document.querySelector('.image-container');
+
+imageContainer.addEventListener('click', (event) => {
+  if (event.target.tagName === 'IMG') {
+    const altText = event.target.alt;
+    alert(`You clicked on ${altText}`);
+  }
+});
+```
+
+In this example, we attach a click event listener to the parent element `imageContainer`.
+
+When the user clicks on an image, the event is first handled on the image element itself, and then it propagates up the DOM tree until it reaches the imageContainer.
+
+The event listener checks if the clicked element is an `IMG` element and displays a message with the image's alt attribute.
+
+Using event delegation and event propagation in this way allows us to handle events efficiently and reduces the amount of code we need to write.
+
+It also ensures that new images added to the imageContainer in the future will automatically inherit the event handling behavior, without the need for additional event listeners to be attached to them individually.
+
+# Conclusion
+
+Delegation and propagation are advanced event handling techniques that can help you write more efficient and effective code.
+
+By delegating event handling to parent elements and leveraging the event propagation mechanism, you can write more scalable and maintainable code.
+
+Understanding these concepts is essential to mastering event handling in JavaScript, and we hope this article has given you a solid foundation to build upon.

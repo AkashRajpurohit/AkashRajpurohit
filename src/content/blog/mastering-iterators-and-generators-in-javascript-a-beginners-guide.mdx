@@ -1,0 +1,136 @@
+---
+title: "Mastering Iterators and Generators in JavaScript: A Beginner's Guide"
+date: '2023-05-12'
+tags: ['javascript']
+draft: false
+summary: "JavaScript's ability to handle data manipulation and iteration has been enhanced with the introduction of iterators and generators. These powerful features allow developers to write more concise and efficient code for handling complex data structures. In this article, we'll explore what iterators and generators are, how they work, and how to use them in your code to simplify data manipulation. Whether you're a beginner or an experienced JavaScript developer, this guide will provide you with the foundational knowledge you need to master iterators and generators in JavaScript."
+---
+
+# Introduction
+
+Generators and iterators are features introduced in ECMAScript 6 (ES6), which is also known as ES2015. These features provide a new way to iterate over collections of data and to generate values on the fly.
+
+Generators allow you to define functions that can be paused and resumed, while iterators provide a standardized way to traverse collections of data. Let's dive deeper into these concepts.
+
+# Generators
+
+> A generator function is a special type of function that can be paused and resumed at any time, allowing you to generate a sequence of values on the fly.
+
+To define a generator function, you use the `function*` syntax (the asterisk distinguishes it from a regular function).
+
+Inside the generator function, you use the `yield` keyword to pause the function and return a value to the caller.
+
+For example, let’s define a simple generator function that generates a sequence of numbers:
+
+```javascript
+function* numberGenerator() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+```
+
+In this example, when we call the `numberGenerator` function, it will return an iterator that we can use to iterate over the sequence of numbers. To do this, we use the next method of the iterator, like this:
+
+```javascript
+const iterator = numberGenerator();
+
+console.log(iterator.next().value); // 1
+console.log(iterator.next().value); // 2
+console.log(iterator.next().value); // 3
+```
+
+As you can see, each time we call the next method of the iterator, the generator function resumes execution and returns the next value in the sequence.
+
+# Iterators
+
+An iterator is an object that provides a standard way to traverse a collection of data. In JavaScript, iterators are defined by the Iterable and Iterator protocols.
+
+The Iterable protocol defines a method that returns an Iterator object, while the Iterator protocol defines a next method that returns an object with two properties: `value` and `done`.
+
+To make an object iterable, you define a method on the object that returns an iterator. This method is called `[Symbol.iterator]`, and it should return an object that conforms to the Iterator protocol.
+
+For example, let’s define a simple iterable object that generates a sequence of numbers:
+
+```javascript
+const numberIterable = {
+  *[Symbol.iterator]() {
+    yield 1;
+    yield 2;
+    yield 3;
+  },
+};
+```
+
+In this example, we define a generator function inside the `[Symbol.iterator]` method to generate the sequence of numbers. We can now use a `for...of` loop to iterate over the sequence:
+
+```javascript
+for (const number of numberIterable) {
+  console.log(number);
+}
+
+// Output: 1, 2, 3
+```
+
+# Real World Example
+
+Suppose you are building a web application that allows users to upload and manage images. You want to implement a feature that automatically resizes the images to a certain size before saving them to your server.
+
+To accomplish this, you can use generators and iterators to process the images in a stream-like fashion, allowing you to efficiently resize and save the images one by one.
+
+First, you create a generator function that retrieves the uploaded images from the client-side and yields each image as a data URI
+
+```javascript
+function* getImageDataURIs() {
+  const imageFiles = document.querySelector('#image-input').files;
+  for (const file of imageFiles) {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    yield new Promise((resolve) => {
+      reader.onload = () => {
+        resolve(reader.result);
+      };
+    });
+  }
+}
+```
+
+Next, you create an iterator function that retrieves each image data URI from the generator and resizes it using a library like `sharp` or whatever is your preferred library/API
+
+```javascript
+async function* resizeImages() {
+  const imageURIs = getImageDataURIs();
+  for await (const uri of imageURIs) {
+    const imageBuffer = Buffer.from(uri.split(',')[1], 'base64');
+    const resizedImageBuffer = await sharp(imageBuffer).resize({ width: 500 }).toBuffer();
+    yield resizedImageBuffer;
+  }
+}
+```
+
+Finally, you create a function that saves each resized image to your server
+
+```javascript
+async function saveResizedImages() {
+  const resizedImages = resizeImages();
+  for await (const imageBuffer of resizedImages) {
+    await fetch('/api/images', {
+      method: 'POST',
+      body: imageBuffer,
+      headers: {
+        'Content-Type': 'image/jpeg',
+      },
+    });
+  }
+}
+```
+
+By using a generator and an iterator, you can easily process each uploaded image in a stream-like fashion, without having to load all the images into memory at once.
+
+This can be especially useful if you are dealing with a large number of images, as it allows you to process them efficiently and without running into memory issues.
+
+# Conclusion
+
+Generators and iterators are powerful tools that provide a new way to work with collections of data in JavaScript. Generators allow you to generate a sequence of values on the fly, while iterators provide a standardized way to traverse collections of data.
+
+By using these features, you can write more efficient and scalable code in JavaScript.

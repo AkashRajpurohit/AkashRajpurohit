@@ -1,0 +1,67 @@
+---
+title: 'Streamline Your Linux Output with the Tee Command'
+date: '2023-04-09'
+tags: ['linux']
+draft: false
+summary: "Do you find yourself constantly redirecting output to multiple files or commands on Linux? The tee command is a useful tool that allows you to send output to multiple destinations simultaneously. In this article, we'll explore how to use the Linux tee command for redirecting output to multiple destinations."
+---
+
+# Introduction
+
+As a Linux user, you may frequently encounter situations where you need to redirect output to multiple destinations. For example, you may want to save a copy of your output to a file while also sending it to another command for further processing.
+
+This can be a time-consuming and error-prone task if done manually. The tee command is a simple yet powerful tool that can help you achieve this.
+
+The tee command reads input from standard input or a file and writes it to both standard output and one or more files simultaneously. This makes it a great tool for redirecting output to multiple destinations without having to manually copy and paste the data.
+
+In this article, we'll go through how to use the tee command on Linux.
+
+# Using the Linux Tee Command
+
+## Using tee for Redirecting Output
+
+The basic syntax of the tee command is as follows:
+
+```bash
+command | tee [options] [file ...]
+```
+
+In this syntax, `command` is the command whose output you want to redirect, and `file` is the name of the file or files you want to send the output to.
+
+If you omit the file name, tee will write the output to standard output.
+
+For example, the following command will list the contents of the current directory and save a copy of the output to a file named "dirlist.txt":
+
+```bash
+ls | tee dirlist.txt
+```
+
+You can also use tee to send output to multiple commands simultaneously.
+
+The following command will list the contents of the current directory and send the output to both the `grep` and `sort` commands:
+
+```bash
+ls | tee >(grep "file") >(sort)
+```
+
+In this command, the `>` symbol before each command specifies that tee should send the output to that command.
+
+## Using tee with Options
+
+The tee command also supports several options that can modify its behavior. For example, you can use the `-a` option to append the output to an existing file instead of overwriting it:
+
+```bash
+ls | tee -a dirlist.txt
+```
+
+You can also use the `-i` option to ignore the interrupt signal (SIGINT) and continue running even if you press Ctrl+C:
+
+```bash
+ls | tee -i dirlist.txt
+```
+
+# Conclusion
+
+The Linux tee command is a useful tool that can simplify the process of redirecting output to multiple destinations. Whether you need to save a copy of your output to a file, send it to another command, or both, tee can help you achieve this with ease.
+
+I hope this article has provided you with a solid understanding of how to use the tee command on Linux. Happy output redirecting!

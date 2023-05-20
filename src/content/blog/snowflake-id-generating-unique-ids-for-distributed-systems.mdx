@@ -1,0 +1,64 @@
+---
+title: 'Snowflake ID: Generating Unique IDs for Distributed Systems'
+date: '2023-05-14'
+tags: ['system design']
+draft: false
+summary: 'In modern distributed systems, generating unique IDs is crucial for data consistency and scalability. Snowflake ID is a type of unique identifier that is widely used in distributed systems for generating IDs with high precision, scalability, and availability. In this blog post, we will discuss what Snowflake ID is and how it works, and explore its use cases and benefits.'
+---
+
+# What is Snowflake ID?
+
+Snowflake ID is a 64-bit unique identifier that consists of three parts: timestamp, worker ID, and sequence number. The timestamp is a 41-bit integer that represents the number of milliseconds since a certain epoch time.
+
+The worker ID is a 10-bit integer that identifies the worker generating the ID, and the sequence number is a 12-bit integer that ensures uniqueness in case multiple IDs are generated within the same millisecond by the same worker.
+
+> Snowflake was developed by [Twitter](https://blog.twitter.com/engineering/en_us/a/2010/announcing-snowflake)
+
+The structure of a Snowflake ID can be represented in a binary format as follows:
+
+```
+0                                       41     51         64
++---------------------------------------+------+-----------+
+| timestamp (milliseconds since epoch)  |worker| sequence  |
++---------------------------------------+------+-----------+
+```
+
+# How Snowflake ID Works
+
+Snowflake ID generator is a distributed system that consists of multiple workers, each responsible for generating unique IDs.
+
+When a worker requests a new ID, it first retrieves the current timestamp, then combines it with its worker ID and a sequence number.
+
+The sequence number ensures that if multiple IDs are generated within the same millisecond by the same worker, each ID will be unique.
+
+If the worker generates more than one ID in the same millisecond, the sequence number is incremented to ensure that each ID is unique.
+
+Finally if in the same millisecond, if the sequence number also reaches its max value, the generator waits for the next millisecond and then starts generating IDs again.
+
+# Use Cases and Benefits
+
+Snowflake ID is widely used in distributed systems for generating unique IDs for various use cases, including:
+
+- Distributed databases
+- Message queues
+- Microservices
+- Big data systems
+- Social networks
+
+# The benefits of using Snowflake ID
+
+- **High precision:** The timestamp component of the ID provides high precision and accuracy for tracking events and transactions.
+- **Scalability:** The worker ID component allows for scaling the generator across multiple nodes, providing high availability and horizontal scaling.
+- **Uniqueness:** The combination of timestamp, worker ID, and sequence number ensures that each ID generated is unique.
+- **Performance:** The generator is designed to generate IDs quickly and efficiently, minimizing the overhead for generating IDs.
+
+<Callout emoji="🚀">
+  If you're looking for an easy-to-use Node.js package to generate Snowflake IDs in your distributed system, check out
+  [`@akashrajpurohit/snowflake-id`](https://github.com/AkashRajpurohit/snowflake-id) package.
+</Callout>
+
+# Conclusion
+
+In summary, Snowflake ID is a powerful tool for generating unique IDs in distributed systems. Its high precision, scalability, and uniqueness make it an ideal choice for various use cases, and its efficient design ensures optimal performance.
+
+By using Snowflake ID, developers can ensure data consistency and scalability in their distributed systems.

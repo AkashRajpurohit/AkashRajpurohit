@@ -1,0 +1,98 @@
+---
+title: 'Demystifying Closures and Lexical Scopes in JavaScript'
+date: '2023-05-04'
+tags: ['javascript']
+draft: false
+summary: 'JavaScript’s closure and lexical scope features can be confusing for many developers, especially those coming from other programming languages. However, understanding these concepts is essential to write efficient and reliable code. In this article, we will dive deep into closures and lexical scoping in JavaScript, explore their nuances, and provide practical examples to help you grasp the concepts with ease.'
+---
+
+# Introduction
+
+JavaScript is a versatile programming language used for creating web applications, browser extensions, and server-side applications. One of the most powerful features of JavaScript is its support for closures and lexical scoping.
+
+These features allow developers to create robust and efficient code by controlling the visibility and lifetime of variables and functions.
+
+In this article, we will dive deep into closures and lexical scoping in JavaScript, explore their nuances, and provide practical examples to help you grasp the concepts with ease.
+
+# What are Closures and Lexical Scopes in JavaScript?
+
+In JavaScript, a closure is a function that has access to variables in its outer (enclosing) function scope, even after the outer function has returned.
+
+> In other words, a closure "closes over" its surrounding state, preserving the values of its variables and functions.
+
+On the other hand, lexical scoping is a mechanism in which a variable's scope is determined by its position within the source code. The scope of a variable is defined by the location of its declaration in the code, and the variables and functions declared in the outer scope are accessible within the inner scope.
+
+Closures and lexical scoping work together to create a powerful mechanism for controlling the visibility and lifetime of variables and functions in JavaScript.
+
+# Understanding Closures and Lexical Scopes in Simple Terms
+
+Imagine you are planning a surprise party for your friend, and you want to send out invitations. You have a list of guests and their addresses, but you don't want to reveal the addresses to anyone else.
+
+So, you write a function that takes in the guest list and returns a new function that can be used to send out invitations to the guests.
+
+The returned function has access to the guest list, but no one else does. This is an example of a closure, where the returned function "closes over" the guest list variable and has access to it even after the outer function has returned.
+
+This way, you can send out the invitations without revealing the addresses to anyone else. The guest list is kept private and secure within the closure, and only the returned function can access it.
+
+# Code Examples
+
+Let's see a code example to demonstrate how closures work in JavaScript:
+
+```javascript
+function outer() {
+  const x = 10;
+
+  function inner() {
+    console.log(x);
+  }
+
+  return inner;
+}
+
+var closure = outer();
+closure(); // Output: 10
+```
+
+In the above code, we have defined an `outer` function that declares a `variable x` and defines an `inner` function that logs the value of x.
+
+The `outer()` function returns the `inner()` function, and we store it in a variable closure.
+
+When we call `closure()`, it outputs the value of `x`, which is `10`. Here, the `inner()` function has closed over its surrounding state, preserving the value of x even after the `outer()` function has returned.
+
+Let's check another example, Consider you want to create a counter which will increment every time you call the function.
+
+```javascript
+function makeCounter() {
+  let count = 0;
+
+  return function getCurrentCount() {
+    count = count + 1;
+    return count;
+  };
+}
+
+const getCurrentCount = makeCounter();
+
+getCurrentCount(); // 1
+
+getCurrentCount(); // 2
+getCurrentCount(); // 3
+```
+
+The `makeCounter()` function closes over the `count` variable and returns a function called `getCurrentCount()` which uses this lexical scoped variable count and adds one to it and returns the updated count.
+
+Now every time you call the `getCurrentCount()` function, it incrementally returns the count value by `remembering` what was the last value of count and adding one to it.
+
+# Real-World Example
+
+A real-world example of closures and lexical scoping in JavaScript is event listeners.
+
+When you attach an event listener to a DOM element, it creates a closure that has access to the variables and functions declared in the outer scope.
+
+This mechanism allows you to create efficient and flexible code that responds to user input in real-time.
+
+# Conclusion
+
+Closures and lexical scoping are fundamental concepts in JavaScript, and mastering them is essential for creating efficient and reliable code.
+
+By understanding the nuances of these features and practicing with code examples, you can unlock the full potential of JavaScript and take your coding skills to the next level.

@@ -1,0 +1,71 @@
+---
+title: 'Building and Publishing TypeScript NPM Packages: A Step-by-Step Guide'
+date: '2023-05-20'
+tags: ['nodejs']
+draft: false
+summary: 'Learn how to create and publish your own Npm packages using TypeScript. This comprehensive guide covers everything from setting up your project with TypeScript, using tsup for building, vitest for testing, and semantic release for versioning and publishing. Take your TypeScript projects to the next level and share your code with the world!'
+---
+
+# Introduction
+
+Creating and publishing your own Npm packages can be a rewarding experience, allowing you to share your code and contribute to the open-source community.
+
+In this tutorial, we will walk through the process of building and publishing an Npm package using TypeScript. We'll cover the essential steps from project setup to testing, building, and finally releasing the package on NPM.
+
+Throughout the tutorial, we will utilize popular tools like tsup for bundling, vitest for testing, and semantic release for automated versioning and publishing.
+
+# Prerequisites
+
+Before we dive into the tutorial, make sure you have Node.js and NPM installed on your machine. Additionally, a basic understanding of TypeScript and package management with NPM will be helpful.
+
+# Step 1: Setting Up the Project
+
+To begin, let's set up a new TypeScript project by using a template which will have all the initial boilerplate required like [ts-npm-template](https://github.com/AkashRajpurohit/ts-npm-template) as a starting point.
+
+Clone the template repository or use it as a template directly from Github to initialize your own project.
+
+# Step 2: Creating the Package
+
+Once your project is set up, it's time to create your NPM package.
+
+Start by defining the package details in the package.json file, including the package name, version, author, and other relevant information.
+
+# Step 3: Writing your library code
+
+Write your library code in TypeScript, taking advantage of its static typing and other language features.
+
+Organize your code into modules and export the necessary functions, classes, or objects to be consumed by other developers.
+
+The place to start with is the `src/index.ts` file.
+
+# Step 4: Testing with vitest
+
+Ensuring the quality of your code is crucial. Use a testing framework like [vitest](https://vitest.dev/) to write unit tests for your package.
+
+Write test cases to cover different scenarios and validate the behavior of your library functions.
+
+# Step 5: Building with tsup
+
+To make your code ready for distribution, you need to bundle it into a single file.
+
+Use [tsup](https://tsup.egoist.dev/), a zero-config bundler specifically designed for TypeScript projects.
+
+It will handle the transpilation and bundling process for you, producing a browser-ready JavaScript file.
+
+# Step 6: Versioning and Publishing with Semantic Release
+
+Semantic Release automates the release and versioning process based on the commit history of your project.
+
+The template automatically configures semantic release to automatically determine the next version number and publish the package to NPM. This ensures a consistent and reliable release workflow.
+
+This is possible by using Github Actions workflow to automate the testing and releasing the package whenever code is pushed to the `main` branch.
+
+Semantic release will automatically determine what should be the next version bump based on the code commits.
+
+Ensure you follow [Angular Commit Conventions](https://gist.github.com/brianclements/841ea7bffdb01346392c) to leverage this feature.
+
+# Conclusion
+
+In this tutorial, we explored the process of creating and publishing Npm packages with TypeScript. By following the steps outlined here, you can build high-quality libraries, harness the power of TypeScript, and contribute to the JavaScript community.
+
+Remember to test your code thoroughly, leverage build tools like tsup, and automate the release process with semantic release. Start sharing your valuable code with the world and make a lasting impact!

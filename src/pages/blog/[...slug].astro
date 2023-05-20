@@ -2,12 +2,14 @@
 import { CollectionEntry, getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-	return posts.map((post) => ({
-		params: { slug: post.slug },
-		props: post,
-	}));
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
 }
 type Props = CollectionEntry<'blog'>;
 
@@ -16,6 +18,6 @@ const { Content } = await post.render();
 ---
 
 <BlogPost {...post.data}>
-	<h1>{post.data.title}</h1>
-	<Content />
+  <!-- TODO: add components map here once everything is imported -->
+  <Content components={{}} />
 </BlogPost>

@@ -1,0 +1,72 @@
+---
+title: Open Source alternatives you must try - Part 1
+date: '2022-05-16'
+tags: ['oss']
+draft: false
+summary: List of open source alternatives for Analytics and No-code tools
+---
+
+# Introduction
+
+Today we will see some of the awesome open-source software which is almost _(and sometimes even better)_ than their counter services (which we usually use).
+
+So without wasting much time, let's get to the list.
+
+# Analytics
+
+When I migrated my blog from Gatsby to Next.js, the first thing I did was research how can I cut out Google Analytics for analytics and use some other privacy-focused solutions. There were many solutions that I found so let's check out some of them
+
+## Ackee
+
+[Ackee](https://ackee.electerious.com/) is the first tool I came across and loved the idea of a self-hosting service for Analytics. The project is built using Node.js with GraphQL for API layer with MongoDB as datastore, it is developed by [@electerious](https://github.com/electerious).
+
+You can follow their easy-to-follow [docs guide](https://docs.ackee.electerious.com/#/docs/Get%20started) to get up your self-hosted instance.
+
+I tried this for quite some time (around a year) on my [old site](https://v2.akashrajpurohit.com) to try out the platform along with Google Analytics and it worked flawlessly.
+
+## Umami.is
+
+[Umami](https://umami.is) is something I wanted to before trying Ackee because it is actively maintained by [@mikecao](https://github.com/mikecao) with more frequent features and bug fixes, but it allows data store with SQL types only (MySQL and PostgreSQL) and since I had some extra credits on MongoDB Atlas, I first tried with Ackee.
+
+Currently, this site (and my other side projects) uses Umami for Analytics and I love it. There are lots of amazing features and scope for improving the project and I am happy to see the OP still actively maintaining it, you can find the source code available [here](https://github.com/mikecao/umami).
+
+## Plausible
+
+[Plausible](https://plausible.io/) was another option that was heavily liked by many people when I was researching, their tagline goes as _Simple and privacy-friendly Google Analytics alternative_, which was something people have been trying to find for a long time, a way to switch away from Google Analytics.
+
+Something different about Plausible is that they do have an [open-source solution](https://plausible.io/open-source-website-analytics) which anyone can self-host, but they also provide a hosted solution for people who just want to switch away from Google Analytics but don't want to burden themselves with hosting and maintaining their instance.
+
+## Summary
+
+To summarize and TL;DR for people who didn't read the whole thing about the analytics section
+
+| Software  | Self-Host | Hosted Service | DataStore         | Ease to Self-Host |
+| --------- | --------- | -------------- | ----------------- | ----------------- |
+| Ackee     | ✅        | ❌             | MongoDB           | ⭐⭐⭐⭐⭐        |
+| Umami     | ✅        | ❌             | PostgreSQL, MySQL | ⭐⭐⭐⭐⭐        |
+| Plausible | ✅        | ✅             | PostgreSQL        | ⭐⭐⭐            |
+
+# No-Code tools
+
+These are some no-code tools that are awesome and used by many people and actively maintained projects
+
+## NocoDB
+
+[NocoDB](https://www.nocodb.com/) is an open-source [Airtable](https://www.airtable.com/) alternative. I love their tagline _NocoDB is an open-source #NoCode platform that turns any **database into a smart spreadsheet**_
+
+It used SQL databases (MySQL, PostgreSQL or MSSQL), you can check out their docs section to learn about [installation guides](https://docs.nocodb.com/getting-started/installation), they support installation via 1-Click solutions with Heroku as well as installation via Docker (so basically any VPC you want like AWS, GCP, Digital Ocean etc)
+
+## n8n
+
+[n8n](https://n8n.io/) is a workflow automation tool. It has more than **200 apps** that can be used to automate your workflow.
+
+n8n comes with both [self-hosted](https://docs.n8n.io/hosting/installation/) solution as well as their cloud solution similar to Plausible as seen above.
+
+Currently, n8n supports SQL databases so it supports PostgreSQL, MySQL and SQLite. However, since they use [TypeORM](https://typeorm.io/) internally so going forward they might also support more scalable SQL databases like [CockroachDB](https://www.cockroachlabs.com/)
+
+# TL;DR
+
+Today we saw some amazing open-source alternatives of products/services we can look into which are more privacy-focused and easy to use.
+There are a lot more options available and I plan to continue this series with more parts in the future, if you find any OSS that you love then let me know in the comments below.
+
+> P.S: The comment section itself is another open-source alternative that I use but we will read more about that in the [next blog](/blog/open-source-alternatives-you-must-try-part-2) 😉

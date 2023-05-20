@@ -1,0 +1,111 @@
+---
+title: 'Essential Linux Commands for Server Maintenance at Home'
+date: '2023-03-04'
+tags: ['linux']
+draft: true
+summary: "As a Linux system administrator, it's essential to have a good grasp of the command-line interface. In this blog, we'll explore some of the most common and useful commands used for maintaining a Linux server at home. From handling files to networking, these commands will help you streamline your work and keep your server running smoothly."
+---
+
+# Introduction
+
+Linux is a powerful operating system that offers a wide range of tools and utilities for system administrators. Whether you're managing a server at work or at home, it's important to have a good understanding of the most commonly used commands.
+
+In this blog, we'll be exploring some of the essential Linux commands that are useful for maintaining a server at home.
+
+<Callout title="Pro Tip!">
+	I won't be able to list down all the available options for each command in this article, but don't worry, if you want to explore all the options for each of these commands then use the `man <command_name>` and you will find all the necessary information there.
+</Callout>
+
+# Handling Files
+
+- **ls** - List the contents of a directory.
+
+  Usage: `ls [options] [file]`
+
+- **cp** - Copy files and directories
+
+  Usage: `cp [options] source_file destination_file`
+
+- **mv** - Move or rename files and directories
+
+  Usage: `mv [options] source_file destination_file`
+
+- **rm** - Remove files and directories
+
+  Usage: `rm [options] file`
+
+- **mkdir** - Create a new directory
+
+  Usage: `mkdir [options] directory_name`
+
+- **rmdir** - Remove an empty directory
+
+  Usage: `rmdir [options] directory_name`
+
+# Networking
+
+- **ping** - Check network connectivity to a host
+
+  Usage: `ping [options] hostname`
+
+- **traceroute** - Display the route taken to reach a network host
+
+  Usage: `traceroute [options] hostname`
+
+- **netstat** - Show network connections, routing tables, and interface statistics
+
+  Usage: `netstat [options]`
+
+- **ifconfig** - Configure network interfaces
+
+  Usage: `ifconfig [options] interface_name`
+
+# System Information
+
+- **ps** - Display information about active processes
+
+  Usage: `ps [options]`
+
+- **top** - Display system resource usage and active processes
+
+  Usage: `top [options]`
+
+- **free** - Display memory usage information
+
+  Usage: `free [options]`
+
+- **df** - Show disk space usage information
+
+  Usage: `df [options]`
+
+- **uptime** - Display system uptime
+
+  Usage: `uptime [options]`
+
+# System Maintenance
+
+- **apt-get** - Install, upgrade, and remove software packages
+
+  Usage: `apt-get [options] package_name`
+
+- **systemctl** - Control the system's services and processes
+
+  Usage: `systemctl [options] service_name`
+
+- **journalctl** - View system logs
+
+  Usage: `journalctl [options]`
+
+- **crontab** - Schedule tasks to run at specific times
+
+  Usage: `crontab [options]`
+
+- **ssh** - Securely connect to another server
+
+  Usage: `ssh [options] user@host`
+
+# Conclusion:
+
+These are just some of the most commonly used Linux commands that a system administrator may use on a daily basis.
+
+By mastering these commands, you'll be able to navigate your server with ease and keep it running smoothly

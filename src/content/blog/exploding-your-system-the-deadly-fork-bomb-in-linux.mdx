@@ -1,0 +1,67 @@
+---
+title: 'Exploding your system: The deadly Fork Bomb in Linux'
+date: '2023-04-09'
+tags: ['linux', 'security']
+draft: true
+summary: "Are you familiar with the term 'fork bomb' in Linux? If not, it is a potentially dangerous command that can severely impact system performance and stability. In this article, we will explore what a fork bomb is, how it works, and how to protect your Linux system from its harmful effects."
+---
+
+# Introduction
+
+A fork bomb is a type of [denial-of-service](/blog/denial-of-service-attacks-what-they-are-and-how-to-protect-against-them/) attack that can crash or freeze a Linux system by overwhelming its resources with a large number of processes.
+
+Essentially, a fork bomb involves repeatedly executing a command that creates new processes until the system becomes unresponsive or crashes.
+
+The fork bomb attack is often executed by malicious users or hackers, but it can also happen accidentally if an inexperienced user runs a poorly written script or command.
+
+In this article, we'll take a closer look at the fork bomb attack and provide some tips for protecting your Linux system from this type of attack.
+
+# What is a fork bomb in Linux?
+
+A fork bomb is a type of denial-of-service attack that exploits the Linux operating system's process management system. In Linux, each process creates a child process using the `fork()` system call. The child process inherits the parent process's resources, including CPU time, memory, and open files.
+
+A fork bomb works by repeatedly calling the `fork()` system call to create new child processes. As the number of child processes increases, the system's available resources are quickly exhausted, leading to slow performance or system crash.
+
+# How to create a fork bomb in Linux?
+
+Creating a fork bomb is simple. You just need to execute a command that repeatedly calls the `fork()` system call to create new child processes.
+
+Here's an example of a common fork bomb command:
+
+```bash
+:(){ :|:& };:
+```
+
+<Callout type="warning" title="Warning!">
+  Do not run this command directly on your terminal!
+</Callout>
+
+This command defines a shell function called `:` (colon) that calls itself twice, creating two child processes.
+
+The `|` character pipes the output of the first call to the second call, creating an infinite loop of child processes.
+
+The `&` character sends each child process to the background, allowing the parent process to continue creating new child processes.
+
+The `;` character terminates the command.
+
+# How to protect your Linux system from fork bombs?
+
+There are several ways to protect your Linux system from fork bomb attacks. One method is to limit the number of processes a user can create by setting resource limits using the `ulimit` command.
+
+For example, you can limit the number of processes a user can create by running the following command:
+
+```bash
+ulimit -u 100
+```
+
+This sets the maximum number of user processes to 100. You can adjust this value depending on your system's resources and requirements.
+
+Another way to protect your system is to use a process monitoring tool like [`htop`](/blog/mastering-process-monitoring-and-management-with-htop-command-in-linux/) or `top` to identify and terminate any fork bomb processes.
+
+These tools show a list of all running processes and their resource usage, allowing you to quickly identify any processes that are consuming too many resources.
+
+# Conclusion
+
+A fork bomb is a potentially dangerous command that can crash or freeze a Linux system by overwhelming its resources with a large number of processes. It is important to understand what a fork bomb is and how it works to protect your Linux system from this type of attack.
+
+By following the tips mentioned in this article, you can limit the number of processes a user can create and use process monitoring tools to identify and terminate any fork bomb processes that may be running on your system.

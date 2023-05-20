@@ -1,0 +1,73 @@
+---
+title: 'Navigating Conflict: A Guide to Conflict Resolution in Distributed Systems'
+date: '2023-03-27'
+tags: ['system design']
+draft: true
+summary: "In distributed systems, conflicts can arise due to various reasons such as network latency, node failures, or concurrent updates to the same data. Conflict resolution is the process of resolving these conflicts and ensuring data consistency. In this article, we'll discuss the different types of conflicts that can occur in distributed systems and the strategies for resolving them."
+---
+
+# Introduction
+
+Distributed systems are complex systems consisting of multiple interconnected components that work together to achieve a common goal.
+
+In such systems, conflicts can arise due to various reasons such as network latency, node failures, or concurrent updates to the same data.
+
+These conflicts can lead to data inconsistency and affect the overall system's reliability and performance. Conflict resolution is the process of resolving these conflicts and ensuring data consistency.
+
+In this article, we'll discuss the different types of conflicts that can occur in distributed systems and the strategies for resolving them. We'll also cover some real-world examples of conflict resolution in distributed systems.
+
+# Types of Conflicts
+
+In distributed systems, conflicts can arise due to various reasons such as:
+
+## Network latency
+
+Network latency can lead to inconsistencies in data due to delayed communication between nodes.
+
+For example, if two nodes update the same data concurrently, the update that arrives later might overwrite the earlier update.
+
+## Node failures
+
+Node failures can also cause conflicts in distributed systems. If a node fails before completing an operation, the system needs to decide how to handle the unfinished operation.
+
+## Concurrent updates
+
+Concurrent updates occur when multiple nodes update the same data at the same time. In such cases, the system needs to determine which update should be accepted.
+
+# Conflict Resolution Strategies
+
+There are various strategies for conflict resolution in distributed systems. Let's discuss some of them.
+
+## Last-write-wins (LWW)
+
+In this strategy, the update that arrives last is considered the winner.
+
+This strategy is simple and easy to implement, but it can lead to data loss if the later update is based on stale data.
+
+## Version vectors
+
+Version vectors are used to track the version of data on different nodes. Each node has a vector that represents the version of data it has seen.
+
+When a node updates the data, it increments its version vector. If two nodes have different version vectors, the system can compare them to determine which update is more recent.
+
+## Conflict-free replicated data types (CRDTs)
+
+CRDTs are data types that are designed to be conflict-free. They can be updated concurrently without causing conflicts. Examples of CRDTs include counters, sets, and maps.
+
+# Real-world examples
+
+Conflict resolution is a crucial aspect of distributed systems, and it's used in many real-world applications. Here are some examples:
+
+- **Git:** Git is a popular distributed version control system that uses conflict resolution to merge changes made by multiple users.
+
+- **Cassandra:** Cassandra is a distributed database that uses a version vector approach for conflict resolution.
+
+- **Riak:** Riak is a distributed key-value store that uses CRDTs for conflict resolution.
+
+# Conclusion
+
+In distributed systems, conflicts can occur due to various reasons, and conflict resolution is crucial to ensure data consistency.
+
+There are different strategies for conflict resolution, such as LWW, version vectors, and CRDTs.
+
+By understanding these strategies, developers can design systems that can handle conflicts efficiently and ensure data consistency.

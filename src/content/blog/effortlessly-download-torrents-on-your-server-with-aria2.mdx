@@ -1,0 +1,58 @@
+---
+title: Effortlessly Download Torrents on Your Server with Aria2
+date: '2023-02-12'
+tags: ['linux']
+draft: false
+summary: Don't wait hours for torrents to download on your server. Aria2 is a lightweight, open-source download manager that can handle torrents with ease. In this guide, we'll show you how to install and set up Aria2 on your server, download torrent files, and manage downloads.
+---
+
+# Introduction
+
+[Aria2](https://aria2.github.io/) is a popular, open-source, and lightweight command-line download manager that supports downloading torrents, as well as HTTP, FTP, and other protocols. With Aria2, you can easily download torrents on your server, saving time and increasing efficiency.
+
+# Using Aria2
+
+## Install Aria2
+
+To install Aria2 on your server, use the package manager for your distribution. For example, on a Debian-based system, you can use the following command:
+
+```bash
+sudo apt-get update
+sudo apt-get install aria2
+```
+
+## Download Torrent Files
+
+To download a torrent file using Aria2, you can use the following command:
+
+```bash
+aria2c [torrent_file_url]
+```
+
+## Manage Downloads
+
+You can use Aria2 to manage your downloads, including pausing, resuming, and checking the status of downloads.
+
+For example, to pause a download, you can use the following command:
+
+```bash
+aria2c --pause=[download_gid]
+```
+
+## Adjust Settings
+
+You can also adjust various settings in Aria2, including the number of connections, the download directory, and more.
+
+For example, to set the maximum number of connections to 50, you can use the following command:
+
+```bash
+aria2c --max-connection-per-server=50 [torrent_file_url]
+```
+
+# Conclusion
+
+Aria2 is a powerful, lightweight, and open-source download manager that makes it easy to download torrents on your server and not just torrents but any files in that sense, but its capability to download and manage torrent files makes it stand out from others.
+
+By following the steps outlined in this guide, you can install and set up Aria2, download torrent files, and manage downloads.
+
+Start downloading torrents quickly and efficiently on your server with Aria2 today!

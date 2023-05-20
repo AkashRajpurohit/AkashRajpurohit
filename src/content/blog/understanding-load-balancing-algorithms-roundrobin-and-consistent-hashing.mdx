@@ -1,0 +1,62 @@
+---
+title: 'Understanding Load Balancing Algorithms: Round-robin and Consistent Hashing'
+date: '2023-04-08'
+tags: ['system design']
+draft: true
+summary: 'Load balancing is a critical component of system design, especially when it comes to distributing traffic to multiple servers. There are several load balancing algorithms, including round-robin and consistent hashing. But what are these algorithms? How do they work? And which one should you use? In this article, we will explore these questions and provide you with a comprehensive guide on load balancing algorithms.'
+---
+
+# Introduction
+
+In today's world, where most of the applications are web-based, handling a massive amount of traffic has become an essential aspect of system design.
+
+With the increasing number of users, the server load becomes uneven, causing some servers to become overburdened while others remain underutilized.
+
+This imbalance can lead to downtime, slow page loads, and other performance issues. That's where load balancing comes in.
+
+Load balancing is the process of distributing network traffic across multiple servers to ensure that no single server is overloaded. It plays a critical role in ensuring that applications are available, responsive, and scalable.
+
+One of the key components of load balancing is the algorithm used to distribute traffic. Two of the most commonly used algorithms are round-robin and consistent hashing.
+
+# Round-robin load balancing
+
+The round-robin algorithm distributes incoming traffic evenly among the available servers in a circular fashion.
+
+It assigns each server an equal number of requests before looping back to the first server in the list. The cycle repeats until all the requests are served.
+
+> The round-robin algorithm works well in scenarios where all servers have the same capacity and can handle an equal amount of traffic. However, it is not suitable for scenarios where server capacities vary significantly.
+
+Consider this example, suppose we have three servers, S1, S2, and S3, and we have ten incoming requests. The round-robin algorithm would distribute the requests as follows:
+
+```
+Request 1: S1
+Request 2: S2
+Request 3: S3
+Request 4: S1
+Request 5: S2
+Request 6: S3
+Request 7: S1
+Request 8: S2
+Request 9: S3
+Request 10: S1
+```
+
+# Consistent Hashing
+
+Consistent hashing is a more advanced load balancing algorithm that distributes traffic based on a hashing function. The hashing function maps each request to a particular server, ensuring that each request is sent to the same server every time.
+
+This ensures that requests are distributed evenly across all servers while maintaining the same server for each request.
+
+In consistent hashing, the hash function maps each server to a point on a circle, called a hash ring. Requests are then mapped to a point on the same circle, and the server closest to that point receives the request.
+
+If a server fails or is removed from the network, the requests that were mapped to that server are redistributed to the remaining servers.
+
+Consistent hashing is more complex than round-robin, but it offers more flexibility and scalability. It can handle more significant loads and can adapt to changes in the server pool.
+
+# Conclusion
+
+Load balancing is a critical component of system design, and choosing the right algorithm can make a significant difference in the performance of your application.
+
+Round-robin and consistent hashing are two commonly used algorithms, each with its advantages and disadvantages.
+
+By understanding how they work, you can make an informed decision about which algorithm to use based on your application's requirements.

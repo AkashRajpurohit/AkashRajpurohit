@@ -1,0 +1,147 @@
+---
+title: Learn JavaScript Array .map() method under 5 minutes with code examples
+tags: [javascript]
+date: 2020-01-05
+summary: Comprehensive yet very easy explanation about JavaScript array map method along with code examples
+draft: false
+---
+
+# Introduction
+
+If you are just starting with Javascript, you might or might not have heard about these terms like `.map()`, `.filter()` or `.reduce()`. In this blog, we will learn about the `.map()` function.
+
+# .Map()
+
+Javascript `.map()` is one of a powerful Array method that is used to perform an operation on each item in an array.
+
+MDN defines map() as
+
+> The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+Let's try to understand what exactly it means with a code sample.
+
+Consider an example where you have an array of objects with fields like `_id, name & age`
+
+```javascript
+const persons = [
+  {
+    _id: '001',
+    name: 'John Doe',
+    age: 25,
+  },
+  {
+    _id: '002',
+    name: 'Kevin Smith',
+    age: 22,
+  },
+  {
+    _id: '003',
+    name: 'Jane Doe',
+    age: 17,
+  },
+  {
+    _id: '004',
+    name: 'John Wick',
+    age: 20,
+  },
+];
+```
+
+Now you want to get only the `name` of all the objects from the `persons` array into a new array called `personNames`.
+
+How would you do it?
+
+There are multiple ways that you can use to achieve this. You can create an empty array called `personNames` and use `.forEach()`, `for()` loop, or `for (... of)` loop.
+
+Let's see how you would do it with a `.forEach()` loop.
+
+```javascript
+const personNames = [];
+
+persons.forEach(function (person) {
+  // Access the name property of individual person with dot(.) operator
+  personNames.push(person.name);
+});
+
+// personNames would be an array like
+
+// personNames = ['John Doe', 'Kevin Smith', 'Jane Doe', 'John Wick']
+```
+
+Notice, you had to create an empty `personNames` array beforehand in case of `.forEach()`. The same thing would be true in case of simple `for()` and `for(... of)` loop as well.
+
+Let's see how you would do this using `.map()`.
+
+```javascript
+const personNames = persons.map(function (person) {
+  return person.name;
+});
+
+// personNames would be an array like
+
+// personNames = ['John Doe', 'Kevin Smith', 'Jane Doe', 'John Wick']
+```
+
+We can even use shorthand `arrow function` (requires ES6 support, Babel or TypeScript) to make it a one-liner
+
+```javascript
+const personNames = persons.map((person) => person.name);
+```
+
+## How does `.map()` works exactly?
+
+It takes 2 arguments, a callback function and an optional context (will be considered as `this` in the callback) which I did not use in the previous example and is optional to use.
+
+The callback function runs for each value in the array and returns each new value in the resulting array.
+
+The callback function takes three parameters viz. `currentValue`, `index` and `originalArray` i.e the array upon which the `.map()` function is called.
+
+In the example, we used the first parameter which was the currentValue.
+
+**Note: Keep in mind that the resulting array will always be the same length as the original array. Also `.map()` will always return a new array i.e it doesn't mutate the original array.**
+
+This should be enough to help you understand how the `.map()` function works and what it does.
+
+<Image src={`/static/images/yay.gif`} width={1296} height={872} />
+
+Take a look at another intermediate example if you want more clarity.
+
+## Another Example
+
+Take a look at another example for when can you use `.map()` method to understand how it makes your life better as well as your code easier to read, understand and maintain.
+
+```javascript
+const countries = ['india', 'america', 'australia' 'germany'];
+
+// Create an array where the first alphabet of each country is capitalized.
+const capitalizedCountryNames = countries.map(country => country[0].toUpperCase() + country.slice(1));
+
+// Output of capitalizedCountryNames
+// capitalizedCountryNames = ['India', 'America', 'Australia' 'Germany']
+```
+
+Here we are using the logic of taking the first character from the string which is at 0th index and converting it to upper case using `.toUpperCase()` string in-built function and then concatenating it with the rest of the characters using `.slice()` method. All this is done in a single line using `.map()` function and arrow function.
+
+You can clean up the code ever better by breaking the inline callback function into separate function and pass that to the `.map()` function.
+
+```javascript
+const countries = ['india', 'america', 'australia' 'germany'];
+
+// capitalizeFirstCharacter function which takes a name as a parameter and returns a string with first letter capitalized name
+const capitalizeFirstCharacter = (name) => name[0].toUpperCase() + name.slice(1);
+
+// Simply pass the capitalizeFirstCharacter as the callback function
+const capitalizedCountryNames = countries.map(capitalizeFirstCharacter);
+
+// Output of capitalizedCountryNames
+// capitalizedCountryNames = ['India', 'America', 'Australia' 'Germany']
+
+```
+
+Now the code is much cleaner and you can reuse the `capitalizeFirstCharacter()` function somewhere else as well without rewriting the logic.
+
+So I hope you have understood the Array `.map()` function in Javascript.
+
+# Important Links
+
+- [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)

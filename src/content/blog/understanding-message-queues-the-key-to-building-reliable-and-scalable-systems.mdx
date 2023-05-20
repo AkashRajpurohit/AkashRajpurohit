@@ -1,0 +1,53 @@
+---
+title: 'Understanding Message Queues: The Key to Building Reliable and Scalable Systems'
+date: '2023-04-02'
+tags: ['system design']
+draft: false
+summary: 'Message queues have become a fundamental part of modern software systems, allowing developers to build distributed, reliable, and scalable applications. In this article, we will explore the concept of message queues, their architecture, and their use cases in both technical and layman terms. Whether you are building a simple application or a complex system, understanding message queues is essential to designing a robust and efficient solution.'
+---
+
+# Introduction
+
+In distributed systems, services must communicate with each other for the system to function properly. In a synchronous approach, a service sends a request to another service and waits for a response before continuing. However, in a modern system with various services, waiting for a response from another service can be costly.
+
+In this scenario, a message queue comes in handy as a communication model that enables asynchronous processing and decoupling of services.
+
+# What is a Message Queue?
+
+A message queue is a software component that handles the storage and transfer of messages between services. It can store messages in a queue until the recipient service is ready to process them.
+
+When the recipient service becomes available, it can consume the message and perform the necessary actions.
+
+# How does it work?
+
+A message queue consists of three main components: **the producer**, **the queue**, and **the consumer**.
+
+The producer is responsible for creating and sending the message to the queue. The queue stores the message until the consumer is ready to process it. The consumer receives and processes the message when it is ready.
+
+When a message is produced, it is sent to the message queue. The message queue stores the message until it is consumed by the intended consumer. The message can be stored for any period, depending on the requirements of the application.
+
+The consumer requests messages from the message queue, processes them, and acknowledges the message. After the message is acknowledged, it is removed from the queue. If the consumer cannot process the message, it can be returned to the queue for processing later.
+
+# Types of message queues:
+
+There are two types of message queues: `Point-to-Point (PTP)` and `Publish/Subscribe (Pub/Sub)`.
+
+## Point-to-Point (PTP)
+
+In this type of message queue, messages are sent to a specific queue and can only be consumed by a single consumer. Each message is processed only once.
+
+## Publish/Subscribe (Pub/Sub)
+
+In this type of message queue, messages are broadcasted to multiple consumers who are interested in receiving the messages. Each message can be processed multiple times, and the subscribers can receive messages at any time.
+
+# Real World Example
+
+One of the most common real-world applications of a message queue is online shopping websites. These websites handle a large number of transactions every day. A message queue is used to manage the orders and the communication between the different components of the system.
+
+Whenever a user places an order, the message queue stores the order and sends a message to the appropriate services to process the order. Once the order is processed, the message queue sends a message to update the order status.
+
+# Conclusion
+
+In conclusion, a message queue is an essential component in modern system design. It enables asynchronous processing and decoupling of services, leading to better system performance and scalability.
+
+It is an ideal solution for managing messages in distributed systems and is widely used in various real-world applications, including e-commerce, banking, and social media platforms.

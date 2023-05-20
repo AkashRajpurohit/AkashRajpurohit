@@ -1,0 +1,55 @@
+---
+title: 'Finding Your Way: Understanding Service Discovery and Service Mesh'
+date: '2023-03-26'
+tags: ['system design']
+draft: true
+summary: "In the world of microservices, services come and go frequently, making it challenging to keep track of them. Service discovery and service mesh are two essential components that help manage microservices efficiently. In this article, we'll explore what service discovery and service mesh are, how they work, and why they are crucial for microservices architecture."
+---
+
+# Introduction
+
+Microservices are an architectural style that allows the development of applications as a suite of small, independent, and loosely coupled services.
+
+These services communicate with each other over a network, and each service performs a specific task.
+
+With the rise of microservices, the need for efficient service management has become increasingly important. That's where service discovery and service mesh come in.
+
+# What is Service Discovery?
+
+Service discovery is the process of locating and identifying available services in a distributed system.
+
+It enables services to find and communicate with each other without knowing the network topology, IP addresses, or port numbers of other services.
+
+Service discovery also helps to automate load balancing, failover, and other critical functions.
+
+# What is Service Mesh?
+
+Service mesh is a dedicated infrastructure layer for managing service-to-service communication within a microservices architecture.
+
+It provides features such as traffic management, service discovery, load balancing, and security, among others.
+
+A service mesh is typically implemented as a set of proxies deployed alongside each microservice, forming a "mesh" of interconnected proxies that handle service-to-service communication.
+
+# How Service Discovery and Service Mesh Work Together?
+
+Service mesh and service discovery complement each other. Service discovery helps to locate services, and the service mesh provides a communication infrastructure to manage service-to-service communication.
+
+Service mesh relies on service discovery to locate services, while service discovery relies on the service mesh to manage the communication between services.
+
+# Examples
+
+One popular implementation of service mesh is [Istio](https://istio.io/), an open-source service mesh platform that provides features such as traffic management, security, and observability.
+
+Istio uses Envoy, a high-performance proxy, to manage service-to-service communication.
+
+Another example of service discovery is [Consul](https://www.consul.io/), an open-source tool that provides a distributed key-value store and a service registry.
+
+Consul's service registry helps to locate services, while its distributed key-value store stores configuration data for services.
+
+# Conclusion
+
+Service discovery and service mesh are essential components of microservices architecture.
+
+They enable services to communicate with each other efficiently, provide load balancing, failover, and other critical functions. While service discovery helps to locate services, the service mesh provides an infrastructure for managing service-to-service communication.
+
+By understanding these concepts, architects and developers can design and build more robust, scalable, and fault-tolerant microservices applications.

@@ -1,0 +1,142 @@
+---
+title: Learn JavaScript Array .reduce() method with code examples
+tags: [javascript]
+date: 2020-01-11
+summary: Learn about Javascript array reduce method also chaining it with map and filter
+draft: false
+---
+
+# Introduction
+
+So far we have seen both `.map()` and `.filter()` method. Today we will learn what is `.reduce()` method and at the end even check out an example where we will use all these three methods together. So do check out the previous blog on [map](/blog/learn-map-method-in-javascript-with-code-examples) and [filter](/blog/learn-filter-method-in-javascript-with-code-examples) if you haven't yet.
+
+# .Reduce()
+
+Reduce method is used to reduce and array i.e through some user-defined logic, reduce the array to a single element
+
+MDN defines `.reduce()` as
+
+> The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value.
+
+We will consider the same example, what we are seeing so far but will add another field to each object which would be `weightInKgs`
+
+```javascript
+const persons = [
+  {
+    _id: '001',
+    name: 'John Doe',
+    age: 25,
+    weightInKgs: 62,
+  },
+  {
+    _id: '002',
+    name: 'Kevin Smith',
+    age: 22,
+    weightInKgs: 55,
+  },
+  {
+    _id: '003',
+    name: 'Jane Doe',
+    age: 17,
+    weightInKgs: 50,
+  },
+  {
+    _id: '004',
+    name: 'John Wick',
+    age: 20,
+    weightInKgs: 52,
+  },
+];
+```
+
+Now consider this, your task is to find the cumulative weight of all the persons present in the `persons` array.
+
+So how would you solve this?
+
+One approach can be that we will have a `totalWeight` variable and then we iterate over the array using any loop, add all the weights to the `totalWeight` and return that value.
+
+By using reduce we can do just that in a much simpler way.
+
+Here's how it will look
+
+```javascript
+const totalWeight = persons.reduce(function (accumulator, person) {
+  return accumulator + person.weightInKgs;
+}, 0);
+
+// Output of totalWeight = 219
+```
+
+So how does it works?
+Well just like `.map()` and `.filter()`, `.reduce()` also takes a callback function. This callback function can take 4 different parameters
+
+- Accumulator
+- Current value
+- Index
+- Original array
+
+I'm sure you already understand what the later three means so I'll explain to you what is this accumulator.
+
+The Accumulator is used to store the value which gets returned by the callback function from the previous iteration.
+
+<Image src={`/static/images/confused.gif`} width={1296} height={872} />
+
+## Confused?
+
+Let's check the example again. At line 3: `return accumulator + person.weightInKgs` I'm returning the addition of whatever is in the accumulator with the weight of the person in the current iteration.
+
+So at each iteration accumulator gets updated with the total weights of the person from all previous iterations.
+
+Now you might be thinking...Well, then what is the value of accumulator at the start of the first iteration. Well, the second parameter of the reduce function (not the callback but the actual reduce function) is the `initial value` of the accumulator which if you go up to the example you will see that I had passed `0` as the initial value. So our accumulator starts with `0` initially, and on each iteration, we update the value of accumulator with the current person's weight.
+
+I know this might all sound gibberish sometimes, but try to read it again by keeping the example in mind and with practice, you will definitely understand it.
+
+**P.S: Use the comment thread if you have any doubts or you are not able to completely understand it**
+
+So this is how the `.reduce()` function works in JavaScript.
+
+# Chaining .Map() .Filter() and .Reduce()
+
+Since we have learned how to use all these functions, now's the perfect time to unleash the power of all of those methods together.
+
+For simplicity, we will consider the same `persons` array example.
+
+<b>
+  If you want to try out by yourself (which I insist), then just read the task below and try to code it by yourself
+  before checking out the solution
+</b>
+
+So let's define the task.
+
+> Given a `persons` array, you have to return the total age of all the persons, given that no person has age {'<='} 20.
+
+Try using all the three functions (Not necessarily needed but why not!)
+
+One of the solutions can be
+
+```javascript
+function totalAge(persons) {
+  return persons
+    .map((person) => person.age)
+    .filter((age) => age > 20)
+    .reduce((acc, age) => (acc = acc + age), 0);
+}
+```
+
+1. First, we used the map method to get a new array of all the ages
+2. We next filtered out all the ages which are strictly less than 20 (that's why {'>'} 20 and not {'>='} 20)
+3. Then we got the sum of all those ages and returned the value.
+
+If you could solve it by yourself then great, you have completely understood how to use all the three functions.
+
+<Image src={`/static/images/the-office-yes.gif`} width={1296} height={872} />
+
+If you got stuck somewhere or were not able to figure out anything at all. It's fine too. You can always go back, revisit the explanations and keep practicing
+
+<Image src={`/static/images/practice.jpg`} width={1296} height={800} />
+
+See you in the next blog 👋
+
+# Important Links
+
+- [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)

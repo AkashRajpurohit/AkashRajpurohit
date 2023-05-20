@@ -1,0 +1,50 @@
+---
+title: "Mastering Debugging in VSCode: A Beginner's Guide"
+date: '2023-02-19'
+tags: ['engineering']
+draft: true
+summary: Debugging is an essential part of a software developer's workflow, helping to identify and resolve issues in the code. VSCode, one of the most popular code editors in the development community, provides a robust and user-friendly debugging experience. In this article, we'll take a deep dive into how to set up and use the VSCode debugger to debug Node.js applications.
+---
+
+# Introduction
+
+Debugging is the process of identifying and resolving issues in a software application. It is a crucial skill for any software developer, and with the right tools, it can be made significantly more accessible.
+
+VSCode, a widely used code editor, provides a powerful and feature-rich debugging environment. By leveraging the debugging capabilities of VSCode, developers can quickly identify and resolve issues, speeding up the development process.
+
+# Setting up the Debugger
+
+To set up the debugger in VSCode, we need to create a configuration file called launch.json. The launch.json file defines the debugging configurations for our application.
+
+Here's an example launch.json file for a Node.js application:
+
+```json:launch.json
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug Node.js",
+			"type": "node",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"program": "${workspaceFolder}/index.js"
+		}
+	]
+}
+```
+
+This `launch.json` file defines a single configuration named Debug Node.js. The configuration type is `node`, and the `request` property is set to launch, indicating that we want to start a new debugging session. The `cwd` property specifies the current working directory, and the `program` property specifies the entry point of the application.
+
+# Debugging in VSCode
+
+Once the `launch.json` file is set up, we can start a debugging session by pressing `F5` or by clicking on the `Run -> Start` Debugging menu option.
+
+When we start a debugging session, VSCode will launch the application and break at the first line of code. We can then step through the code, add breakpoints, and inspect variables to identify issues in the application.
+
+> For more in-depth explanation, you should definitely check out the [docs for VSCode](https://code.visualstudio.com/docs/editor/debugging) for debugging.
+
+# Conclusion
+
+Debugging is an essential skill for software developers, and with the right tools, it can be made significantly easier. In this article, we learned how to set up and use the VSCode debugger to debug Node.js applications.
+
+By leveraging the power of the VSCode debugger, developers can quickly identify and resolve issues, making the development process faster and more efficient.

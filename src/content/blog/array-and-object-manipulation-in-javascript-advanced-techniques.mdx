@@ -1,0 +1,108 @@
+---
+title: 'Array and Object Manipulation in JavaScript: Advanced Techniques'
+date: '2023-05-13'
+tags: ['javascript']
+draft: false
+summary: "Arrays and objects are fundamental data structures in JavaScript. They are used extensively in modern web development to store and manipulate data. In this blog post, we will explore advanced techniques for manipulating arrays and objects in JavaScript. We will cover topics such as flattening arrays, merging objects, filtering and mapping arrays, and much more. By the end of this post, you will have a deeper understanding of JavaScript's array and object manipulation capabilities."
+---
+
+# Introduction
+
+Arrays and objects are powerful tools in JavaScript, but their built-in methods can only take you so far. To become a true JavaScript master, you need to know how to manipulate arrays and objects using advanced techniques. This can help you write more efficient code and tackle complex data manipulation tasks.
+
+In this blog post, we will explore some of the most useful and powerful techniques for array and object manipulation in JavaScript.
+
+# Advanced Techniques
+
+## Flattening Arrays
+
+Sometimes you may need to flatten a deeply nested array into a single level array. You can achieve this using the `flat()` method.
+
+However, this method may not work on older browsers. An alternative way is to use recursion.
+
+Here's an example of how you can use recursion to flatten an array:
+
+```javascript
+function flattenArray(arr) {
+  return arr.reduce(function (flatArray, toFlatten) {
+    return flatArray.concat(Array.isArray(toFlatten) ? flattenArray(toFlatten) : toFlatten);
+  }, []);
+}
+```
+
+## Merging Nested Objects
+
+Merging objects in JavaScript can be challenging, especially when dealing with nested objects.
+
+You can merge objects using the `Object.assign()` method. However, this method only works for shallow objects. To merge nested objects, you can use a library like lodash or write your own recursive function.
+
+Here's an example of how you can merge two nested objects:
+
+```javascript
+function mergeObjects(obj1, obj2) {
+  const merged = { ...obj1 };
+  for (let key in obj2) {
+    if (typeof obj2[key] === 'object' && obj2[key] !== null) {
+      merged[key] = mergeObjects(obj1[key], obj2[key]);
+    } else {
+      merged[key] = obj2[key];
+    }
+  }
+  return merged;
+}
+```
+
+## Filtering and Mapping Arrays
+
+Filtering and mapping arrays are common operations in JavaScript. The `filter()` method allows you to filter an array based on a condition, while the `map()` method transforms each element of an array into a new element.
+
+However, you can combine these two methods into a single `reduce()` method. Here's an example of how you can use the `reduce()` method to filter and map an array:
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+const oddSquares = numbers.reduce(function (result, number) {
+  if (number % 2 === 1) {
+    result.push(number * number);
+  }
+  return result;
+}, []);
+```
+
+## Object filtering
+
+You can filter an object based on a condition using the `Object.keys()` and `Array.prototype.filter()` methods to filter keys in an object.
+
+For example:
+
+```javascript
+const obj = { a: 1, b: 2, c: 3 };
+const filteredObj = Object.keys(obj)
+  .filter((key) => obj[key] > 1)
+  .reduce((acc, key) => {
+    acc[key] = obj[key];
+    return acc;
+  }, {});
+console.log(filteredObj); // { b: 2, c: 3 }
+```
+
+## Object mapping
+
+You can create a new object based on an existing object by mapping its keys and values using the `Object.entries()` and `Array.prototype.reduce()` methods.
+
+For example:
+
+```javascript
+const obj = { a: 1, b: 2, c: 3 };
+const mappedObj = Object.entries(obj).reduce((acc, [key, value]) => {
+  acc[key.toUpperCase()] = value * 2;
+  return acc;
+}, {});
+console.log(mappedObj); // { A: 2, B: 4, C: 6 }
+```
+
+# Conclusion
+
+JavaScript provides an extensive set of built-in methods for array and object manipulation. However, to become a true master, you need to know advanced techniques that can help you write more efficient and effective code.
+
+In this post, we covered some of the most useful and powerful techniques for manipulating arrays and objects in JavaScript. These techniques can help you tackle even the most complex data manipulation tasks.

@@ -1,0 +1,55 @@
+---
+title: 'How to Use the Linux Shred Command for Secure File Deletion'
+date: '2023-04-28'
+tags: ['linux']
+draft: false
+summary: "Deleting a file from your computer's hard drive doesn't actually erase the data, leaving it open to recovery by unauthorized individuals. The Linux `shred` command provides a simple and effective solution to securely delete files from your computer's hard drive. In this article, we'll explore how to use the `shred` command in Linux and provide practical examples to help you get started."
+---
+
+# Introduction
+
+Deleting files from your computer's hard drive doesn't actually erase the data. Instead, the file's storage space is marked as available for new data, but the original data remains on the drive until it's overwritten.
+
+This means that the data can potentially be recovered by unauthorized individuals, posing a security risk. The `shred` command in Linux provides a solution to securely delete files from your computer's hard drive.
+
+In this blog post, we'll explore how to use the `shred` command and provide practical examples to help you get started.
+
+# Using the shred Command
+
+## For Secure File Deletion
+
+The `shred` command in Linux is used to securely delete files from your computer's hard drive. When you use the `shred` command, the file is overwritten several times with random data before it's finally deleted, making it much more difficult for the data to be recovered.
+
+To use the `shred` command, you need to run the following command:
+
+```bash
+shred -u <file_name>
+```
+
+In the above command, `file_name` is the name of the file you want to shred. The `-u` option tells the `shred` command to delete the file after it's been shredded.
+
+You can also use the `-n` option to specify the number of times you want the file to be overwritten. For example, to overwrite the file 10 times, you can use the following command:
+
+```bash
+shred -n 10 -u <file_name>
+```
+
+## For Securely Deleting Directories
+
+The `shred` command can also be used to securely delete directories and their contents. To securely delete a directory and its contents, you need to run the following command:
+
+```bash
+shred -u -z <directory_name>
+```
+
+In the above command, `directory_name` is the name of the directory you want to shred. The `-u` option tells the `shred` command to delete the directory after it's been shredded.
+
+The `-z` option tells the `shred` command to add a final overwrite with zeros to hide the shredding.
+
+You can also use the `-n` option to specify the number of times you want the directory and its contents to be overwritten.
+
+# Conclusion
+
+The `shred` command in Linux provides a simple and effective solution to securely delete files and directories from your computer's hard drive. Using the `shred` command, you can overwrite the data with random data multiple times, making it much more difficult for the data to be recovered.
+
+In this blog post, we've explored how to use the `shred` command in Linux and provided practical examples to help you get started. By using the `shred` command, you can help protect your sensitive data and keep it from falling into the wrong hands.

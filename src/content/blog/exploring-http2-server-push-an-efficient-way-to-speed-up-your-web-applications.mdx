@@ -1,0 +1,55 @@
+---
+title: 'Exploring HTTP/2 Server Push: An Efficient Way to Speed Up Your Web Applications'
+date: '2023-04-04'
+tags: ['system design']
+draft: false
+summary: 'HTTP/2 Server Push is an innovative feature of the HTTP/2 protocol that allows web developers to proactively push resources to clients before they even request them. This feature helps in reducing page loading time and enhancing the overall performance of web applications.'
+---
+
+# Introduction
+
+HTTP/2 is the second major version of the HTTP protocol used by the World Wide Web. It is the successor of the HTTP/1.x protocol, which has been in use for over a decade.
+
+HTTP/2 aims to address the shortcomings of HTTP/1.x by introducing several new features, including HTTP/2 server push.
+
+In this article, we will delve into what HTTP/2 is, its benefits, and how HTTP/2 server push works. We will also look into some real-world examples of how it can be used to improve web application performance.
+
+# What is HTTP/2?
+
+HTTP/2 is a binary protocol that is designed to improve the performance of web applications by reducing the latency and improving the page loading speed.
+
+HTTP/2 achieves this by using a technique called **multiplexing**, which allows multiple requests to be sent and received at the same time over a single connection.
+
+This eliminates the need for multiple connections between the client and the server, thereby reducing the latency and improving the overall performance of web applications.
+
+# What is HTTP/2 Server Push?
+
+HTTP/2 server push is a feature that allows the server to push resources to the client proactively, without waiting for the client to request them. This helps in reducing the latency and improving the page loading time of web applications.
+
+With HTTP/2 server push, the server can push resources such as HTML, CSS, JavaScript files, images, and videos to the client before the client even requests them.
+
+# How HTTP/2 Server Push Works?
+
+HTTP/2 server push works by using a `PUSH_PROMISE` frame, which is sent by the server to the client to indicate that a particular resource will be pushed.
+
+The client can then choose to accept or reject the pushed resource. If the client accepts the pushed resource, the server can send the resource using a `DATA` frame.
+
+# Benefits of HTTP/2 Server Push
+
+- **Improved Page Load Time:** HTTP/2 server push helps in reducing the page loading time of web applications by proactively pushing the resources to the client before they even request them.
+
+- **Reduced Latency:** With HTTP/2 server push, the server can push the resources to the client without waiting for the client to request them. This helps in reducing the latency and improving the performance of web applications.
+
+- **Enhanced User Experience:** With faster page loading time and reduced latency, web applications can provide a better user experience to their users.
+
+# Examples of HTTP/2 Server Push
+
+- **Pushing Critical Resources:** Web developers can use HTTP/2 server push to push critical resources such as CSS and JavaScript files to the client before they even request them. This helps in reducing the page loading time and improving the performance of web applications.
+
+- **Pushing Large Resources:** HTTP/2 server push can be used to push large resources such as images and videos to the client before they even request them. This helps in reducing the page loading time and improving the performance of web applications.
+
+# Conclusion
+
+HTTP/2 server push is an innovative feature of the HTTP/2 protocol that can significantly improve the performance of web applications. With HTTP/2 server push, web developers can proactively push resources to clients before they even request them, thereby reducing the page loading time and improving the user experience.
+
+By leveraging HTTP/2 server push, web developers can take their web applications to the next level and provide a faster and more responsive user experience.

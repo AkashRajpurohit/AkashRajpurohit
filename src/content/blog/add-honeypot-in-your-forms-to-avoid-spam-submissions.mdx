@@ -1,0 +1,111 @@
+---
+title: Add a Honeypot in your Forms to avoid Spam Submissions
+tags: [security]
+date: '2022-08-21'
+summary: Learn how to quickly add a spam filter to reduce spam submissions in any of your forms on your website.
+draft: false
+---
+
+# Introduction
+
+Let's face it, no one likes to see spam messages in their dashboard for various forms added on their website. Be it a contact form, newsletter signup or fake user sign-ups.
+
+Personally, I don't even want to capture and save such data let alone inspect and delete them from my dashboard. So how can we **MAKE THEM STOP!!!**
+
+<Image
+  alt={`Spam submissions I received in a month`}
+  src={`/static/images/spam-submissions-contact-form.png`}
+  width={2364}
+  height={1084}
+/>
+
+# reCAPTCHA
+
+Sure, reCAPTCHA is one of the great solutions to block bots to perform any certain action (in our case, form submission). But who doesn't like to be frustrated about getting the captcha wrong again and again!
+
+<Image src={`/static/images/captcha-meme.jpg`} width={640} height={697} />
+
+Simply put: we all hate them.
+
+> Fun Fact: Humanity wastes about 500 years per day on CAPTCHAs ([source](https://blog.cloudflare.com/introducing-cryptographic-attestation-of-personhood/)).
+
+So how can I not ruin the experience for my users and still protect myself from the spam submissions?
+
+# Honeypot
+
+[Honeypot](<https://en.wikipedia.org/wiki/Honeypot_(computing)>) is a mechanism to virtually trap attackers (which for us are these bots). The basic idea here is that we want to be able to distinguish between a legit user submitting the form vs a bot that is running across the sites and submitting any available forms with bot messages.
+
+How do we distinguish between them?
+
+We will use the concept of Honeypot here where we will add a bot field into our forms, which would not be visible to normal legit users but bots would see it and fill those form fields.
+
+Let's check how we would do it in form using code examples in react
+
+```jsx:components/ContactForm.tsx {11}
+// ...
+
+const sendMessage = () => {
+	// we will fill this later
+}
+
+const ContactForm = () => {
+	return (
+		<form onSubmit={sendMessage}>
+			// This would be a bot field with type="hidden"
+			<input name="bot-field" placeholder="do not fill this" type="hidden" />
+			<input type='text' name='name' />
+			<input type='text' name='message' />
+			<button type="submit">Submit</button>
+		</form>
+	)
+}
+
+```
+
+We are leveraging the input type [hidden](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden) to add a field that won't be visible to a user but most certainly but the bot.
+
+> Note: This is not the most full proof solution to avoid bot submissions since there are always workarounds to bypass this but I have found this method to be quite helpful for me to reduce noise in my submissions and it's the easiest solution to add for the initial phase.
+
+The next step is to complete the `sendMessage` function in which we will distinguish between bot user and actual user based on the value of the `bot-field` input element.
+
+```jsx:components/ContactForm.tsx {12-17}
+// ...
+
+const sendMessage = (event) => {
+	event.preventDefault();
+
+  const formData = new FormData(event.target);
+
+	// check if bot-field have any value
+	// if yes then we will mark this submission as bot submission
+	// and discard it
+	// we are looking at the "name" property on the input fields
+	if (formData.get('bot-field')) {
+		// report as bot submission for tracking
+
+		// early return and finish this task
+		return;
+	}
+
+	// ... do your form processing here
+}
+
+const ContactForm = () => {
+	return (
+		<form onSubmit={sendMessage}>
+			// This would be a bot field with type="hidden"
+			<input name="bot-field" placeholder="do not fill this" type="hidden" />
+			<input type='text' name='name' />
+			<input type='text' name='message' />
+			<button type="submit">Submit</button>
+		</form>
+	)
+}
+
+```
+
+That's it, this should be a good starting point to reduce the bot submissions to your forms.
+
+Also if you happen to know any other methods to improve this experience then feel free to share it in the comment section below and help everyone else.
+
+See you in next one 👋🏽

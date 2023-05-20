@@ -1,0 +1,96 @@
+---
+title: 'Navigating Your Database Efficiently: Cursor Based Pagination vs Offset Based'
+date: '2023-03-01'
+tags: ['performance', 'database']
+draft: false
+summary: Take control of your database performance with cursor based pagination. Learn why it's a better option compared to offset based pagination.
+---
+
+# Introduction
+
+When dealing with large datasets, it's important to ensure that the way we retrieve data from the database is efficient. Pagination is a common technique used to break down the large datasets into smaller, manageable chunks.
+
+There are two commonly used methods for pagination: `offset based pagination` and `cursor based pagination`.
+
+In this article, we'll be focusing on cursor based pagination and why it's a better option compared to offset based pagination.
+
+# Cursor Based Pagination
+
+Cursor based pagination works by using a unique cursor, or marker, to determine the starting point of each page of data. The cursor points to the current location in the dataset and the next page of data is retrieved based on that marker.
+
+This method of pagination is more efficient compared to offset based pagination as it reduces the **amount of data that needs to be processed and retrieved from the database**.
+
+# Benefits of Cursor Based Pagination
+
+## Consistent results
+
+With cursor based pagination, the data retrieved from the database remains consistent, even if new data is added or removed. This is because the cursor acts as a stable marker, pointing to the current location in the dataset.
+
+## Performance
+
+Cursor based pagination is more efficient compared to offset based pagination, as it reduces the amount of data that needs to be processed and retrieved from the database. This results in faster query execution times and improved overall performance.
+
+## Scalability
+
+Cursor based pagination is more scalable compared to offset based pagination. As the dataset grows, the cursor based pagination method can continue to retrieve data efficiently, while offset based pagination becomes less efficient as the dataset grows larger.
+
+# Dry Run
+
+To demonstrate the difference between cursor based pagination and offset based pagination, let's consider an example using the EXPLAIN query in PostgreSQL.
+
+Let's consider a table named "users" with the following data:
+
+```bash
+ id | username
+----+----------
+  1 | user1
+  2 | user2
+  3 | user3
+  4 | user4
+  5 | user5
+```
+
+If we use offset based pagination to retrieve the second and third rows, the query would look like this:
+
+```sql
+EXPLAIN SELECT * FROM users LIMIT 2 OFFSET 1;
+```
+
+The EXPLAIN output for this query would look something like this:
+
+```bash
+Limit  (cost=0.00..3.02 rows=2 width=8)
+  ->  Seq Scan on users  (cost=0.00..5.00 rows=5 width=8)
+        Filter: (limit_clause)
+        Rows Removed by Filter: 3
+```
+
+As you can see, this query is doing a full scan of the entire table, even though only two rows are being returned. This can be very slow if the table is large, as all of the data must be read before the limit and offset are applied.
+
+Now, let's see what happens when we use cursor based pagination to retrieve the second and third rows:
+
+```sql
+EXPLAIN SELECT * FROM users ORDER BY id LIMIT 2 FETCH NEXT 2 ROWS ONLY;
+```
+
+The EXPLAIN output for this query would look something like this:
+
+```bash
+Limit  (cost=0.42..0.44 rows=2 width=8)
+  ->  Index Scan using users_pkey on users  (cost=0.42..3.50 rows=5 width=8)
+        Order By: id
+        Cursor: forward
+        Rows Removed by Filter: 3
+```
+
+As you can see, this query is only scanning the two rows that are being returned, and it is doing so in a more efficient manner by using an index scan. This is because cursor based pagination is able to start from the current position in the result set and move forward, instead of starting from the beginning of the result set and filtering out all of the unnecessary data.
+
+# Conclusion
+
+In conclusion, cursor-based pagination is a much more efficient and scalable method of pagination compared to offset-based pagination. By using a unique cursor to keep track of where to start the next page of results, you can avoid many of the performance and scalability issues associated with offset-based pagination.
+
+Cursor-based pagination also allows you to paginate in any direction and handle changes to the underlying data more gracefully.
+
+While offset-based pagination is simple to implement, it can lead to significant performance and scalability issues as the size of your database grows.
+
+By using cursor-based pagination, you can ensure that your application remains performant and scalable as it grows, and avoid the issues associated with offset-based pagination.

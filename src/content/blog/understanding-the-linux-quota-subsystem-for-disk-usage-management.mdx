@@ -1,0 +1,51 @@
+---
+title: 'Understanding the Linux Quota Subsystem for Disk Usage Management'
+date: '2023-03-18'
+tags: ['linux']
+draft: true
+summary: "Are you running out of disk space on your Linux system? Do you need to limit the amount of disk space available to users or groups? The Linux quota subsystem can help you manage disk usage by setting limits and sending warnings when those limits are exceeded. In this article, we'll provide an introduction to the Linux quota subsystem and how it can be used for disk usage management."
+---
+
+# Introduction
+
+Managing disk space on a Linux system can be challenging, especially in a multi-user environment. Without proper controls, users can easily fill up disk space, making it difficult for other users to work on the system.
+
+The Linux quota subsystem provides a way to limit the amount of disk space available to users or groups and send warnings when those limits are exceeded.
+
+The Linux quota subsystem consists of two main components: quota management tools and kernel support for quotas. The kernel support for quotas provides the underlying functionality, while the quota management tools provide the user interface to manage quotas.
+
+# Explaining the Linux Quota Subsystem
+
+The Linux quota subsystem uses two types of quotas: user quotas and group quotas. User quotas limit the amount of disk space used by a particular user, while group quotas limit the amount of disk space used by a group of users.
+
+Quotas are set on a per-filesystem basis, meaning that you can set different quotas for different filesystems.
+
+By default, quotas are disabled on most Linux distributions, so you need to enable them before you can use them.
+
+To enable quotas, you need to add the `usrquota` and/or `grpquota` options to the filesystems you want to monitor.
+
+For example, to enable quotas on the `/home` filesystem, you would add the following line to the `/etc/fstab` file:
+
+```bash:/etc/fstab
+/dev/sda1 /home ext4 defaults,usrquota,grpquota 0 1
+```
+
+After enabling quotas, you can use the quota management tools to set limits and monitor usage.
+
+The main tools for managing quotas are `quotaon`, `edquota`, and `repquota`.
+
+The `quotaon` command enables quotas on a filesystem, while `edquota` is used to set quotas for individual users or groups. `repquota` displays a summary of disk usage and quota information for a filesystem.
+
+Here's an example of how to set a disk quota of 1GB for the user "akash" on the "/home" filesystem:
+
+```bash
+sudo edquota -u akash /home
+```
+
+This will open the default text editor and allow you to set the soft and hard limits for "akash".
+
+# Conclusion
+
+Managing disk usage on a Linux system is crucial for ensuring that the system operates efficiently. The Linux quota subsystem provides an easy way to limit the amount of disk space available to users and groups and sends warnings when those limits are exceeded.
+
+By understanding how to use the Linux quota subsystem, you can take control of disk usage on your Linux system and prevent it from becoming cluttered with unnecessary files.

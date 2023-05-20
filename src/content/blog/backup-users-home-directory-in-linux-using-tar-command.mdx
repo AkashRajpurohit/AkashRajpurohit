@@ -1,0 +1,110 @@
+---
+title: Backup Users Home Directory In Linux Using Tar Command
+tags: [bash, linux]
+date: 2021-03-01
+summary: Learn how to easily and systematically backup your home directory in linux.
+draft: false
+---
+
+# Introduction
+
+We often need to do things that may put us at risk of losing data in Linux, nevertheless, it's always better to take systematic backups from time to time.
+
+Today we will be learning about how to use the powerful tool called [`tar`](/blog/mastering-the-linux-tar-command-a-guide-to-archive-creation-and-extraction/) in Linux to help in the backup process.
+
+# Tar Command
+
+Let's take a quick look at the tar command and the flags that we will be using with it.
+
+```bash
+tar -zcvpf /[Backup_Location]/[Backup_Filename] /[User_Home_Directory_Location]
+```
+
+Now let's understand these flags.
+
+- z : Compress the backup file with ‘gzip’ to make it a small size.
+- c : Create a new backup archive.
+- v : verbosely list files that are processed.
+- p : Preserves the permissions of the files put in the archive for later restoration.
+- f : use archive file or device ARCHIVE.
+
+# Usage
+
+Let us now backup the home directory, in my case, the user name is `akash`.
+
+```bash
+tar -zcvpf /backup/akash-backup-$(date +%d-%m-%Y).tar.gz /home/akash
+```
+
+This will produce the output (for the /backup directory) as
+
+```bash
+ls -lh /backup
+
+total 15G
+-rw-r--r--. 1 root root 15G Mar  1 12:09 akash-backup-01-03-2021.tar.gz
+```
+
+If you wish to exclude some directory to be archived, you can use `--exclude` flag, something like this
+
+```bash
+tar --exclude='/home/akash/Documents/test-folder' -zcvpf /backup/akash-backup-$(date +%d-%m-%Y).tar.gz /home/akash
+```
+
+This will archive everything excluding the `test-folder` inside Documents.
+
+And that's it, this will help you create a backup and store it with the date inside `/backup` directory.
+
+# Bonus
+
+Doing this once is fine, but what if there was a way to regularly backup your content and automatically wipe out the old backups, wouldn't that be great. So let's just do that.
+
+We will use a shell script and cron job to automate this task for us.
+
+# Backup Script
+
+First, let's move into a better directory where we will store our script.
+
+```bash
+nano /opt/scripts/home-dir-backup.sh
+```
+
+Now copy the mentioned script, it is pretty straightforward. We use `tar` to compress and create a backup file under the `$BACKUP_DIR` and use [`find`](/blog/mastering-the-art-of-file-and-directory-search-with-linuxs-find-command/) command to delete old backups.
+
+```bash
+#!/bin/bash
+DATE=$(date +%d-%m-%Y)
+BACKUP_DIR="/backup"
+
+# To backup akash's home directory
+tar -zcvpf $BACKUP_DIR/akash-$DATE.tar.gz /home/akash
+
+# To delete files older than 15 days
+find $BACKUP_DIR/* -mtime +15 -exec rm {} \;
+```
+
+Set executable permissions for this file.
+
+```bash
+chmod +x home-dir-backup.sh
+```
+
+Now your script is ready to be used.
+
+# Cron Job
+
+The final step is to set up the cron job to run this script automatically. We will enter into crontab using
+
+```bash
+crontab -e
+```
+
+Inside it paste the following lines at the bottom.
+
+```bash
+0 12 * * 5 /opt/scripts/home-dir-backup.sh
+```
+
+This will run this script every Friday at 12:00. To learn more about how to configure these values, I would highly recommend using [crontab.guru](https://crontab.guru/#0_12_*_*_5).
+
+Hope you found this helpful, see you in the next one.

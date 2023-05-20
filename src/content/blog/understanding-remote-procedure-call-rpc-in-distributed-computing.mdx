@@ -1,0 +1,43 @@
+---
+title: 'Understanding Remote Procedure Call (RPC) in Distributed Computing'
+date: '2023-03-31'
+tags: ['system design']
+draft: false
+summary: Remote Procedure Call (RPC) is a popular mechanism used in distributed computing to allow programs running on different machines to communicate with each other. This article will explain what RPC is, how it works, and provide real-world examples of its applications.
+---
+
+# Introduction
+
+Remote Procedure Call (RPC) is a widely used communication protocol in distributed computing systems. The protocol enables two applications running on different machines to communicate with each other.
+
+In other words, RPC allows a client application to invoke a procedure on a remote server as if it were a local procedure.
+
+The protocol provides a simple way to build distributed systems, where services or functions are distributed across multiple machines, but appear as a single system to the user.
+
+# What is RPC?
+
+In technical terms, RPC is a protocol that enables the client application to call a procedure on a remote server, which executes the requested procedure and sends back the result to the client.
+
+The client application and the server communicate through a network, using a communication protocol such as [TCP](/blog/demystifying-tcp-a-comprehensive-guide-to-transmission-control-protocol/) or [UDP](/blog/what-is-udp-and-when-to-use-it-a-comprehensive-guide/).
+
+The process of calling a remote procedure is similar to calling a local procedure. The client passes the input parameters to the server, and the server returns the result.
+
+To make the process of remote procedure call seamless, a middleware layer is used. The middleware layer provides an abstraction layer between the client and server, making it appear as if the client and server are communicating directly.
+
+The middleware layer is responsible for handling the low-level details of the communication, such as establishing and tearing down the connection, serialization and deserialization of data, and error handling.
+
+# Real World Example
+
+One of the most common examples of RPC is the use of Remote Method Invocation (RMI) in Java. RMI is a Java-specific implementation of RPC that allows objects in one Java Virtual Machine (JVM) to invoke methods on objects in another JVM.
+
+The RMI system provides a mechanism for distributed objects to communicate with each other, making it possible to build distributed applications in Java.
+
+Another example of RPC is the use of [gRPC](https://grpc.io/), an open-source remote procedure call framework developed by Google.
+
+gRPC provides a high-performance, scalable, and language-independent RPC framework that can be used to build distributed systems in a wide range of programming languages.
+
+# Conclusion:
+
+Remote Procedure Call (RPC) is a powerful tool for building distributed systems that can help make the interaction between different systems seamless. RPC provides an abstraction layer that enables developers to build distributed systems that appear as a single system to the end user.
+
+It allows programs running on different machines to communicate with each other, making it possible to build distributed applications that can scale to handle large numbers of users.

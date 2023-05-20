@@ -1,0 +1,293 @@
+---
+title: How to add fuzzy search to your React app using Fuse.js
+date: '2022-08-20'
+tags: ['react']
+draft: false
+summary: Learn how to create a reusable useSearch hook in react using Typescript to add searching functionality in your app
+---
+
+# Introduction
+
+Often while building applications we want to add some sort of searching feature to help our users to find the thing they are looking for. In this article, we will learn how to build one in react using [Fuse.js](https://fusejs.io) and make it type-safe with Typescript.
+
+> If you are just instead in the code part then skip right [here](#usesearch-hook)
+
+# Dead simple searching method
+
+Before we go ahead, I want to make it clear that in this article we would be using an external library to help us with the search but if you want the simplest approach to have a searching-like feature then you can just go ahead and use [includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) method on the array to have straight forward search.
+
+Of course, it has its limitations, for starters, it does exact string search without fuzzy search and it's not text case insensitive by default but it's definitely the simplest solution to have and I wanted to point it out before we go ahead.
+
+# Why Fuse.js?
+
+> Fuse.js is a powerful, lightweight **fuzzy-search** library, with **zero dependencies**.
+
+Two main reasons I went ahead and incorporated Fuse.js search for my [blog page](/blogs/) as well is that it allows me to do fuzzy-search and that it has zero dependencies and the overall [bundle size](https://bundlephobia.com/package/fuse.js@6.6.2) is quite small.
+
+So what does fuzzy search means? Well, fuzzy searching (more formally known as _approximate string matching_) is the technique of finding strings that are approximately equal to a given pattern.
+
+You can read more in detail about fuzzy search on [Wikipedia](https://en.wikipedia.org/wiki/Approximate_string_matching)
+
+Fuse.js uses the concept of **relevance score** to rank the results. This score is determined by three factors:
+
+- Fuzziness score
+- Key weight
+- Field-length norm
+
+You can read more about these concepts [here](https://fusejs.io/concepts/scoring-theory.html#scoring-theory)
+
+So go ahead and install Fuse.js library in your project with package manager of your choice. I'll be using yarn so here's the command for that.
+
+```bash
+yarn add fuse.js
+```
+
+# useSearch hook
+
+Now we know which library we are going to use for searching, let's build a reusable react hook that will help us build this functionality.
+
+Let's create a file called `useSearch.ts` and lay out the input props and the output for this hook
+
+```javascript:hooks/useSearch.ts
+import { useState } from 'react'
+
+interface IUseSearchProps {
+  dataSet: any[]
+  keys: string[]
+}
+
+export default function useSearch(
+	{ dataSet, keys }: IUseSearchProps
+) {
+	const [searchValue, setSearchValue] = useState('')
+	const results = [] // we will calculate this soon
+
+	return {
+		results,
+		searchValue,
+		setSearchValue
+	}
+}
+```
+
+We are taking the `dataSet` as the prop which is the list of data in which we want to perform the search, `keys` as another prop which will consist of the keys on which we want Fuse.js to perform the search.
+
+Next, let's check how we can import the library and instantiate it with our dataSet
+
+```javascript:hooks/useSearch.ts
+import { useMemo } from 'react'
+import Fuse from 'fuse.js'
+// ...
+
+export default function useSearch(
+	{ dataSet, keys }: IUseSearchProps
+) {
+	// ...
+
+	const fuse = useMemo(() => {
+    const options = {
+      includeScore: true,
+      keys,
+    }
+
+    return new Fuse(dataSet, options)
+  }, [dataSet, keys])
+
+	// ...
+}
+
+```
+
+We are importing the Fuse.js library using [es6 import](/blog/how-to-use-es6-import-syntax-in-nodejs/) and instantiating it with the dataSet and the options. For options, we are adding the keys which we imported as props and setting `includeScore` to true. We would use this score to determine which results we want to include in the search output. Read more about all the options supported by Fuse.js [here](https://fusejs.io/api/options.html).
+
+As an additional tip, we are using `useMemo` hook here so that we do not create the fuse instance again if the dataSet and the keys are the same.
+
+Now let's use this fuse instance to calculate the results for us based on the searchValue.
+
+```javascript:hooks/useSearch.ts
+import { useState, useMemo } from 'react'
+import Fuse from 'fuse.js'
+
+// ...
+
+const SCORE_THRESHOLD = 0.4
+
+export default function useSearch(
+	{ dataSet, keys }: IUseSearchProps
+) {
+	const [searchValue, setSearchValue] = useState('')
+
+	// ...
+
+	const results = useMemo(() => {
+    if (!searchValue) return dataSet
+
+    const searchResults = fuse.search(searchValue)
+
+    return searchResults
+      .filter((fuseResult) => fuseResult.score < SCORE_THRESHOLD)
+      .map((fuseResult) => fuseResult.item)
+  }, [fuse, searchValue, dataSet])
+
+	// ...
+}
+```
+
+For results, we are again using the `useMemo` hook to recalculate the results whenever the searchValue changes (and we are adding fuse and dataSet as they are used in this hook and hence are dependencies for it).
+
+In this useMemo hook we will first check if we have anything in searchValue or not, if not then we want to simply return the dataSet (or whatever logic you have for showing initial values from dataSet).
+
+But if we have some searchValue then we will use the `fuse.search` function with this searchValue. This gives us back the results with the information about the `score` and the actual `item` in the dataSet.
+
+Now based on the score value we will filter out the results which do not match our threshold.
+
+> In Fuse.js a score closer to 0 means it's a perfect match and a score closer to 1 means it's far away from the search value.
+
+Once we have filtered out the results, we would map over and return the `item` which is the individual item data in the dataSet.
+
+So if we wire it up all together then the file should look like this
+
+```javascript:hooks/useSearch.ts
+import { useState, useMemo } from 'react'
+import Fuse from 'fuse.js'
+
+interface IUseSearchProps {
+  dataSet: any[]
+  keys: string[]
+}
+
+const SCORE_THRESHOLD = 0.4
+
+export default function useSearch({ dataSet, keys }: IUseSearchProps) {
+  const [searchValue, setSearchValue] = useState('')
+
+  const fuse = useMemo(() => {
+    const options = {
+      includeScore: true,
+      keys,
+    }
+
+    return new Fuse(dataSet, options)
+  }, [dataSet, keys])
+
+  const results = useMemo(() => {
+    if (!searchValue) return dataSet
+
+    const searchResults = fuse.search(searchValue)
+
+    return searchResults
+      .filter((fuseResult) => fuseResult.score < SCORE_THRESHOLD)
+      .map((fuseResult) => fuseResult.item)
+  }, [fuse, searchValue, dataSet])
+
+  return {
+    searchValue,
+    setSearchValue,
+    results,
+  }
+}
+
+```
+
+# Usage
+
+The usage is very easy now, in whichever component we want to add search feature we can import the hook and use it as mentioned below
+
+```javascript:components/PostList.tsx
+import useSearch from 'hooks/useSearch'
+// ...
+
+const PostList = (posts) => {
+	const { results, searchValue, setSearchValue } = useSearch({
+    dataSet: posts,
+    keys: ['title', 'summary', 'tags'],
+  })
+
+	// Search bar here
+
+	// Render the results accordingly
+}
+
+export default PostList;
+```
+
+# Type-Safe
+
+Our hook is functional and ready to use, just one thing, the hook does not have information about what is the type of the dataSet and hence cannot infer what would be the return type of the hook as well.
+
+We'll fix this by using Typescript [Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html) to help us with just that.
+
+The type-safe version of this would look like this
+
+```javascript:hooks/useSearch.ts {4,11}
+import { useState, useMemo } from 'react'
+import Fuse from 'fuse.js'
+
+interface IUseSearchProps<T> {
+  dataSet: T[]
+  keys: string[]
+}
+
+const SCORE_THRESHOLD = 0.4
+
+export default function useSearch<T>({ dataSet, keys }: IUseSearchProps<T>) {
+  const [searchValue, setSearchValue] = useState('')
+
+  const fuse = useMemo(() => {
+    const options = {
+      includeScore: true,
+      keys,
+    }
+
+    return new Fuse(dataSet, options)
+  }, [dataSet, keys])
+
+  const results = useMemo(() => {
+    if (!searchValue) return dataSet
+
+    const searchResults = fuse.search(searchValue)
+
+    return searchResults
+      .filter((fuseResult) => fuseResult.score < SCORE_THRESHOLD)
+      .map((fuseResult) => fuseResult.item)
+  }, [fuse, searchValue, dataSet])
+
+  return {
+    searchValue,
+    setSearchValue,
+    results,
+  }
+}
+
+```
+
+Notice how we are using the `T` to typecast the dataSet value in our hook. Now our hook is type-safe and our usage accordingly will change like this
+
+```javascript:components/PostList.tsx {12}
+import useSearch from 'hooks/useSearch'
+// ...
+
+interface Post {
+	title: string
+	summary: string
+	tags: string[]
+	// ... other fields
+}
+
+const PostList = (posts) => {
+	const { results, searchValue, setSearchValue } = useSearch<Post>({
+    dataSet: posts,
+    keys: ['title', 'summary', 'tags'],
+  })
+
+	// Search bar here
+
+	// Render the results accordingly
+}
+
+export default PostList;
+```
+
+With this the value of our results is type-safe and typescript won't be mad anymore.
+
+Hope you found this helpful. See you in another one 👋🏽

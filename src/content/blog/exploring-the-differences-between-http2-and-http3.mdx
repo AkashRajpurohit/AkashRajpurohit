@@ -1,0 +1,41 @@
+---
+title: 'Exploring the Differences Between HTTP/2 and HTTP/3'
+date: '2023-04-04'
+tags: ['system design']
+draft: false
+summary: "As the internet continues to evolve, so does the protocol that powers it - HTTP. HTTP/2 and HTTP/3 are two of the latest versions of HTTP, both designed to improve web performance and security. In this article, we'll explore the differences between HTTP/2 and HTTP/3 and how they impact the modern web."
+---
+
+# Introduction
+
+HTTP, or Hypertext Transfer Protocol, is the foundation of data communication on the World Wide Web. It is a protocol that allows clients and servers to communicate with each other and exchange information.
+
+The latest versions of HTTP, HTTP/2 and HTTP/3, are designed to improve the performance, security, and reliability of web applications. Let's dive deeper into what makes these two protocols different.
+
+# What is HTTP/2?
+
+HTTP/2 is the successor to HTTP/1.1, and it was designed to address some of the limitations of the previous version. HTTP/2 enables the server to send multiple requests in a single connection, eliminating the need for multiple TCP connections.
+
+It also supports [server push](/blog/exploring-http2-server-push-an-efficient-way-to-speed-up-your-web-applications/), which allows the server to send resources to the client before they are requested. This can significantly improve web performance by reducing the latency of page loading.
+
+# What is HTTP/3?
+
+HTTP/3, on the other hand, is the newest version of HTTP, and it uses a different transport protocol called [QUIC](https://en.wikipedia.org/wiki/QUIC). QUIC was designed to address the limitations of TCP, which can cause delays and packet loss.
+
+HTTP/3 is designed to improve web performance in situations where network conditions are poor or inconsistent. It achieves this by reducing the number of round trips required to establish a connection and encrypting more of the communication between client and server.
+
+# Differences between HTTP/2 and HTTP/3
+
+One of the main differences between HTTP/2 and HTTP/3 is the transport protocol used. HTTP/2 uses TCP, while HTTP/3 uses QUIC.
+
+Another difference is that HTTP/3 is designed to improve performance on unreliable networks, such as mobile networks. HTTP/3 reduces the number of round trips required to establish a connection and encrypts more of the communication between client and server.
+
+Additionally, HTTP/3 supports connection migration, allowing a client to switch to a new network without dropping the connection.
+
+# Conclusion
+
+HTTP/2 and HTTP/3 are both designed to improve web performance and security, but they differ in their approach.
+
+While HTTP/2 uses TCP to improve performance, HTTP/3 uses QUIC to address the limitations of TCP. With the increasing use of mobile devices and the internet, HTTP/3 is expected to become more prevalent in the coming years.
+
+By understanding the differences between HTTP/2 and HTTP/3, developers can choose the right protocol for their web applications and ensure optimal performance for their users.

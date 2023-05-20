@@ -1,0 +1,67 @@
+---
+title: 'Mastering Partial Application in JavaScript: A Comprehensive Guide'
+date: '2023-03-19'
+tags: ['javascript']
+draft: true
+summary: "In JavaScript, partial application is a powerful technique that allows you to create new functions by fixing some, but not all of the arguments of an existing function. This technique can help you write cleaner, more concise code, and improve the reusability of your functions. In this article, we'll explore what partial application is, how it works, and how to use it in your own code."
+---
+
+# Introduction
+
+In functional programming, functions are treated as first-class citizens, which means they can be passed around as arguments, returned as values, and even be partially applied.
+
+Partial application is a technique where you create a new function by fixing some of the arguments of an existing function, while leaving others open for later use.
+
+Partial application is especially useful when you have a function that takes multiple arguments, but you only want to fix some of them.
+
+By fixing some arguments, you can create a new function that takes fewer arguments, making it easier to reuse and compose with other functions.
+
+# Partial Application in JavaScript
+
+Let's explore how partial application works in JavaScript with some examples.
+
+To understand partial application, let's start with a simple example of a function that takes two arguments and returns their sum:
+
+```javascript
+function add(a, b) {
+  return a + b;
+}
+```
+
+We can partially apply this function to fix one of the arguments, like this:
+
+```javascript
+const add5 = add.bind(null, 5); // Fix the first argument to 5
+
+add5(3); // Returns 8
+```
+
+In this example, we used the bind method to create a new function `add5`, which is the same as the add function, but with the first argument fixed to 5. Now, when we call `add5(3)`, it returns the sum of 5 and 3, which is 8.
+
+Another way to partially apply a function in JavaScript is to use a closure. Here's an example:
+
+```javascript
+function multiply(a, b) {
+  return a * b;
+}
+
+function partiallyApply(func, ...fixedArgs) {
+  return function (...remainingArgs) {
+    return func.apply(null, fixedArgs.concat(remainingArgs));
+  };
+}
+
+const multiplyBy3 = partiallyApply(multiply, 3); // Fix the first argument to 3
+
+multiplyBy3(4); // Returns 12
+```
+
+In this example, we created a higher-order function partiallyApply, which takes a function and an array of fixed arguments, and returns a new function that applies those fixed arguments when called.
+
+The returned function is created using a closure, which allows it to access the fixed arguments when called.
+
+# Conclusion
+
+Partial application is a powerful technique in functional programming that can help you write cleaner, more reusable code. It allows you to create new functions by fixing some of the arguments of an existing function, while leaving others open for later use.
+
+In this article, we explored how partial application works in JavaScript and how to use it with some examples. By mastering partial application, you can write more concise and effective code that is easier to maintain and debug.

@@ -1,0 +1,323 @@
+---
+title: How I automatically generate a dynamic sitemap in Next.js
+date: '2022-10-22'
+tags: ['nextjs']
+draft: false
+summary: Learn how to generate a dynamic sitemap on build time automatically in Next.js with Contentlayer
+---
+
+# Introduction
+
+Today we will learn how to generate a dynamic sitemap.xml file for your website automatically on build time in Next.js.
+
+> I personally use this method to generate the [sitemap](/sitemap.xml) for my website as well.
+
+We would be using [Contentlayer](https://www.contentlayer.dev/) to grab the data from blogs and other dynamic pages but the core logic of generating the sitemap should be similar if you use some other library.
+
+# Creating a node script
+
+We will be creating a node script that we will be running during the build lifecycle to generate the sitemap.xml and store it inside the appropriate folder.
+
+> The folder where we want to store the sitemap.xml file is `public` folder.
+
+Let's quickly list down the tasks we want to do in this script first.
+
+1. Get the slug of all static pages in our app.
+2. Get the slug of all dynamically generated pages (blogs etc) in our app.
+3. Create a sitemap.xml format file and loop over all these slugs and add the `<url></url>` tag to specify each slug.
+4. Format the output with prettier using HTML parser.
+5. Save the output inside the `public` folder as `sitemap.xml`
+
+So first let's create a file `scripts/generate-sitemap.mjs`. I am using `.mjs` extension so I can use import statement over require, you can read more about [es6 import here](/blog/how-to-use-es6-import-syntax-in-nodejs/)
+
+```javascript:scripts/generate-sitemap.mjs
+import { writeFileSync } from 'fs'
+import globby from 'globby'
+import prettier from 'prettier'
+
+async function generateSitemap() {
+	// ...
+}
+
+// Will call the function whenever the file is run
+generateSitemap();
+```
+
+The external dependencies here are `globby` and `prettier` so let's install them as well as devDependencies.
+
+```bash
+yarn add -D globby prettier
+```
+
+Next, let's now fill up the function by following the steps we laid out above and get all the slugs for the static pages in our app
+
+```javascript:scripts/generate-sitemap.mjs
+import { writeFileSync } from 'fs'
+import globby from 'globby'
+import prettier from 'prettier'
+
+async function generateSitemap() {
+	const pages = await globby([
+    'pages/*.(t|j)sx',
+    '!pages/_*.(t|j)sx', // for _app.tsx and _document.tsx
+    '!pages/[*.(t|j)sx', // for [...page].tsx and [[...page]].tsx
+    '!pages/api',
+    '!pages/404.(t|j)sx',
+    '!pages/500.(t|j)sx',
+  ])
+}
+
+// Will call the function whenever the file is run
+generateSitemap();
+```
+
+We are doing pattern matching for all files inside pages directory which have `.tsx` or `.jsx` extension.
+
+Next, we want to exclude some of the files here, these would be any files starting with `_` like `_app.tsx` or `_document.tsx`. We also want to exclude all files which are added for wild card matching as well as the api folder.
+
+Finally, we also want to exclude any 404 or 500 pages we might have added.
+
+Now, let's bring in those dynamically generated pages.
+
+---
+
+Since I am using the Contentlayer, it provides a really nice API to get all the generated pages data which is available under `.contentlayer/generated` folder.
+
+So we will pull any documentType we would have defined here, for eg let's pull all the blog posts.
+
+```javascript:scripts/generate-sitemap.mjs {4,16}
+import { writeFileSync } from 'fs'
+import globby from 'globby'
+import prettier from 'prettier'
+import { allPosts } from '../.contentlayer/generated/index.mjs'
+
+async function generateSitemap() {
+	const pages = await globby([
+    'pages/*.(t|j)sx',
+    '!pages/_*.(t|j)sx', // for _app.tsx and _document.tsx
+    '!pages/[*.(t|j)sx', // for [...page].tsx and [[...page]].tsx
+    '!pages/api',
+    '!pages/404.(t|j)sx',
+    '!pages/500.(t|j)sx',
+  ])
+
+	const blogPages = allPosts.map((page) => page.slug)
+}
+
+// Will call the function whenever the file is run
+generateSitemap();
+```
+
+---
+
+Once we have all the slugs for the website, we will now generate the file contents for the sitemap.xml.
+
+```javascript:scripts/generate-sitemap.mjs
+import { writeFileSync } from 'fs'
+import globby from 'globby'
+import prettier from 'prettier'
+import { allPosts } from '../.contentlayer/generated/index.mjs'
+import siteMetadata from '../data/siteMetadata.js'
+
+async function generateSitemap() {
+	const pages = await globby([
+    'pages/*.(t|j)sx',
+    '!pages/_*.(t|j)sx', // for _app.tsx and _document.tsx
+    '!pages/[*.(t|j)sx', // for [...page].tsx and [[...page]].tsx
+    '!pages/api',
+    '!pages/404.(t|j)sx',
+    '!pages/500.(t|j)sx',
+  ])
+
+	const blogPages = allPosts.map((page) => page.slug)
+
+	const sitemap = `
+        <?xml version="1.0" encoding="UTF-8"?>
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+            ${pages
+              .concat(blogPages)
+              .map((page) => {
+                const path = page
+                  .replace('pages/', '/')
+                  .replace('public/', '/')
+                  .replace('.tsx', '')
+                  .replace('.jsx', '')
+                  .replace('.mdx', '')
+                  .replace('.md', '')
+                  .replace('/rss.xml', '')
+                const route = path === '/index' ? '' : path
+                return `
+                        <url>
+                            <loc>${siteMetadata.siteUrl}${route}/</loc>
+                        </url>
+                    `
+              })
+              .join('')}
+        </urlset>
+    `
+}
+
+// Will call the function whenever the file is run
+generateSitemap();
+```
+
+We are basically adding the xml headers for sitemap and then looping over all the pages, removing any file extensions or other metadata and then adding the route under url -> loc property.
+
+You would notice that I am appending each route with `siteMetadata.siteUrl`.
+I usually prefer to keep site metadata information inside a separate file so I am importing the site base URL from here, but feel free to hardcode your actual site URL directly here.
+
+---
+
+With this we have our XML file ready, now we just need to format it once and we would use prettier to do that.
+
+```javascript:scripts/generate-sitemap.mjs {8,46-49}
+import { writeFileSync } from 'fs'
+import globby from 'globby'
+import prettier from 'prettier'
+import { allPosts } from '../.contentlayer/generated/index.mjs'
+import siteMetadata from '../data/siteMetadata.js'
+
+async function generateSitemap() {
+	const prettierConfig = await prettier.resolveConfig('./.prettierrc.js')
+
+	const pages = await globby([
+    'pages/*.(t|j)sx',
+    '!pages/_*.(t|j)sx', // for _app.tsx and _document.tsx
+    '!pages/[*.(t|j)sx', // for [...page].tsx and [[...page]].tsx
+    '!pages/api',
+    '!pages/404.(t|j)sx',
+    '!pages/500.(t|j)sx',
+  ])
+
+	const blogPages = allPosts.map((page) => page.slug)
+
+	const sitemap = `
+        <?xml version="1.0" encoding="UTF-8"?>
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+            ${pages
+              .concat(blogPages)
+              .map((page) => {
+                const path = page
+                  .replace('pages/', '/')
+                  .replace('public/', '/')
+                  .replace('.tsx', '')
+                  .replace('.jsx', '')
+                  .replace('.mdx', '')
+                  .replace('.md', '')
+                  .replace('/rss.xml', '')
+                const route = path === '/index' ? '' : path
+                return `
+                        <url>
+                            <loc>${siteMetadata.siteUrl}${route}/</loc>
+                        </url>
+                    `
+              })
+              .join('')}
+        </urlset>
+    `
+
+		const formatted = prettier.format(sitemap, {
+			...prettierConfig,
+			parser: 'html',
+  	})
+}
+
+// Will call the function whenever the file is run
+generateSitemap();
+```
+
+I am using the same config that I have created for the project so on line 8 we will import the `.prettierrc.js` file and pass that config to `prettier.format` function call and set the parser to be `html`.
+
+Finally, we would write this file to the `public` folder so our final script would look like this
+
+# Final Script
+
+```javascript:scripts/generate-sitemap.mjs
+import { writeFileSync } from 'fs'
+import globby from 'globby'
+import prettier from 'prettier'
+import { allPosts } from '../.contentlayer/generated/index.mjs'
+import siteMetadata from '../data/siteMetadata.js'
+
+async function generateSitemap() {
+	const prettierConfig = await prettier.resolveConfig('./.prettierrc.js')
+
+	const pages = await globby([
+    'pages/*.(t|j)sx',
+    '!pages/_*.(t|j)sx', // for _app.tsx and _document.tsx
+    '!pages/[*.(t|j)sx', // for [...page].tsx and [[...page]].tsx
+    '!pages/api',
+    '!pages/404.(t|j)sx',
+    '!pages/500.(t|j)sx',
+  ])
+
+	const blogPages = allPosts.map((page) => page.slug)
+
+	const sitemap = `
+        <?xml version="1.0" encoding="UTF-8"?>
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+            ${pages
+              .concat(blogPages)
+              .map((page) => {
+                const path = page
+                  .replace('pages/', '/')
+                  .replace('public/', '/')
+                  .replace('.tsx', '')
+                  .replace('.jsx', '')
+                  .replace('.mdx', '')
+                  .replace('.md', '')
+                  .replace('/rss.xml', '')
+                const route = path === '/index' ? '' : path
+                return `
+                        <url>
+                            <loc>${siteMetadata.siteUrl}${route}/</loc>
+                        </url>
+                    `
+              })
+              .join('')}
+        </urlset>
+    `
+
+		const formatted = prettier.format(sitemap, {
+			...prettierConfig,
+			parser: 'html',
+  	})
+
+		writeFileSync('public/sitemap.xml', formatted)
+}
+
+// Will call the function whenever the file is run
+generateSitemap();
+```
+
+# Running the Script
+
+Now we have our script ready with us, but when shall we run it is the next question.
+
+So what we want is anytime we build our project and have generated the pages (both static and dynamic) we want to update our sitemap.xml to reflect those changes.
+
+To do this automatically, we will use the `postbuild` script.
+
+> In NPM scripts world you can hook up any script with its `pre` and `post` hook which basically would run a script before or after running the main script.
+
+Since we want to generate the sitemap after we have build our website, we will use the `postbuild` hook.
+
+So head over to your `package.json` file and add these additional scripts
+
+```json:package.json
+{
+	"scripts": {
+		"start": "next start",
+		"dev": "next dev",
+		"build": "next build",
+		"sitemap": "cross-env NODE_OPTIONS='--experimental-json-modules' node ./scripts/generate-sitemap.mjs",
+		"postbuild": "yarn sitemap"
+	}
+}
+```
+
+Notice we are adding another script called `sitemap` which run our script with `--experimental-json-modules` flag, you can read more about this flag [here](https://nodejs.medium.com/announcing-a-new-experimental-modules-1be8d2d6c2ff).
+
+With this, now whenever your site is built anywhere (Cloud or locally), the `postbuild` hook would get triggered and it would generate a sitemap for your website and place it in the public folder.
+
+Hope you found this useful, see you in another one 👋🏽

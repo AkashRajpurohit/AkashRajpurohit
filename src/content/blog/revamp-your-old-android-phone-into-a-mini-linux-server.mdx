@@ -1,0 +1,131 @@
+---
+title: Revamp Your Old Android Phone into a Mini Linux Server
+date: '2023-02-17'
+tags: ['homelab']
+draft: false
+summary: Turn your old Android phone into a portable Linux server with the Linux Deploy app. Learn how to set up a Debian server on your device and use it to host websites, run scripts, and more!
+discuss:
+  - type: DiscussLink
+    id: hackernews
+    url: https://news.ycombinator.com/item?id=34832630
+  - type: DiscussLink
+    id: reddit
+    url: https://www.reddit.com/r/homelab/comments/118otvg/revamp_your_old_android_phone_into_a_mini_linux/
+  - type: DiscussLink
+    id: twitter
+    url: https://twitter.com/akashwhocodes/status/1626534603094892545
+---
+
+# Introduction
+
+With the fast pace of technology, we often find ourselves upgrading to newer devices, leaving our old phones in a forgotten corner. But what if we could put that old device to good use?
+
+By using the Linux Deploy app, we can convert an Android phone into a portable Linux server. This can be used for hosting websites, running scripts, and even as a development machine.
+
+In this article, we'll go over all the steps required to transform your Android phone into a mini Linux lab.
+
+# Install Linux Deploy
+
+The first step to convert your Android phone into a Linux server is to install the Linux Deploy app. You can find this app on the [Google Play Store](https://play.google.com/store/apps/details?id=ru.meefik.linuxdeploy&hl=en_IN&gl=US) or directly check its [Github repo](https://github.com/meefik/linuxdeploy) and it's free to download.
+
+> Ensure you have already rooted your device since it will require root access to operate.
+
+# Configure the Linux Deploy App
+
+Once you've installed the Linux Deploy app, it's time to configure it. Open the app and click on the **properties button** which will be on the bottom right corner beside the "Start" and "Stop" buttons.
+
+On this screen, update the configurations as below:
+
+## Distribution
+
+Debian
+
+## Architecture
+
+armhf
+
+## Distribution Suite
+
+Buster
+
+## Installation type
+
+File
+
+## Installation path
+
+The default option is `${EXTERNAL_STORAGE}/linux.img`. This will create the Linux image on your **internal memory**.
+
+If you want to keep the Linux image on external storage like SD card, then you can change it to `${SECONDARY_STORAGE}/linux.img`.
+
+> Note that `EXTERNAL_STORAGE` is internal storage and `SECONDARY_STORAGE` is any external storage like SD card.
+
+## Image size
+
+This is an important section because the default option would be `Automatic calculation`. If we keep it as default it will allocate around `2GB` of storage for the Linux server.
+
+However, from my experience, I ran out of memory very quickly once I started running node applications on it. So I would suggest instead of Automatic calculation, pick a decent amount of size.
+
+For me, I went ahead with giving it `80GB` of storage because I'm using this old device as part of my minilab hence I can allocate much higher space to it. But feel free to allocate size as per your considerations. The more the better room for you to install stuff on the server.
+
+## File system
+
+ext4
+
+## User name
+
+android (you should change this as this will be your non root user in the linux system through which you will ssh into the system)
+
+## User password
+
+Set a strong password here for your username above.
+
+## INIT
+
+Tick the checkbox to enable it.
+
+## Init System
+
+Select the option as `sysv`. This means your init system would be SystemV.
+
+[Read more about SystemV](/blog/init-systems-unveiled-understanding-the-differences-between-systemd-and-systemv/) if you want to get some insights about what it is.
+
+## SSH
+
+Tick the checkbox to enable it.
+
+You can keep the SSH settings to default or modify it as per your choice.
+
+# Start the Installation
+
+Once you've completed all the above steps, go back to the main screen and click on the 3-dot menu located on the TOP RIGHT corner and press `Install`.
+
+You'll see a progress bar showing the installation process. It may take a few minutes for the installation to complete.
+
+When you see the last line shown as `<<<deploy` your installation is complete and now you have successfully installed Linux on your android device 🎉
+
+On the BOTTOM LEFT corner press `START` to start the Linux containers and now we are ready to start using SSH.
+
+# Connect to Your Debian Server
+
+Open a terminal of your choice on your other device (For eg a laptop or another mobile which have some terminal app installed like termux etc) and type the following SSH command to connect to your server:
+
+```bash
+ssh username@IPAddress
+```
+
+Here replace `username` with the [user name you set above](#user-name) and `IPAddress` with the device IP address.
+
+You can check the IP Address which is allocated to the server by checking on top of the Linux Deploy app.
+
+Next, enter the password when prompted for one as the one [you set above](#user-password)
+
+# Start using your Mini Linux Lab
+
+You're now ready to start using your mini Linux lab! You can install additional packages, host websites, or use it as a development machine. The possibilities are endless with your portable Linux server.
+
+# Conclusion
+
+By using the Linux Deploy app, you can turn an old Android phone into a portable Linux server. This is a great way to put your old phone to good use and have a mini Linux lab at your fingertips.
+
+Whether you want to host websites, run scripts, or use it as a development machine, the options are endless. With this setup, you can take your Linux server with you wherever you go!

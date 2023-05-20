@@ -1,0 +1,85 @@
+---
+title: How to protect your website from attacks using Cloudflare WAF and Rate Limiting
+date: '2022-11-01'
+tags: [cloudflare, security]
+draft: false
+summary: In this article, I will explain how I was able to protect my website from attackers and how you can too using Cloudflare WAF and rate limiting.
+---
+
+# Introduction
+
+In my previous write-up I explained how we can [setup Cloudflare proxy](/blog/how-to-setup-cloudflare-proxy-for-your-website-hosted-on-vercel-or-netlify/) for your website hosted on Vercel or Netlify. In that article, I mention a brief detail about why I had to do it which was that a week before writing this article, my website and other apps / APIs were attacked by someone.
+
+This has happened to me in the past as well but it did not cause much damage so I ignored it, which was a big fault on my end because this time it did cause quite a lot of damage and hence I wanted to share how I was able to protect my website after the attack and hopefully would be able to avert such incidents in future and why you shouldn't do the mistake as me of not adding the very least basic protections to safeguard your apps from malicious actors.
+
+# The attack
+
+No matter what you do, there will always be some bad actors who would want to harm your website or your application and the most common way for them to do this is by doing a [DoS or DDoS](https://en.wikipedia.org/wiki/Denial-of-service_attack) attack.
+
+When that happens, from my experience, Cloudflare is more mature to handle it by itself and what's more amazing is that you can do the configurations yourself to safeguard your website from these malicious requests.
+
+Last weekend on 23<sup>rd</sup> Oct 2022, I woke up to find all my websites, APIs and applications which were hosted on Vercel were erroring out because someone tried to attack my website's API routes and caused the functions to time out and were rate limited with the error
+
+<Callout type="warning">`FUNCTION_RATE_LIMIT`: This Serverless Function was rate limited Vercel</Callout>
+
+Someone was able to make tons of concurrent requests which had exhausted the default limit of **1000** concurrent executions. Now the important thing here is that this was an attack because even Vercel mentions that reaching this limit is [extremely rare](https://vercel.com/guides/what-should-i-do-if-i-receive-a-429-error-on-vercel).
+
+Since I did not have the proxy in between all these attacks went straight to my origin server at Vercel and essentially executed Denial of Service where now legit users were also getting 429 rate limited errors from my APIs.
+
+This is when I decided to explore [Cloudflare proxy and implement it](/blog/how-to-setup-cloudflare-proxy-for-your-website-hosted-on-vercel-or-netlify/) as the first step to protect my site in the future and boy oh boy I love how easy it was to block these malicious requests and have more control over my site.
+
+So today I'll share what configurations I added to protect my website from these types of attacks.
+
+# Configuring Cloudflare
+
+Two important things I did to add some protection to the website were setting up **WAF rules** and **Rate limiting rules**.
+
+Also, the configurations that I did are possible to do even in their free plan so you should definitely do it because I don't feel there will be any downside to it.
+
+## Cloudflare WAF rules
+
+Cloudflare WAF or Web application firewall is a service that provides both automatic protection from vulnerabilities as well as the flexibility to create custom rules using the Cloudflare [ruleset engine](https://developers.cloudflare.com/ruleset-engine/)
+
+Using WAF rules you can the incoming traffic to your website and apply filters based on location, IP address, user agent, URI, and more.
+
+Based on these filtering you can choose to perform actions like Blocking, Managed Challenge, JS Challenge and more.
+
+How I am using the WAF rules is to block all requests to admin sections for my websites based on certain conditions. What I would suggest is if you have any admin-specific routes like `/wp-admin` for WordPress sites or custom `/dashboard` or `/admin` routes then you can either restrict the access for those to either a specific Country or Continent where you plan to access the site admin tools the most or become even stricter by allowing only requests from your IP address to access the admin routes.
+
+Of course, for the IP address filter, you need to make sure you have a [static IP](https://whatismyipaddress.com/dynamic-static) from your ISP.
+
+You can find these settings under Security -> WAF and under Firewall rules.
+
+## Rate limiting rules
+
+Another important thing to do is to rate limit your APIs on the proxy layer itself based on some rules so that your downstream services don't get hammered if they are not able to detect possible DOS attacks.
+
+<Callout emoji="🫡">
+  Another reason why I really love Cloudflare is that they truly care about each and everyone to provide essential
+  [security tools](https://blog.cloudflare.com/unmetered-ratelimiting/) to all customers (Free and Paid both).
+</Callout>
+
+I did have a few computationally expensive APIs and luckily I had shipped some performance improvements just a week back which helped me a lot during this attack. However, I still don't want these APIs to get hammered anytime so the best thing to do is rate-limit these APIs.
+
+You can find these in the next tab of WAF from above and for free users you can add 1 rate-limiting rule.
+
+To understand more about configuring the rate-limiting rules you can check it out in detail on [Cloudflare developer](https://developers.cloudflare.com/waf/rate-limiting-rules/) page.
+
+To determine what would be a proper configuration for your apps, it would depend on what's the usage so you have to do those calculations and accordingly create an optimal configuration.
+
+# Results
+
+After incorporating these changes, I am pretty happy that Cloudflare was able to detect and mitigate more than **~480** such threats since the time I added all these rules. Also, the WAF and rate-limiting rules are also working pretty well.
+
+<Image src={`/static/images/cf-threats-blocked.png`} width={2070} height={1154} alt="Threats blocked by Cloudflare" />
+
+<Image
+  src={`/static/images/cf-firewall-rules-blocking-user.png`}
+  width={2036}
+  height={1032}
+  alt="Cloudflare WAF blocking requests to admin-specific routes"
+/>
+
+Lastly, I would like to say that I am still exploring Cloudflare as a product and so far I am loving how good Cloudflare is in terms of DX but at the same time I may be missing out on some things when I do these write-ups so if you are someone who has a lot of experience with this and feels that this can be improved then please don't hesitate to reach out on [Twitter](https://twitter.com/akashwhocodes) or any other social media feasible for you because I would love to discuss it with you and also I will definitely be updating these write-ups from time-to-time with the latest content.
+
+Hope you found this helpful, see you in another one 👋🏽

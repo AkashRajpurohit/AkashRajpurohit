@@ -1,0 +1,51 @@
+---
+title: 'Understanding Federation in Databases: Definition, Types and Use Cases'
+date: '2023-03-28'
+tags: ['system design', 'database']
+draft: false
+summary: Learn about how federated databases enable the efficient management of distributed systems by allowing for seamless data access and sharing across multiple databases and data sources.
+---
+
+# Introduction
+
+In today's era of big data, data management has become increasingly complex, especially when it comes to managing large-scale distributed systems. This is where federated databases come into play.
+
+Federation, also known as federated database systems, is a technique that allows data to be accessed and shared across multiple databases and data sources, regardless of their location. This approach provides a unified view of data, enabling organizations to access and manage data seamlessly, even if it is distributed across different systems and platforms.
+
+# What is Federation in Databases?
+
+Federation is a technique used to combine multiple databases into a single, virtual database. It allows organizations to access data from multiple databases as if it were from a single database.
+
+In other words, a federated database system provides a unified view of data from multiple databases, which can be geographically dispersed and hosted on different platforms.
+
+# Technical Explanation
+
+A federated database system consists of a set of local databases, each of which is managed separately, along with a federated server that coordinates the communication between them.
+
+The federated server acts as a mediator between the client and the local databases, intercepting the client requests and forwarding them to the appropriate local database.
+
+The federated server then consolidates the results from each database and presents them to the client as if they came from a single database.
+
+# Types of Federation
+
+There are two types of federated databases: **homogeneous** and **heterogeneous**.
+
+A homogeneous federated database consists of multiple databases of the same type, such as multiple Oracle databases.
+
+A heterogeneous federated database consists of multiple databases of different types, such as Oracle, MySQL, and SQL Server.
+
+# Real-World Example
+
+One real-world example of federation is the use of a federated database in a multinational corporation that has offices in multiple countries.
+
+Each country has its own local database, which is responsible for managing its data. However, when it comes to making strategic decisions, the management needs access to the data from all the countries.
+
+With a federated database system, the management can access all the data from a single interface, without having to manually gather data from different local databases.
+
+# Conclusion
+
+Federation is a powerful tool for managing large-scale distributed systems, enabling seamless access to data across multiple databases and data sources.
+
+By allowing organizations to access and manage data from a single interface, regardless of where the data is stored, federation provides a unified view of data, making it easier to make informed decisions.
+
+Whether you're a multinational corporation or a startup, federated database systems can help you manage your data more efficiently and effectively.

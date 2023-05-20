@@ -1,0 +1,162 @@
+---
+title: How to setup Cloudflare proxy for your website hosted on Vercel or Netlify
+date: '2022-10-23'
+tags: [cloudflare, devops]
+draft: false
+summary: In this article, I will show you how to properly set up Cloudflare proxy for any of your website which is hosted on some other service like Vercel or Netlify.
+---
+
+# Introduction
+
+In this article, we will learn how to set up Cloudflare Proxy if your websites or apps are hosted on Vercel or Netlify or any of the other similar services.
+
+Most of the steps would be pretty much the same if you are hosting the website on let's say a Digital Ocean droplet or any other VPS but in this one, I want to focus more on when you have your website hosted at some place like Vercel or Netlify or other SaaS-based cloud providers.
+
+**Skip the next section if you are looking for the set-up directly**
+
+# But Why?
+
+Before we start with the process it's important to understand why we want to do this in the first place or rather why these cloud providers would not encourage you to add a Cloudflare proxy in the first place.
+
+> Please bear in mind that I am not stating this in any negative way, in fact, I am using Netlify and Vercel for a long time and love their service and ease of deploying apps.
+
+But this is what I have read on many community forums it is not encouraged to add a proxy in between and they do have very solid reasoning behind it. The reason why it is not encouraged is that these individual services already have their edge infrastructure in place to provide caching of static assets and load balancing your serverless functions over the globe, its not possible for them to control the client-to-server request life cycle if there is a proxy sitting in between probably doing the same task of adding another cache layer.
+
+If your goal is to use a Cloudflare proxy just for caching static assets so that those can reach your end users quickly then I don't think you need the add a proxy, this use-case is very well handled by these cloud providers already.
+
+If you want to have more control over the traffic you definitely want to add a Cloudflare proxy in between.
+
+A Cloudflare proxy will help you introspect the traffic and apply some configurations which can help you to [protect your website](/blog/how-to-protect-your-website-from-attacks-using-cloudflare-waf-and-rate-limiting/) from malicious users and attackers.
+
+There are a few tricky things to do to get the proxy to work happily with Vercel or Netlify. So let's dive into it.
+
+# Prerequisite
+
+To ensure we can start with the proxying there are few things that are required.
+
+1. You have a site added to Cloudflare so you can update the DNS records for your site.
+2. You have your site hosted on Vercel or Netlify which has an apex domain (root level domain) configured on Cloudflare.
+
+<Image
+  src={`/static/images/cf-apex-dns.png`}
+  width={2032}
+  height={618}
+  alt="Cloudflare DNS settings for your root domain"
+/>
+
+> Most probably for you the proxy status would be **DNS Only** instead of proxied.
+
+# Steps of Enabling Proxy
+
+You must've guessed, I just need to toggle this switch from DNS Only to Proxy.
+
+Well yes, but we will do this in the last step, before that let's do some required configurations so that the proxy can work happily.
+
+## Enable your SSL/TLS encryption mode to Full
+
+You can find this under **SSL/TLS** -> **Overview**
+
+<Image
+  src={`/static/images/cf-ssl-mode-full.png`}
+  width={2148}
+  height={1230}
+  alt="Cloudflare SSL encryption mode set to Full"
+/>
+
+What this will do is encrypt the connection between your Cloudflare proxy and your origin server (which would be Vercel or Netlify or anything else).
+
+## Disable Always Use HTTPS
+
+Don't worry, you read it correctly, I know it is advised to redirect your traffic from HTTP to HTTPS and we will do that in the next step using Page rules but the reason we want to disable it from here is that there are certain routes where we **do not** want to redirect from HTTP to HTTPS.
+
+The routes where we don't want to redirect from HTTP to HTTPS are anything under `yourdomain.tld/.well-known/` directory.
+
+This is because Vercel or Netlify uses [Let's Encrypt](https://letsencrypt.org/) for generating certificates that are valid for 3 months and are auto-renewed.
+
+The renewal process is like this, Vercel will hit this route `yourdomain.tld/.well-known/acme-challenge`. If this HTTP request gets redirected to HTTPS, Let's Encrypt will fail to issue an SSL certificate on behalf of Vercel for your domain. So essentially whenever your domain SSL certificates renewal process would be due, it would fail which means the connection between Cloudflare and Vercel would also fail.
+
+To avoid this, we will add some page rules to make sure that our site always uses HTTPS but also does not redirect to HTTPS if a request comes in for certificate renewal.
+
+So to disable this head to the **SSL/TLS** -> **Edge Certificates** and disable this option.
+
+<Image
+  src={`/static/images/cf-disable-https.png`}
+  width={2098}
+  height={436}
+  alt="Disable Always use HTTPS on Cloudflare SSL Edge certificates"
+/>
+
+## Setting up Page Rules
+
+Head over to **Rules** -> **Page Rules**
+
+We will add two rules here, one is to disable SSL when any request comes in at path `.well-known` and another one is to always use HTTPS for all other routes.
+
+So let's start with the first one, create a new rule and add the configuration as shown in the image below
+
+<Image
+  src={`/static/images/cf-disable-ssl-page-rule.png`}
+  width={1582}
+  height={902}
+  alt="Disable SSL page rule for all subdomain and apex domain matching the path of .well-known"
+/>
+
+Save this rule and add another rule for always using HTTPS for all other routes.
+
+<Image
+  src={`/static/images/cf-allow-https-page-rule.png`}
+  width={1616}
+  height={886}
+  alt="Upgrade to HTTPS for all subdomain and apex domain for all paths which are incoming as HTTP request"
+/>
+
+> The most important detail here is the ordering of these page rules, we want to make sure that the Always use HTTPS rule stays in the last order so that our page rule for `.well-known` gets processed first and it does not get upgraded to HTTPS
+
+So make sure your order looks something like this.
+
+<Image src={`/static/images/cf-page-rule-order.png`} width={2028} height={400} alt="Correct order of the page rules" />
+
+If they are not in this order then use the arrow button to align them in this order.
+
+After this is done, we can now enable the proxy from **DNS Only** to **Proxied** in the DNS settings as we saw above.
+
+## Testing
+
+After finishing up all the mentioned changes, its time now to test it.
+
+To verify if we have done the configurations correctly, we would do two specific tests.
+
+1. All incoming requests to `http://yourdomain.tld/.well-known/acme-challenge` should **not** get redirected to HTTPS
+2. All incoming requests to `http://yourdomain.tld/` should get redirected to `https://yourdomain.tld`
+
+So let's test for these two scenarios, open your terminal and type the CURL command by replacing `yourdomain.tld` with your actual domain name.
+
+```bash
+curl -IL http://yourdomain.tld/.well-known/acme-challenge
+```
+
+If everything went right you should see a similar output where the HTTP request is not redirected to HTTPS and returned a 404 status code since no such file exists on my server.
+
+<Image
+  src={`/static/images/cf-no-redirect-for-wellknown.png`}
+  width={1300}
+  height={804}
+  alt="There was no redirection from HTTP to HTTPS"
+/>
+
+```bash
+curl -IL http://yourdomain.tld
+```
+
+And for this, we would see a successful redirect to HTTPS with a 301 status code.
+
+<Image
+  src={`/static/images/cf-success-https-redirect.png`}
+  width={1402}
+  height={800}
+  alt="All other requests are successfully redirected from HTTP to HTTPS"
+/>
+
+Now you have successfully configured your Cloudflare proxy.
+
+Hope you found this helpful, see you in the next one where we will learn how I was able to safeguard my website hosted on Vercel using Cloudflare 🚀 👋🏽

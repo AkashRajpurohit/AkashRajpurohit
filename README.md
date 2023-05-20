@@ -21,10 +21,11 @@
 
 - [x] TailwindCSS + Prettier + ESLint
 - [x] Cloudflare Deployment -> Facing issue with pre-rendering though -> more [here](https://github.com/withastro/astro/issues/7140)
-- [ ] Dark / Light mode
-- [ ] MDX blogs
+- [x] MDX blogs
+  - [ ] Once components are added, add them to MDX Content components map
 - [ ] Full SEO for blogs
 - [ ] Dynamic Open graph from Cloudinary
+- [ ] Dark / Light mode
 - [ ] Command + K
 - [ ] Newsletter Form + API
 - [ ] Custom Link component with hover placeholder

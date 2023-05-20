@@ -1,0 +1,45 @@
+---
+title: 'High-Availability Strategies: Ensuring Uninterrupted Service'
+date: '2023-04-08'
+tags: ['system design']
+draft: true
+summary: "In today's fast-paced world, organizations cannot afford any downtime or disruption in their services. High-availability strategies help mitigate such risks by ensuring uninterrupted service even in the event of a failure or outage. In this article, we will discuss various high-availability strategies such as active-passive, active-active, and N+1, along with their pros and cons."
+---
+
+# Introduction
+
+High-availability (HA) is the ability of a system to remain operational and accessible even in the event of a failure or outage.
+
+HA is critical for organizations that provide mission-critical services, such as e-commerce, banking, healthcare, and more. When a system fails, it can lead to loss of revenue, damage to reputation, and even legal issues. Hence, it is essential to have a robust high-availability strategy in place.
+
+In this article, we will discuss various HA strategies, their advantages and disadvantages, and how to choose the right strategy for your organization.
+
+# Active-Passive
+
+In an active-passive HA strategy, there are two identical systems, one active and one passive.
+
+> The active system serves all requests, while the passive system remains idle, constantly syncing with the active system.
+
+If the active system fails, the passive system takes over the workload, ensuring uninterrupted service. This strategy is relatively easy to implement, as it requires minimal changes to the existing infrastructure.
+
+# Active-Active
+
+> In an active-active HA strategy, there are multiple identical systems that share the workload.
+
+Each system serves a portion of the requests, and all systems remain active simultaneously.
+
+This strategy provides better scalability and performance than the active-passive strategy. However, it also requires more complex infrastructure and load-balancing mechanisms.
+
+# N+1
+
+In an N+1 HA strategy, there are N active systems and one spare (N+1).
+
+The spare system remains idle, ready to take over the workload of any failed system.
+
+This strategy provides excellent redundancy and fault-tolerance. However, it also requires more resources and is more complex to implement than the other two strategies.
+
+# Conclusion
+
+High-availability is crucial for any organization that provides mission-critical services. Choosing the right HA strategy depends on various factors such as cost, complexity, scalability, and performance requirements.
+
+Active-passive, active-active, and N+1 are some of the commonly used HA strategies, each with its own advantages and disadvantages. By understanding these strategies, organizations can design and implement a robust HA solution that ensures uninterrupted service and meets their business needs.

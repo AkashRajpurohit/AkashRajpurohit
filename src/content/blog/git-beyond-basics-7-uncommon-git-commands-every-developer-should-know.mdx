@@ -1,0 +1,110 @@
+---
+title: 'Git Beyond Basics: 7 Uncommon Git Commands Every Developer Should Know'
+date: '2023-04-08'
+tags: ['git', 'engineering']
+draft: true
+summary: 'Git is one of the most popular version control systems used by developers worldwide. However, most developers only use a handful of Git commands in their daily work. In this article, we will explore some uncommon Git commands that can help improve your workflow and productivity. These commands will help you to work more efficiently, troubleshoot issues, and collaborate more effectively with your team.'
+---
+
+# Introduction
+
+Git is a powerful tool for version control that allows developers to track changes to their code over time. However, the vast number of Git commands available can be overwhelming, and most developers only use a fraction of them.
+
+In this article, we will explore seven uncommon Git commands that can help you to work more efficiently and effectively.
+
+# Commands
+
+## git stash
+
+The git stash command allows you to temporarily save changes that are not yet ready to be committed.
+
+This can be useful when you need to switch branches or pull in changes from another branch without committing your changes.
+
+Example:
+
+```bash
+git stash
+
+Saved working directory and index state WIP on feature-branch: 7f23a8a Add new feature
+```
+
+## git bisect
+
+The git bisect command helps you to find the commit that introduced a bug in your code.
+
+You can use this command to quickly locate the commit that caused the bug and fix it.
+
+Example:
+
+```bash
+git bisect start
+git bisect bad
+git bisect good v1.0
+```
+
+## git rebase
+
+Git rebase is a command that allows you to rewrite your Git history.
+
+This can be useful if you need to clean up your commit history before merging a branch or if you need to apply a series of commits from one branch to another.
+
+Example:
+
+```bash
+git checkout feature-branch
+git rebase main
+```
+
+## git revert
+
+If you ever need to undo a commit, git revert is the command to use. Unlike git reset, git revert allows you to undo a commit without removing it from your Git history
+
+This is useful if you need to undo a commit that has already been pushed to a remote repository.
+
+Example:
+
+```bash
+git revert 7f23a8a
+```
+
+## git cherry-pick
+
+The git cherry-pick command allows you to apply a single commit from one branch to another.
+
+This can be useful when you need to apply a specific fix or feature to another branch without merging the entire branch.
+
+Example:
+
+```bash
+git cherry-pick 7f23a8a
+```
+
+## git blame
+
+The git blame command allows you to see who last modified a specific line of code and when.
+
+This can be helpful in identifying the author of a particular bug or issue.
+
+Example:
+
+```bash
+git blame index.html
+```
+
+## git submodule
+
+The git submodule command allows you to include one Git repository as a subdirectory of another Git repository.
+
+This can be useful when you need to include a shared library or tool in your project.
+
+Example:
+
+```bash
+git submodule add https://github.com/user/repo.git
+```
+
+# Conclusion
+
+In this article, we have explored seven uncommon Git commands that can help improve your workflow and productivity. These commands can help you to work more efficiently, troubleshoot issues, and collaborate more effectively with your team.
+
+By incorporating these commands into your daily workflow, you can become a more proficient Git user and take your coding skills to the next level.

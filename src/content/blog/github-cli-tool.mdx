@@ -1,0 +1,135 @@
+---
+title: Github CLI ready for your terminal.
+tags: [git]
+date: 2020-03-08
+summary: Read more about the new beta feature added by Github which is their Command Line Interface(CLI).
+draft: true
+---
+
+# Introduction
+
+Github recently released the beta version of their Github CLI. It's a simple CLI tool that can be used to bring Github concepts (repo, issue, pr) into the terminal.
+
+You can download it at [https://cli.github.com/](https://cli.github.com/).
+
+# Commands
+
+After installing the cli on your system, just open the terminal and you can use any of these commands
+
+## Issue
+
+```bash
+gh issue create
+```
+
+It will ask you for the title and the body of the issue
+
+```text
+Creating pull request for feature-branch into the master in owner/repo
+? Title My new issue
+? Body [(e) to launch nano, enter to skip]
+http://github.com/owner/repo/issues/1
+```
+
+Additionally, you can directly use flags to create the issue directly.
+
+```bash
+gh issue create --title "Issue Title here" --body "Issue Body here"
+```
+
+And you can use the web browser as well to directly open the URL to the page by adding the `--web` flag
+
+```bash
+gh issue create --web
+```
+
+You can list the issues using
+
+```bash
+gh issue list
+```
+
+along with some additional flags to filter like open issues
+
+```bash
+gh issue list --state open
+```
+
+## Pull Requests
+
+Just like issues, you can open PR's as well using the CLI.
+
+```bash
+gh pr create
+```
+
+And again it also supports using the `--title` and `--body` flags.
+
+The cool part here is that you can view the status of the PR directly in the terminal.
+
+```bash
+gh pr status
+```
+
+```text
+Current branch
+  There is no pull request associated with [blog/07]
+
+Created by you
+  You have no open pull requests
+
+Requesting a code review from you
+  You have no pull requests to review
+```
+
+## Repo
+
+Cloning a repo using CLI
+
+```bash
+gh repo clone <Owner/Repo>
+```
+
+Additionally, you can create new repo using
+
+```bash
+gh repo create <name>
+```
+
+It supports a set of flags like
+
+```text
+  -d, --description string   Description of the repository
+      --enable-issues        Enable issues in the new repository (default true)
+      --enable-wiki          Enable wiki in the new repository (default true)
+  -h, --homepage string      Repository home page URL
+      --public               Make the new repository public
+  -t, --team string          The name of the organization team to be granted access
+```
+
+Along with creating repos, you can even fork any repo using this tool.
+
+```bash
+gh repo fork <repository>
+```
+
+And at the very least, open/view any repo in the browser using
+
+```bash
+gh repo view <repository>
+```
+
+- Note - If no `repository` is mentioned, it forks/views the current repository, that is the folder in which you are using the repo if it is initialized as a git repository remotely.
+
+# TL;DR
+
+We talk about the latest announcement made by Github about their CLI tool and see a few examples of the commands it ships with.
+
+# Conclusion
+
+Github CLI is in beta and continuous development, so if you are using it and want to share any feedback then [visit here](https://docs.google.com/forms/d/e/1FAIpQLSfScxLCO5eyeIM4clYcEQEnT0bIP6PK3LZ7E4AHQdj5tItUvQ/viewform?usp=send_form) or create an [issue here](https://github.com/cli/cli)
+
+# Links
+
+- [Github CLI](https://cli.github.com/)
+- [Docs](https://cli.github.com/manual/)

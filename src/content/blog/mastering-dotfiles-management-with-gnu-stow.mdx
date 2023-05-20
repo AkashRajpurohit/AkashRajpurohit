@@ -1,0 +1,72 @@
+---
+title: 'Mastering Dotfiles Management with GNU Stow'
+date: '2023-02-21'
+tags: ['engineering']
+draft: false
+summary: If you're a software developer or a power user who works with a UNIX-like operating system, you might have heard about dotfiles. Dotfiles are hidden configuration files that are used to customize the behavior of applications or the shell environment. In this article, we'll explore what dotfiles are, and how to manage them using the GNU Stow project.
+discuss:
+  - type: DiscussLink
+    id: hackernews
+    url: https://news.ycombinator.com/item?id=34882429
+---
+
+# Introduction
+
+When you work on a computer, you often have specific preferences for how your applications or shell environment should behave. For example, you may prefer a certain color scheme in your terminal, or you may want to have specific aliases for common shell commands.
+
+These preferences can be set using configuration files, which are often referred to as dotfiles. The name "dotfiles" comes from the fact that these files have a filename starting with a dot, which makes them hidden by default.
+
+However, managing dotfiles can be challenging, especially when you have multiple machines or want to share your dotfiles with other users. This is where GNU Stow comes in, which is a tool that simplifies the management of dotfiles.
+
+> I personally use this method for managing dotfiles, you can check it out at [AkashRajpurohit/dotfiles](https://github.com/AkashRajpurohit/dotfiles)
+
+# What are dotfiles?
+
+Dotfiles are configuration files that are used to customize the behavior of applications or the shell environment. These files are often located in the user's home directory, and their names start with a dot to make them hidden. Some common examples of dotfiles include:
+
+- **.bashrc / .zshrc:** Configures the behavior of the Bash / Zsh shell.
+- **.vimrc:** Configures the Vim text editor.
+- **.gitconfig:** Configures the behavior of the Git version control system.
+
+# GNU Stow project
+
+[GNU Stow](https://www.gnu.org/software/stow/) is a free, open-source tool that simplifies the management of dotfiles. It works by creating symbolic links from the dotfiles in a separate directory to the corresponding files in the user's home directory. This makes it easy to manage dotfiles across multiple machines or to share them with other users.
+
+# Setting up dotfiles with GNU Stow
+
+To set up your dotfiles using GNU Stow, follow these steps:
+
+Create a directory to store your dotfiles. For example, you can create a directory called "dotfiles" in your home directory.
+
+```bash
+mkdir ~/dotfiles
+```
+
+Create a subdirectory for each application or environment you want to customize. For example, you can create a subdirectory called "zsh" for your Zsh shell configuration.
+
+```bash
+mkdir ~/dotfiles/zsh
+```
+
+Move your configuration files to the corresponding subdirectory. For example, you can move your .zshrc file to the "zsh" subdirectory.
+
+```bash
+mv ~/.zshrc ~/dotfiles/zsh/
+```
+
+Use GNU Stow to create symbolic links from the dotfiles in the "dotfiles" directory to the corresponding files in your home directory.
+
+For example, to create a symbolic link for the "zsh" subdirectory, run the following command:
+
+```bash
+cd ~/dotfiles
+stow zsh
+```
+
+Now, any changes you make to your dotfiles in the "dotfiles" directory will be reflected in your home directory.
+
+# Conclusion
+
+Managing dotfiles can be a hassle, but with GNU Stow, it becomes a breeze. By creating symbolic links to your dotfiles, GNU Stow simplifies the process of managing your configuration files across multiple machines or sharing them with other users.
+
+With these simple steps, you can easily set up and manage your dotfiles using GNU Stow.

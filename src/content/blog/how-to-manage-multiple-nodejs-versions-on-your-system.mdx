@@ -1,0 +1,177 @@
+---
+title: How to manage multiple Node.js versions on your system
+tags: [nodejs]
+date: 2020-11-08
+summary: Learn how to manage multiple versions of Node.js on your local system with ease.
+draft: false
+---
+
+# Introduction
+
+When you are working with Node.js, there would be many scenarios where you would have to use different node versions, for eg your some projects are working on node v8 and now you want to upgrade to a new version without thinking much about the transition and still support old version projects. Or maybe you just want to try out the latest releases of nodejs (which by the way currently is [v15](https://nodejs.org/en/) and it does have some amazing new features you should try) without the need of uninstalling your local current version, then upgrade to the new version and later again revert to your old version.
+
+To overcome all this mess, today we will learn about some awesome tools which can make your life a bit easier when you have to manage multiple nodejs version on your system.
+
+# Options Available
+
+So we will see two tools in general and look in-depth about the one which I personally prefer and why.
+
+So the first project is the [n package](https://github.com/tj/n). It's a simple Node.js version management package. You can read more about this on their [github readme](https://github.com/tj/n#n--interactively-manage-your-nodejs-versions).
+
+The second project is the [nvm or Node Version Manager](https://github.com/nvm-sh/nvm). We will go a bit in-depth about NVM in this tutorial.
+
+**Note: Both n and nvm doesn't support windows directly, however, we will see an alternative of nvm in windows as well.**
+
+# NVM (Node Version Manager)
+
+So first things first, let talk about the OS support, so NVM natively supports Linux, macOS, and Windows WSL (Windows Subsystem for Linux), so basically it does not directly support windows yet, but no need to worry about windows users because we have [nvm-windows](https://github.com/coreybutler/nvm-windows). Please note this is not a project created by NVM but it's a similar project to NVM and almost all of the commands will be the same. So you can check out the repo for more details.
+
+So now let's check how to get NVM on your system.
+
+## Windows
+
+First, we need to do a little preparation:
+
+- Uninstall any existing versions of Node.js
+- Delete any existing Node.js installation directories (such as `C:\Program Files\nodejs`)
+- Delete the existing npm install location (such as `C:\Users\<user>\AppData\Roaming\npm`)
+
+Once this is done, head over to the download section and run the [latest stable installer](https://github.com/coreybutler/nvm-windows/releases) and you should be good to go!
+
+## Linux and macOS
+
+You can install nvm using cURL or Wget. On your terminal, run the following
+
+**cURL:**
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
+```
+
+**Wget:**
+
+```bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
+```
+
+Note that the version number (v0.37.2) will change as the project develops, so it’s worth checking the [install section of the project’s home page](https://github.com/nvm-sh/nvm#install--update-script) to find the most recent version.
+
+The script clones the nvm repository to `~/.nvm` folder and also attempts to source lines from the snippet below to the correct profile file (`~/.bash_profile`, `~/.zshrc`, `~/.profile`, or `~/.bashrc`).
+
+And that’s it! Reload (or restart) your terminal and nvm is ready to be used.
+
+# Using NVM
+
+Now if you have installed it correctly, the `nvm` command should be accessible in your terminal. Let's see some basic commands that nvm provides.
+
+## Install Multiple Node Versions
+
+So the command to install any node version is `nvm install <version-no>`. For eg to install node v10, you can type:
+
+```bash
+nvm install 10
+```
+
+You can even specify the exact version like `nvm install 12.14.1`, this will fetch the exact version mentioned.
+
+If you don't remember the version numbers and simply want to install the lts (Long Term Support) version currently then just use
+
+```bash
+nvm install --lts
+```
+
+So this way you can install multiple version of nodejs on your system, and if you wish to remove/delete any version from it, then use the uninstall command
+
+```bash
+nvm uninstall 10
+```
+
+## Switching Between Versions
+
+Now you have multiple versions of nodejs installed, but you can use only one at a time right, so let's check how to switch between different versions, for that we will use the `use` command.
+
+```bash
+nvm use 10
+```
+
+Similar to install, you can switch to the lts version using the same flag
+
+```bash
+nvm use --lts
+```
+
+## Custom Aliases
+
+Let's face it, we aren't really fond of remembering version numbers, but not to worry because using nvm you can give custom aliases to any version number and use that name to switch between different version
+
+```bash
+nvm alias my-version 10
+```
+
+And use this name to switch like
+
+```bash
+nvm use my-version
+```
+
+Now down the line, you think that your version is not 10 anymore, just like nature, you have also evolved, so you don't want my-version to point to 10 anymore, well you can do that by using the `unalias` command.
+
+```bash
+nvm unalias my-version
+```
+
+## List all installed versions
+
+Use the `ls` command to list all the versions you have installed.
+
+```bash
+nvm ls
+```
+
+Now let's talk about the key feature why I like using nvm.
+
+## Specify a Node Version on a Per-project Basis
+
+I have many personal nodejs projects as well as some client projects built using some different nodejs version, and I wouldn't like to see my code dealing with breaking changes just because I keep on changing node versions on my system. So there has to be a way for the project to remember that I was working on v10 let suppose and not on v15 which you are playing around with now. This is where I truly believe nvm shines.
+
+With the help of `.nvmrc` file, you can specify the version number this project expects and by simply typing `nvm use` inside this folder, nvm will automatically pick up the version from the `.nvmrc` file and use that version in the folder 😍.
+
+Now I personally don't even want to type `nvm use` every time I cd into a folder, and let the nvm automatically pickup the version and set it. So how do I do that?
+
+<Image
+  alt={`Modern problems require modern solutions`}
+  src={`/static/images/modern-problems.jpg`}
+  width={1296}
+  height={750}
+/>
+
+Well since I already use [oh-my-zsh](https://ohmyz.sh/) for my terminal profile, using this snippet I can achieve this task pretty easily.
+
+Here’s the ZSH snippet. Place this below your nvm config:
+
+```bash
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm use
+    fi
+  elif [ "$node_version" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+```
+
+Now when you change the directory with a `.nvmrc` file, your terminal will automatically pick up the node version and use that.
+
+You can always read more about it on their [github repo](https://github.com/nvm-sh/nvm) and also the windows alternative [nvm-windows](https://github.com/coreybutler/nvm-windows).

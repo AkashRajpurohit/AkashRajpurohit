@@ -1,0 +1,87 @@
+---
+title: 'FZF: The Ultimate Linux Productivity Tool'
+date: '2023-04-13'
+tags: ['linux']
+draft: true
+summary: "Are you tired of endlessly scrolling through terminal output or file listings? Look no further than fzf! This powerful command-line tool allows you to quickly and efficiently search and select from lists of files, processes, command history, and much more. In this article, we'll explore what fzf is and how you can use it to level up your Linux productivity game."
+---
+
+# Introduction
+
+As a Linux user, you're likely familiar with the power and flexibility of the command-line interface (CLI). But even the most experienced users can find themselves bogged down by long lists of output or hard-to-remember command syntax.
+
+That's where fzf comes in - this powerful tool streamlines many common CLI tasks, making your Linux experience more efficient and enjoyable.
+
+# What is fzf?
+
+[Fzf](https://github.com/junegunn/fzf) is a command-line fuzzy finder that can help you quickly search and select files, processes, command history, and more. It's lightweight, fast, and highly customizable, making it a popular tool among Linux power users.
+
+Fzf works by filtering a list of items based on a query, allowing you to quickly narrow down and select the desired item.
+
+# How to Use fzf
+
+Here are some examples of how to use fzf in your everyday Linux workflow:
+
+## Searching for Files
+
+To search for files using fzf, simply navigate to the directory you want to search and type the following command:
+
+```bash
+ls | fzf
+```
+
+This will display a fuzzy-searchable list of files in the current directory, allowing you to quickly select the file you're looking for.
+
+## Selecting a Process to Kill
+
+To kill a process using fzf, type the following command:
+
+```bash
+ps aux | fzf | awk '{print $2}' | xargs kill
+```
+
+This will display a list of running processes, which you can filter using fzf. Once you've selected the process you want to kill, fzf will output the process ID, which is then piped to the kill command via [xargs](/blog/mastering-batch-processing-with-linux-xargs-command/).
+
+## Searching Command History
+
+To search your command history using fzf, simply type:
+
+```bash
+history | fzf
+```
+
+This will display a searchable list of your recent command history, allowing you to quickly recall and execute past commands.
+
+## Checkout to a Git branch
+
+To search your git branches easily with fzf and checkout to it, simply type:
+
+```bash
+git branch --all | fzf | xargs git checkout
+```
+
+This will display a searchable list of your git branches, allowing you to quickly checkout to the selected branch.
+
+## Opening a file in Vim
+
+You can use fzf to open any file in Vim, simply type:
+
+```bash
+vim $(fzf --preview 'echo {}')
+```
+
+## Selecting and copying text from a file
+
+You can use fzf to select a file and then select and copy text from that file by typing:
+
+```bash
+find . -type f | fzf --preview 'cat {}' | xargs -r awk '{print}' | xclip -selection clipboard
+```
+
+Make sure you have [xclip](https://linux.die.net/man/1/xclip) installed before using it.
+
+# Conclusion
+
+Fzf is a versatile and powerful tool that can help you streamline many common CLI tasks, making your Linux experience more efficient and enjoyable. By using fzf, you can save time and reduce frustration, allowing you to focus on the work that really matters.
+
+With its intuitive interface and customizable features, fzf is a must-have tool for any Linux power user. So why not give it a try and see how it can take your productivity to the next level?

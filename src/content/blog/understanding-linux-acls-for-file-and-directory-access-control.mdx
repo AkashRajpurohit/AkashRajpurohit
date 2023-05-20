@@ -1,0 +1,59 @@
+---
+title: 'Understanding Linux ACLs for File and Directory Access Control'
+date: '2023-03-18'
+tags: ['linux']
+draft: true
+summary: "Linux ACLs provide a more granular way to control access to files and directories, allowing for finer control over permissions. In this article, we'll introduce you to ACLs, explain how they work, and show you how to use them to set permissions."
+---
+
+# Introduction
+
+Linux permissions are essential for securing files and directories, but they're not always enough. Sometimes, you need more granular control over who can access what, and that's where Linux Access Control Lists (ACLs) come in.
+
+ACLs provide a way to define permissions for individual users and groups on a per-file or per-directory basis. This makes it easier to grant specific users or groups access to specific files, even when they're located in the same directory.
+
+In this article, we'll provide an introduction to Linux ACLs, explain how they work, and show you how to use them to set permissions.
+
+# What are Linux ACLs?
+
+ACLs are an extension to the standard Unix file permissions system, which consists of read, write, and execute permissions for the file owner, group, and other users. ACLs allow you to define additional permissions for individual users and groups.
+
+ACLs provide a more granular way of controlling access to files and directories, allowing you to set permissions on a per-user or per-group basis. This means that you can give specific users or groups more or fewer permissions than the default set by the file's owner or group.
+
+# How Do Linux ACLs Work?
+
+Linux ACLs work by adding an additional layer of access control to the file or directory. When you create an ACL, you define a list of users or groups and the permissions that they have on the file or directory.
+
+When a user attempts to access a file or directory that has an ACL, the system checks the ACL to see if the user or group has the required permissions.
+
+If the user or group has the necessary permissions, they're allowed to access the file or directory. If they don't have the necessary permissions, they're denied access.
+
+# Using Linux ACLs
+
+To use Linux ACLs, you'll need to ensure that your file system supports them. Most modern file systems do, but it's always worth checking to be sure.
+
+To create an ACL for a file or directory, you'll use the `setfacl` command. The basic syntax is as follows:
+
+```bash
+setfacl -m u:username:permissions filename
+```
+
+Here, `u` denotes the user, `username` is the name of the user, `permissions` are the permissions to be set, and `filename` is the name of the file or directory.
+
+For example, to give the user akash read and write permissions to a file called `testfile`, you'd use the following command:
+
+```bash
+setfacl -m u:akash:rw testfile
+```
+
+To view the ACL for a file or directory, you'll use the `getfacl` command. The basic syntax is as follows:
+
+```bash
+getfacl filename
+```
+
+# Conclusion
+
+Linux ACLs provide a more granular way to control access to files and directories, allowing for finer control over permissions. In this article, we've introduced you to ACLs, explained how they work, and shown you how to use them to set permissions.
+
+By understanding ACLs, you'll be able to grant specific users or groups access to specific files, even when they're located in the same directory.

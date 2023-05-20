@@ -1,0 +1,80 @@
+---
+title: Journey into "how to professionally say" project
+date: '2022-05-08'
+tags: ['projects']
+draft: false
+summary: Join me in the journey of this project which got way more traction than expected
+discuss:
+  - type: DiscussLink
+    id: hackernews
+    url: https://news.ycombinator.com/item?id=31224996
+  - type: DiscussLink
+    id: reddit
+    url: https://www.reddit.com/r/programming/comments/ug5ivo/how_to_professionally_say/
+  - type: DiscussLink
+    id: twitter
+    url: https://twitter.com/akashwhocodes/status/1520837892419252224
+---
+
+# Introduction
+
+Sharing my thoughts and learnings from creating a side project as a fun activity over a weekend, which unexpectedly got a lot of traction from [Hackernews](https://news.ycombinator.com/item?id=31224996) and the community at [Reddit](https://www.reddit.com/r/programming/comments/ug5ivo/how_to_professionally_say/). You can find the project live link [here](https://howtoprofessionallysay.akashrajpurohit.com/) and the source code at [here](https://github.com/AkashRajpurohit/howtoprofessionallysay). So let's get started with it.
+
+# The Project Idea
+
+The project idea was pretty simple, it was a compiled list of content created by [@loewhaley](https://www.instagram.com/loewhaley/) on Instagram with added search feature for making the written content easily accessible.
+
+So once I added the data for it in a JSON object, all I needed to do was to display this information on a webpage. Since I am a huge fan of Next.js, naturally I decided to go ahead with the same stack once again which is [Next.js](https://nextjs.org) and [TailwindCSS](https://tailwindcss.com) and started the project with a [basic boilerplate](https://github.com/AkashRajpurohit/howtoprofessionallysay/commit/b93014cd9364414db3ba6d4cefa37c0ef0f411e8)
+
+# Analytics
+
+I track the analytics of all my side projects using [Umami](https://umami.is) and self-host it on [Vercel](https://vercel.com).
+For this project, I started noticing a huge spike in the traffic when I posted it on hacker news. For some reason, people started clicking the link and led it to reach the first page and first link of hacker news for a couple of hours.
+
+During this time the traffic of the site peaked at around **~900** live users concurrently. (_it may be a trivial number for many but for me, it was a whole new experience_). This continued for a couple of hours and within 24 hours, the site registered more than **100k** hits.
+
+<StaticTweet id="1521100117457080320" />
+
+The effect of this was that the project was hosted on Vercel (along with my other projects, specifically my portfolio site and my analytics tool), so within 24 hours the outbound bandwidth usage increased to more than 55GB which led to a notification from Vercel stating that I have consumed more than 50% of my bandwidth available.
+
+This was pretty shocking because never had I ever come across this problem so naturally never explored an option to find a solution for it. But I knew that if this momentum continues any longer, the site would go down and take down all other projects as well, so I needed to find some solution and that too in a relatively short time.
+
+I know what you might be thinking, _well just add additional bandwidth by throwing in more money at it_. I did think of doing just that but I knew it was in that momentum where the site was getting lots of hits but eventually, it was going to slow down, I just need to scale it up only for that duration so that the site and my other projects remain up till the momentum is there.
+
+So I spend some time first to see if Vercel can support this project and provide additional bandwidth till the momentum continues, but that request got rejected (and it makes sense why) but I tried a shot as that seemed to be the straightforward solution for it. And it started to seem that the momentum was getting slow but all of a sudden the traffic increased again as someone cross-posted the link on Reddit and people started using the site once again.
+
+<StaticTweet id="1521100516058537985" />
+
+This is when I knew it won't keep up with traffic and decided to look into other alternatives, during this I found out about [Cloudflare Pages](https://pages.cloudflare.com/) and the part where it allows **unlimited bandwidth**.
+
+# Using Cloudflare Pages
+
+So now I needed to figure out how to swap the current deployment strategy to Cloudflare. The first thing I did was since the entire site is just a static page, instead of building the site with `next build` and having a node server (which Vercel does probably on their backend) to run the site using `next start`, I swapped the flow to building the site and exporting it with `next export`, you can read more about next export [here](https://nextjs.org/docs/advanced-features/static-html-export).
+
+Once I had done these changes, I created a Cloudflare page by connecting Cloudflare pages to my GitHub repo (as I still needed the automatic CI/CD pipelines) and tested out if the site works fine.
+
+> One tip while doing this, Cloudflare by default uses Node 12.x for builds and it required a Node version greater than that, so for Cloudflare to use an upgraded version of Node, we need to set an environment variable called "NODE_VERSION".
+
+Once the site was live, I swapped the domain name so that the traffic can be redirected and served by Cloudflare, once the DNS was resolved, I still waited for a few more minutes for the project on Vercel and then removed the project from Vercel and kept Cloudflare for the deployment of this project.
+
+It is going well with it and if you are interested in the numbers of bandwidth then here it is, till the time the project was on Vercel, it recorded around **~68 GB** of Outbound bandwidth and currently (as of today when I am writing this blog) the data on Cloudflare is of around **~154 GB** so in total around **222 GB** of bandwidth have been consumed with more than **300K total hits** on the website.
+
+# Product Hunt Launch
+
+So after a month, I decided to launch the project on [ProductHunt](https://www.producthunt.com/posts/how-to-professionally-say) and the launch went extremely awesome.
+
+It was a bit slow earlier and was ranked 10th position for the day but after a couple of hours, It reached as high as 3rd rank during the peak. At the end of the day, the product was ranked as the **5th Product of the Day** on ProductHunt 🥳🤩
+
+<StaticTweet id="1544558580548116480" />
+
+This was my first experience launching a product on ProductHunt and it was an amazing experience, the people on ProductHunt are extremely supportive and gave interesting ideas and feedback. I hope to work on those soon and be able to improve the project and make it more useable for everyone.
+
+If you haven't checked it out yet then go ahead and check it on [ProductHunt](https://www.producthunt.com/posts/how-to-professionally-say) and share your feedback if any 😄.
+
+# Some learnings
+
+I had never used [Cloudflare](https://www.cloudflare.com/) but I totally love their product now and looking forward to exploring more of their services. Also, I had learned about the `next export` command but never tried it on any project so that was a new experience.
+
+I enjoyed the process of experiencing high traffic clicks and what strategy can be deployed to keep the site live and performant on the speed. Looking forward to keeping on learning and building other stuff on the side.
+
+That's it for today, see you some other time.

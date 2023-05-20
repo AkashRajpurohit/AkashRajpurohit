@@ -1,0 +1,43 @@
+---
+title: 'What is UDP and When to Use it? A Comprehensive Guide'
+date: '2023-03-29'
+tags: ['system design', 'networking']
+draft: false
+summary: UDP is a lesser-known protocol when compared to TCP, but it plays a vital role in network communication. If you are looking to learn about UDP and its use cases, you have come to the right place. Read on to explore the ins and outs of UDP and when it should be used.
+---
+
+# Introduction
+
+User Datagram Protocol (UDP) is a transport layer protocol used in computer networking to send data over the internet. UDP is a simpler protocol compared to TCP (Transmission Control Protocol) and provides a faster way to transmit data, but at the cost of reliability.
+
+UDP is often used in applications where speed is more important than reliability, such as real-time streaming, video conferencing, and online gaming.
+
+In this article, we will explore the concept of User Datagram Protocol (UDP), how it works, and its advantages and disadvantages. We will also provide a real-world example to help understand the concept better.
+
+# Technical Explanation
+
+UDP is a connectionless protocol, which means that it does not require a connection to be established between the sender and receiver. Instead, data is sent in the form of small packets, known as datagrams, and each datagram is treated as an independent unit of data.
+
+UDP is designed to be a fast and lightweight protocol, and it operates without the complex mechanisms used by TCP. UDP does not provide error checking, and it does not guarantee that all data will be delivered. This means that data can be lost, duplicated, or received out of order during transmission.
+
+UDP uses port numbers to identify the applications on the sending and receiving computers. When a program on the sender's computer wants to send data, it specifies the port number of the receiving program, and the data is sent to that port number.
+
+# Layman Explanation
+
+User Datagram Protocol (UDP) is a way for computers to quickly send and receive small amounts of data over a network. It is like a courier who delivers small packages quickly without checking if the package was delivered successfully or not.
+
+Imagine you are sending a message to your friend. With UDP, you just write the message on a postcard and drop it in the mailbox. The postcard will be delivered quickly without worrying about whether it reaches your friend or not.
+
+If the postcard gets lost along the way or your friend doesn't receive it, there's no way to know or resend the message. But if you just need to send a quick message that's not critical or time-sensitive, UDP is a great option.
+
+# Real World Example
+
+One example of where UDP is commonly used is in online gaming. In gaming, the speed of data transmission is critical to the game's performance, as any delay or lag can result in a poor user experience. UDP allows game data to be sent in real-time, without the overhead of error checking and retransmission that is present in TCP.
+
+In contrast, TCP may be more suitable for other applications such as file transfers, email, and web browsing, where reliability is more important than speed.
+
+# Conclusion
+
+In conclusion, User Datagram Protocol (UDP) is a connectionless protocol used for transmitting data over the internet. UDP is a fast and lightweight protocol that operates without the complex mechanisms used by TCP.
+
+It is often used in applications where speed is more important than reliability. However, UDP is less reliable than TCP, as data can be lost, duplicated, or received out of order during transmission.

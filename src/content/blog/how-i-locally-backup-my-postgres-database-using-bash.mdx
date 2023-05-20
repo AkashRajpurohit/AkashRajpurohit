@@ -1,0 +1,194 @@
+---
+title: 3 simple steps to create a local backup of Postgres database using Bash script
+date: '2022-10-05'
+tags: [bash, postgres]
+draft: false
+summary: In this article, I will show you how I back up the Postgres database hosted on Supabase (ideally can be anywhere) to the local system and automate this process.
+---
+
+# Introduction
+
+So just like me, you must also be having some databases running on the cloud for which you want to create backup snapshots periodically.
+
+Most of the cloud providers would already have some service (paid or free) for having automatic backups, but today we will learn how to create local backups of your Postgres database using a Bash script.
+
+I am using this script myself for taking backups from Postgres Database hosted on Supabase for some [self-hosted](/blog/open-source-alternatives-you-must-try-part-1) services that I use. So let's get started.
+
+> Only here for the script? Skip to the [final script](#final-bash-script) section
+
+# Bash variables
+
+Let's first check what are the few variables you need to run the script and register them.
+
+1. `BACKUP_DIR` - The directory where your backups would be stored
+2. `DB_HOST` - Database hostname, this would be the hostname that you would get from your cloud instance, also you can set a local database hostname as well if you want to create a backup for the local database.
+3. `DB_PASSWORD` - Database password
+4. `DB_PORT` - Ideally for the Postgres database, it would be **5432**.
+5. `APP_NAME` - Application name, we will use this to append in the backup file name.
+6. `tables` - List of tables you want to backup.
+
+We will have a `DATE` variable as well which again would be used in the filename.
+
+So your initial bash script should start like this
+
+```bash
+#!/bin/bash
+
+DATE=$(date +%d-%m-%Y)
+BACKUP_DIR="/backups"
+
+# Ideally you would want to keep these variables outside of the script
+# and add them to your .bashenv/.zshenv file
+DB_HOST=<remote-hostname or local-hostname>
+DB_PASSWORD=securepassword
+DB_NAME=postgres
+DB_PORT=5432
+APP_NAME=myawesomeapp
+
+# List of tables you want to backup
+tables=("table1" "table2" "table3")
+```
+
+# Backup database
+
+We will use the [pg_dump](https://www.postgresql.org/docs/current/app-pgdump.html) utility for creating a backup of the database.
+
+We can dump the entire database in a single `.sql` file however I like to create a separate file per table.
+
+<Callout type="info" title="Personal Preference">
+  The reason I prefer to do this way is that for my application I like to do some post-processing on the insert
+  statements because of which the database restoration becomes 50x faster on large datasets. More details on this can be
+  part of another blog.
+</Callout>
+
+So here we would now loop over all the tables we have mentioned before and start dumping our database into a local file.
+
+The pg_dump command would look like this
+
+```bash
+pg_dump -d postgresql://postgres:$DB_PASSWORD@$DB_HOST:$DB_PORT/$DB_NAME --column-inserts --data-only --table=tablename
+```
+
+To break down the command, let's go through the set of flags we are using.
+
+1. `-d` - the database we want to connect.
+2. `--column-inserts` - This would dump the data as `INSERT` commands with explicit column names like `INSERT INTO table (column, ...) VALUES ...`. This will make restoration very slow. it is mainly useful for making dumps that can be loaded into non-PostgreSQL databases. Any error during restoring will cause only rows that are part of the problematic INSERT to be lost, rather than the entire table contents.
+3. `--data-only` - Dump only the data, not the schema (data definitions). Table data, large objects, and sequence values are dumped.
+4. `--table` - Dump only tables with names matching patterns.
+
+These are the flags I use, feel free to add/remove any based on your preferences.
+
+<Callout type="warning" title="Caution">
+  As quoted here "_This will make restoration very slow_" for --column-inserts, this indeed would be the case because
+  the dump would have multiple INSERT statements which would be very slow to restore. There are multiple approaches
+  using which you can speed up the restoration. However, you can skip this flag if you don't want your database dump to
+  be in the format of column inserts.
+</Callout>
+
+So this would allow us to a backup single table, but what we want is to backup multiple tables and store them in a separate file, for this we would loop over the tables variable and redirect the output from `stdout` to a file.
+
+The updated bash script would look like this
+
+```bash
+#!/bin/bash
+
+DATE=$(date +%d-%m-%Y)
+BACKUP_DIR="/backups"
+
+# Ideally you would want to keep these variables outside of the script
+# and add them to your .bashenv/.zshenv file
+DB_HOST=<remote-hostname or local-hostname>
+DB_PASSWORD=securepassword
+DB_NAME=postgres
+DB_PORT=5432
+APP_NAME=myawesomeapp
+
+# List of tables you want to backup
+tables=("table1" "table2" "table3")
+
+# Go through each table and pull the records
+for table in ${tables[@]};
+do
+	echo "Downloading records for the table: $table"
+	# Run pg_dump command against each table and pull the records
+	pg_dump -d postgresql://postgres:$DB_PASSWORD@$DB_HOST:$DB_PORT/$DB_NAME --column-inserts --data-only --table="$table" > $BACKUP_DIR/$APP_NAME-$table-$(date +%d-%m-%Y).sql
+
+	echo "Downloading finished for the table: $table"
+done
+```
+
+# Purge old backups
+
+This is an optional step, but what we can do additionally is to remove old backups which are older than let's say 15 or 30 days and purge them whenever we run our script.
+
+```bash
+# To delete files older than 30 days
+find $BACKUP_DIR/* -mtime +30 -exec rm {} \;
+```
+
+<Callout type="warning" title="Caution">
+  Always verify the commands which remove any data before running them, same goes for here as well.
+</Callout>
+
+# Final Bash Script
+
+After merging all the steps we saw, our final bash script should look like this.
+
+```bash:db-backup.sh
+#!/bin/bash
+
+DATE=$(date +%d-%m-%Y)
+BACKUP_DIR="/backups"
+
+# Ideally you would want to keep these variables outside of the script
+# and add them to your .bashenv/.zshenv file
+DB_HOST=<remote-hostname or local-hostname>
+DB_PASSWORD=securepassword
+DB_NAME=postgres
+DB_PORT=5432
+APP_NAME=myawesomeapp
+
+# List of tables you want to backup
+tables=("table1" "table2" "table3")
+
+# Go through each table and pull the records
+for table in ${tables[@]};
+do
+	echo "Downloading records for the table: $table"
+	# Run pg_dump command against each table and pull the records
+	pg_dump -d postgresql://postgres:$DB_PASSWORD@$DB_HOST:$DB_PORT/$DB_NAME --column-inserts --data-only --table="$table" > $BACKUP_DIR/$APP_NAME-$table-$(date +%d-%m-%Y).sql
+
+	echo "Downloading finished for the table: $table"
+done
+
+# To delete files older than 30 days
+find $BACKUP_DIR/* -mtime +30 -exec rm {} \;
+```
+
+Make sure you give executable permissions to this script. You can do this by using `chmod` command.
+
+```bash
+chmod +x ./db-backup.sh
+```
+
+# Bonus
+
+Running the script manually is nice, but why do it manually when you can automate this right? So let's just do that.
+
+> We will use a similar setup that we saw in the [backup home directory](/blog/backup-users-home-directory-in-linux-using-tar-command/) using tar blog
+
+We will set up a cron job to run this script automatically. We will enter into crontab using
+
+```bash
+crontab -e
+```
+
+Inside it paste the following lines at the bottom.
+
+```bash
+0 12 * * 5 /path/to/script/db-backup.sh
+```
+
+This will run this script every Friday at 12:00. To learn more about how to configure these values, I would highly recommend using [crontab.guru](https://crontab.guru/).
+
+Hope you found this helpful, see you in the next one.

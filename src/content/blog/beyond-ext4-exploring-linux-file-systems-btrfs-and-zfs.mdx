@@ -1,0 +1,51 @@
+---
+title: 'Beyond ext4 — Exploring Linux File Systems Btrfs and ZFS'
+date: '2023-03-15'
+tags: ['linux']
+draft: true
+summary: 'Linux is known for its flexibility and customizability, which is largely due to its file systems. While the ext4 file system is commonly used in Linux distributions, there are other options available that offer unique features and advantages. Two of the most notable alternatives are Btrfs and ZFS. In this article, we will explore these file systems and see what makes them stand out from the crowd.'
+---
+
+# Introduction
+
+When it comes to Linux file systems, the ext4 file system has been the default choice for many years. It's a reliable and mature file system that's been around since 2008, and it's still widely used today.
+
+However, there are other file systems available that offer unique features and advantages over ext4. In this article, we'll take a look at two of the most interesting alternatives viz Btrfs and ZFS.
+
+# Btrfs
+
+Btrfs is a copy-on-write (CoW) file system that was designed to be a modern replacement for the aging ext4 file system. One of the main advantages of Btrfs is its support for subvolumes, which allows for easier management of file system partitions.
+
+With subvolumes, it's possible to create logical partitions within a single physical partition, which can make it easier to manage multiple operating systems or different user accounts.
+
+Btrfs also includes built-in support for RAID, which allows multiple disks to be used in a single file system. Btrfs supports several different RAID levels, including RAID 0, 1, 5, 6, and 10.
+
+This can be particularly useful for users who need to store large amounts of data, as it provides both redundancy and increased performance.
+
+Another notable feature of Btrfs is its support for snapshots, which allows users to create a read-only copy of a file system at a specific point in time. This can be useful for creating backups or for testing new software without affecting the main file system.
+
+Btrfs also includes support for compression and deduplication. Compression can help save disk space and improve performance by reducing the amount of data that needs to be read and written to disk. Deduplication, on the other hand, can save disk space by identifying duplicate data and storing only one copy of it.
+
+# ZFS
+
+ZFS is a file system that was originally developed by Sun Microsystems for use in their Solaris operating system. It's a CoW file system that includes support for RAID, snapshots, and clones.
+
+ZFS is designed to be a self-healing file system, which means it can detect and correct errors on the fly. This can help prevent data loss and improve overall system reliability.
+
+One of the key features of ZFS is its support for pools. A pool is a collection of disks that are managed as a single entity. ZFS supports several different RAID levels, including RAID 0, 1, 5, 6, and 10.
+
+ZFS also includes support for caching and tiering, which can improve performance by storing frequently accessed data in faster storage media like solid-state drives (SSDs).
+
+ZFS also includes support for snapshots and clones, which can be particularly useful for creating backups or for testing new software without affecting the main file system. ZFS snapshots are read-only copies of a file system at a specific point in time, while clones are writable copies of a snapshot.
+
+Another notable feature of ZFS is its built-in support for data integrity protection. ZFS uses a technique called checksumming to detect and correct data corruption. This can help prevent data loss and ensure the integrity of your files.
+
+# Conclusion
+
+Both Btrfs and ZFS are advanced file systems that offer unique features and advantages over the ext4 file system.
+
+Btrfs is a relatively new file system that's designed to be a modern replacement for ext4, with features like subvolumes, RAID support, snapshots, and built-in compression and deduplication.
+
+ZFS, on the other hand, is a mature file system that's designed to be a self-healing file system, with features like pools, RAID support, snapshots, and built-in data integrity protection.
+
+If you're looking for a file system that can meet your advanced storage needs, either Btrfs or ZFS could be a good choice. It's worth noting that both file systems require some expertise to set up and configure properly, so it's important to do your research and consult the documentation before diving in.

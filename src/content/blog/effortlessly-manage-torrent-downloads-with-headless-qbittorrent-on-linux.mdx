@@ -1,0 +1,82 @@
+---
+title: Effortlessly Manage Torrent Downloads with Headless qBittorrent on Linux
+date: '2023-02-19'
+tags: ['linux']
+draft: false
+summary: Learn how to install qBittorrent on a Linux server without a GUI and run it in the background with SystemD for a seamless torrenting experience.
+---
+
+# Introduction
+
+qBittorrent is a popular and open-source torrent client that can be installed on a wide range of operating systems including Linux.
+
+A headless mode means running a program without a GUI (Graphical User Interface), which is ideal for a server setup where a GUI is not required.
+
+In this blog, we will guide you through the process of installing qBittorrent in a headless mode on a Linux server.
+
+# Installing qBittorrent in Headless mode
+
+The first step is to update the package list and install the required packages:
+
+```bash
+sudo apt update
+sudo apt install qbittorrent-nox
+```
+
+Once the installation is complete, start the `qbittorrent-nox` service with the following command:
+
+```bash
+qbittorrent-nox
+```
+
+You can access the qBittorrent interface by visiting the following URL in your web browser: `http://localhost:8080`
+
+# Running qBittorrent in Background with SystemD
+
+Running the command on the terminal directly is fine for testing it out, However, we don't want to block the terminal window whenever we are running qBittorrent.
+
+To run qBittorrent in the background, we can use SystemD, the init system used in modern Linux distributions. Here's how you can do it:
+
+Create a service file by using the following command:
+
+```bash
+sudo vi /etc/systemd/system/qbittorrent.service
+```
+
+Add the following content to the file:
+
+```bash:/etc/systemd/system/qbittorrent.service
+[Unit]
+Description=qBittorrent Daemon
+
+[Service]
+User=your_username
+ExecStart=/usr/bin/qbittorrent-nox
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Replace `your_username` with your system user who would have read/write access (preferably non-root user).
+
+Save and close the file.
+
+Reload the SystemD configuration with the following command:
+
+```bash
+sudo systemctl daemon-reload
+```
+
+Start the qBittorrent service and enable it to start at boot time with the following commands:
+
+```bash
+sudo systemctl start qbittorrent
+sudo systemctl enable qbittorrent
+```
+
+If you are curious, you can read more in detail about SystemD and how to use it for [running background services](/blog/keep-your-services-running-in-the-background-with-systemd/) in one of my previous blog
+
+# Conclusion
+
+In this blog, we showed you how to install qBittorrent in a headless mode on a Linux server and how to run it in the background with SystemD. The steps are straightforward and easy to follow, making it convenient for you to set up qBittorrent on your server.

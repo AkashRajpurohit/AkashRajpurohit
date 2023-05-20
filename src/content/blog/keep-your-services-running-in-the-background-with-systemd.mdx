@@ -1,0 +1,124 @@
+---
+title: Keep Your Services Running in the Background with SystemD
+date: '2023-02-15'
+tags: ['linux']
+draft: false
+summary: Do you want your Linux services to keep running even after you log out of your system? SystemD makes it easy to run services in the background. In this guide, we'll show you how to create a SystemD service, start and stop it, and monitor its status.
+---
+
+# Introduction:
+
+SystemD is a system and service manager for Linux that provides an efficient way to manage services and daemons. SystemD can be used to start, stop, and manage services, as well as monitor their status.
+
+By using SystemD to run your services in the background, you can ensure that they continue to run even after you log out of your system.
+
+# Run a Service in the Background with SystemD
+
+## Create a SystemD Service
+
+To create a SystemD service, you will need to create a new service file in the `/etc/systemd/system/` directory.
+
+For example, to create a service for Apache, you can create the file `/etc/systemd/system/httpd.service` with the following contents:
+
+```bash:/etc/systemd/system/httpd.service
+[Unit]
+Description=Apache Web Server
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/httpd -k start
+ExecStop=/usr/sbin/httpd -k stop
+
+[Install]
+WantedBy=multi-user.target
+```
+
+## Start and Stop the Service
+
+To start the Apache service, use the following command:
+
+```bash
+sudo systemctl start httpd
+```
+
+To stop the Apache service, use the following command:
+
+```bash
+sudo systemctl stop httpd
+```
+
+## Monitor Service Status
+
+You can monitor the status of the Apache service by using the following command:
+
+```bash
+systemctl status httpd
+```
+
+This command will show you whether the service is running or not, as well as other information about the service.
+
+## Enable and Disable Services
+
+You can also enable and disable services so that they start automatically at boot time. To enable the Apache service, use the following command:
+
+```bash
+sudo systemctl enable httpd
+```
+
+To disable the Apache service, use the following command:
+
+```bash
+sudo systemctl disable httpd
+```
+
+## Detailed Explanation
+
+### [Unit]
+
+This section specifies metadata about the service, such as its description, dependencies, and related services.
+
+```bash
+Description=Apache Web Server
+```
+
+This line gives a description of the service, which can be any text you like. In this case, it's "Apache Web Server."
+
+### [Service]
+
+This section specifies the actions that SystemD should take to start and stop the service.
+
+```bash
+Type=simple
+```
+
+This line specifies the type of service. "simple" is a common type for most services.
+
+```bash
+ExecStart=/usr/sbin/httpd -k start
+```
+
+This line specifies the command that SystemD should run to start the service. In this case, it's `/usr/sbin/httpd` with the argument `-k start`.
+
+```bash
+ExecStop=/usr/sbin/httpd -k stop
+```
+
+This line specifies the command that SystemD should run to stop the service. In this case, it's `/usr/sbin/httpd` with the argument `-k stop`.
+
+### [Install]
+
+This section specifies how the service should be installed and integrated into the system.
+
+```bash
+WantedBy=multi-user.target
+```
+
+This line specifies the target that the service should be integrated with. The target multi-user.target means that the service will start automatically at boot time, after the basic system services have started.
+
+So, that's an overview of what each line in a SystemD service file means. By understanding each line, you can create and customize your own SystemD services to run your services in the background.
+
+# Conclusion
+
+SystemD provides an easy and efficient way to run services in the background on Linux. By following the steps outlined in this guide, you can create a SystemD service, start and stop it, monitor its status, and enable and disable it.
+
+Start using SystemD to manage your services and keep them running smoothly in the background.

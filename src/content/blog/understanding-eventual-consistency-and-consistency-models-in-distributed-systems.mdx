@@ -1,0 +1,49 @@
+---
+title: 'Understanding Eventual Consistency and Consistency Models in Distributed Systems'
+date: '2023-03-27'
+tags: ['system design']
+draft: true
+summary: 'In distributed systems, maintaining consistency of data across multiple nodes is crucial. However, achieving absolute consistency in a distributed system is difficult, and often, not practical. This is where eventual consistency comes into play. But what is eventual consistency? And what are the different consistency models available? In this article, we will explore these concepts and how they are used in distributed systems.'
+---
+
+# Introduction
+
+Distributed systems are becoming increasingly common, with the rise of cloud computing and microservices architecture.
+
+One of the biggest challenges in distributed systems is ensuring data consistency across multiple nodes.
+
+In a centralized system, consistency can be easily maintained. However, in a distributed system, consistency becomes much more difficult to achieve.
+
+To solve this problem, various consistency models have been proposed, including eventual consistency. In this article, we will explore what eventual consistency is, how it works, and the different consistency models available in distributed systems.
+
+# What is eventual consistency?
+
+> Eventual consistency is a consistency model used in distributed systems, which allows data to be inconsistent for a period of time.
+
+In eventual consistency, updates to data propagate through the system asynchronously, eventually reaching all nodes and resulting in a consistent state.
+
+Eventual consistency is often used in systems where absolute consistency is not required, such as in caching or in systems that prioritize availability over consistency.
+
+For example, in a social media platform, it is not necessary for a user's follower count to be absolutely consistent at all times.
+
+# Consistency Models
+
+There are several other consistency models available in distributed systems, including `strong consistency`, `weak consistency`, and `eventual consistency`.
+
+In strong consistency, all nodes have the same view of the data at all times. In weak consistency, nodes may have different views of the data at different times. Eventual consistency falls somewhere in between these two models.
+
+# Examples
+
+One popular example of eventual consistency is Amazon's DynamoDB. In DynamoDB, data is partitioned across multiple nodes, and updates are propagated asynchronously.
+
+As a result, there may be a period of time where some nodes have different views of the data. However, eventually, all nodes will converge on a consistent view of the data.
+
+Another example is Apache Cassandra, which uses a tunable consistency model. Cassandra allows users to configure the consistency level of read and write operations, allowing users to prioritize either availability or consistency.
+
+# Conclusion
+
+In conclusion, eventual consistency is a valuable tool for maintaining consistency in distributed systems where absolute consistency is not required.
+
+Understanding the different consistency models available is important when designing distributed systems, as it can greatly impact the performance and reliability of the system.
+
+By using the right consistency model, developers can ensure that their distributed systems are scalable, reliable, and consistent.

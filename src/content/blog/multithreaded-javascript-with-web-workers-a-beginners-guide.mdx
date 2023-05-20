@@ -1,0 +1,81 @@
+---
+title: "Multi-Threaded JavaScript with Web Workers: A Beginner's Guide"
+date: '2023-03-19'
+tags: ['javascript']
+draft: true
+summary: "Are you tired of slow and unresponsive web applications? Do you want to improve the performance of your JavaScript code without sacrificing user experience? Look no further than JavaScript's Web Workers API. In this article, we'll explore the basics of web workers and how they can help you create multi-threaded web applications."
+---
+
+# Introduction:
+
+Web applications are becoming more complex, and with that comes the need for better performance. JavaScript is a single-threaded language, which means that it can only execute one task at a time. This can lead to slow and unresponsive web applications, especially when dealing with large amounts of data.
+
+Web Workers are a powerful feature of the HTML5 specification that allow JavaScript code to be executed in parallel on separate threads. This means that heavy computations can be offloaded to separate threads, freeing up the main thread to handle user input and other tasks.
+
+In this article, we'll explore how Web Workers work, how to create them, and how to communicate between them and the main thread.
+
+# Creating a Web Worker
+
+To create a Web Worker, we need to create a separate JavaScript file that contains the code we want to run in the worker. Let's create a simple example that calculates the factorial of a number:
+
+```javascript:worker.js
+onmessage = function(e) {
+	const result = factorial(e.data);
+	postMessage(result);
+}
+
+function factorial(n) {
+	if (n <= 1) return 1;
+	return n \* factorial(n - 1);
+}
+```
+
+In this example, the `onmessage` function is called whenever a message is received from the main thread. The message contains the number we want to calculate the factorial for. The factorial function calculates the factorial of a number recursively.
+
+To create a Web Worker from this file, we can use the Worker constructor:
+
+```javascript
+const worker = new Worker('worker.js');
+```
+
+This creates a new Web Worker from the `worker.js` file. We can then send messages to the worker using the postMessage method:
+
+```javascript
+worker.postMessage(5);
+```
+
+This sends a message containing the number 5 to the worker. The worker will then calculate the factorial of 5 and send the result back to the main thread using the postMessage method:
+
+```javascript
+worker.onmessage = function (e) {
+  console.log(`Factorial of 5 is ${e.data}`);
+};
+```
+
+This logs the result of the calculation to the console.
+
+# Communicating between Web Workers and the main thread
+
+Web Workers communicate with the main thread using the postMessage method and the `onmessage` event. The `postMessage` method sends a message to the other thread, while the `onmessage` event is called whenever a message is received.
+
+Let's modify our previous example to calculate the factorial of multiple numbers:
+
+```javascript:main.js
+const worker = new Worker('worker.js');
+
+worker.onmessage = function(e) {
+	console.log(`Factorial of ${e.data.n} is ${e.data.result}`);
+}
+
+for (let i = 1; i <= 5; i++) {
+	worker.postMessage({ n: i });
+}
+```
+
+In this example, we create a new Web Worker from the `worker.js` file. We then send messages to the worker containing an object with the number we want to calculate the factorial for. The worker calculates the factorial and sends the result back to the main thread in an object containing the original number and the result.
+
+# Conclusion
+
+Web Workers are a great tool for improving the performance of web applications, especially when dealing with large amounts of data. By offloading heavy computations to separate threads, Web Workers can free up the main thread to handle user input and other tasks, resulting in a smoother and more responsive user experience.
+
+If you're looking to improve the performance of your web application, give Web Workers a try. With a little bit of effort, you can create multi-threaded applications that are fast, responsive, and a joy to use.

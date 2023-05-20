@@ -1,0 +1,230 @@
+---
+title: API Rate Limit for Production Ready Applications in Node.js
+tags: [nodejs]
+date: 2020-05-03
+summary: Learn how to quickly rate limit your API endpoints for small and large size applications
+draft: false
+---
+
+# Introduction
+
+Rate limiting is one of the most important security feature that you must add for securing backend APIs from malicious attacks like brute-forcing `/login` or `/admin` and for handling unwanted flood of requests from users. In simple terms, rate-limiting allows us as a developer to control the rate at which user requests are processed by our server.
+
+In this guide, we will learn how to add rate limiting for a small-sized project as quickly as possible and how to scale such a method for a production-ready application.
+
+# Why do you want to add rate-limiting?
+
+Simply said, you want to reduce the risk of [DOS](https://en.wikipedia.org/wiki/DOS) attacks and make sure that your server is never overloaded.
+
+For example, you have to build a Public API and you want to allow unsubscribed users to make only 100 requests per hour. Once the user has exceeded that limit, you just want to simply ignore the request and send them an error indicating that they have exhausted their free limit and consider to subscribe for your API or anything or that sort.
+
+Kindly bear in mind that for implementing a rate-limiting technique, there must be a clearly defined constraint, which could be based on any of the following:
+
+- <b>IP address:</b> The constraint is on the IP address of the device from where the request was initiated.
+- <b>Location:</b> The constraint here is based on the geographical region which is implemented based on the location from
+  where the request was made.
+- <b>Users: </b> The constraint is made on the particular user and is implemented by using a unique identifier for the particular
+  user like userId, API KEY, etc.
+
+Several algorithms can be used to implemented rate limiting, you can [read more about them here](https://en.wikipedia.org/wiki/Rate_limiting).
+
+Given that, let us start with the practical implementation of API rate limiting.
+
+# For Small & Medium-Sized Applications
+
+We will use a third-party npm package called [express-rate-limit](https://www.npmjs.com/package/express-rate-limit) for this purpose. Surely we can build a custom middleware ourselves but there is no need to reinvent the wheel.
+
+## Step 1: Setup Basic Project
+
+I'm assuming that you already have a project set up with express. If not then quickly setup an express project using [boilerplate-gen](https://www.npmjs.com/package/boilerplate-gen) package.
+
+```bash
+npx boilerplate-gen
+```
+
+and choose express for the project template.
+
+## Step 2: Install the third party package
+
+Install the package.
+
+```bash
+npm i express-rate-limit
+# OR if you are using YARN
+yarn add express-rate-limit
+```
+
+## Step 3: Create the rate limit middleware
+
+```javascript:middlewares/ratelimit.js
+const rateLimit = require('express-rate-limit');
+
+// Rate limit middleware
+const rateLimitMiddleware = rateLimit({
+  windowMs: 60 * 60 * 1000,
+  max: 100,
+  message: 'You have exceeded your 100 requests per hour limit.',
+  headers: true,
+});
+
+// Export it
+module.exports = rateLimitMiddleware;
+```
+
+Let's now quickly try to understand what we are doing here.
+
+We are exporting a function called `rateLimitMiddleware` which invokes the rateLimit function which we installed from the package. This middleware enforces rate limiting based on the options we have passed in, which are -
+
+- `windowMs` - The window size in milliseconds, which in our case is 1 hour.
+- `max` - Maximum number of requests which can be allowed in the given window size.
+- `message` - The error message that the user would get when they exceed their limit.
+- `headers` - This option automatically adds the appropriate headers showing that this API resource is rate limited (`X-RateLimit-Limit`), current usage (`X-RateLimit-Remaining`) and time to wait before retrying (`Retry-After`).
+
+Now that we have created our middleware, we have simply configure our application to use this middleware when handling the requests.
+
+Let's do that quickly
+
+## Step 4: Use the middleware
+
+```javascript:app.js {2,6}
+const express = require('express');
+const rateLimitMiddleware = require('./middlewares/ratelimit');
+
+const app = express();
+// Use Ratelimit Middleware
+app.use(rateLimitMiddleware);
+```
+
+Voilà! We are done here. Now all the requests will be rate-limited according to your configurations. Also you can add multiple middlewares with different sets of configurations for certain routes.
+
+For eg, normal routes can be rate-limited to 100 requests per hour and `/login` or `/admin` can be rate-limited to 20 requests per hour to avoid [brute force password attacks](https://en.wikipedia.org/wiki/Brute-force_attack)
+
+> Note: This package identifies users by their IP addresses using `req.ip` by default
+
+Great! So now you have added a rate limiter for your API with just 4 simple steps.
+
+Now let's move to the other half section of this blog, which is...
+
+# For Large Applications
+
+The above-mentioned implementation is really good if you are building a small to medium size application. However, this approach will not scale for large applications.
+
+Why is that?? You must be asking right.
+
+Firstly, if your application size is large, most likely you won't be having a single node process on a single server. Rather you will have multiple node processes running on a distributed system and the above third party package does not share state with other processes/servers by default.
+
+So using the same configurations you won't be able to scale.
+
+So what's the solution there? How can I share the state between multiple server instances?
+
+The answer is quite simple
+
+You use an `External Data Store` to store all the information.
+
+`express-rate-limit` package uses `Memory Store` by default which stores `hits` in-memory in the Node.js process, hence cannot share the state between processes.
+
+So we can use an external data store to store this information and that way we can have multiple processes/servers using that external store and that way we can scale our application.
+
+Now the question is what should we use as our `Data Store`. Well, there are many choices like -
+
+- Redis Store
+- Memcached Store
+- Mongo Store
+- PostgreSQL
+- MySQL etc.
+
+I would prefer to choose [Redis](https://redis.io/) because it is fast and flexible with support for various types of data structures.
+
+Also we will use another third-party package called [rate-limiter-flexible](https://www.npmjs.com/package/rate-limiter-flexible) as it works with Redis, process Memory, Cluster or PM2, Memcached, MongoDB, MySQL, PostgreSQL and allows to control requests rate in a single process or distributed environment.
+
+Let's now start with the implementation part. Assuming you have an existing project, or use the same method from above to set up a new one quickly.
+
+## Step 1: Install the package
+
+Install the packages needed.
+
+```bash
+npm i rate-limiter-flexible redis
+# OR if you are using YARN
+yarn add rate-limiter-flexible redis
+```
+
+## Step 2: Setup the middleware
+
+We will use Redis for the project, if you don't have Redis installed then first [download and install it from here](https://redis.io/download)
+
+```javascript:middleware/rateLimiterRedis.js
+const redis = require('redis');
+const { RateLimiterRedis } = require('rate-limiter-flexible');
+
+// Create redis client
+const redisClient = redis.createClient({
+  host: 'redis',
+  port: 6379,
+});
+
+// Setup Rate Limiter
+const rateLimiter = new RateLimiterRedis({
+  redis: redisClient, // redis client instance
+  keyPrefix: 'appname:rl', // prefix your keys with some name
+  points: 10, // 10 requests
+  duration: 1, // per 1 second by IP
+});
+
+// Setup the middleware using the rate limiter config
+const rateLimiterMiddleware = (req, res, next) => {
+  // On the basis of ip address, but can be modified according to your needs
+  rateLimiter
+    .consume(req.ip)
+    .then(() => {
+      next();
+    })
+    .catch(() => {
+      res.status(429).send('Too Many Requests');
+    });
+};
+
+module.exports = rateLimiterMiddleware;
+```
+
+Let's break it down by each section.
+
+1. We import the packages, both Redis and rate-limiter-flexible, and use the `RateLimiterRedis` since we are implementing with Redis.
+
+2. We create Redis client connecting to the local machine on Redis default port `6379`. You can use a remote hosted machine with Redis as well here (which you might do for large systems).
+
+3. We create the rateLimiter instance with some configuration options
+
+   - `redis` - The redisClient instance we created.
+   - `keyPrefix` - Adding a prefix to all the keys generated from it, we can use it like `appname:rl`, rl is for ratelimit. Feel free to choose any other keyPrefix.
+   - `points` - Maximum number of points can be consumed over the duration.
+   - `duration` - Number of seconds before consumed points are reset. If it is set to `0` then it never resets.
+
+     You can view more [options here](https://www.npmjs.com/package/rate-limiter-flexible#basic-options)
+
+4. Finally, we set up our middleware which uses the rateLimiter instance we created above and we consume based on the `req.ip` i.e IP address of the user.
+
+Finally, we will use this middleware in our `app.js`
+
+## Step 3: Use the middleware
+
+```javascript:app.js {2,5}
+const express = require('express');
+const rateLimiterRedisMiddleware = require('./middleware/rateLimiterRedis');
+
+const app = express();
+app.use(rateLimiterRedisMiddleware);
+```
+
+And..that's it. Now you can scale your application with rate limiter. I would highly suggest you to check the docs of the package for more details and configuration options.
+
+# TL;DR
+
+We learn how to set up rate limiter for nodejs and expressjs for small and large size applications with implementation with code examples.
+
+# Links
+
+- [What is Rate Limiting](https://en.wikipedia.org/wiki/Rate_limiting)
+- [express-rate-limit](https://www.npmjs.com/package/express-rate-limit)
+- [rate-limiter-flexible](https://www.npmjs.com/package/rate-limiter-flexible)
+- [Redis](https://redis.io/)

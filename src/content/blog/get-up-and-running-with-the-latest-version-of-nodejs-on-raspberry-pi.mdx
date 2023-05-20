@@ -1,0 +1,41 @@
+---
+title: Get Up and Running with the Latest Version of Node.js on Raspberry Pi
+date: '2023-02-25'
+tags: ['nodejs', 'homelab']
+draft: false
+summary: Do you want to run the latest version of Node.js on your Raspberry Pi? This guide will take you through the process of installing the latest version of Node.js on armhf architecture using binary packages.
+---
+
+# Introduction
+
+The Raspberry Pi is a small, affordable single-board computer that is widely used for educational and hobby projects. One of the popular uses of Raspberry Pi is to run Node.js applications, and it is a great platform for learning, testing and developing web applications.
+
+However, getting the latest version of Node.js up and running on a Raspberry Pi can be a challenge. This guide provides step-by-step instructions on how to install the latest version of Node.js on a Raspberry Pi running armhf architecture.
+
+# Instructions
+
+Download the latest version of Node.js for armhf architecture.
+
+```bash
+curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
+```
+
+> Note: Replace the `setup_18.x` with the node.js version you want to download and install. I am picking 18 since that's the LTS release at the time of writing this blog
+
+Install Node.js
+
+```bash
+sudo apt-get install nodejs
+```
+
+Verify the installation
+
+```bash
+node -v
+```
+
+# Conclusion
+
+With these simple steps, you should now have the latest version of Node.js up and running on your Raspberry Pi. Whether you are just starting out with Node.js or you are an experienced developer, this guide will help you get up and running quickly and easily.
+
+Start building your next project on Raspberry Pi with Node.js today!

@@ -1,0 +1,47 @@
+---
+title: 'What is a Cache and How Does it Speed Up Your Applications?'
+date: '2023-04-01'
+tags: ['system design']
+draft: false
+summary: Caching is a powerful technique used by software engineers to speed up their applications. But what exactly is a cache, and how does it work? In this article, we'll dive into the technical details of caching, explain how it can improve the performance of your applications, and provide real-world examples to help you better understand this essential concept.
+---
+
+# Introduction
+
+In today's fast-paced world, speed is critical. When it comes to software, users expect fast and responsive applications that provide them with the data they need quickly.
+
+However, some operations can be resource-intensive and time-consuming, which can slow down applications. That's where caching comes in.
+
+A cache is a temporary storage area that stores frequently accessed data, making it faster to access, reducing the need for frequent requests to the original data source, and ultimately improving application performance.
+
+# What is a Cache?
+
+In technical terms, a cache is a hardware or software component that stores data so that future requests for that data can be served faster. Caching can occur at various levels in the software stack, including the database level, application level, and network level.
+
+Caches can store a wide range of data, from database query results to HTML web pages, images and more.
+
+> When a user requests data from an application, the system checks the cache first to see if the requested data is already available. If the data is present in the cache, it's returned to the user without having to query the original data source, saving time and resources.
+
+If the data is not present in the cache, the system fetches it from the original data source, stores it in the cache, and then returns it to the user.
+
+# Types of cache
+
+- **Browser cache:** A cache that stores data, such as web pages, images, and scripts, that are frequently accessed by the user to speed up subsequent visits to the same site.
+- **Content delivery network (CDN) cache:** A cache that stores copies of frequently requested content, such as images and videos, on multiple servers around the world to reduce the load on the origin server and improve access times for users.
+- **CPU cache:** A cache that stores frequently used data from main memory to reduce the time it takes for the CPU to access that data.
+- **Database cache:** A cache that stores frequently accessed data in memory to reduce the number of disk reads needed to serve database queries.
+- **Operating system cache:** A cache that stores frequently used data, such as file system metadata and disk blocks, in memory to reduce the time it takes for the operating system to access that data.
+- **Proxy cache:** A cache that stores copies of frequently accessed web pages and content on a server closer to the user, reducing the load on the origin server and improving access times for users.
+- **Session cache:** A cache that stores frequently accessed session data, such as user authentication information, in memory to reduce the number of database reads needed to serve user requests.
+
+# Real World Example
+
+A common example of caching is the browser cache. When you visit a website, your browser stores static content such as images, CSS files, and JavaScript files in its cache.
+
+The next time you visit the website, the browser checks its cache for the static content before requesting it from the website's server. If the content is present in the cache, it's returned to the user from the cache, speeding up the page load time.
+
+# Conclusion
+
+Caching is a powerful technique used by software engineers to speed up their applications. By storing frequently accessed data in a cache, applications can serve data to users faster and reduce the need for frequent requests to the original data source.
+
+With caching, developers can optimize their applications for speed and provide users with a better experience.

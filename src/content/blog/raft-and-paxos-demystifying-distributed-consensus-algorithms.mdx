@@ -1,0 +1,63 @@
+---
+title: 'Raft and Paxos: Demystifying Distributed Consensus Algorithms'
+date: '2023-03-27'
+tags: ['system design']
+draft: true
+summary: 'Distributed consensus is a fundamental problem in distributed systems, where multiple nodes need to agree on a single value or a sequence of values. Raft and Paxos are two popular consensus algorithms used in distributed systems. In this article, we will explain the concepts behind Raft and Paxos in a simplified manner and explore how they work to achieve consensus in distributed systems.'
+---
+
+# Introduction
+
+Distributed systems are an essential part of modern software development, powering everything from social media networks to cloud computing.
+
+In these systems, multiple nodes work together to provide a reliable and scalable service to end-users. However, ensuring that all nodes in the system agree on the same state is a challenging task.
+
+Distributed consensus algorithms, such as Raft and Paxos, solve this problem by ensuring that all nodes agree on the same state.
+
+In this article, we will explain how Raft and Paxos achieve consensus in a distributed system.
+
+# What is Distributed Consensus?
+
+> Distributed consensus is the process of multiple nodes in a distributed system agreeing on a single value or sequence of values.
+
+It is a fundamental problem in distributed systems, and solving it is crucial for building reliable and scalable distributed applications.
+
+For example, consider a distributed database that stores customer transactions. Each node in the system receives customer transactions from multiple sources and stores them locally.
+
+To ensure that all nodes have the same state, they need to agree on the order in which the transactions occurred.
+
+Distributed consensus algorithms help achieve this by ensuring that all nodes agree on the same order of transactions.
+
+# Raft Consensus Algorithm
+
+Raft is a consensus algorithm designed to be easy to understand and implement. It consists of three main components: `leader election`, `log replication`, and `safety`.
+
+In Raft, there is one leader node that serves as the primary point of contact for clients.
+
+The leader node receives client requests, replicates them to other nodes in the system, and responds to the client once a quorum of nodes acknowledges the request. If the leader node fails, a new leader is elected using a leader election algorithm.
+
+Raft uses a replicated log to keep track of the state of the system. When a client request is received, the leader node appends it to its local log and replicates it to other nodes in the system.
+
+Once a quorum of nodes has acknowledged the request, the leader marks it as committed in its log.
+
+Raft ensures safety by guaranteeing that committed entries in the log are never overwritten or lost.
+
+This is achieved by using a `commit index`, which ensures that all nodes have agreed on the same set of committed entries.
+
+# Paxos Consensus Algorithm
+
+Paxos is a consensus algorithm that is widely used in distributed systems. It is a more complex algorithm than Raft, but it is also more efficient in certain scenarios.
+
+Paxos consists of two main phases: `prepare` and `accept`.
+
+In the prepare phase, a node sends a prepare request to other nodes in the system, asking them to promise not to accept any values lower than a certain sequence number.
+
+In the accept phase, the node sends an accept request to other nodes, proposing a value to be accepted.
+
+Paxos guarantees safety by ensuring that only one value is chosen at a time and that all nodes agree on the same value. This is achieved by using a quorum of nodes to agree on the same value.
+
+# Conclusion
+
+Distributed consensus is a fundamental problem in distributed systems, and solving it is crucial for building reliable and scalable distributed applications.
+
+Raft and Paxos are two popular consensus algorithms used in distributed systems. While both algorithms have different approaches, they both ensure that all nodes in a distributed system agree on the same state.

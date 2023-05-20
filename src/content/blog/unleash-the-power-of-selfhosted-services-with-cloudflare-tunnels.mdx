@@ -1,0 +1,159 @@
+---
+title: Unleash the Power of Self-Hosted Services with Cloudflare Tunnels
+date: '2023-03-11'
+tags: ['cloudflare', 'homelab']
+draft: false
+summary: Say goodbye to complicated port forwarding and hello to effortless access to your self-hosted services with Cloudflare Tunnels. Discover how to configure and use this game-changing technology.
+---
+
+# Introduction
+
+Self-hosting your own services such as websites, applications, and file servers has become increasingly popular due to the rise of cloud computing. However, one major challenge with self-hosting is making these services accessible from the Internet.
+
+In the last blog, I mentioned a solution using [Cloudflare API for DDNS](/blog/dynamic-dns-made-easy-with-cloudflare-api/) which works great if you have a Dynamic IP address.
+
+However, if you don't then don't worry because this is where Cloudflare Tunnels comes into play, offering a simple and secure way to expose your services to the world.
+
+# What is Cloudflare Tunnels?
+
+Cloudflare Tunnels is a service offered by Cloudflare, a popular Content Delivery Network (CDN) and security provider. It enables you to make your self-hosted services accessible from the Internet without the need for complicated port forwarding or firewall configurations.
+
+Cloudflare Tunnel can connect HTTP web servers, SSH servers, remote desktops, and other protocols safely to Cloudflare.
+
+# How Cloudflare Tunnels Works
+
+Cloudflare Tunnels utilizes its Edge infrastructure to create a secure and encrypted connection between your self-hosted services and the Internet.
+
+When someone tries to access your service, the request is intercepted by the Cloudflare Edge Servers, which then forwards the request to your service and returns the response back to the user.
+
+This entire process happens in real-time, ensuring fast and secure access to your services.
+
+<Image
+  src="https://developers.cloudflare.com/cloudflare-one/static/documentation/connections/connect-apps/handshake.jpg"
+  alt="Handshake between end user and internal service. Picture from developers.cloudflare.com"
+  width="1768"
+  height="1102"
+/>
+
+# Step-by-Step Guide to Configure Cloudflare Tunnels
+
+## Sign up for a Cloudflare account
+
+If you don't already have a Cloudflare account, you can sign up for one [here](https://cloudflare.com/).
+
+## Add a new website to your Cloudflare account
+
+Once you've logged into your Cloudflare account, click on the "Add a Website" button, enter your website's URL, and follow the steps to add your website to Cloudflare.
+
+## Install cloudflared
+
+Cloudflared is the CLI tool that enables you to create tunnels to your self-hosted services. You can install it on your device by following the instructions on developer [docs section](https://developers.cloudflare.com/argo-tunnel/downloads/).
+
+## Authenticate with Cloudflare
+
+Once you have installed cloudflared, you will need to authenticate with Cloudflare. To do this, run the following command:
+
+```bash
+cloudflared login
+```
+
+This will prompt you to enter your Cloudflare account email and API key. Once you have entered this information, you will be authenticated with Cloudflare and ready to start setting up tunnels.
+
+## Setting up a Tunnel
+
+To create a new tunnel, you will use the following command:
+
+```bash
+cloudflared tunnel create <tunnel-name>
+```
+
+Replace `<tunnel-name>` with the name of the service you want to expose. This will create a new tunnel and display a unique tunnel ID.
+
+Confirm that the tunnel has been successfully created by running:
+
+```bash
+cloudflared tunnel list
+```
+
+## Configure your Tunnel with Ingress rules
+
+Now that you've created your tunnel, you need to configure it to point to the service you want to expose. To do this, you'll need to create a configuration file.
+
+Create a new file in a text editor and paste the following configuration:
+
+```yaml:config.yaml
+tunnel: <your-tunnel-id>
+credentials-file: /root/.cloudflared/<your-tunnel-id>.json
+
+ingress:
+  - hostname: <subdomain.hostname.com>
+    service: http://localhost:<port>
+
+  - service: http_status:404
+```
+
+Replace `<your-tunnel-id>` with the ID of your tunnel (which you obtained in step above when we created a tunnel).
+
+Replace `<subdomain.hostname.com>` with the hostname you want to use for your service (this will be the URL that people use to access it). Replace `<port>` with the port number of the service you want to expose (for example, 80 for a web server).
+
+Save this file as `config.yaml` in a location of your choice.
+
+## Setup DNS for routing traffic
+
+Next we want to assign a CNAME record that points traffic to your tunnel subdomain. From the above example it will be whatever you are replacing `<subdomain>` with.
+
+```bash
+cloudflared tunnel route dns <your-tunnel-id> <subdomain>
+```
+
+Replace `<your-tunnel-id>` with the ID of your tunnel and `subdomain` with the subdomain that you added in the config file.
+
+## Start your Tunnel
+
+Now that you've configured your tunnel, you can start it by running the following command:
+
+```bash
+cloudflared tunnel --config /path/to/your/config.yaml run <tunnel-name>
+```
+
+Replace `<tunnel-name>` with the name you chose for your tunnel in create tunnel section and replace `/path/to/your/config.yaml` with the path where you stored the `config.yaml` file.
+
+## Test your Tunnel
+
+Now that your tunnel is running, you should be able to access your local service from the internet by visiting the hostname you specified in the configuration file.
+
+Try accessing it from a different network or using a VPN to simulate an external connection.
+
+## Run cloudflared as a service
+
+You can manually go ahead and create a service file for running cloudflared as a service on your system and [this guide](/blog/keep-your-services-running-in-the-background-with-systemd/) will help you with that.
+
+However, cloudflared already provides a quick way to set it up with a single command.
+
+```bash
+cloudflared service install
+```
+
+After the service is installed, you can start it with this command:
+
+```bash
+sudo systemctl start cloudflared
+```
+
+And optionally view the status of the service with
+
+```bash
+sudo systemctl status cloudflared
+```
+
+Additionally, I would highly recommend to enable this service so anytime you logout or reboot the system, cloudflared service automatically starts again.
+
+```bash
+sudo systemctl enable cloudflared
+```
+
+# Conclusion
+
+Cloudflare Tunnels is a powerful tool for exposing your self-hosted services to the internet. With a simple and secure setup process, you can quickly and easily connect to your services from anywhere in the world.
+
+Whether you are exposing a single service or multiple services, Cloudflare Tunnels makes it easy to connect to your services and keep them accessible to the world.

@@ -1,0 +1,185 @@
+---
+title: 'Mastering Intermediate Linux Commands for Efficient Server Management'
+date: '2023-03-04'
+tags: ['linux']
+draft: true
+summary: 'As a Linux server administrator, you may have already learned the basics of Linux commands. However, to manage your server more efficiently, you need to dive deeper into the lesser-known, but equally important intermediate-level commands. In this article, we will cover some of the intermediate-level Linux commands that will help you become a more proficient Linux sysadmin.'
+---
+
+# Introduction
+
+As a sysadmin, you often come across complex tasks that require more than just basic commands. That's why it's important to learn some intermediate-level Linux commands that can make your work easier and more efficient.
+
+These commands can help you automate repetitive tasks, manage processes, and monitor system performance, among other things. In this article, we will explore some of these commands and their usage.
+
+<Callout title="Pro Tip!">
+	Just like the [previous article](/blog/essential-linux-commands-for-server-maintenance-at-home/) dropping in a friendly advice that refer to man pages for learning more in detail about each commands using the `man <command_name>`
+</Callout>
+
+# Monitoring and Performance
+
+- **sar** - The sar command is used to collect, report, and save system activity information.
+
+  It is helpful for monitoring system performance and diagnosing issues.
+
+  ```bash
+  sar -u 5 10
+  ```
+
+  This command will display CPU utilization statistics every 5 seconds, 10 times.
+
+- **atop** - The atop command is used to monitor system resources and processes.
+
+  It provides a detailed view of the system activity and helps in identifying performance bottlenecks.
+
+  ```bash
+  atop -r /var/log/atop/atop_20230301
+  ```
+
+  This command will display the system activity for a specific date.
+
+- **free** - Display the amount of free and used memory in the system.
+
+  ```bash
+  free -h
+  ```
+
+  This will display the data in a human-readable format.
+
+# Process Management
+
+- **ps** - Display information about the currently running processes.
+
+  ```bash
+  ps -aux
+  ```
+
+- **kill** - Send a signal to a process, which can be used to terminate the process.
+
+  ```bash
+  kill -9 1234
+  ```
+
+  This will kill the process which has the `PID` of 1234
+
+- **pkill** - Kill processes based on their name or other attributes.
+
+  ```bash
+  pkill -f firefox
+  ```
+
+  This will kill the firefox process.
+
+- **nice** - nice command is used to set the priority of a process.
+
+  It is often used to give lower priority to CPU-intensive processes so that they don't hog the system resources.
+
+  ```bash
+  nice -5 wget https://akashrajpurohit.com
+  ```
+
+  To set negative priority you can use a double hyphen
+
+  ```bash
+  nice --5 wget https://akashrajpurohit.com
+  ```
+
+- **renice** - Change the priority of an already running process.
+
+  ```bash
+  renice +5 1234
+  ```
+
+  This will change the priority of the process with `PID` 1234.
+
+- **top** - Displays real-time information about running processes and system resources.
+
+  ```bash
+  top
+  ```
+
+# Networking Commands
+
+- **traceroute** - Traces the route taken by packets over an IP network.
+
+  ```bash
+  traceroute google.com
+  ```
+
+- **tcpdump** - Captures network traffic in real-time and saves it to a file.
+
+  ```bash
+  tcpdump -i eth0 -w capture.pcap
+  ```
+
+- **netstat** - Displays information about network connections, routing tables, and network interfaces.
+
+  ```bash
+  netstat -ano | grep ESTABLISHED
+  ```
+
+- **nmap** - Scans a network and discovers open ports and services.
+
+  ```bash
+  nmap -sS -O 192.168.1.1/24
+  ```
+
+# Disk Management
+
+- **lsof** - The lsof command is used to list open files on the system. It is helpful for identifying processes that are using a specific file or disk partition.
+
+  ```bash
+  lsof /dev/sda1
+  ```
+
+  This command will list all processes that are using the /dev/sda1 disk partition.
+
+- **blkid** - The blkid command is used to display information about block devices. It is helpful for identifying disk partitions and their properties.
+
+  ```bash
+  blkid /dev/sda1
+  ```
+
+  This command will display the properties of the `/dev/sda1` disk partition.
+
+- **fdisk** - fdisk command is used to list, create, delete, or modify partitions on a hard disk.
+
+  ```bash
+  fdisk -l
+  ```
+
+  This command will list the partition tables for the hard drive.
+
+# Miscellaneous Commands
+
+- **sed** - A stream editor for filtering and transforming text.
+
+  ```bash
+  sed 's/foo/bar/g' input.txt > output.txt
+  ```
+
+- **awk** - A versatile programming language for text processing and data extraction.
+
+  ```bash
+  cat access.log | awk '{ print $1 }'
+  ```
+
+- **tar** - A utility for creating and manipulating tar archives.
+
+  ```bash
+  tar -czvf archive.tar.gz file1 file2 dir1
+  ```
+
+- **find** - Searches for files and directories that match certain criteria.
+
+  ```bash
+  find /var/log -type f -name "*.log" -mtime +7 -exec rm {} \;
+  ```
+
+# Conclusion
+
+These are some of the intermediate-level Linux commands that a system admin may use while maintaining a Linux server.
+
+However, this is not an exhaustive list, and there are many more commands that you can explore as you become more experienced with Linux administration.
+
+If you are someone who manages Linux servers a lot and want to add/edit some of the commands then do let me know in the comments below or reach out on any social media platform.

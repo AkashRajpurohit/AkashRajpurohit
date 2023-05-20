@@ -1,0 +1,130 @@
+---
+title: Stay Secure — Essential SSH Security Practices for Linux Servers
+date: '2023-02-11'
+tags: ['linux', 'security']
+draft: false
+summary: Protect your Linux server from potential threats by following best practices for SSH security. Learn about using strong passwords, disabling root login, enabling public key authentication, and more in our comprehensive guide.
+---
+
+# Introduction
+
+Setting up SSH on a server is an important task for securing remote access to your systems. However, it is crucial to follow best practices to ensure the security of your systems and data. In this blog, we will discuss some of the essential security practices that you should follow when setting up SSH on your server.
+
+# Setting up SSH
+
+## Install the SSH Server
+
+To install the SSH server, you can use the package manager for your Linux distribution. For example, on a Debian-based system, you can use the following command:
+
+```bash
+sudo apt-get update
+sudo apt-get install ssh
+```
+
+## Start the SSH Service
+
+Once the SSH server is installed, you can start the SSH service using the following command:
+
+```bash
+sudo systemctl start ssh
+```
+
+## Verify SSH is Running:
+
+To verify that the SSH service is running, you can use the following command:
+
+```bash
+sudo systemctl status ssh
+```
+
+## Configure SSH
+
+The SSH server is configured through the `/etc/ssh/sshd_config` file. You can use a text editor, such as `nano` or `vi`, to make changes to this file.
+
+## Restart the SSH Service
+
+After making changes to the `/etc/ssh/sshd_config` file, you will need to restart the SSH service for the changes to take effect. You can use the following command to restart the service:
+
+```bash
+sudo systemctl restart ssh
+```
+
+That's it! Now that you have installed and set up SSH on your Linux server, you can start using it for secure remote access.
+
+Follow the next section to learn about security practices outlined to keep your server secure.
+
+<Callout type="warning">
+  The specific steps for installing and configuring SSH may vary slightly depending on your Linux distribution, so be
+  sure to consult the documentation for your distribution if you run into any issues.
+</Callout>
+
+# Security Practices for SSH
+
+## Use a Strong Password
+
+When setting up an SSH server, the first and most important step is to use a strong password for the root user account. This password should be a combination of letters, numbers, and special characters, and should be at least 12 characters long.
+
+## Disable Root Login
+
+The root account is the most privileged user on the system and it is recommended to disable direct root login via SSH. Instead, you can create a non-root user account and use that account to log in to the server, and then use the `sudo` command to run commands as the root user.
+
+To update this, open the [ssh config file](#configure-ssh) in a text editor and update this line
+
+```bash
+PermitRootLogin no
+```
+
+## Use Public Key Authentication
+
+Instead of using a password for authentication, you can use public key authentication with SSH. This is more secure as it eliminates the possibility of password-based attacks, such as brute force attacks.
+
+To update this, open the [ssh config file](#configure-ssh) in a text editor and update this line
+
+```bash
+PasswordAuthentication no
+```
+
+## Change the Default SSH Port
+
+By default, the SSH server listens on port 22. To add an extra layer of security, you can change the default SSH port to a different port number. This makes it more difficult for attackers to find your SSH server, as they would have to scan a larger range of ports.
+
+To update this, open the [ssh config file](#configure-ssh) in a text editor and update this line
+
+```bash
+Port 2222
+```
+
+## Limit SSH Access
+
+You can limit SSH access to specific users or IP addresses by using the 'AllowUsers' or 'AllowGroups' directive. This allows you to control who can log in to your server via SSH and from where.
+
+To update this, open the [ssh config file](#configure-ssh) in a text editor and update this line
+
+```bash
+AllowUsers user1 user2
+```
+
+## Use SSH Hardening Options
+
+SSH includes several hardening options that you can use to further secure your server. For example, you can disable the forwarding of X11 sessions, or restrict the use of certain protocols.
+
+X11 forwarding is an SSH protocol that enables users to run graphical applications on a remote server and interact with them using their local display and I/O devices.
+
+The majority of the time you would never need this if you are using your server for CLI operations.
+
+To update this, open the [ssh config file](#configure-ssh) in a text editor and update this line
+
+```bash
+X11Forwarding no
+Protocol 2
+```
+
+## Keep SSH Up-to-Date
+
+Finally, it's important to keep your SSH server up-to-date with the latest security patches and updates. This helps to ensure that your server is protected against any known vulnerabilities.
+
+# Conclusion
+
+By following these security practices, you can ensure that your SSH server is secure and protected against potential threats. These practices are not difficult to implement, but they can make a big difference in keeping your server and data safe. Remember to always keep your server updated and to follow best practices for securing your systems.
+
+That's it for this one, See you in another one 👋🏽

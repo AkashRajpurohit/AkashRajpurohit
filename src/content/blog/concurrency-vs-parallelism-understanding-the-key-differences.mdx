@@ -1,0 +1,53 @@
+---
+title: 'Concurrency vs. Parallelism: Understanding the Key Differences'
+date: '2023-03-03'
+tags: ['system design']
+draft: false
+summary: Concurrency and parallelism are often used interchangeably, but they refer to distinct concepts in computer science. In this article, we will break down the differences between concurrency and parallelism, explore the benefits and drawbacks of each, and provide real-world examples to help you better understand these concepts.
+---
+
+# Introduction
+
+In the field of computer science and software engineering, the terms "concurrency" and "parallelism" are frequently used interchangeably. However, it is important to understand that these two concepts are not the same thing. While they both relate to the idea of multiple processes running at the same time, they each describe a different aspect of that process.
+
+# What is Concurrency?
+
+Concurrency refers to the idea of multiple processes executing at the same time. These processes can be running on a single core, or they can be split across multiple cores, but the important thing is that they are executing simultaneously. This can be achieved through time slicing, where the CPU switches between processes, giving each a small slice of time to run.
+
+# What is Parallelism?
+
+Parallelism, on the other hand, refers to the actual execution of multiple processes at the same time. This is achieved through the use of multiple cores or processors. When processes are running in parallel, each process is given its own dedicated core, allowing it to run without being interrupted.
+
+# Real World Example
+
+Imagine you're a chef who needs to make a meal for 10 guests. To make the meal, you have to follow the recipes, chop vegetables, cook the dishes, and serve the guests.
+
+**Concurrency:** You decide to multitask and chop vegetables while the dishes are cooking. This way, you are doing multiple tasks at the same time, but not necessarily at the same pace. You are juggling multiple tasks, but you can only do one task at a time. This is concurrency.
+
+**Parallelism:** You have a sous chef who can help you with the cooking. You both can chop vegetables and cook the dishes simultaneously, at the same pace. This way, you can prepare the meal faster and serve the guests on time. This is parallelism.
+
+> So, the difference between concurrency and parallelism is that concurrency is about doing multiple tasks at the same time, while parallelism is about doing multiple tasks simultaneously, at the same pace.
+
+# Benefits and Drawbacks of Concurrency
+
+One of the main benefits of concurrency is that it allows for efficient utilization of a single core. By splitting processing time between multiple processes, a single core can effectively handle multiple tasks at the same time.
+
+This can be especially useful in real-time systems, where processes need to respond to events as quickly as possible.
+
+However, concurrency can also lead to complications, such as race conditions and deadlocks. These occur when two processes try to access the same resource at the same time, leading to unexpected results.
+
+# Benefits and Drawbacks of Parallelism
+
+Parallelism offers the ability to perform multiple tasks at the same time, leading to a significant increase in processing power.
+
+This is especially important in compute-intensive applications, where a single core may not be enough to complete a task in a reasonable amount of time.
+
+However, parallelism can also be difficult to implement, as it requires careful coordination between processes to avoid issues such as data race conditions and deadlocks.
+
+Additionally, parallelism can also introduce communication overhead, as processes must communicate with each other to coordinate their activities.
+
+# Conclusion
+
+In conclusion, concurrency and parallelism are both important concepts in computer science and software engineering, each with its own benefits and drawbacks.
+
+Understanding the key differences between these concepts is crucial for choosing the best approach for a given task. While concurrency is often more efficient for real-time systems, parallelism is essential for high-performance computing tasks.

@@ -1,0 +1,349 @@
+---
+title: New Features in ES2020 with code examples.
+tags: [javascript]
+date: 2020-03-03
+summary: Get insights about new features added in Javascript es2020 like BigInt, Promise.allSettled, Optional Chaining and many more.
+draft: false
+---
+
+# Introduction
+
+ES2020 is the new version introduced of ECMAScript corresponding to the year 2020. Unlike ES6 or formerly known as ES2015 which added such a large number of new highlights to Javascript, ES2020 has brought only a handful of new features. However, we will see some quite useful features which are added to this version.
+
+This article introduces the features provided by ES2020 with easy code examples. In this way, you can quickly understand the new features without the need for any complex explanation.
+
+However, it is necessary to have a basic knowledge of JavaScript to fully understand the best ones introduced.
+
+## The new JavaScript features in ES2020
+
+✔️ Dynamic import()
+
+✔️ BigInt
+
+✔️ Promise.allSettled
+
+✔️ globalThis
+
+✔️ Optional Chaining
+
+✔️ Nullish coalescing operator
+
+# Dynamic Import()
+
+As you know the basic import syntax which was introduced in es6. For eg -
+
+```javascript
+import { calPower } from './math.js';
+
+calPower(10);
+```
+
+Now you can import a file dynamically.
+
+```javascript
+const math = './math.js';
+
+import(math).then((module) => {
+  module.calPower(10);
+});
+```
+
+Dynamic import() returns a promise for the module namespace object of the requested module. Since it returns a promise, you can also use the `async/await` syntax.
+
+```javascript
+const math = './math.js';
+
+(async () => {
+  const module = await import(math);
+
+  module.calPower(10);
+})();
+```
+
+### Browser Support for Dynamic Import
+
+- Chrome - 63
+- Firefox - 67
+- Opera - 50
+- Safari - 11.1
+- Edge - No Support
+- IE - No Support
+
+# BigInt
+
+In JavaScript, there is a limit up to which it can perform calculations on integers <b>with precision</b> and not start acting weirdly.
+
+```javascript
+let limit = Number.MAX_SAFE_INTEGER;
+// limit = 9007199254740991
+
+console.log(limit + 1); // 9007199254740992
+console.log(limit + 2); // 9007199254740992
+```
+
+Its not a typo mistake, you can check it out by pasting the snippet on your browser dev tools.
+
+So how to process integers which have a value greater than the `MAX_SAFE_INTEGER`?
+
+BigInt is a savior in this case.
+
+You can make a BigInt by calling BigInt() with parenthesis or tack `n` at the end of the number.
+
+```javascript
+const bigNum = BigInt(90071992547409922323);
+```
+
+Or
+
+```javascript
+const bigNum = 90071992547409922323n;
+```
+
+Now you can easily do operations on BigInt numbers without losing precision
+
+```javascript
+const bigNum = BigInt(100);
+const anotherBigNum = 400n;
+
+console.log(bigNum + anotherBigNum);
+// 500n
+```
+
+### Browser Support for BigInt
+
+- Chrome - 67
+- Firefox - 68
+- Opera - 54
+- Edge - No Support
+- IE - No Support
+- Safari - No Support
+
+# Promise.allSettled
+
+Working with Javascript, you may have many times encountered with [Asynchronous programming](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous) and used promises.
+
+Also you may have used `Promise.all([promise1, promise2, ...])` function.
+
+Well, when you are using `Promise.all()` for all the pending promises if any one of the promises gets rejected, the function gets rejected with the rejected reason from the promise and stops the execution there.
+
+Consider the promises -
+
+```javascript
+const p1 = new Promise((resolve, reject) => resolve('Resolved in P1'));
+
+const p2 = new Promise((resolve, reject) => reject('Rejected in P2'));
+
+const p3 = new Promise((resolve, reject) => resolve('Resolved in P3'));
+
+const allPromises = [p1, p2, p3];
+```
+
+Now we will first see what happens when we use `Promise.all()`
+
+```javascript
+Promise.all(allPromises)
+  .then((data) => console.log(data))
+  .catch((err) => console.error(err));
+
+// Output
+// Rejected in P2
+// from catch block of Promise.all
+```
+
+In this case, we can use `Promise.allSettled()` to make sure that even if any of the promise gets rejected, we still continue to try and resolve the remaining promises.
+
+The syntax is the same, just the function signature changes
+
+```javascript
+Promise.allSettled(allPromises)
+  .then((data) => console.log(data))
+  .catch((err) => console.error(err));
+
+// Output - Array of objects
+/*
+
+[
+  { status: "fulfilled", value: "Resolved in P1" },
+  { status: "rejected", reason: "Rejected in P2" },
+  { status: "fulfilled", value: "Resolved in P3" },
+]
+
+*/
+```
+
+We get information about two things - one is the status of the promise which can be fulfilled or rejected and if the promise is resolved then with what value did it got resolved. In the case of rejected promise, we get the reason of rejection.
+
+Amazing right!!
+
+When can we use it ???
+
+One simple use case could be like when you are trying to source data from 5 different API's or external services.
+
+Now you don't want to show zero results just because one of the API didn't provide the response or got rejected. Its a lot better show data which you got from other 4 API's rather than not showing anything at all.
+
+### Browser Support for Promise.allSettled
+
+- Chrome - 76
+- Firefox - 71
+- Edge - No Support
+- IE - No Support
+- Opera - Unknown
+- Safari - Unknown
+
+# globalThis
+
+This one is really great and its dead simple to understand.
+
+Basically, `globalThis` refers to global `this` context on the environment you are working on.
+
+`globalThis` would be `this` in case of Browsers.
+
+It would be `global` in the case of node.
+
+Simply you don't have to worry about different environmental issues anymore.
+
+Under the hood, it works like this
+
+```javascript
+var getGlobal = function () {
+  if (typeof self !== 'undefined') {
+    return self;
+  }
+  if (typeof window !== 'undefined') {
+    return window;
+  }
+  if (typeof global !== 'undefined') {
+    return global;
+  }
+  throw new Error('unable to locate global object');
+};
+```
+
+But you don't have to worry about this.
+
+### Support for globalThis
+
+- Chrome: 71
+- Node: 12
+- Firefox: 65
+- Safari: 12.1
+- IE: No Support
+- Opera: No Support
+- Edge: No Support
+
+# Optional Chaining
+
+This is my personal favorite feature that is added to ES2020.
+
+We have many times encountered scenarios where we are trying to access a property value that's deep within an object.
+
+```javascript
+const person = {
+  name: 'John Doe',
+  age: 21,
+  address: {
+    street: 'Main Street 21',
+    coords: {
+      latitude: 19.0342,
+      longitude: 72.12342,
+    },
+  },
+};
+
+// Access lat and lng
+const lat = person.address.coords.latitude;
+const lng = person.address.coords.longitude;
+```
+
+See how we keep on tacking `.` operator to access the property deep within this tree.
+
+This is fine if we can assure that all these keys would always be there for every person document.
+
+What happens if there is no `coords` key for any object.
+
+You will see an error something like this
+
+```javascript
+Uncaught TypeError: Cannot read property 'latitude' of undefined
+```
+
+This is because we could not find the coords property on the address and we tried to find `latitude` property on undefined.
+
+Now earlier you would have to write this messy code like this
+
+```javascript
+if(person.address && person.address.coords) {
+  ...
+}
+```
+
+Sure you can use ternary `? :` operator but this always gets ugly.
+
+So to tackle this, we have the Optional Chaining operator `(?)`
+
+It's very simple and efficient. You simply add a `?` before the `.` operator.
+
+```javascript
+const lat = person?.address?.coords?.latitude;
+// lat = undefined
+```
+
+The value is undefined, but your program did not throw any error and stopped its execution.
+
+### Browser Support for Optional Chaining
+
+- Chrome - 80
+- Firefox - 74
+- Edge - 80
+- Safari - No Support
+- IE - No Support
+- Opera - No Support
+
+# Nullish coalescing operator
+
+Nullish coalescing is kind of similar to what we have seen before.
+
+The nullish coalescing operator `(??)` is a logical operator that returns its `right-hand side` operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
+
+However, it is not exactly similar to using `(||)` logical OR operator. In the case of logical OR, the left operand is returned if it is a `falsy` value which is not null or undefined.
+
+In other words, if you use `||` to provide some default value to another variable, you may encounter unexpected behaviors if you consider some falsy values as usable (like '' or 0).
+
+Let's see an example which might help you understand it much better
+
+```javascript
+const name = null ?? 'Anonymous';
+console.log(name); // Anonymous
+
+// However
+
+const number = 0 ?? 42;
+console.log(number); // 0
+```
+
+So if you want to add a default value in case your left-hand side may be null or undefined, you can use the nullish coalescing operator
+
+### Browser Support for Nullish coalescing operator
+
+- Chrome - 80
+- Firefox - 72
+- Edge - 80
+- Safari - No Support
+- IE - No Support
+- Opera - No Support
+
+# TL;DR
+
+We learn about some of the amazing features like Dynamic import(), BigInt, Promise.allSettled, globalThis, Optional Chaining, Nullish coalescing operator, which are added in ES2020 with explanation and code examples.
+
+# Conclusion
+
+This was a rather long article but I tried to explain the terms in as simple terms as possible. Also, I know its been a long time since I wrote my [previous blog about git](/blog/5-basic-git-commands-every-developer-must-know/) but I was kind of busy with college work and other freelance projects as well. But I'll soon be active and you can expect frequent blogs.
+
+One topic that I'm planning to start now is solving data structures and algorithms questions from leetcode or hackerrank. If you are interested in it then let me know in the comment section below.
+
+Have a great morning, evening or night.
+
+# Links
+
+- [Can I Use This??](https://caniuse.com/)

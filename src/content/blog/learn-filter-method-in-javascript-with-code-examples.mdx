@@ -1,0 +1,131 @@
+---
+title: Learn JavaScript Array .filter() method with code examples
+tags: [javascript]
+date: 2020-01-07
+summary: Learn about Javascript array filter method in easiest way possible.
+draft: false
+---
+
+# Introduction
+
+In the previous blog, we learned about the `.map()` method. If you haven't read it yet then you can check that out [here](/blog/learn-map-method-in-javascript-with-code-examples). In this one, we will learn about the `.filter()` method. So let's get started with it.
+
+# .Filter()
+
+So you have certain items in an array and you want to filter out a few of them?
+
+Well as the name suggests filter function can be used for this.
+
+MDN defines `.filter()` as
+
+> The `filter()` method creates a new array with all elements that pass the test implemented by the provided function.
+
+Let's understand it a little better with an example.
+
+I'm considering the same `persons` array which we used in the previous blog.
+
+```javascript
+const persons = [
+  {
+    _id: '001',
+    name: 'John Doe',
+    age: 25,
+  },
+  {
+    _id: '002',
+    name: 'Kevin Smith',
+    age: 22,
+  },
+  {
+    _id: '003',
+    name: 'Jane Doe',
+    age: 17,
+  },
+  {
+    _id: '004',
+    name: 'John Wick',
+    age: 20,
+  },
+];
+```
+
+Let's say we have a task to allow only valid users to vote. So any user whose age is < 18 should not be allowed i.e they should be filtered out.
+
+To do this we can simply use the `.filter()` method and you'll see how easy your life can get with the help of such powerful function.
+
+```javascript
+const personsWhoCanVote = persons.filter(function (person) {
+  if (person.age >= 18) {
+    return true;
+  } else {
+    return false;
+  }
+});
+
+// Output of personsWhoCanVote
+/*
+personsWhoCanVote = [
+  {
+    _id: '001',
+    name: 'John Doe',
+    age: 25
+  },
+  {
+    _id: '002',
+    name: 'Kevin Smith',
+    age: 22
+  },
+  {
+    _id: '004',
+    name: 'John Wick',
+    age: 20
+  }
+]
+*/
+```
+
+In this case, Jane Doe would get filtered out because her age is 17 which is less than 18.
+
+> Basically, if the callback function returns true, the current element will be in the resulting array but if it returns false, then it won’t be.
+
+Also just like `.map()`, the filter method also takes the same three parameters in the callback function which are `currentValue`, `index` and the `originalArray` and it also returns a new array instead of mutating or modifying the original array.
+
+So this is how the `.filter()` method works in a nutshell.
+
+## But wait!! I know what you are waiting for...
+
+<Image src={`/static/images/its-coming.gif`} width={1296} height={872} />
+
+We know how to use the filter method but its the clean code time!
+
+Let's refactor our code for valid voters problem
+
+We'll start with a `one-liner` solution using filter (because why not!)
+
+```javascript
+const personsWhoCanVote = persons.filter((person) => person.age >= 18);
+```
+
+<Image src={`/static/images/mind-blown.gif`} width={1296} height={872} />
+
+And this code will produce the same output as above since we are explicitly returning a boolean value at `person.age >= 18` we can simply return this value rather than having an if-else block or even a ternary operator.
+
+Finally, we can make it more clean and maintainable by splitting the logic into its own function for reusability.
+
+```javascript
+const canVote = (person) => person.age >= 18;
+
+const personsWhoCanVote = persons.filter(canVote);
+```
+
+And that's it.
+
+> Remember you don't necessarily have to follow like this. for eg splitting into different functions or using arrow functions.
+
+This is simply a cherry on the top of the cake.
+
+Next would be [.reduce() method](/blog/learn-reduce-method-in-javascript-with-code-examples). See you there. 👋
+
+# Important Links
+
+- [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)

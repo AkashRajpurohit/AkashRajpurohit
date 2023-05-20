@@ -1,0 +1,47 @@
+---
+title: "A Beginner's Guide to Linux Process Scheduling Algorithms: Understanding CFS and CFQ"
+date: '2023-03-18'
+tags: ['linux']
+draft: true
+summary: "Linux process scheduling algorithms can significantly impact the performance of your system. This article provides an overview of the two most commonly used scheduling algorithms - CFS and CFQ - and how they work. We'll also discuss how to view and modify the scheduler settings to optimize system performance."
+---
+
+# Introduction
+
+When multiple processes are running simultaneously on a Linux system, the kernel must determine which process to run next. This decision is made by the process scheduler, which assigns CPU time to each process based on various criteria, such as priority, CPU utilization, and time spent waiting.
+
+Linux supports various scheduling algorithms, each with its own strengths and weaknesses. In this article, we'll focus on the two most commonly used algorithms - CFS and Completely Fair Queuing.
+
+# Completely Fair Scheduler (CFS)
+
+CFS is the default scheduler in most modern Linux distributions. It uses a red-black tree data structure to keep track of processes' relative priorities and scheduling time.
+
+When a process is created, the scheduler assigns it a "virtual runtime", which represents the amount of CPU time the process is allowed to run in proportion to other processes.
+
+Processes with higher priorities have shorter virtual runtimes, meaning they get to run first.
+
+The CFS algorithm ensures that all processes get a fair share of CPU time, hence the name "completely fair."
+
+# Completely Fair Queuing (CFQ)
+
+CFQ is an older scheduling algorithm that was the default in Linux before CFS. It uses a per-process I/O request queue and schedules processes based on the number of requests they've made.
+
+This approach is effective for systems with heavy disk I/O loads, but it can result in some processes being starved of CPU time, leading to poor performance.
+
+CFQ has been largely superseded by CFS, but it is still available and may be useful in some situations.
+
+To view and modify the scheduler settings on a Linux system, you can use the command-line tool called `schedtool`.
+
+For example, to set the scheduling policy of a process with a PID of 1234 to SCHED_BATCH, you can use the following command:
+
+```bash
+schedtool -p 1234 -B -n -20
+```
+
+This command sets the process priority to the lowest possible value, which means it will only run when there are no other processes waiting to run. You can also use the `chrt` command to modify a process's scheduling policy.
+
+# Conclusion
+
+Linux process scheduling algorithms play a crucial role in determining system performance. Understanding how the CFS and Completely Fair Queuing algorithms work can help you optimize your system for maximum efficiency.
+
+By using the right scheduler settings and policies, you can ensure that critical processes get the CPU time they need while also allowing other processes to run without being starved of resources.
