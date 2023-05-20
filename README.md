@@ -122,7 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
-- [Building and Publishing TypeScript Npm Packages: A Step-by-Step Guide](https://akashrajpurohit.com/blog/building-and-publishing-typescript-npm-packages-a-stepbystep-guide/)
+- [Building and Publishing TypeScript NPM Packages: A Step-by-Step Guide](https://akashrajpurohit.com/blog/building-and-publishing-typescript-npm-packages-a-stepbystep-guide/)
 - [Snowflake ID: Generating Unique IDs for Distributed Systems](https://akashrajpurohit.com/blog/snowflake-id-generating-unique-ids-for-distributed-systems/)
 - [Array and Object Manipulation in JavaScript: Advanced Techniques](https://akashrajpurohit.com/blog/array-and-object-manipulation-in-javascript-advanced-techniques/)
 - [Mastering Iterators and Generators in JavaScript: A Beginner&#39;s Guide](https://akashrajpurohit.com/blog/mastering-iterators-and-generators-in-javascript-a-beginners-guide/)
