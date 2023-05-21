@@ -1,0 +1,48 @@
+---
+import { twJoin } from 'tailwind-merge';
+
+const styles = {
+  info: {
+    container:
+      'bg-sky-50 dark:bg-gray-800/60 dark:ring-1 dark:ring-gray-300/10',
+    title: 'text-sky-900 dark:text-sky-400',
+    body: 'text-sky-800 prose-code:text-sky-900 dark:text-gray-300 dark:prose-code:text-gray-300 prose-a:text-sky-900 [--tw-prose-background:theme(colors.sky.50)]',
+  },
+  warning: {
+    container:
+      'bg-amber-50 dark:bg-gray-800/60 dark:ring-1 dark:ring-gray-300/10',
+    title: 'text-amber-900 dark:text-amber-500',
+    body: 'text-amber-800 prose-code:text-amber-900 prose-a:text-amber-900 [--tw-prose-underline:theme(colors.amber.400)] dark:[--tw-prose-underline:theme(colors.sky.700)] [--tw-prose-background:theme(colors.amber.50)] dark:text-gray-300 dark:prose-code:text-gray-300',
+  },
+};
+
+type Props = {
+  title?: string;
+  type?: 'warning' | 'info';
+  emoji?: string;
+};
+
+let { title, type = 'info', emoji = '💡' } = Astro.props;
+
+if (type === 'warning') {
+  emoji = '⚠️';
+}
+---
+
+<div class={twJoin('my-8 flex rounded-3xl p-6', styles[type].container)}>
+  {emoji && <span class='text-2xl flex-none'>{emoji}</span>}
+  <div class='ml-4 flex-auto'>
+    {
+      title && title.trim() !== '' && (
+        <p
+          class={twJoin('m-0 mb-2.5 font-display text-xl', styles[type].title)}
+        >
+          {title}
+        </p>
+      )
+    }
+    <div class={twJoin('prose', styles[type].body)}>
+      <slot />
+    </div>
+  </div>
+</div>

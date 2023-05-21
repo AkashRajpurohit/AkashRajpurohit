@@ -1,6 +1,9 @@
 ---
 import { CollectionEntry, getCollection } from 'astro:content';
-import BlogPost from '../../layouts/BlogPost.astro';
+import BlogPost from '@layouts/BlogPost.astro';
+import Callout from '@components/ui/Callout.astro';
+import Image from '@components/ui/BlogImage.astro';
+import { Tweet } from '@astro-community/astro-embed-twitter';
 
 export const prerender = true;
 
@@ -19,5 +22,5 @@ const { Content } = await post.render();
 
 <BlogPost {...post.data}>
   <!-- TODO: add components map here once everything is imported -->
-  <Content components={{}} />
+  <Content components={{ Callout, Image, Tweet }} />
 </BlogPost>

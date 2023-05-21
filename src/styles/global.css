@@ -65,3 +65,19 @@ blockquote {
 	margin: 0px;
 	font-style: italic;
 }
+
+.tweet-card {
+  background: floralwhite;
+  font-family: sans-serif;
+  border: 0;
+}
+
+.tweet-card a {
+  color: purple;
+  font-weight: bold;
+}
+
+.tweet-author-name {
+  font-family: cursive;
+  font-size: 1.5em;
+}

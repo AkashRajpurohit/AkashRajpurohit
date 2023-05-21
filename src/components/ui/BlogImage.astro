@@ -1,0 +1,17 @@
+---
+const { alt, ...props } = Astro.props;
+---
+
+<figure>
+  <img
+    {...props}
+    alt={alt || 'A visual depiction of what is being written about'}
+  />
+  {
+    alt && (
+      <figcaption class='text-center dark:text-gray-300 text-gray-600 italic text-xs'>
+        {alt}
+      </figcaption>
+    )
+  }
+</figure>
