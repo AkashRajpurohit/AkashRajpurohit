@@ -26,7 +26,6 @@
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
-    "astro-rome": "^0.1.15",
     "rome": "12.1.2"
   }
 }

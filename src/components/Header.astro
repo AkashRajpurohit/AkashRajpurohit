@@ -1,18 +1,22 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import { siteMetadata } from '@lib/config';
 ---
 
 <header>
   <h2>
-    {SITE_TITLE}
+    {siteMetadata.title}
   </h2>
   <nav>
-    <HeaderLink href="/">Home</HeaderLink>
-    <HeaderLink href="/blogs">Blog</HeaderLink>
-    <HeaderLink href="/about">About</HeaderLink>
-    <HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-    <HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
+    <HeaderLink href='/'>Home</HeaderLink>
+    <HeaderLink href='/blogs'>Blog</HeaderLink>
+    <HeaderLink href='/about'>About</HeaderLink>
+    <HeaderLink href='https://twitter.com/astrodotbuild' target='_blank'>
+      Twitter
+    </HeaderLink>
+    <HeaderLink href='https://github.com/withastro/astro' target='_blank'>
+      GitHub
+    </HeaderLink>
   </nav>
 </header>
 <style>
