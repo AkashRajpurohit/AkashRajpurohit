@@ -1,20 +1,33 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import BaseHead from '@components/BaseHead.astro';
 import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
 import FormattedDate from '@components/FormattedDate.astro';
+import ArticleHead from '@components/ArticleHead.astro';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = {
+  data: CollectionEntry<'blog'>['data'];
+  slug: CollectionEntry<'blog'>['slug'];
+};
 
-const { title, summary, date, lastmod } = Astro.props;
+const {
+  data: { title, summary, date, lastmod },
+  slug,
+} = Astro.props;
 // TODO: generate og image from cloudinary helper
 const ogImage = '';
 ---
 
 <html lang='en'>
   <head>
-    <BaseHead title={title} description={summary} image={ogImage} />
+    <ArticleHead
+      title={title}
+      description={summary}
+      image={ogImage}
+      slug={slug}
+      date={date}
+      lastmod={lastmod}
+    />
     <style>
       .title {
         font-size: 2em;

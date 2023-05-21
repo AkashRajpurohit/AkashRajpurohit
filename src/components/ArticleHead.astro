@@ -1,0 +1,58 @@
+---
+import { siteMetadata } from '@lib/config';
+import BaseHead from './BaseHead.astro';
+
+export interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  slug: string;
+  date: Date;
+  lastmod?: Date;
+}
+
+const { title, description, image, slug, date, lastmod } = Astro.props;
+const publishedAt = new Date(date).toUTCString();
+const modifiedAt = new Date(lastmod || date).toUTCString();
+const url = siteMetadata.siteUrl + slug;
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': url,
+  },
+  headline: title,
+  image: [
+    {
+      '@type': 'ImageObject',
+      url: image,
+    },
+  ],
+  datePublished: publishedAt,
+  dateModified: modifiedAt,
+  author: {
+    '@type': 'Person',
+    name: siteMetadata.author,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: siteMetadata.author,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${siteMetadata.siteUrl}${siteMetadata.siteLogo}`,
+    },
+  },
+  description,
+};
+const ldData = JSON.stringify(structuredData);
+---
+
+<BaseHead title={title} description={description} image={image} />
+
+<!-- Additional head tags for content specific pages -->
+{date && <meta property='article:published_time' content={publishedAt} />}
+{lastmod && <meta property='article:modified_time' content={modifiedAt} />}
+
+<script type='application/ld+json' set:html={ldData}></script>

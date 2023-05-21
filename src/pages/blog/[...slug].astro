@@ -3,6 +3,7 @@ import { CollectionEntry, getCollection } from 'astro:content';
 import BlogPost from '@layouts/BlogPost.astro';
 import Callout from '@components/ui/Callout.astro';
 import Image from '@components/ui/BlogImage.astro';
+// @ts-ignore next-line
 import { Tweet } from '@astro-community/astro-embed-twitter';
 
 export const prerender = true;
@@ -20,7 +21,7 @@ const post = Astro.props;
 const { Content } = await post.render();
 ---
 
-<BlogPost {...post.data}>
+<BlogPost data={post.data} slug={post.slug}>
   <!-- TODO: add components map here once everything is imported -->
   <Content components={{ Callout, Image, Tweet }} />
 </BlogPost>
