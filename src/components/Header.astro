@@ -1,29 +1,20 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { siteMetadata } from '@lib/config';
+import { headerNavLinks } from '@lib/config';
 ---
 
-<header>
-  <h2>
-    {siteMetadata.title}
-  </h2>
+<header
+  class='relative z-50 mx-auto max-w-7xl lg:px-8 flex flex-col items-center mt-6'
+>
   <nav>
-    <HeaderLink href='/'>Home</HeaderLink>
-    <HeaderLink href='/blogs'>Blog</HeaderLink>
-    <HeaderLink href='/about'>About</HeaderLink>
-    <HeaderLink href='https://twitter.com/astrodotbuild' target='_blank'>
-      Twitter
-    </HeaderLink>
-    <HeaderLink href='https://github.com/withastro/astro' target='_blank'>
-      GitHub
-    </HeaderLink>
+    <ul
+      class='flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10'
+    >
+      {
+        headerNavLinks.map((link) => (
+          <HeaderLink href={link.href}>{link.title}</HeaderLink>
+        ))
+      }
+    </ul>
   </nav>
 </header>
-<style>
-  header {
-    margin: 0em 0 2em;
-  }
-  h2 {
-    margin: 0.5em 0;
-  }
-</style>

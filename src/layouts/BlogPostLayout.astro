@@ -1,0 +1,81 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+import FormattedDate from '@components/FormattedDate.astro';
+import ArticleHead from '@components/ArticleHead.astro';
+import Container from '@components/Container.astro';
+import { siteMetadata } from '@lib/config';
+// @ts-ignore
+import ArrowLeft from '@astropub/icons/ArrowLeft';
+
+type Props = {
+  data: CollectionEntry<'blog'>['data'];
+  slug: CollectionEntry<'blog'>['slug'];
+};
+
+const {
+  data: { title, summary, date, lastmod },
+  slug,
+} = Astro.props;
+// TODO: generate og image from cloudinary helper
+const ogImage = '';
+---
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <ArticleHead
+      title={title}
+      description={summary}
+      image={ogImage}
+      slug={slug}
+      date={date}
+      lastmod={lastmod}
+    />
+  </head>
+
+  <body
+    class='flex h-full flex-col bg-zinc-50 text-gray-900 dark:bg-black dark:text-white'
+  >
+    <Header />
+    <Container class='mt-16 lg:mt-32'>
+      <div class='fixed inset-0 flex justify-center sm:px-8'>
+        <div class='flex w-full max-w-7xl lg:px-8'>
+          <div
+            class='w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20'
+          >
+          </div>
+        </div>
+      </div>
+      <div class='xl:relative'>
+        <div class='mx-auto max-w-2xl'>
+          <a
+            type='button'
+            href={siteMetadata.pages.blogs}
+            aria-label='Go back to articles'
+            class='group mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 dark:ring-white/10 dark:hover:border-zinc-700 dark:hover:ring-white/20 lg:absolute lg:-left-5 lg:-mt-2 lg:mb-0 xl:-top-1.5 xl:left-0 xl:mt-0'
+          >
+            <ArrowLeft
+              class='h-4 w-4 stroke-zinc-500 transition group-hover:stroke-zinc-700 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400'
+            />
+          </a>
+          <article>
+            <header class='flex flex-col gap-4'>
+              <h1
+                class='mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl'
+              >
+                {title}
+              </h1>
+              <FormattedDate date={date} />
+            </header>
+          </article>
+          <div class='mt-8 prose prose-slate dark:prose-invert'>
+            <slot />
+          </div>
+        </div>
+      </div>
+    </Container>
+    <Footer />
+  </body>
+</html>

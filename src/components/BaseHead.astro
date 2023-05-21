@@ -30,8 +30,8 @@ const {
 <link rel='canonical' href={canonicalURL} />
 
 <!-- Primary Meta Tags -->
-<title>{title}</title>
-<meta name='title' content={title} />
+<title>{title} | {siteMetadata.title}</title>
+<meta name='title' content={`${title} | ${siteMetadata.title}`} />
 <meta name='description' content={description} />
 
 <!-- Open Graph / Facebook -->
@@ -47,5 +47,3 @@ const {
 <meta property='twitter:title' content={title} />
 <meta property='twitter:description' content={description} />
 <meta property='twitter:image' content={image} />
-<meta name='twitter:label1' content='Written by' />
-<meta name='twitter:data1' content={author} />

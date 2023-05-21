@@ -3,13 +3,7 @@ import { siteMetadata } from '@lib/config';
 const today = new Date();
 ---
 
-<footer>
+<footer class='relative z-50 mx-auto max-w-7xl lg:px-8'>
   &copy; {today.getFullYear()}
   {siteMetadata.author}. All rights reserved.
 </footer>
-<style>
-  footer {
-    padding: 25px;
-    text-align: center;
-  }
-</style>

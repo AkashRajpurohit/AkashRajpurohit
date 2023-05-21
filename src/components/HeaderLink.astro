@@ -1,5 +1,6 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
+import { twJoin } from 'tailwind-merge';
 
 type Props = HTMLAttributes<'a'>;
 
@@ -9,16 +10,21 @@ const { pathname } = Astro.url;
 const isActive = href === pathname || href === pathname.replace(/\/$/, '');
 ---
 
-<a href={href} class:list={[className, { active: isActive }]} {...props}>
-	<slot />
-</a>
-<style>
-	a {
-		display: inline-block;
-		text-decoration: none;
-	}
-	a.active {
-		font-weight: bolder;
-		text-decoration: underline;
-	}
-</style>
+<li>
+  <a
+    href={href}
+    class={twJoin(
+      'relative block px-3 py-2 transition',
+      isActive
+        ? 'text-primary-500 dark:text-primary-400'
+        : 'hover:text-primary-500 dark:hover:text-primary-400',
+    )}
+  >
+    <slot />
+    {
+      isActive && (
+        <span class='absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-primary-500/0 via-primary-500/40 to-primary-500/0 dark:from-primary-400/0 dark:via-primary-400/40 dark:to-primary-400/0' />
+      )
+    }
+  </a>
+</li>

@@ -68,3 +68,52 @@ export const siteMetadata = {
     },
   },
 };
+
+export const headerNavLinks = [
+  { href: siteMetadata.pages.home, title: 'Home' },
+  { href: siteMetadata.pages.blogs, title: 'Blogs' },
+  { href: siteMetadata.pages.projects, title: 'Projects' },
+  { href: siteMetadata.pages.about, title: 'About' },
+];
+
+export const pageWiseMeta = {
+  home: {
+    title: 'Home',
+    description: siteMetadata.description,
+  },
+  about: {
+    title: 'About',
+    description: 'Details of my life and my journey as software engineer',
+  },
+  blogs: {
+    title: 'Blogs',
+    description: (totalPosts: number) =>
+      `I have been writing since 2020, mostly around tech and my career. In total I have written ${totalPosts} posts. I hope you enjoy them.`,
+  },
+  projects: {
+    title: 'Projects',
+    description:
+      'Things I build when I am learning something new or just for fun.',
+  },
+  snippets: {
+    title: 'Snippets',
+    description: 'Simple code snippets that I use in my projects.',
+  },
+  uses: {
+    title: 'Uses',
+    description: 'The products and types of equipment I use on daily basis.',
+  },
+  resume: {
+    title: 'Resume',
+    description: 'Check out how my journey have been like over the years',
+  },
+  newsletter: {
+    title: 'Newsletter',
+    description:
+      'The place where you can subscribe to my newsletter to receive early updates.',
+  },
+  privacyPolicy: {
+    title: 'Privacy Policy',
+    description: 'Privacy policy of akashrajpurohit.com',
+  },
+};
