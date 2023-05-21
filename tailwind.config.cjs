@@ -9,7 +9,6 @@ module.exports = {
       colors: {
         primary: colors.amber,
         secondary: colors.fuchsia,
-        gray: colors.zinc,
       },
     },
   },

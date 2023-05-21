@@ -4,7 +4,7 @@ import BlogPostLayout from '@layouts/BlogPostLayout.astro';
 import Callout from '@components/ui/Callout.astro';
 import Image from '@components/ui/BlogImage.astro';
 // @ts-ignore next-line
-import { Tweet } from '@astro-community/astro-embed-twitter';
+// import { Tweet } from '@astro-community/astro-embed-twitter';
 
 export const prerender = true;
 
@@ -23,5 +23,5 @@ const { Content } = await post.render();
 
 <BlogPostLayout data={post.data} slug={post.slug}>
   <!-- TODO: add components map here once everything is imported -->
-  <Content components={{ Callout, Image, Tweet }} />
+  <Content components={{ Callout, Image }} />
 </BlogPostLayout>
