@@ -7,7 +7,7 @@ import rome from 'astro-rome';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://akashrajpurohit.com',
   integrations: [mdx(), sitemap(), tailwind(), rome()],
   output: 'hybrid',
   experimental: {

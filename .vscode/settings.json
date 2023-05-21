@@ -1,4 +1,7 @@
 {
-	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "rome.rome"
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "rome.rome",
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  }
 }

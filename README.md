@@ -19,7 +19,7 @@
 
 ## Feature support
 
-- [x] TailwindCSS + Prettier + ESLint
+- [x] TailwindCSS + Rome
 - [x] Cloudflare Deployment -> Facing issue with pre-rendering though -> more [here](https://github.com/withastro/astro/issues/7140)
 - [x] MDX blogs
   - [ ] Once components are added, add them to MDX Content components map
@@ -30,7 +30,7 @@
 - [ ] Newsletter Form + API
 - [ ] Custom Link component with hover placeholder
 - [ ] Blogs search functionality (useSearchHook)
-- [ ] Twitter Card + Tweets data from notion
+- [ ] Twitter Card + Tweets data from notion -> Look into [this](https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter#readme)
 - [ ] View Counter
 - [ ] Like Counter
 - [ ] Share with others buttons
