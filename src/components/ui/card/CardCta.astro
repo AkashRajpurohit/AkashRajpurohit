@@ -1,0 +1,19 @@
+---
+import { twJoin } from 'tailwind-merge';
+
+type Props = {
+  class?: string;
+};
+
+const { class: className } = Astro.props;
+---
+
+<div
+  aria-hidden='true'
+  class={twJoin(
+    'relative z-10 mt-4 flex items-center text-sm font-medium text-primary-500',
+    className,
+  )}
+>
+  <slot />
+</div>
