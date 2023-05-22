@@ -36,6 +36,7 @@ export default defineConfig({
       ],
     ],
   },
+  compressHTML: true,
   trailingSlash: 'always',
   integrations: [mdx(), sitemap(), tailwind()],
   output: 'hybrid',
