@@ -7,10 +7,16 @@ import cloudflare from '@astrojs/cloudflare';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://akashrajpurohit.com',
-  integrations: [mdx(), sitemap(), tailwind()],
-  output: 'hybrid',
-  experimental: {
-    hybridOutput: true,
+  markdown: {
+    shikiConfig: {
+      theme: 'dracula',
+    },
   },
-  adapter: cloudflare(),
+  trailingSlash: 'always',
+  integrations: [mdx(), sitemap(), tailwind()],
+  output: 'static',
+  // experimental: {
+  //   hybridOutput: true,
+  // },
+  // adapter: cloudflare(),
 });
