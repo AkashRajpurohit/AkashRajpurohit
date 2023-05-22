@@ -36,16 +36,16 @@ const ogImage = getSocialImageForBlog(data);
   <body
     class='flex h-full flex-col bg-zinc-50 text-zinc-900 dark:bg-black dark:text-white'
   >
-    <Header />
-    <Container class='mt-16 lg:mt-32'>
-      <div class='fixed inset-0 flex justify-center sm:px-8'>
-        <div class='flex w-full max-w-7xl lg:px-8'>
-          <div
-            class='w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20'
-          >
-          </div>
+    <div class='fixed inset-0 flex justify-center sm:px-8'>
+      <div class='flex w-full max-w-7xl lg:px-8'>
+        <div
+          class='w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20'
+        >
         </div>
       </div>
+    </div>
+    <Header />
+    <Container class='mt-16 lg:mt-32 z-50'>
       <div class='xl:relative'>
         <div class='mx-auto max-w-2xl'>
           <a

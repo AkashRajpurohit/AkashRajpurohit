@@ -14,12 +14,12 @@ const { href, Icon, class: className } = Astro.props;
   <a
     href={href}
     target='_blank'
-    class='group flex text-sm font-medium text-zinc-800 transition hover:text-primary-500 dark:text-zinc-200 dark:hover:text-primary-500'
+    class='group flex gap-2 items-center text-sm font-medium text-zinc-800 transition hover:text-primary-500 dark:text-zinc-200 dark:hover:text-primary-500'
   >
     <Icon
       class='h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-primary-500'
     />
-    <span class='ml-4'>
+    <span>
       <slot />
     </span>
   </a>

@@ -25,8 +25,8 @@
   - [ ] Once components are added, add them to MDX Content components map
 - [x] Full SEO for blogs
 - [x] Dynamic Open graph from Cloudinary
+- [x] Dark / Light mode
 - [ ] Newsletter Form + API
-- [ ] Dark / Light mode
 - [ ] Command + K
 - [ ] Custom Link component with hover placeholder
 - [ ] Blogs search functionality (useSearchHook)
