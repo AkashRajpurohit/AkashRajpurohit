@@ -8,18 +8,17 @@ import Container from '@components/Container.astro';
 import { siteMetadata } from '@lib/config';
 // @ts-ignore
 import ArrowLeft from '@astropub/icons/ArrowLeft';
+import { getSocialImageForBlog } from '@lib/opengraph';
 
 type Props = {
   data: CollectionEntry<'blog'>['data'];
   slug: CollectionEntry<'blog'>['slug'];
 };
 
-const {
-  data: { title, summary, date, lastmod },
-  slug,
-} = Astro.props;
-// TODO: generate og image from cloudinary helper
-const ogImage = '';
+const { data, slug } = Astro.props;
+const { title, summary, date, lastmod } = data;
+
+const ogImage = getSocialImageForBlog(data);
 ---
 
 <!DOCTYPE html>
