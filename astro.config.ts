@@ -4,6 +4,10 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import cloudflare from '@astrojs/cloudflare';
 
+import rehypeExternalLinks from 'rehype-external-links';
+import rehypeSlug from 'rehype-slug';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://akashrajpurohit.com',
@@ -11,6 +15,26 @@ export default defineConfig({
     shikiConfig: {
       theme: 'dracula',
     },
+    rehypePlugins: [
+      rehypeSlug,
+      [
+        rehypeAutolinkHeadings,
+        {
+          behavior: 'append',
+          properties: {
+            class: 'autolink-header sr-only',
+            ariaHidden: true,
+            tabIndex: -1,
+          },
+        },
+      ],
+      [
+        rehypeExternalLinks,
+        {
+          content: { type: 'text', value: ' ↗️' },
+        },
+      ],
+    ],
   },
   trailingSlash: 'always',
   integrations: [mdx(), sitemap(), tailwind()],

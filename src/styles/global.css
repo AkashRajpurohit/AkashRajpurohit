@@ -1,3 +1,48 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.prose .autolink-header {
+  @apply absolute invisible;
+
+  margin-right: -1em;
+  padding-left: 0.5em;
+  cursor: pointer;
+}
+
+.autolink-header:hover {
+  @apply visible no-underline;
+}
+
+.prose a {
+  @apply text-primary-700;
+}
+
+.prose a:not(.autolink-header):not(.remove-underline) {
+  @apply transition-all no-underline relative inline-block;
+}
+
+.prose a:not(.autolink-header):not(.remove-underline):after {
+  @apply block border-b-2 border-primary-500 transform scale-x-0 transition-all duration-300 origin-center;
+  content: '';
+}
+
+.prose a:not(.autolink-header):not(.remove-underline):hover:after {
+  @apply transform scale-x-100 origin-right;
+  content: '';
+}
+
+.prose .autolink-header:after {
+  @apply text-zinc-300 dark:text-zinc-700;
+  content: '🔗';
+}
+
+.prose *:hover > .autolink-header {
+  @apply visible no-underline;
+}
+
+.prose h1,
+h2,
+h3 {
+  @apply scroll-mt-6;
+}
