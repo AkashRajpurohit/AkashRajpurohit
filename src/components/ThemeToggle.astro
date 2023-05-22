@@ -1,0 +1,78 @@
+---
+// @ts-ignore
+import SunIcon from '@astropub/icons/Sun';
+// @ts-ignore
+import MoonIcon from '@astropub/icons/Moon';
+---
+
+<div>
+  <button
+    type='button'
+    data-theme-toggle-button
+    aria-label='Toggle dark mode'
+    class='group rounded-full bg-white/90 p-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20'
+  >
+    <SunIcon
+      className='h-5 w-5 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-primary-50 [@media(prefers-color-scheme:dark)]:stroke-primary-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-primary-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-primary-600'
+    />
+    <MoonIcon
+      className='hidden h-5 w-5 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-primary-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-primary-500'
+    />
+  </button>
+</div>
+
+<script is:inline>
+  const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  const toggleButton = document.querySelector('[data-theme-toggle-button]');
+
+  updateMode();
+  darkModeMediaQuery.addEventListener('change', updateModeWithoutTransitions);
+  window.addEventListener('storage', updateModeWithoutTransitions);
+
+  if (toggleButton) {
+    toggleButton.addEventListener('click', toggleMode);
+  }
+
+  function updateMode() {
+    let isSystemDarkMode = darkModeMediaQuery.matches;
+    let isDarkMode =
+      window.localStorage.isDarkMode === 'true' ||
+      (!('isDarkMode' in window.localStorage) && isSystemDarkMode);
+
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+    if (isDarkMode === isSystemDarkMode) {
+      delete window.localStorage.isDarkMode;
+    }
+  }
+
+  function disableTransitionsTemporarily() {
+    document.documentElement.classList.add('[&_*]:!transition-none');
+    window.setTimeout(() => {
+      document.documentElement.classList.remove('[&_*]:!transition-none');
+    }, 0);
+  }
+
+  function updateModeWithoutTransitions() {
+    disableTransitionsTemporarily();
+    updateMode();
+  }
+
+  function toggleMode() {
+    disableTransitionsTemporarily();
+
+    let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    let isSystemDarkMode = darkModeMediaQuery.matches;
+    let isDarkMode = document.documentElement.classList.toggle('dark');
+
+    if (isDarkMode === isSystemDarkMode) {
+      delete window.localStorage.isDarkMode;
+    } else {
+      window.localStorage.isDarkMode = isDarkMode;
+    }
+  }
+</script>

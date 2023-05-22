@@ -7,8 +7,9 @@ export const siteMetadata = {
   theme: 'dark', // system, dark or light
   siteUrl: 'https://akashrajpurohit.com',
   siteRepo: 'https://github.com/AkashRajpurohit/akashrajpurohit.com',
-  siteLogo: '/static/images/logo.png',
+  siteLogo: '/static/images/logo-v3.png',
   image: '/static/images/avatar.png',
+  image_small: '/static/images/avatar_small.jpg',
   image_large: '/static/images/avatar-v2.jpg',
   socialBanner: '/static/images/twitter-card-v3.png',
   email: 'me@akashrajpurohit.com',
@@ -70,10 +71,11 @@ export const siteMetadata = {
 };
 
 export const headerNavLinks = [
-  { href: siteMetadata.pages.home, title: 'Home' },
-  { href: siteMetadata.pages.blogs, title: 'Blogs' },
-  { href: siteMetadata.pages.projects, title: 'Projects' },
   { href: siteMetadata.pages.about, title: 'About' },
+  { href: siteMetadata.pages.projects, title: 'Projects' },
+  { href: siteMetadata.pages.blogs, title: 'Blogs' },
+  { href: siteMetadata.pages.snippets, title: 'Snippets' },
+  { href: siteMetadata.pages.uses, title: 'Uses' },
 ];
 
 export const pageWiseMeta = {
