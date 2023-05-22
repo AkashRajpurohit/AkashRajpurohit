@@ -1,4 +1,4 @@
-import rss from '@astrojs/rss';
+import rss, { RSSFeedItem } from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 import type { APIContext } from 'astro';
 import { siteMetadata } from '@lib/config';
@@ -8,7 +8,7 @@ const author = `${siteMetadata.email} (${siteMetadata.author})`;
 
 export async function get(context: APIContext) {
   const allPosts = await getCollection('blog');
-  const postItems = allPosts.map((post) => ({
+  const postItems: RSSFeedItem[] = allPosts.map((post) => ({
     title: post.data.title,
     description: post.data.summary,
     pubDate: post.data.lastmod || post.data.date,
