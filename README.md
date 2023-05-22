@@ -23,8 +23,8 @@
 - [x] Cloudflare Deployment -> Facing issue with pre-rendering though -> more [here](https://github.com/withastro/astro/issues/7140)
 - [x] MDX blogs
   - [ ] Once components are added, add them to MDX Content components map
-- [ ] Full SEO for blogs
-- [ ] Dynamic Open graph from Cloudinary
+- [x] Full SEO for blogs
+- [x] Dynamic Open graph from Cloudinary
 - [ ] Dark / Light mode
 - [ ] Command + K
 - [ ] Newsletter Form + API

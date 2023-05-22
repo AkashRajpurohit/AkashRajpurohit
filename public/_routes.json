@@ -12,6 +12,8 @@
 		"/sitemap-0.xml",
 		"/sitemap-index.xml",
 		"/static/*",
+		"/fonts/*",
+		"/logos/*",
 		"/blogs/*",
 		"/projects/*",
 		"/about/*",

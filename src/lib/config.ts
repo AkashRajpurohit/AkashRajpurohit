@@ -10,7 +10,7 @@ export const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   image_large: '/static/images/avatar-v2.jpg',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: '/static/images/twitter-card-v3.png',
   email: 'me@akashrajpurohit.com',
   github: 'https://github.com/AkashRajpurohit',
   twitter: 'https://twitter.com/AkashWhoCodes',
