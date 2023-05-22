@@ -15,21 +15,7 @@
 }
 
 .prose a {
-  @apply text-primary-700;
-}
-
-.prose a:not(.autolink-header):not(.remove-underline) {
-  @apply transition-all no-underline relative inline-block;
-}
-
-.prose a:not(.autolink-header):not(.remove-underline):after {
-  @apply block border-b-2 border-primary-500 transform scale-x-0 transition-all duration-300 origin-center;
-  content: '';
-}
-
-.prose a:not(.autolink-header):not(.remove-underline):hover:after {
-  @apply transform scale-x-100 origin-right;
-  content: '';
+  @apply text-primary-700 dark:text-primary-500 hover:text-primary-900 dark:hover:text-primary-300 transition-colors duration-200;
 }
 
 .prose .autolink-header:after {

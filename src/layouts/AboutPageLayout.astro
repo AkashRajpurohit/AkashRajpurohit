@@ -1,0 +1,98 @@
+---
+import Container from '@components/Container.astro';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+import BaseHead from '@components/BaseHead.astro';
+import { siteMetadata, pageWiseMeta } from '@lib/config';
+import SocialLink from '@components/SocialLink.astro';
+import TwitterIcon from '@components/ui/icons/TwitterIcon.astro';
+import InstagramIcon from '@components/ui/icons/InstagramIcon.astro';
+import GithubIcon from '@components/ui/icons/GithubIcon.astro';
+import LinkedinIcon from '@components/ui/icons/LinkedinIcon.astro';
+import MailIcon from '@components/ui/icons/MailIcon.astro';
+
+type Props = {
+  frontmatter: {
+    heroTitle: string;
+  };
+};
+
+const { title, description } = pageWiseMeta.about;
+const {
+  frontmatter: { heroTitle },
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang='en' class='scroll-smooth'>
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+  <body
+    class='flex h-full flex-col bg-zinc-50 text-zinc-900 dark:bg-black dark:text-white'
+  >
+    <Header />
+    <Container class='mt-16 sm:mt-32'>
+      <div class='fixed inset-0 flex justify-center sm:px-8'>
+        <div class='flex w-full max-w-7xl lg:px-8'>
+          <div
+            class='w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20'
+          >
+          </div>
+        </div>
+      </div>
+      <div class='relative'>
+        <div
+          class='grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12'
+        >
+          <div class='lg:pl-20'>
+            <div class='max-w-xs px-2.5 lg:max-w-none'>
+              <img
+                src={siteMetadata.image_large}
+                alt={`Photo of ${siteMetadata.author}`}
+                sizes='(min-width: 1024px) 32rem, 20rem'
+                class='aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800 h-48 lg:h-96 object-top'
+              />
+            </div>
+          </div>
+          <div class='lg:order-first lg:row-span-2'>
+            <h1
+              class='text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl'
+            >
+              {heroTitle}
+            </h1>
+            <div
+              class='mt-6 space-y-7 text-base prose prose-slate dark:prose-invert'
+            >
+              <slot />
+            </div>
+          </div>
+          <div class='lg:pl-20'>
+            <ul role='list' class='space-y-4'>
+              <SocialLink href='#' Icon={GithubIcon}>
+                Follow on GitHub
+              </SocialLink>
+              <SocialLink href='#' Icon={TwitterIcon}>
+                Follow on Twitter
+              </SocialLink>
+              <SocialLink href='#' Icon={LinkedinIcon}>
+                Follow on LinkedIn
+              </SocialLink>
+              <SocialLink href='#' Icon={InstagramIcon}>
+                Follow on Instagram
+              </SocialLink>
+              <SocialLink
+                href={`mailto:${siteMetadata.email}`}
+                Icon={MailIcon}
+                class='border-t border-zinc-100 pt-4 dark:border-zinc-700/40'
+              >
+                {siteMetadata.email}
+              </SocialLink>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </Container>
+    <Footer />
+  </body>
+</html>

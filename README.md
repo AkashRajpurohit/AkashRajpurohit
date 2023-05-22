@@ -3,7 +3,7 @@
 ## Pages
 
 - [ ] Home
-- [ ] About
+- [x] About
 - [ ] Blogs
   - [ ] Individual blogs
 - [ ] Projects
@@ -25,9 +25,9 @@
   - [ ] Once components are added, add them to MDX Content components map
 - [x] Full SEO for blogs
 - [x] Dynamic Open graph from Cloudinary
+- [ ] Newsletter Form + API
 - [ ] Dark / Light mode
 - [ ] Command + K
-- [ ] Newsletter Form + API
 - [ ] Custom Link component with hover placeholder
 - [ ] Blogs search functionality (useSearchHook)
 - [ ] Twitter Card + Tweets data from notion -> Look into [this](https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter#readme)

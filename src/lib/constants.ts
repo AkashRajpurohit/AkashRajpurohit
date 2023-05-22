@@ -25,3 +25,5 @@ export const allowedBlogTags = [
   'database',
   'networking',
 ];
+
+export type socialLinkTypes = 'twitter' | 'github' | 'linkedin' | 'instagram';
