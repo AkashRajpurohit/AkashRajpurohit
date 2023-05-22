@@ -14,9 +14,9 @@ export default defineConfig({
   },
   trailingSlash: 'always',
   integrations: [mdx(), sitemap(), tailwind()],
-  output: 'static',
-  // experimental: {
-  //   hybridOutput: true,
-  // },
-  // adapter: cloudflare(),
+  output: 'hybrid',
+  experimental: {
+    hybridOutput: true,
+  },
+  adapter: cloudflare(),
 });

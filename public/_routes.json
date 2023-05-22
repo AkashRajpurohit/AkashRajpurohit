@@ -1,0 +1,25 @@
+{
+	"version": 1,
+	"include": [
+		"/*"
+	],
+	"exclude": [
+		"/_astro/*",
+		"/_worker.js",
+		"/",
+		"/index.html",
+		"/rss.xml",
+		"/sitemap-0.xml",
+		"/sitemap-index.xml",
+		"/static/*",
+		"/blogs/*",
+		"/projects/*",
+		"/about/*",
+		"/snippets/*",
+		"/resume/*",
+		"/uses/*",
+		"/privacy-policy/*",
+		"/newsletter/*",
+		"/blog/*"
+	]
+}
