@@ -16,6 +16,7 @@ export const siteMetadata = {
   github: 'https://github.com/AkashRajpurohit',
   twitter: 'https://twitter.com/AkashWhoCodes',
   linkedin: 'https://www.linkedin.com/in/AkashRajpurohit',
+  instagram: 'https://www.linkedin.com/akashwho.codes',
   youtube: 'https://www.youtube.com/TheITGuy',
   rss: '/rss.xml',
   resumeDownloadLink: '/static/pdfs/AkashRajpurohit_Resume.pdf',

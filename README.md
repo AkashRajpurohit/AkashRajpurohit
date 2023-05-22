@@ -26,10 +26,12 @@
 - [x] Full SEO for blogs
 - [x] Dynamic Open graph from Cloudinary
 - [x] Dark / Light mode
+- [x] Footer
+- [ ] Mobile Navbar
+- [ ] Blogs search functionality (useSearchHook)
 - [ ] Newsletter Form + API
 - [ ] Command + K
 - [ ] Custom Link component with hover placeholder
-- [ ] Blogs search functionality (useSearchHook)
 - [ ] Twitter Card + Tweets data from notion -> Look into [this](https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter#readme)
 - [ ] View Counter
 - [ ] Like Counter
