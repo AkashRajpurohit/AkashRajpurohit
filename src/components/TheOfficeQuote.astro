@@ -1,0 +1,36 @@
+---
+import { siteMetadata } from '@lib/config';
+---
+
+<the-office-quote>
+  <h3>While you are here, here’s an Office quote for you</h3>
+  <figure>
+    <blockquote cite='https://akashrajpurohit.github.io/the-office-api/'>
+      An amazing office quote is loading...
+    </blockquote>
+    <figcaption class='flex justify-end'>— {siteMetadata.author}</figcaption>
+  </figure>
+</the-office-quote>
+
+<script>
+  class TheOfficeQuote extends HTMLElement {
+    constructor() {
+      super();
+      const quote = this.querySelector('blockquote');
+      const author = this.querySelector('figcaption');
+
+      if (!quote) return;
+      if (!author) return;
+
+      fetch('https://officeapi.akashrajpurohit.com/quote/random')
+        .then((res) => res.json())
+        .then((data) => {
+          quote.textContent = data.quote;
+          author.textContent = `— ${data.character}`;
+        });
+    }
+  }
+
+  // Tell the browser to use our TheOfficeQuote class for <the-office-quote> elements.
+  customElements.define('the-office-quote', TheOfficeQuote);
+</script>
