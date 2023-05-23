@@ -3,10 +3,6 @@ import { CollectionEntry, getCollection } from 'astro:content';
 import BlogPostLayout from '@layouts/BlogPostLayout.astro';
 import Callout from '@components/ui/Callout.astro';
 import Image from '@components/ui/BlogImage.astro';
-// @ts-ignore next-line
-// import { Tweet } from '@astro-community/astro-embed-twitter';
-
-export const prerender = true;
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -18,10 +14,14 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
-const { Content } = await post.render();
+const { Content, remarkPluginFrontmatter } = await post.render();
+const data = {
+  ...post.data,
+  minutesRead: remarkPluginFrontmatter.minutesRead,
+};
 ---
 
-<BlogPostLayout data={post.data} slug={post.slug}>
+<BlogPostLayout data={data} slug={post.slug}>
   <!-- TODO: add components map here once everything is imported -->
   <Content components={{ Callout, Image }} />
 </BlogPostLayout>

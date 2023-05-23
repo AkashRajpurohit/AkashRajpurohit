@@ -3,12 +3,6 @@ import { pageWiseMeta } from '@lib/config';
 import { getCollection } from 'astro:content';
 import { isDateBefore } from '@lib/utils';
 import SimpleLayout from '@layouts/SimpleLayout.astro';
-import Card from '@components/ui/card/Card.astro';
-import CardTitle from '@components/ui/card/CardTitle.astro';
-import CardEyebrow from '@components/ui/card/CardEyebrow.astro';
-import FormattedDate from '@components/FormattedDate.astro';
-import CardDescription from '@components/ui/card/CardDescription.astro';
-import CardCta from '@components/ui/card/CardCta.astro';
 import ArticleCard from '@components/ui/ArticleCard.astro';
 
 const posts = (await getCollection('blog'))

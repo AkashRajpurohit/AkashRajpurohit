@@ -7,6 +7,8 @@ import cloudflare from '@astrojs/cloudflare';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+// @ts-ignore
+import { remarkReadingTime } from './src/lib/plugins/remark-reading-time';
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,6 +17,7 @@ export default defineConfig({
     shikiConfig: {
       theme: 'dracula',
     },
+    remarkPlugins: [remarkReadingTime],
     rehypePlugins: [
       rehypeSlug,
       [
