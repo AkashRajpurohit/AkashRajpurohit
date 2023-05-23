@@ -31,6 +31,8 @@ export default defineConfig({
       [
         rehypeExternalLinks,
         {
+          rel: ['noopener nofollow noreferrer'],
+          target: '_blank',
           content: { type: 'text', value: ' ↗️' },
         },
       ],
