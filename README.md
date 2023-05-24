@@ -9,13 +9,13 @@
 - [ ] Projects
 - [ ] Snippets
   - [ ] Individual snippets
-- [ ] Uses
+- [x] Uses
 - [ ] Resume
 - [ ] Newsletter
   - [ ] Individual newsletter (NEW)
 - [ ] Tweets
 - [ ] Tags
-- [ ] Privacy Policy
+- [x] Privacy Policy
 
 ## Feature support
 
