@@ -3,6 +3,8 @@ import { CollectionEntry, getCollection } from 'astro:content';
 import BlogPostLayout from '@layouts/BlogPostLayout.astro';
 import Callout from '@components/ui/Callout.astro';
 import Image from '@components/ui/BlogImage.astro';
+import { getSuggestedPosts, getPublishedAndSortedPosts } from '@lib/utils';
+import ArticleCard from '@components/ui/ArticleCard.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -14,6 +16,18 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
+const allPosts = await getCollection('blog');
+const sortedPosts = getPublishedAndSortedPosts(allPosts);
+const suggestedPosts = getSuggestedPosts({
+  parentPost: post,
+  allPosts: allPosts,
+  limit: 3,
+});
+
+const postIndex = sortedPosts.findIndex((p) => p.slug === post.slug);
+const prevPost = sortedPosts[postIndex + 1] || null;
+const nextPost = sortedPosts[postIndex - 1] || null;
+
 const { Content, remarkPluginFrontmatter } = await post.render();
 const data = {
   ...post.data,
@@ -22,6 +36,48 @@ const data = {
 ---
 
 <BlogPostLayout data={data} slug={post.slug}>
-  <!-- TODO: add components map here once everything is imported -->
   <Content components={{ Callout, Image }} />
+  <section class='flex flex-col gap-8' slot='blog-post-footer'>
+    <!-- Next/Previous articles section -->
+    <div class='flex justify-between'>
+      {
+        prevPost !== null && (
+          <div class='max-w-sm space-y-2'>
+            <h2 class='font-semibold text-xs uppercase tracking-wide text-zinc-500 dark:text-zinc-400'>
+              Previous Article
+            </h2>
+            <div class='text-primary-700 dark:text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'>
+              <a href={`/blog/${prevPost.slug}/`}>{prevPost.data.title}</a>
+            </div>
+          </div>
+        )
+      }
+      {
+        nextPost !== null && (
+          <div class='max-w-sm space-y-2'>
+            <h2 class='font-semibold text-xs uppercase tracking-wide text-zinc-500 dark:text-zinc-400'>
+              Next Article
+            </h2>
+            <div class='text-primary-700 dark:text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'>
+              <a href={`/blog/${nextPost.slug}/`}>{nextPost.data.title}</a>
+            </div>
+          </div>
+        )
+      }
+    </div>
+    <!-- Suggested Posts section -->
+    <div class='flex flex-col gap-6'>
+      <h3
+        class='font-semibold text-xs uppercase tracking-wide text-zinc-500 dark:text-zinc-400'
+      >
+        You may also like
+      </h3>
+      <div
+        role='list'
+        class='grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3'
+      >
+        {suggestedPosts.map((post) => <ArticleCard {...post} />)}
+      </div>
+    </div>
+  </section>
 </BlogPostLayout>

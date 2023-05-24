@@ -1,20 +1,14 @@
 ---
 import { pageWiseMeta } from '@lib/config';
 import { getCollection } from 'astro:content';
-import { isDateBefore } from '@lib/utils';
+import { getAllTagsMap, getPublishedAndSortedPosts } from '@lib/utils';
 import SimpleLayout from '@layouts/SimpleLayout.astro';
 import ArticleCard from '@components/ui/ArticleCard.astro';
 
-const posts = (await getCollection('blog'))
-  .filter((post) => !post.data.draft)
-  .sort((post1, post2) => {
-    if (isDateBefore(post1.data.date, post2.data.date)) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
+const posts = getPublishedAndSortedPosts(await getCollection('blog'));
 
+// TODO: use this tagsMap to renders tags list on UI
+const tagsMap = getAllTagsMap(posts);
 const { title, description } = pageWiseMeta.blogs;
 ---
 

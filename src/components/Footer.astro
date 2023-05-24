@@ -38,12 +38,14 @@ const navigation: Record<string, Item[]> = {
 const today = new Date();
 ---
 
-<div class='w-full pt-16 pb-8 px-4 sm:px-0'>
+<div class='w-full pt-16 pb-8 px-4 sm:px-12'>
   <footer class='relative z-50 mx-auto max-w-5xl'>
     <div
       class='flex flex-col md:flex-row gap-4 justify-between items-start w-full border-t border-zinc-100 pb-16 pt-10 dark:border-zinc-700/40'
     >
-      <div class='flex flex-1 flex-row gap-20 md:gap-48 justify-start'>
+      <div
+        class='flex flex-1 flex-row gap-20 sm:px-4 lg:px-8 md:gap-48 justify-start'
+      >
         <div>
           <h3 class='text-sm font-semibold tracking-wider uppercase'>
             General
