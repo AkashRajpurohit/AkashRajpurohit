@@ -12,6 +12,8 @@ export const isDateBefore = (date1: Date, date2: Date) =>
 export const isDateAfter = (date1: Date, date2: Date) =>
   !isDateBefore(date1, date2);
 
+export const slugifyTag = (tag: string) => tag.split(' ').join('-');
+
 export const getPublishedAndSortedPosts = (
   allPosts: CollectionEntry<'blog'>[],
 ) => {

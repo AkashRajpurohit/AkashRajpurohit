@@ -9,6 +9,7 @@ import { siteMetadata } from '@lib/config';
 // @ts-ignore
 import ArrowLeft from '@astropub/icons/ArrowLeft';
 import { getSocialImageForBlog } from '@lib/opengraph';
+import TagsList from '@components/TagsList.astro';
 
 type Props = {
   data: CollectionEntry<'blog'>['data'];
@@ -64,10 +65,10 @@ const ogImage = getSocialImageForBlog(data);
             >
               {title}
             </h1>
-            <div class='flex gap-2 text-zinc-600 dark:text-zinc-400'>
+            <div class='flex gap-2 font-light text-zinc-600 dark:text-zinc-400'>
               <span>{minutesRead}</span>{' · '}
               <FormattedDate date={date} />{' · '}
-              {tags.map((tag) => <span class='mr-2'>#{tag}</span>)}
+              <TagsList tags={tags} />
             </div>
           </header>
           <article class='mt-8 prose prose-slate dark:prose-invert'>
