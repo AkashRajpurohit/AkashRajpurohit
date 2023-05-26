@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Unit Testing in JavaScript: How to Ensure Code Quality and Catch Bugs Early](https://akashrajpurohit.com/blog/unit-testing-in-javascript-how-to-ensure-code-quality-and-catch-bugs-early/)
 - [Building and Publishing TypeScript NPM Packages: A Step-by-Step Guide](https://akashrajpurohit.com/blog/building-and-publishing-typescript-npm-packages-a-stepbystep-guide/)
 - [Snowflake ID: Generating Unique IDs for Distributed Systems](https://akashrajpurohit.com/blog/snowflake-id-generating-unique-ids-for-distributed-systems/)
 - [Array and Object Manipulation in JavaScript: Advanced Techniques](https://akashrajpurohit.com/blog/array-and-object-manipulation-in-javascript-advanced-techniques/)
@@ -136,7 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [How to Use the Linux Shred Command for Secure File Deletion](https://akashrajpurohit.com/blog/how-to-use-the-linux-shred-command-for-secure-file-deletion/)
 - [How to Use the Linux Netcat Command for Network Communication and Testing](https://akashrajpurohit.com/blog/how-to-use-the-linux-netcat-command-for-network-communication-and-testing/)
 - [A Beginner&#39;s Guide to Using the Linux Mount Command for File System Management](https://akashrajpurohit.com/blog/a-beginners-guide-to-using-the-linux-mount-command-for-file-system-management/)
-- [Splitting and Concatenating Files on Linux Made Easy with the split Command](https://akashrajpurohit.com/blog/splitting-and-concatenating-files-on-linux-made-easy-with-the-split-command/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
