@@ -11,6 +11,7 @@ import { getCollection } from 'astro:content';
 import { recentPostsLimit } from '@lib/constants';
 import FilterByTagsCard from '@components/ui/FilterByTagsCard.astro';
 import ArticleCard from '@components/ui/ArticleCard';
+import NewsletterForm from '@components/NewsletterForm';
 
 // @ts-ignore
 import Pencil from '@astropub/icons/Pencil2';
@@ -81,7 +82,7 @@ const { title, description } = pageWiseMeta.home;
         </div>
       </div>
       <div class='space-y-10 lg:pl-16 xl:pl-24'>
-        <!-- <Newsletter /> -->
+        <NewsletterForm />
         <FilterByTagsCard tagsList={tagsList} />
       </div>
     </div>

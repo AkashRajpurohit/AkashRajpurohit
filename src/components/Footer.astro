@@ -1,5 +1,4 @@
 ---
-import { twJoin } from 'tailwind-merge';
 import { siteMetadata } from '@lib/config';
 import SocialLink from './SocialLink.astro';
 import GithubIcon from './ui/icons/GithubIcon.astro';
@@ -7,6 +6,7 @@ import TwitterIcon from './ui/icons/TwitterIcon.astro';
 import LinkedinIcon from './ui/icons/LinkedinIcon.astro';
 import InstagramIcon from './ui/icons/InstagramIcon.astro';
 import MailIcon from './ui/icons/MailIcon.astro';
+import NewsletterForm from './NewsletterForm';
 
 type Item = {
   name: string;
@@ -104,7 +104,7 @@ const today = new Date();
         </div>
       </div>
       <div class='mt-8 md:mt-0 flex-1 flex justify-end'>
-        <h1>NEWSLETTER HERE</h1>
+        <NewsletterForm />
       </div>
     </div>
     <div
