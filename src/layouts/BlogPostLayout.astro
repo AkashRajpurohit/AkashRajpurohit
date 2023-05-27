@@ -1,4 +1,6 @@
 ---
+import '@fontsource/inter';
+import '@fontsource/ibm-plex-mono';
 import type { CollectionEntry } from 'astro:content';
 import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
@@ -32,6 +34,7 @@ const ogImage = getSocialImageForBlog(data);
       slug={slug}
       date={date}
       lastmod={lastmod}
+      minutesRead={minutesRead || ''}
     />
   </head>
   <body

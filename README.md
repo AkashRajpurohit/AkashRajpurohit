@@ -29,6 +29,7 @@
 - [x] Dark / Light mode
 - [x] Footer
 - [x] Blogs search functionality
+- [ ] Fonts
 - [ ] Mobile Navbar
 - [ ] Newsletter Form + API
 - [ ] Command + K
