@@ -26,4 +26,6 @@ export const allowedBlogTags = [
   'networking',
 ];
 
+export const recentPostsLimit = 4;
+
 export type socialLinkTypes = 'twitter' | 'github' | 'linkedin' | 'instagram';

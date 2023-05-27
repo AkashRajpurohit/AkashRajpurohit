@@ -6,6 +6,21 @@ import TwitterIcon from '@components/ui/icons/TwitterIcon.astro';
 import InstagramIcon from '@components/ui/icons/InstagramIcon.astro';
 import GithubIcon from '@components/ui/icons/GithubIcon.astro';
 import LinkedinIcon from '@components/ui/icons/LinkedinIcon.astro';
+import { getAllTagsMap, getPublishedAndSortedPosts } from '@lib/utils';
+import { getCollection } from 'astro:content';
+import { recentPostsLimit } from '@lib/constants';
+import FilterByTagsCard from '@components/ui/FilterByTagsCard.astro';
+import ArticleCard from '@components/ui/ArticleCard';
+
+// @ts-ignore
+import Pencil from '@astropub/icons/Pencil2';
+// @ts-ignore
+import ChevronRight from '@astropub/icons/ChevronRight';
+
+const allPosts = getPublishedAndSortedPosts(await getCollection('blog'));
+const allTags = getAllTagsMap(allPosts);
+const tagsList = Object.keys(allTags);
+const recentPosts = allPosts.slice(0, recentPostsLimit);
 
 const { title, description } = pageWiseMeta.home;
 ---
@@ -45,7 +60,30 @@ const { title, description } = pageWiseMeta.home;
       />
     </div>
   </div>
-  <main>
-    <p>Hello World!</p>
-  </main>
+  <div class='mt-24 md:mt-28'>
+    <div
+      class='mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2'
+    >
+      <div class='flex flex-col gap-8'>
+        <h2
+          class='flex text-sm font-semibold uppercase tracking-wider text-zinc-600 dark:text-zinc-400'
+        >
+          <Pencil class='h-5 w-5 flex-none' />
+          <span class='ml-3'>Recent Articles</span>
+        </h2>
+        <div class='flex flex-col gap-16'>
+          {recentPosts.map((post) => <ArticleCard {...post} />)}
+        </div>
+        <div class='mt-4 flex justify-end'>
+          <a href='/blogs/' class='text-primary-500 flex items-center gap-1'
+            >See more <ChevronRight class='h-4 w-4 flex-none' /></a
+          >
+        </div>
+      </div>
+      <div class='space-y-10 lg:pl-16 xl:pl-24'>
+        <!-- <Newsletter /> -->
+        <FilterByTagsCard tagsList={tagsList} />
+      </div>
+    </div>
+  </div>
 </SimpleLayout>
