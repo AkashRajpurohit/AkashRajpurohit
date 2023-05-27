@@ -4,7 +4,7 @@ import BlogPostLayout from '@layouts/BlogPostLayout.astro';
 import Callout from '@components/ui/Callout.astro';
 import Image from '@components/ui/BlogImage.astro';
 import { getSuggestedPosts, getPublishedAndSortedPosts } from '@lib/utils';
-import ArticleCard from '@components/ui/ArticleCard.astro';
+import ArticleCard from '@components/ui/ArticleCard';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');

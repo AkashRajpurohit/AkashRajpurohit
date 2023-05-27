@@ -14,6 +14,12 @@ export const isDateAfter = (date1: Date, date2: Date) =>
 
 export const slugifyTag = (tag: string) => tag.split(' ').join('-');
 
+export const getRandomPostTitle = (posts: CollectionEntry<'blog'>[]) => {
+  const randomIndex = Math.floor(Math.random() * posts.length);
+  const randomPost = posts[randomIndex];
+  return randomPost.data.title;
+};
+
 export const getPublishedAndSortedPosts = (
   allPosts: CollectionEntry<'blog'>[],
 ) => {
