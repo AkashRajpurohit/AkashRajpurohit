@@ -64,7 +64,7 @@ export default function SearchList({ searchList }: Props) {
       >
         Search
       </label>
-      <div class='relative'>
+      <div class='relative lg:max-w-xl xl:max-w-2xl -mt-5 lg:-mt-[5.5rem]'>
         <div class='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3'>
           <svg
             aria-hidden='true'
