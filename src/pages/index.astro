@@ -5,12 +5,19 @@ import SimpleLayout from '@layouts/SimpleLayout.astro';
 const { title, description } = pageWiseMeta.home;
 ---
 
-<SimpleLayout
-  title={title}
-  description={description}
-  heroTitle='Crafting Code and Embracing the Unknown'
-  heroSubtitle='I’m Akash Rajpurohit, a software engineer and tech enthusiast based in Mumbai, India 🇮🇳. Welcome to my digital domain, where I engineer solutions and ignite imaginations.'
->
+<SimpleLayout title={title} description={description}>
+  <div slot='header-main-section'>
+    <h1
+      class='text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl'
+    >
+      Crafting Code and Embracing the Unknown
+    </h1>
+    <p class='mt-6 text-base text-zinc-600 dark:text-zinc-400'>
+      I’m Akash Rajpurohit, a software engineer and tech enthusiast based in
+      Mumbai, India 🇮🇳. Welcome to my digital domain, where I engineer solutions
+      and ignite imaginations.
+    </p>
+  </div>
   <main>
     <p>Hello World!</p>
   </main>

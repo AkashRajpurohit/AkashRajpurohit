@@ -12,12 +12,21 @@ const allTags = Object.keys(tagsMap);
 const { title, description } = pageWiseMeta.blogs;
 ---
 
-<SimpleLayout
-  title={title}
-  description={description(posts.length)}
-  heroTitle='Writing on software development, system design, linux and in general tech.'
-  heroSubtitle={`I have been writing since 2020, mostly around tech and my career. In total I have written ${posts.length} posts. I hope you enjoy them.`}
->
+<SimpleLayout title={title} description={description(posts.length)}>
+  <div slot='header-main-section'>
+    <h1
+      class='text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl'
+    >
+      Writing on software development, system design, linux and in general tech.
+    </h1>
+    <p class='mt-6 text-base text-zinc-600 dark:text-zinc-400'>
+      I have been writing since 2020, mostly around tech and my career. In total
+      I have written <span class='font-semibold underline decoration-wavy'
+        >{posts.length}</span
+      >
+      posts. I hope you enjoy them.
+    </p>
+  </div>
   <div slot='header-side-section'>
     <div
       class='flex flex-col gap-2 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40'

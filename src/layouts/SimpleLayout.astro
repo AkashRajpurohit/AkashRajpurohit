@@ -9,11 +9,9 @@ import BaseHead from '@components/BaseHead.astro';
 type Props = {
   title: string;
   description: string;
-  heroTitle?: string;
-  heroSubtitle?: string;
 };
 
-const { title, description, heroTitle = '', heroSubtitle = '' } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -37,20 +35,7 @@ const { title, description, heroTitle = '', heroSubtitle = '' } = Astro.props;
       <div class='relative'>
         <div class='flex flex-col lg:flex-row gap-4'>
           <header class='max-w-2xl'>
-            {
-              heroTitle && (
-                <h1 class='text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl'>
-                  {heroTitle}
-                </h1>
-              )
-            }
-            {
-              heroSubtitle && (
-                <p class='mt-6 text-base text-zinc-600 dark:text-zinc-400'>
-                  {heroSubtitle}
-                </p>
-              )
-            }
+            <slot name='header-main-section' />
           </header>
           <div class='lg:max-w-xs'>
             <slot name='header-side-section' />

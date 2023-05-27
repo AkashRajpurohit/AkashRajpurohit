@@ -21,7 +21,7 @@
 ## Feature support
 
 - [x] TailwindCSS + Rome
-- [x] Cloudflare Deployment -> Facing issue with pre-rendering though -> more [here](https://github.com/withastro/astro/issues/7140)
+- [x] Cloudflare Deployment
 - [x] MDX blogs
   - [x] Once components are added, add them to MDX Content components map
 - [x] Full SEO for blogs
@@ -29,8 +29,7 @@
 - [x] Dark / Light mode
 - [x] Footer
 - [x] Blogs search functionality
-- [ ] Fonts
-- [ ] Mobile Navbar
+- [x] Fonts
 - [ ] Newsletter Form + API
 - [ ] Command + K
 - [ ] Custom Link component with hover placeholder
@@ -38,6 +37,7 @@
 - [ ] View Counter
 - [ ] Like Counter
 - [ ] Share with others buttons
+- [ ] Mobile Navbar
 - [ ] Comments? Don't have any on current blog
 - [ ] Umami Analytics with Events
 - [ ] Carbon Ads

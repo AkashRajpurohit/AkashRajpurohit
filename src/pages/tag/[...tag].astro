@@ -34,12 +34,21 @@ const postsByTag = posts.filter((post) =>
 const { title, description } = pageWiseMeta.tag;
 ---
 
-<SimpleLayout
-  title={`${tagName} | ${title}`}
-  description={description}
-  heroTitle={`Tagged Brilliance: Unveiling ${tagName} Wonders`}
-  heroSubtitle={`Delve into a collection of blogs focused on ${tagName}, exploring the depths of knowledge and expertise`}
->
+<SimpleLayout title={`${tagName} | ${title}`} description={description}>
+  <div slot='header-main-section'>
+    <h1
+      class='text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl'
+    >
+      Tagged Brilliance: Unveiling <span
+        class='font-semibold underline decoration-wavy'>{tagName}</span
+      > Wonders
+    </h1>
+    <p class='mt-6 text-base text-zinc-600 dark:text-zinc-400'>
+      Delve into a collection of blogs focused on ${tagName}, exploring the
+      depths of knowledge and expertise. There are total {postsByTag.length} blogs
+      on this subject.
+    </p>
+  </div>
   <div slot='header-side-section'>
     <div
       class='flex flex-col gap-2 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40'

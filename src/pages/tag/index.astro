@@ -11,12 +11,18 @@ const tagsList = Object.keys(tagsMap);
 const { title, description } = pageWiseMeta.tag;
 ---
 
-<SimpleLayout
-  title={title}
-  description={description}
-  heroTitle='Discover Blogs Across Various Tags'
-  heroSubtitle='Navigate through the list of tags to find insightful content that aligns with your interests'
->
+<SimpleLayout title={title} description={description}>
+  <div slot='header-main-section'>
+    <h1
+      class='text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl'
+    >
+      Discover Blogs Across Various Tags
+    </h1>
+    <p class='mt-6 text-base text-zinc-600 dark:text-zinc-400'>
+      Navigate through the list of tags to find insightful content that aligns
+      with your interests
+    </p>
+  </div>
   <div
     class='rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 max-w-2xl'
   >

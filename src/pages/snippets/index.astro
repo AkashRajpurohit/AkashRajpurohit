@@ -5,11 +5,18 @@ import SimpleLayout from '@layouts/SimpleLayout.astro';
 const { title, description } = pageWiseMeta.snippets;
 ---
 
-<SimpleLayout
-  title={title}
-  description={description}
-  heroTitle='Re-usable code snippets'
-  heroSubtitle='These are collections of code snippets I have used in some of my projects and saved them for easy use in future. These would be relatively short snippets and some might require setup instructions.'
->
+<SimpleLayout title={title} description={description}>
+  <div slot='header-main-section'>
+    <h1
+      class='text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl'
+    >
+      Re-usable code snippets
+    </h1>
+    <p class='mt-6 text-base text-zinc-600 dark:text-zinc-400'>
+      These are collections of code snippets I have used in some of my projects
+      and saved them for easy use in future. These would be relatively short
+      snippets and some might require setup instructions.
+    </p>
+  </div>
   <main>Hello from snippets</main>
 </SimpleLayout>
