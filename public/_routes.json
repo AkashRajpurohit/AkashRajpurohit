@@ -19,6 +19,7 @@
 		"/tag/*",
 		"/resume/*",
 		"/uses/*",
+		"/tweets/*",
 		"/privacy-policy/*",
 		"/newsletter/*",
 		"/blog/*"
