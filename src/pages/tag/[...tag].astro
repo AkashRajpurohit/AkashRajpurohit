@@ -1,0 +1,56 @@
+---
+import { pageWiseMeta } from '@lib/config';
+import { getCollection } from 'astro:content';
+import {
+  capitalizeSentence,
+  getAllTagsMap,
+  getPublishedAndSortedPosts,
+  slugifyTag,
+  unSlugifyTag,
+} from '@lib/utils';
+import SimpleLayout from '@layouts/SimpleLayout.astro';
+import TagsList from '@components/TagsList.astro';
+import SearchList from '@components/SearchList';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const tagsMap = getAllTagsMap(posts);
+  const allTags = Object.keys(tagsMap).map(slugifyTag);
+  return allTags.map((tag) => ({
+    params: { tag },
+  }));
+}
+
+const { tag } = Astro.params;
+const unSlugifiedTag = unSlugifyTag(tag || '');
+const tagName = capitalizeSentence(unSlugifiedTag);
+const posts = getPublishedAndSortedPosts(await getCollection('blog'));
+const tagsMap = getAllTagsMap(posts);
+const allTags = Object.keys(tagsMap);
+const postsByTag = posts.filter((post) =>
+  post.data.tags.includes(unSlugifiedTag),
+);
+
+const { title, description } = pageWiseMeta.tag;
+---
+
+<SimpleLayout
+  title={`${tagName} | ${title}`}
+  description={description}
+  heroTitle={`Tagged Brilliance: Unveiling ${tagName} Wonders`}
+  heroSubtitle={`Delve into a collection of blogs focused on ${tagName}, exploring the depths of knowledge and expertise`}
+>
+  <div slot='header-side-section'>
+    <div
+      class='flex flex-col gap-2 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40'
+    >
+      <h3
+        class='font-semibold text-xs uppercase tracking-wide text-zinc-500 dark:text-zinc-400'
+      >
+        Filter by Tags
+      </h3>
+      <TagsList tags={allTags} selectedTag={unSlugifiedTag} />
+    </div>
+  </div>
+  <SearchList searchList={postsByTag} client:load />
+</SimpleLayout>

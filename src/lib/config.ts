@@ -119,4 +119,8 @@ export const pageWiseMeta = {
     title: 'Privacy Policy',
     description: 'Privacy policy of akashrajpurohit.com',
   },
+  tag: {
+    title: 'Tags',
+    description: 'Filter blogs via specific tags',
+  },
 };

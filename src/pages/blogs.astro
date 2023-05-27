@@ -7,8 +7,6 @@ import TagsList from '@components/TagsList.astro';
 import SearchList from '@components/SearchList';
 
 const posts = getPublishedAndSortedPosts(await getCollection('blog'));
-
-// TODO: use this tagsMap to renders tags list on UI
 const tagsMap = getAllTagsMap(posts);
 const allTags = Object.keys(tagsMap);
 const { title, description } = pageWiseMeta.blogs;

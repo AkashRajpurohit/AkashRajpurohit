@@ -1,0 +1,15 @@
+---
+import { pageWiseMeta } from '@lib/config';
+import SimpleLayout from '@layouts/SimpleLayout.astro';
+
+const { title, description } = pageWiseMeta.snippets;
+---
+
+<SimpleLayout
+  title={title}
+  description={description}
+  heroTitle='Re-usable code snippets'
+  heroSubtitle='These are collections of code snippets I have used in some of my projects and saved them for easy use in future. These would be relatively short snippets and some might require setup instructions.'
+>
+  <main>Hello from snippets</main>
+</SimpleLayout>

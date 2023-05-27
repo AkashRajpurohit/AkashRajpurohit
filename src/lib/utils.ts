@@ -13,6 +13,14 @@ export const isDateAfter = (date1: Date, date2: Date) =>
   !isDateBefore(date1, date2);
 
 export const slugifyTag = (tag: string) => tag.split(' ').join('-');
+export const unSlugifyTag = (tag: string) => tag.split('-').join(' ');
+
+export const capitalizeSentence = (sentence: string) => {
+  return sentence
+    .split(' ')
+    .map((word) => `${word[0].toUpperCase()}${word.slice(1)}`)
+    .join(' ');
+};
 
 export const getRandomPostTitle = (posts: CollectionEntry<'blog'>[]) => {
   const randomIndex = Math.floor(Math.random() * posts.length);

@@ -1,17 +1,26 @@
 ---
+import { twJoin } from 'tailwind-merge';
 import { slugifyTag } from '@lib/utils';
 
 type Props = {
   tags: string[];
+  selectedTag?: string;
+  class?: string;
 };
 
-const { tags } = Astro.props;
+const { tags, selectedTag = '', class: className } = Astro.props;
 ---
 
-<div class='flex flex-wrap gap-2'>
+<div class={twJoin('flex flex-wrap gap-2', className)}>
   {
     tags.map((tag) => (
-      <a class='hover:text-primary-500' href={`/tag/${slugifyTag(tag)}/`}>
+      <a
+        class={twJoin(
+          'hover:text-primary-500',
+          selectedTag === tag && 'text-primary-600 dark:text-primary-400',
+        )}
+        href={`/tag/${slugifyTag(tag)}/`}
+      >
         <span># {tag}</span>
       </a>
     ))

@@ -1,0 +1,25 @@
+---
+import { pageWiseMeta } from '@lib/config';
+import { getCollection } from 'astro:content';
+import { getAllTagsMap, getPublishedAndSortedPosts } from '@lib/utils';
+import SimpleLayout from '@layouts/SimpleLayout.astro';
+import TagsList from '@components/TagsList.astro';
+
+const posts = getPublishedAndSortedPosts(await getCollection('blog'));
+const tagsMap = getAllTagsMap(posts);
+const tagsList = Object.keys(tagsMap);
+const { title, description } = pageWiseMeta.tag;
+---
+
+<SimpleLayout
+  title={title}
+  description={description}
+  heroTitle='Discover Blogs Across Various Tags'
+  heroSubtitle='Navigate through the list of tags to find insightful content that aligns with your interests'
+>
+  <div
+    class='rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 max-w-2xl'
+  >
+    <TagsList class='gap-4' tags={tagsList} />
+  </div>
+</SimpleLayout>

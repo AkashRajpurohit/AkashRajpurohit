@@ -66,15 +66,16 @@ export default function SearchList({ searchList }: Props) {
       </label>
       <div class='relative'>
         <div class='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3'>
-          {/* rome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
           <svg
             aria-hidden='true'
+            role='img'
             class='h-5 w-5 text-zinc-500 dark:text-zinc-400'
             fill='none'
             stroke='currentColor'
             viewBox='0 0 24 24'
             xmlns='http://www.w3.org/2000/svg'
           >
+            <title class='sr-only'>Search icon</title>
             <path
               stroke-linecap='round'
               stroke-linejoin='round'
@@ -85,9 +86,10 @@ export default function SearchList({ searchList }: Props) {
         </div>
         <input
           class='block w-full rounded-lg border border-zinc-300 bg-zinc-50 p-2 pl-10 text-sm text-zinc-900 focus:border-primary-500 focus:outline-primary-500 focus:ring-primary-500 dark:border-zinc-600 dark:bg-zinc-700 dark:text-white dark:placeholder-zinc-400 dark:focus:border-primary-500 dark:focus:ring-primary-500'
-          placeholder={`Try "${randomPostTitle}"`}
+          placeholder={randomPostTitle}
           required
           id='search'
+          autocomplete='off'
           onInput={(e) => setQuery(e.target.value)}
           value={query()}
         />
