@@ -45,3 +45,7 @@
   - [ ] Generate blog boilerplate
   - [ ] Generate and store tweets data
   - [ ] Newsletter send
+
+## TODO
+- [ ] fix sitemap showing /api/ urls as well
+- [ ] Rehype autolink headers icon is not showing up anymore

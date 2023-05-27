@@ -14,7 +14,7 @@ const { socialBanner } = siteMetadata;
 const {
   title,
   description,
-  image = `${canonicalURL}${socialBanner}`,
+  image = `${Astro.site}${socialBanner}`,
 } = Astro.props;
 ---
 

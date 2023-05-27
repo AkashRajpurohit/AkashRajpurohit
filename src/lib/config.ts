@@ -7,11 +7,11 @@ export const siteMetadata = {
   theme: 'dark', // system, dark or light
   siteUrl: 'https://akashrajpurohit.com',
   siteRepo: 'https://github.com/AkashRajpurohit/akashrajpurohit.com',
-  siteLogo: '/static/images/logo-v3.png',
+  siteLogo: 'static/images/logo-v3.png',
+  socialBanner: 'static/images/twitter-card-v3.png',
   image: '/static/images/avatar.png',
   image_small: '/static/images/avatar_small.jpg',
   image_large: '/static/images/avatar-v2.jpg',
-  socialBanner: '/static/images/twitter-card-v3.png',
   email: 'me@akashrajpurohit.com',
   github: 'https://github.com/AkashRajpurohit',
   twitter: 'https://twitter.com/AkashWhoCodes',
