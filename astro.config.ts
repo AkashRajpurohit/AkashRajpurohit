@@ -25,7 +25,7 @@ export default defineConfig({
         {
           behavior: 'append',
           properties: {
-            class: 'autolink-header sr-only',
+            class: 'autolink-header',
             ariaHidden: true,
             tabIndex: -1,
           },

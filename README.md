@@ -48,4 +48,4 @@
 
 ## TODO
 - [ ] fix sitemap showing /api/ urls as well
-- [ ] Rehype autolink headers icon is not showing up anymore
+- [x] Rehype autolink headers icon is not showing up anymore
