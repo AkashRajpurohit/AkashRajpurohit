@@ -3,8 +3,8 @@ import { pageWiseMeta } from '@lib/config';
 import { getCollection } from 'astro:content';
 import { getAllTagsMap, getPublishedAndSortedPosts } from '@lib/utils';
 import SimpleLayout from '@layouts/SimpleLayout.astro';
-import TagsList from '@components/TagsList.astro';
 import SearchList from '@components/SearchList';
+import FilterByTagsCard from '@components/ui/FilterByTagsCard.astro';
 
 const posts = getPublishedAndSortedPosts(await getCollection('blog'));
 const tagsMap = getAllTagsMap(posts);
@@ -28,16 +28,7 @@ const { title, description } = pageWiseMeta.blogs;
     </p>
   </div>
   <div slot='header-side-section'>
-    <div
-      class='flex flex-col gap-2 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40'
-    >
-      <h3
-        class='font-semibold text-xs uppercase tracking-wide text-zinc-500 dark:text-zinc-400'
-      >
-        Filter by Tags
-      </h3>
-      <TagsList tags={allTags} />
-    </div>
+    <FilterByTagsCard tagsList={allTags} />
   </div>
   <SearchList searchList={posts} client:load />
 </SimpleLayout>

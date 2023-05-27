@@ -1,6 +1,11 @@
 ---
-import { pageWiseMeta } from '@lib/config';
+import { pageWiseMeta, siteMetadata } from '@lib/config';
 import SimpleLayout from '@layouts/SimpleLayout.astro';
+import SocialLink from '@components/SocialLink.astro';
+import TwitterIcon from '@components/ui/icons/TwitterIcon.astro';
+import InstagramIcon from '@components/ui/icons/InstagramIcon.astro';
+import GithubIcon from '@components/ui/icons/GithubIcon.astro';
+import LinkedinIcon from '@components/ui/icons/LinkedinIcon.astro';
 
 const { title, description } = pageWiseMeta.home;
 ---
@@ -17,6 +22,28 @@ const { title, description } = pageWiseMeta.home;
       Mumbai, India 🇮🇳. Welcome to my digital domain, where I engineer solutions
       and ignite imaginations.
     </p>
+    <div class='mt-6 flex gap-4'>
+      <SocialLink
+        href={siteMetadata.twitter}
+        aria-label='Follow on Twitter'
+        Icon={TwitterIcon}
+      />
+      <SocialLink
+        href={siteMetadata.github}
+        aria-label='Follow on GitHub'
+        Icon={GithubIcon}
+      />
+      <SocialLink
+        href={siteMetadata.linkedin}
+        aria-label='Follow on LinkedIn'
+        Icon={LinkedinIcon}
+      />
+      <SocialLink
+        href={siteMetadata.instagram}
+        aria-label='Follow on Instagram'
+        Icon={InstagramIcon}
+      />
+    </div>
   </div>
   <main>
     <p>Hello World!</p>

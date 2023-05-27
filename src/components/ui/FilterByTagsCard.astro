@@ -1,0 +1,24 @@
+---
+import TagsList from '@components/TagsList.astro';
+// @ts-ignore
+import DrawingPin from '@astropub/icons/DrawingPinFilled';
+
+type Props = {
+  tagsList: string[];
+  selectedTag?: string;
+};
+
+const { tagsList, selectedTag } = Astro.props;
+---
+
+<div class='rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40'>
+  <h2
+    class='flex text-sm font-semibold uppercase tracking-wider text-zinc-900 dark:text-zinc-100'
+  >
+    <DrawingPin class='h-6 w-6 flex-none' />
+    <span class='ml-3'>Filter by Tags</span>
+  </h2>
+  <div class='mt-4'>
+    <TagsList tags={tagsList} selectedTag={selectedTag} />
+  </div>
+</div>

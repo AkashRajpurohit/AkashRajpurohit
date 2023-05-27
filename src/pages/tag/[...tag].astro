@@ -9,8 +9,8 @@ import {
   unSlugifyTag,
 } from '@lib/utils';
 import SimpleLayout from '@layouts/SimpleLayout.astro';
-import TagsList from '@components/TagsList.astro';
 import SearchList from '@components/SearchList';
+import FilterByTagsCard from '@components/ui/FilterByTagsCard.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -50,16 +50,7 @@ const { title, description } = pageWiseMeta.tag;
     </p>
   </div>
   <div slot='header-side-section'>
-    <div
-      class='flex flex-col gap-2 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40'
-    >
-      <h3
-        class='font-semibold text-xs uppercase tracking-wide text-zinc-500 dark:text-zinc-400'
-      >
-        Filter by Tags
-      </h3>
-      <TagsList tags={allTags} selectedTag={unSlugifiedTag} />
-    </div>
+    <FilterByTagsCard tagsList={allTags} selectedTag={unSlugifiedTag} />
   </div>
   <SearchList searchList={postsByTag} client:load />
 </SimpleLayout>
