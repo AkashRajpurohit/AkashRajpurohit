@@ -1,15 +1,20 @@
+import { getAllNewsletterSubscribers } from '@lib/db';
+
 export const prerender = false;
 
 // Get all newsletter subscribers
 export async function get() {
+  const totalSubscribers = await getAllNewsletterSubscribers();
+
   const response = {
-    totalSubscribers: Math.floor(Math.random() * 1000), // TODO: dummy data for now
+    totalSubscribers,
   };
 
   return new Response(JSON.stringify(response), {
     status: 200,
     headers: {
       'Content-Type': 'application/json',
+      'Cache-Control': 'public, max-age=7200, s-maxage=3600',
     },
   });
 }
