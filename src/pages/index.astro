@@ -86,9 +86,9 @@ const from_url = Astro.url.toString();
           >
         </div>
       </div>
-      <div class='space-y-10 lg:pl-16 xl:pl-24'>
-        <NewsletterForm from_url={from_url} client:visible />
+      <div class='lg:pl-16 xl:pl-24 flex flex-col gap-8'>
         <FilterByTagsCard tagsList={tagsList} />
+        <NewsletterForm from_url={from_url} client:visible />
       </div>
     </div>
   </div>
