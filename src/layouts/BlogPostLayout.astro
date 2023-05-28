@@ -48,9 +48,11 @@ const ogImage = getSocialImageForBlog(data);
         </div>
       </div>
     </div>
-    <Header />
-    <Container class='mt-16 lg:mt-32 z-50'>
-      <div class='xl:relative'>
+    <Container>
+      <Header />
+    </Container>
+    <div class='xl:relative'>
+      <Container class='mt-16 lg:mt-32 z-50'>
         <div class='mx-auto max-w-2xl'>
           <a
             type='button'
@@ -78,8 +80,8 @@ const ogImage = getSocialImageForBlog(data);
             <slot />
           </article>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </div>
     <div class='mt-20 z-50 max-w-2xl xl:max-w-5xl mx-auto relative px-4'>
       <slot name='blog-post-footer' />
     </div>

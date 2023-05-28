@@ -35,9 +35,11 @@ const { title, summary, date } = snippet;
         </div>
       </div>
     </div>
-    <Header />
-    <Container class='mt-16 lg:mt-32 z-50'>
-      <div class='xl:relative'>
+    <Container>
+      <Header />
+    </Container>
+    <div class='xl:relative'>
+      <Container class='mt-16 lg:mt-32 z-50'>
         <div class='mx-auto max-w-2xl'>
           <a
             type='button'
@@ -63,8 +65,8 @@ const { title, summary, date } = snippet;
             <slot />
           </article>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </div>
     <Footer />
   </body>
 </html>

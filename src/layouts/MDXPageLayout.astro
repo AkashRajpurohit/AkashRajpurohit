@@ -35,9 +35,11 @@ const { title, description } = pageWiseMeta[pageType];
         </div>
       </div>
     </div>
-    <Header />
-    <Container class='mt-16 sm:mt-32 z-50'>
-      <div class='relative'>
+    <Container>
+      <Header />
+    </Container>
+    <div class='relative'>
+      <Container class='mt-16 sm:mt-32 z-50'>
         <header class='max-w-2xl mx-auto'>
           {
             heroTitle && (
@@ -59,8 +61,8 @@ const { title, description } = pageWiseMeta[pageType];
         >
           <slot />
         </div>
-      </div>
-    </Container>
+      </Container>
+    </div>
     <Footer />
   </body>
 </html>

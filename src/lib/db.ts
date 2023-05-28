@@ -1,5 +1,16 @@
-import { db } from './config';
 import type { NewsletterFormInput } from './constants';
+
+export const db = {
+  baseUrl: (import.meta.env.MONGO_API_BASE_URL || '') as string,
+  apiKey: (import.meta.env.MONGO_API_KEY || '') as string,
+  database: 'blog-db',
+  dataSource: 'Cluster0',
+  collections: {
+    newsletter: 'newsletterSubscribers',
+    likes: 'likes',
+    views: 'views',
+  },
+};
 
 export const getAllNewsletterSubscribers = async () => {
   if (!db.baseUrl || !db.apiKey) {
