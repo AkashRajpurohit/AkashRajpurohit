@@ -31,16 +31,16 @@
 - [x] Blogs search functionality
 - [x] Fonts
 - [x] Newsletter Form + API
-- [ ] Command + K
+- [x] Mobile Navbar
 - [ ] Custom Link component with hover placeholder
 - [ ] Twitter Card + Tweets data from notion -> Look into [this](https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter#readme)
 - [ ] View Counter
 - [ ] Like Counter
 - [ ] Share with others buttons
-- [ ] Mobile Navbar
 - [ ] Comments? Don't have any on current blog
 - [ ] Umami Analytics with Events
 - [ ] Carbon Ads
+- [ ] Command + K
 - [ ] Helpful scripts
   - [ ] Generate blog boilerplate
   - [ ] Generate and store tweets data

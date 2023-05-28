@@ -70,7 +70,9 @@ const ogImage = getSocialImageForBlog(data);
             >
               {title}
             </h1>
-            <div class='flex gap-2 font-light text-zinc-600 dark:text-zinc-400'>
+            <div
+              class='flex flex-wrap gap-2 font-light text-zinc-600 dark:text-zinc-400'
+            >
               <span>👀 {minutesRead}</span>{' · '}
               📆 <FormattedDate date={date} />{' · '}
               <TagsList tags={tags} />
