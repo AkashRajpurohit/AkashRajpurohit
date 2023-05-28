@@ -7,7 +7,6 @@ import solidJs from '@astrojs/solid-js';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-// @ts-ignore
 import { remarkReadingTime } from './src/lib/plugins/remark-reading-time';
 
 // https://astro.build/config

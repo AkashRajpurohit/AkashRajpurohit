@@ -1,0 +1,35 @@
+---
+import { heroImages } from '@lib/constants';
+import { twJoin } from 'tailwind-merge';
+
+const rotations = [
+  'rotate-2',
+  '-rotate-2',
+  'rotate-2',
+  'rotate-2',
+  '-rotate-2',
+];
+---
+
+<div class='mt-16 sm:mt-20 z-[1000]'>
+  <div class='-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8'>
+    {
+      heroImages.map((image, imageIndex) => (
+        <div
+          class={twJoin(
+            'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+            rotations[imageIndex % rotations.length],
+          )}
+        >
+          <img
+            src={image}
+            alt='headshot photos'
+            width={640}
+            height={480}
+            class='absolute inset-0 h-full w-full object-cover'
+          />
+        </div>
+      ))
+    }
+  </div>
+</div>

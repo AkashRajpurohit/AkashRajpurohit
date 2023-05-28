@@ -28,4 +28,12 @@ export const allowedBlogTags = [
 
 export const recentPostsLimit = 4;
 
+export const heroImages = [
+  '/static/images/hero-image-1.jpg',
+  '/static/images/hero-image-2.jpg',
+  '/static/images/hero-image-3.jpg',
+  '/static/images/hero-image-4.jpg',
+  '/static/images/hero-image-5.jpg',
+];
+
 export type socialLinkTypes = 'twitter' | 'github' | 'linkedin' | 'instagram';
