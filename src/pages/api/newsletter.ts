@@ -7,8 +7,8 @@ import type { APIRoute } from 'astro';
 
 export const prerender = false;
 
-export const get: APIRoute = async () => {
-  const totalSubscribers = await getTotalNewsletterSubscribersCount();
+export const get: APIRoute = async ({ request }) => {
+  const totalSubscribers = await getTotalNewsletterSubscribersCount(request);
 
   const response = {
     totalSubscribers,
@@ -43,7 +43,7 @@ export const post: APIRoute = async ({ request }) => {
       );
     }
 
-    const { error, success } = await subscribeToNewsletter({
+    const { error, success } = await subscribeToNewsletter(request, {
       email,
       first_name,
       last_name,

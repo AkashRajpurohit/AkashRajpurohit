@@ -1,4 +1,5 @@
 import type { NewsletterFormInput } from './constants';
+import { getRuntime } from '@astrojs/cloudflare/runtime';
 
 export const db = {
   baseUrl: (import.meta.env.MONGO_API_BASE_URL || '') as string,
@@ -12,10 +13,38 @@ export const db = {
   },
 };
 
-export const getTotalNewsletterSubscribersCount = async () => {
-  if (!db.baseUrl || !db.apiKey) {
+const getBaseUrlAndAPIKey = (request: Request) => {
+  const runtimeEnv = getRuntime<{
+    MONGO_API_BASE_URL: string;
+    MONGO_API_KEY: string;
+  }>(request);
+  let baseUrl;
+  let apiKey;
+
+  if (db.baseUrl) {
+    baseUrl = db.baseUrl;
+  } else {
+    baseUrl = runtimeEnv.env.MONGO_API_BASE_URL;
+  }
+
+  if (db.apiKey) {
+    apiKey = db.apiKey;
+  } else {
+    apiKey = runtimeEnv.env.MONGO_API_KEY;
+  }
+
+  if (!baseUrl || !apiKey) {
     throw new Error('Missing required environment variables');
   }
+
+  return {
+    baseUrl,
+    apiKey,
+  };
+};
+
+export const getTotalNewsletterSubscribersCount = async (request: Request) => {
+  const { baseUrl, apiKey } = getBaseUrlAndAPIKey(request);
 
   const data = JSON.stringify({
     database: db.database,
@@ -28,12 +57,12 @@ export const getTotalNewsletterSubscribersCount = async () => {
     ],
   });
 
-  const response = await fetch(`${db.baseUrl}/action/aggregate`, {
+  const response = await fetch(`${baseUrl}/action/aggregate`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       'Access-Control-Request-Headers': '*',
-      'api-key': db.apiKey,
+      'api-key': apiKey,
     },
     body: data,
   });
@@ -45,14 +74,15 @@ export const getTotalNewsletterSubscribersCount = async () => {
   return responseBody?.documents[0]?.totalSubscribers;
 };
 
-export const subscribeToNewsletter = async ({
-  email,
-  first_name = '',
-  last_name = '',
-}: Omit<NewsletterFormInput, 'from_url'>) => {
-  if (!db.baseUrl || !db.apiKey) {
-    throw new Error('Missing required environment variables');
-  }
+export const subscribeToNewsletter = async (
+  request: Request,
+  {
+    email,
+    first_name = '',
+    last_name = '',
+  }: Omit<NewsletterFormInput, 'from_url'>,
+) => {
+  const { baseUrl, apiKey } = getBaseUrlAndAPIKey(request);
 
   const data = JSON.stringify({
     database: db.database,
@@ -69,12 +99,12 @@ export const subscribeToNewsletter = async ({
     upsert: true,
   });
 
-  const response = await fetch(`${db.baseUrl}/action/updateOne`, {
+  const response = await fetch(`${baseUrl}/action/updateOne`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       'Access-Control-Request-Headers': '*',
-      'api-key': db.apiKey,
+      'api-key': apiKey,
     },
     body: data,
   });
