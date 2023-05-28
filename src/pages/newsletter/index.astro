@@ -1,0 +1,67 @@
+---
+import { pageWiseMeta, siteMetadata } from '@lib/config';
+import SimpleLayout from '@layouts/SimpleLayout.astro';
+import SocialLink from '@components/SocialLink.astro';
+import TwitterIcon from '@components/ui/icons/TwitterIcon.astro';
+import InstagramIcon from '@components/ui/icons/InstagramIcon.astro';
+import GithubIcon from '@components/ui/icons/GithubIcon.astro';
+import LinkedinIcon from '@components/ui/icons/LinkedinIcon.astro';
+import { getAllTagsMap, getPublishedAndSortedPosts } from '@lib/utils';
+import { getCollection } from 'astro:content';
+import { recentPostsLimit } from '@lib/constants';
+import FilterByTagsCard from '@components/ui/FilterByTagsCard.astro';
+import ArticleCard from '@components/ui/ArticleCard';
+import NewsletterForm from '@components/NewsletterForm';
+
+// @ts-ignore
+import Pencil from '@astropub/icons/Pencil2';
+// @ts-ignore
+import ChevronRight from '@astropub/icons/ChevronRight';
+import Photos from '@components/Photos.astro';
+
+const { title, description } = pageWiseMeta.newsletter;
+const from_url = Astro.url.toString();
+---
+
+<SimpleLayout title={title} description={description}>
+  <div slot='header-main-section'>
+    <h1
+      class='text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl'
+    >
+      Join the Inner Circle: Get Updates Straight to Your Inbox
+    </h1>
+    <p class='mt-6 text-base text-zinc-600 dark:text-zinc-400'>
+      Stay in the loop with all things – exciting projects, thoughts, and more,
+      delivered right to your mailbox
+    </p>
+  </div>
+  <div class='mt-16 md:mt-20'>
+    <div class='max-w-2xl'>
+      <p class='mb-4 text-xl font-bold leading-normal md:text-2xl'>
+        New Newsletter Platform Incoming 🚀
+      </p>
+      <p class='mb-8'>
+        As you might know I was earlier using{' '}
+        <a class='text-primary-500 underline' href='https://www.getrevue.co/'>
+          Revue
+        </a>{' '}
+        for managing Newsletter's on this website, however recently Revue decided
+        to shut down their services. Hence I am in the process of building and maintaining
+        my own newsletter system or use an existing open source solutions which I
+        can self host on{' '}
+        <a
+          class='text-primary-500 underline'
+          href='/blog/building-my-first-home-lab/'
+        >
+          my home server
+        </a>{' '}
+        but that will take some time.
+        <br />
+        <br />
+        Meanwhile you can still subscribe to the newsletter and you will be notified
+        when I start sending out newsletter once again.
+      </p>
+      <NewsletterForm from_url={from_url} client:visible />
+    </div>
+  </div>
+</SimpleLayout>

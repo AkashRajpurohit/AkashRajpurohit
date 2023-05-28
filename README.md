@@ -11,7 +11,7 @@
   - [x] Individual snippets
 - [x] Uses
 - [ ] Resume
-- [ ] Newsletter
+- [x] Newsletter
   - [ ] Individual newsletter (NEW)
 - [ ] Tweets
 - [x] Tags
