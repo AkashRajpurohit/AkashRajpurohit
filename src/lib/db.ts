@@ -12,7 +12,7 @@ export const db = {
   },
 };
 
-export const getAllNewsletterSubscribers = async () => {
+export const getTotalNewsletterSubscribersCount = async () => {
   if (!db.baseUrl || !db.apiKey) {
     throw new Error('Missing required environment variables');
   }

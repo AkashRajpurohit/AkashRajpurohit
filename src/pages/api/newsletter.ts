@@ -1,11 +1,14 @@
 import type { NewsletterFormInput } from '@lib/constants';
-import { getAllNewsletterSubscribers, subscribeToNewsletter } from '@lib/db';
+import {
+  getTotalNewsletterSubscribersCount,
+  subscribeToNewsletter,
+} from '@lib/db';
 import type { APIRoute } from 'astro';
 
 export const prerender = false;
 
 export const get: APIRoute = async () => {
-  const totalSubscribers = await getAllNewsletterSubscribers();
+  const totalSubscribers = await getTotalNewsletterSubscribersCount();
 
   const response = {
     totalSubscribers,

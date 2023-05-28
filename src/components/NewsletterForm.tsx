@@ -14,7 +14,20 @@ const postFormData = async (
     },
   });
   const data = await response.json();
+
   return data;
+};
+
+const getTotalSubscribers = async (): Promise<number> => {
+  const response = await fetch('/api/newsletter', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  const data = await response.json();
+
+  return data.totalSubscribers;
 };
 
 type Props = {
@@ -24,6 +37,7 @@ type Props = {
 export default function NewsletterForm({ from_url = '' }: Props) {
   const [formData, setFormData] = createSignal<FormData>();
   const [response] = createResource(formData, postFormData);
+  const [totalSubscribers] = createResource(getTotalSubscribers);
 
   function submit(e: SubmitEvent) {
     e.preventDefault();
@@ -67,7 +81,19 @@ export default function NewsletterForm({ from_url = '' }: Props) {
         </button>
       </div>
       <div class='mt-2'>
-        <Suspense>
+        <Suspense
+          fallback={
+            <div
+              role='status'
+              class='animate-pulse mt-4 h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48'
+            />
+          }
+        >
+          {!response() && totalSubscribers() && (
+            <p class='text-sm font-light text-zinc-600 dark:text-zinc-400'>
+              Join other {totalSubscribers()} subscribers.
+            </p>
+          )}
           {response() && (
             <p
               class={twJoin(
