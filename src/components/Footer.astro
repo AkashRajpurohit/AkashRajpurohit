@@ -36,6 +36,7 @@ const navigation: Record<string, Item[]> = {
 };
 
 const today = new Date();
+const from_url = Astro.url.toString();
 ---
 
 <div class='w-full pt-16 pb-8 px-4 sm:px-12'>
@@ -104,7 +105,7 @@ const today = new Date();
         </div>
       </div>
       <div class='mt-8 md:mt-0 flex-1 flex justify-end'>
-        <NewsletterForm />
+        <NewsletterForm from_url={from_url} client:visible />
       </div>
     </div>
     <div

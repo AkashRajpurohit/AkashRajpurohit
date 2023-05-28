@@ -36,4 +36,9 @@ export const heroImages = [
   '/static/images/hero-image-5.jpg',
 ];
 
-export type socialLinkTypes = 'twitter' | 'github' | 'linkedin' | 'instagram';
+export type NewsletterFormInput = {
+  email: string;
+  first_name?: string;
+  last_name?: string;
+  from_url?: string;
+};

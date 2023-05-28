@@ -1,9 +1,38 @@
+import { createSignal, createResource, Suspense } from 'solid-js';
+import { twJoin } from 'tailwind-merge';
 import { RiBusinessMailSendLine } from 'solid-icons/ri';
+import { FiLoader } from 'solid-icons/fi';
 
-export default function NewsletterForm() {
+const postFormData = async (
+  formData: FormData,
+): Promise<{ message: string; error: boolean }> => {
+  const response = await fetch('/api/newsletter', {
+    method: 'POST',
+    body: JSON.stringify(Object.fromEntries(formData)),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  const data = await response.json();
+  return data;
+};
+
+type Props = {
+  from_url?: string;
+};
+
+export default function NewsletterForm({ from_url = '' }: Props) {
+  const [formData, setFormData] = createSignal<FormData>();
+  const [response] = createResource(formData, postFormData);
+
+  function submit(e: SubmitEvent) {
+    e.preventDefault();
+    setFormData(new FormData(e.target as HTMLFormElement));
+  }
+
   return (
     <form
-      action='/thank-you'
+      onSubmit={submit}
       class='rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40'
     >
       <h2 class='flex text-sm font-semibold text-zinc-900 dark:text-zinc-100'>
@@ -14,8 +43,10 @@ export default function NewsletterForm() {
         Get notified when I publish something new, and unsubscribe at any time.
       </p>
       <div class='mt-6 flex'>
+        <input type='hidden' name='from_url' class='sr-only' value={from_url} />
         <input
           type='email'
+          name='email'
           placeholder='Email address'
           aria-label='Email address'
           required
@@ -23,10 +54,33 @@ export default function NewsletterForm() {
         />
         <button
           type='submit'
-          class='inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-800 font-semibold text-zinc-100 hover:bg-zinc-700 active:bg-zinc-800 active:text-zinc-100/70 dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700 dark:active:text-zinc-100/70 ml-4 flex-none'
+          disabled={response.loading}
+          class='inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-800 font-semibold text-zinc-100 hover:bg-zinc-700 active:bg-zinc-800 active:text-zinc-100/70 dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700 dark:active:text-zinc-100/70 disabled:hover:bg-zinc-800 dark:disabled:hover:bg-zinc-700 disabled:opacity-50 disabled:cursor-progress ml-4 flex-none'
         >
-          Join
+          {response.loading ? (
+            <span class='px-1 text-primary-500'>
+              <FiLoader class='animate-spin h-5 w-5' />
+            </span>
+          ) : (
+            'Join'
+          )}
         </button>
+      </div>
+      <div class='mt-2'>
+        <Suspense>
+          {response() && (
+            <p
+              class={twJoin(
+                'ml-2 text-sm font-medium',
+                response()?.error
+                  ? 'text-red-500 dark:text-red-400'
+                  : 'text-green-500 dark:text-green-400',
+              )}
+            >
+              {response()?.message}
+            </p>
+          )}
+        </Suspense>
       </div>
     </form>
   );

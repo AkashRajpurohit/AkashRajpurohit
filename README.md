@@ -30,7 +30,7 @@
 - [x] Footer
 - [x] Blogs search functionality
 - [x] Fonts
-- [ ] Newsletter Form + API
+- [x] Newsletter Form + API
 - [ ] Command + K
 - [ ] Custom Link component with hover placeholder
 - [ ] Twitter Card + Tweets data from notion -> Look into [this](https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter#readme)
