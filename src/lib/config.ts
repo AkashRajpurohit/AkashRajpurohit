@@ -124,3 +124,15 @@ export const pageWiseMeta = {
     description: 'Filter blogs via specific tags',
   },
 };
+
+export const db = {
+  baseUrl: (import.meta.env.MONGO_API_BASE_URL || '') as string,
+  apiKey: (import.meta.env.MONGO_API_KEY || '') as string,
+  database: 'blog-db',
+  dataSource: 'Cluster0',
+  collections: {
+    newsletter: 'newsletterSubscribers',
+    likes: 'likes',
+    views: 'views',
+  },
+};
