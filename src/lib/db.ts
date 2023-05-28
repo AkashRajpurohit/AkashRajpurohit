@@ -1,4 +1,4 @@
-import type { NewsletterFormInput } from './constants';
+import type { NewsletterFormInput, ViewInput } from './constants';
 import { getRuntime } from '@astrojs/cloudflare/runtime';
 
 export const db = {
@@ -136,4 +136,62 @@ export const subscribeToNewsletter = async (
   return {
     success,
   };
+};
+
+export const getViewsBySlugAndType = async (
+  request: Request,
+  { slug, type }: ViewInput,
+) => {
+  const { baseUrl, apiKey } = getBaseUrlAndAPIKey(request);
+
+  const getData = JSON.stringify({
+    database: db.database,
+    dataSource: db.dataSource,
+    collection: db.collections.views,
+    filter: { slug, type },
+    projection: {
+      count: 1,
+    },
+  });
+
+  const getResponse = await fetch(`${baseUrl}/action/findOne`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Request-Headers': '*',
+      'api-key': apiKey,
+    },
+    body: getData,
+  });
+
+  const getResponseBody = (await getResponse.json()) as {
+    document: { count: number };
+  };
+
+  const updatedCount = getResponseBody?.document?.count + 1;
+
+  const updateData = JSON.stringify({
+    database: db.database,
+    dataSource: db.dataSource,
+    collection: db.collections.views,
+    filter: { slug, type },
+    update: {
+      $set: {
+        count: updatedCount,
+      },
+    },
+    upsert: true,
+  });
+
+  await fetch(`${baseUrl}/action/updateOne`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Request-Headers': '*',
+      'api-key': apiKey,
+    },
+    body: updateData,
+  });
+
+  return updatedCount;
 };

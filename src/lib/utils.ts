@@ -22,6 +22,10 @@ export const capitalizeSentence = (sentence: string) => {
     .join(' ');
 };
 
+export const formatNumber = (number: number) => {
+  return number.toLocaleString('en-US');
+};
+
 export const getRandomPostTitle = (posts: CollectionEntry<'blog'>[]) => {
   const randomIndex = Math.floor(Math.random() * posts.length);
   const randomPost = posts[randomIndex];

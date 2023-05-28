@@ -12,6 +12,7 @@ import { siteMetadata } from '@lib/config';
 import ArrowLeft from '@astropub/icons/ArrowLeft';
 import { getSocialImageForBlog } from '@lib/opengraph';
 import TagsList from '@components/TagsList.astro';
+import ViewCount from '@components/ViewCount';
 
 type Props = {
   data: CollectionEntry<'blog'>['data'];
@@ -73,8 +74,9 @@ const ogImage = getSocialImageForBlog(data);
             <div
               class='flex flex-wrap gap-2 font-light text-zinc-600 dark:text-zinc-400'
             >
-              <span>👀 {minutesRead}</span>{' · '}
               📆 <FormattedDate date={date} />{' · '}
+              <span>⏳ {minutesRead}</span>{' · '}
+              👀 <ViewCount client:idle slug={slug} type='blog' />{' · '}
               <TagsList tags={tags} />
             </div>
           </header>

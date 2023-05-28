@@ -42,3 +42,10 @@ export type NewsletterFormInput = {
   last_name?: string;
   from_url?: string;
 };
+
+export type ViewInput = {
+  slug: string;
+  type: ViewType;
+};
+
+export type ViewType = 'blog' | 'page' | 'project' | 'snippet';
