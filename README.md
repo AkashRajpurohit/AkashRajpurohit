@@ -2,7 +2,7 @@
 
 ## Pages
 
-- [ ] Home
+- [x] Home
 - [x] About
 - [x] Blogs
   - [ ] Individual blogs

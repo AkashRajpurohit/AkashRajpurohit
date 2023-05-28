@@ -39,7 +39,7 @@ const { title, description } = pageWiseMeta.home;
       Mumbai, India 🇮🇳. Welcome to my digital domain, where I engineer solutions
       and ignite imaginations.
     </p>
-    <div class='mt-6 flex gap-2'>
+    <ul role='list' class='mt-6 flex gap-2'>
       <SocialLink
         href={siteMetadata.twitter}
         aria-label='Follow on Twitter'
@@ -60,7 +60,7 @@ const { title, description } = pageWiseMeta.home;
         aria-label='Follow on Instagram'
         Icon={InstagramIcon}
       />
-    </div>
+    </ul>
   </div>
   <div slot='hero-photos'>
     <Photos />
