@@ -1,0 +1,24 @@
+---
+import SnippetLayout from '@layouts/SnippetLayout.astro';
+import Callout from '@components/ui/Callout.astro';
+import GradientText from '@components/ui/GradientText.astro';
+import Step from '@components/ui/Step.astro';
+import Image from '@components/ui/BlogImage.astro';
+import { CollectionEntry, getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const snippets = await getCollection('snippets');
+  return snippets.map((snippet) => ({
+    params: { snippet: snippet.slug },
+    props: snippet,
+  }));
+}
+type Props = CollectionEntry<'snippets'>;
+
+const snippet = Astro.props;
+const { Content } = await snippet.render();
+---
+
+<SnippetLayout snippet={snippet.data}>
+  <Content components={{ Callout, Image, GradientText, Step }} />
+</SnippetLayout>

@@ -1,0 +1,32 @@
+---
+title: Valid HTTP URL
+summary: Check if a string is a valid HTTP URL
+date: 2022-05-22
+logo: javascript.svg
+---
+
+```javascript
+export const isValidHTTPUrl = (string) => {
+  let url;
+
+  try {
+    url = new URL(string);
+  } catch {
+    return false;
+  }
+
+  return ['http:', 'https:'].includes(url.protocol);
+};
+```
+
+We are using the [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) API to check if a passed string is valid or not.
+
+The first try/catch will immediately catch if the string is a valid URL or not, if it is not, it will throw an error like `Uncaught TypeError: URL constructor: string is not a valid URL`. In such a case, we would return `false` in the catch block
+
+In case it's a valid URL, the last line checks if it's a valid HTTP/HTTPS URL.
+
+> Note: This method has no false negatives (as far as I know) but does have some false positives
+
+Some examples of false positives could be `http://..` or `http:/a` which are considered valid URLs, even though the DNS might not resolve for these URLs, you can read the [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986) for more details.
+
+Nevertheless, I would prefer to use this over the complex Regex which could potentially [break the internet](https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/)

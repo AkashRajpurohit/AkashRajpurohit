@@ -1,0 +1,70 @@
+---
+import '@fontsource/inter';
+import '@fontsource/ibm-plex-mono';
+import type { CollectionEntry } from 'astro:content';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+import FormattedDate from '@components/FormattedDate.astro';
+import BaseHead from '@components/BaseHead.astro';
+import Container from '@components/Container.astro';
+import { siteMetadata } from '@lib/config';
+// @ts-ignore
+import ArrowLeft from '@astropub/icons/ArrowLeft';
+
+type Props = {
+  snippet: CollectionEntry<'snippets'>['data'];
+};
+
+const { snippet } = Astro.props;
+const { title, summary, date } = snippet;
+---
+
+<!DOCTYPE html>
+<html lang='en' class='scroll-smooth'>
+  <head>
+    <BaseHead title={title} description={summary} />
+  </head>
+  <body
+    class='flex h-full flex-col bg-zinc-50 text-zinc-900 dark:bg-black dark:text-white'
+  >
+    <div class='fixed inset-0 flex justify-center sm:px-8'>
+      <div class='flex w-full max-w-7xl lg:px-8'>
+        <div
+          class='w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20'
+        >
+        </div>
+      </div>
+    </div>
+    <Header />
+    <Container class='mt-16 lg:mt-32 z-50'>
+      <div class='xl:relative'>
+        <div class='mx-auto max-w-2xl'>
+          <a
+            type='button'
+            href={siteMetadata.pages.snippets}
+            aria-label='Go back to snippets'
+            class='group mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 dark:ring-white/10 dark:hover:border-zinc-700 dark:hover:ring-white/20 lg:absolute lg:-left-5 lg:-mt-2 lg:mb-0 xl:-top-1.5 xl:left-0 xl:mt-0'
+          >
+            <ArrowLeft
+              class='h-4 w-4 stroke-zinc-500 transition group-hover:stroke-zinc-700 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400'
+            />
+          </a>
+          <header class='flex flex-col gap-6'>
+            <h1
+              class='mt-6 text-4xl font-bold tracking-wide text-zinc-800 dark:text-zinc-100 sm:text-5xl'
+            >
+              {title}
+            </h1>
+            <div class='flex gap-2 font-light text-zinc-600 dark:text-zinc-400'>
+              📆 <FormattedDate date={date} />
+            </div>
+          </header>
+          <article class='mt-8 prose prose-slate dark:prose-invert'>
+            <slot />
+          </article>
+        </div>
+      </div>
+    </Container>
+    <Footer />
+  </body>
+</html>

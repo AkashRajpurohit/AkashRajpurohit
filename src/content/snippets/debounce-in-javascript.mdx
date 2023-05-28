@@ -1,0 +1,44 @@
+---
+title: Debounce in JavaScript
+summary: Create a simple reusable debounce function
+date: 2022-05-27
+logo: javascript.svg
+---
+
+```javascript
+const debounce = (func, duration = 2000) => {
+  let timeout;
+
+  return function (...args) {
+    const effect = () => {
+      timeout = null;
+      return func.apply(this, args);
+    };
+
+    clearTimeout(timeout);
+    timeout = setTimeout(effect, duration);
+  };
+};
+
+export default debounce;
+```
+
+## Usage
+
+```javascript
+import debounce from 'utils/debounce';
+
+const handler = debounce(
+  () => console.log('I will print after 4 seconds'),
+  4000,
+);
+```
+
+## Output
+
+<Image
+  alt={`Output for debounce`}
+  src={`/static/images/debounce-output.png`}
+  width={588}
+  height={420}
+/>

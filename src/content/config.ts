@@ -3,7 +3,6 @@ import { difference } from '@lib/utils';
 import { defineCollection, z } from 'astro:content';
 
 const blog = defineCollection({
-  // Type-check frontmatter using a schema
   schema: z.object({
     title: z.string(),
     summary: z.string(),
@@ -50,4 +49,28 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { blog };
+const snippets = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    summary: z.string(),
+    // Transform string to Date object
+    date: z
+      .union([
+        z.string(),
+        z.date().refine((date) => !isNaN(date.getTime()), {
+          message: 'Invalid date',
+        }),
+      ])
+      .transform((value) => {
+        if (typeof value === 'string') {
+          const parsedDate = new Date(value);
+          return parsedDate;
+        } else {
+          return value;
+        }
+      }),
+    logo: z.string(),
+  }),
+});
+
+export const collections = { blog, snippets };

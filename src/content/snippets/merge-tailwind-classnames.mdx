@@ -1,0 +1,39 @@
+---
+title: Merge TailwindCSS Classes
+summary: Simple utility function to merge tailwind classes
+date: 2022-05-07
+logo: tailwind.svg
+---
+
+<Step number={1} title={'Install the tailwind merge package'} />
+
+```bash
+yarn add tailwind-merge
+
+# OR
+
+npm install tailwind-merge
+```
+
+<Step
+  number={2}
+  title={
+    'Create a utility function to accept multiple classnames and merge them'
+  }
+/>
+
+```ts
+// lib/classNames.ts
+
+import { twMerge } from 'tailwind-merge';
+
+const classNames = (...classes: string[]) => {
+  return twMerge(classes.filter(Boolean).join(' '));
+};
+
+export default classNames;
+```
+
+<Step number={3} title={'Use it in a component'} />
+
+See how it is can be used in the [Gradient text snippet](/snippets/gradient-text-tailwind/)

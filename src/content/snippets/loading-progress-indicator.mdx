@@ -1,0 +1,148 @@
+---
+title: Loading Progress Indicator
+summary: React hook to use NProgress with Next.js router.
+date: 2022-05-07
+logo: react.svg
+---
+
+<Step number={1} title={'Install the dependencies'} />
+
+```bash
+yarn add nprogress
+yarn add -D @types/nprogress
+
+# OR
+
+npm i nprogress
+npm i -D @types/nprogress
+```
+
+<Step number={2} title={'Component to listen for progress events'} />
+
+```tsx
+// components/NProgress.tsx
+
+import { useRouter } from 'next/router';
+import NProgress from 'nprogress';
+import { useEffect } from 'react';
+
+const Progress = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    let timeout: NodeJS.Timeout;
+
+    const start = () => {
+      timeout = setTimeout(NProgress.start, 100);
+    };
+
+    const done = () => {
+      clearTimeout(timeout);
+      NProgress.done();
+    };
+
+    router.events.on('routeChangeStart', start);
+    router.events.on('routeChangeComplete', done);
+    router.events.on('routeChangeError', done);
+
+    return () => {
+      router.events.off('routeChangeStart', start);
+      router.events.off('routeChangeComplete', done);
+      router.events.off('routeChangeError', done);
+    };
+  }, [router.events]);
+
+  return <></>;
+};
+
+export default Progress;
+```
+
+<Step number={3} title={'CSS to style it a bit'} />
+
+```css
+/* styles/nprogress.css */
+
+/* Make clicks pass-through */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: #179f82;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+/* NProgress Spinner */
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  top: 15px;
+  right: 15px;
+}
+
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+
+  border: solid 2px transparent;
+  border-top-color: #179f82;
+  border-left-color: #179f82;
+  border-radius: 50%;
+
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+  animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes nprogress-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+```
+
+<Step number={4} title={'Add the component to `_app.tsx`'} />
+
+```tsx
+// pages/_app.tsx
+
+import NProgress from 'components/NProgress';
+import 'styles/nprogress.css';
+
+export default function App({ Component, pageProps }: AppProps) {
+  return (
+    <>
+      <Component {...pageProps} />
+      <NProgress />
+    </>
+  );
+}
+```

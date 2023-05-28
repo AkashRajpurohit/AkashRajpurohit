@@ -1,0 +1,64 @@
+---
+title: Gradient Text using TailwindCSS
+summary: Create a gradient text using TailwindCSS
+date: 2022-05-07
+logo: tailwind.svg
+---
+
+<Step
+  number={1}
+  title={'Create a utility function for merging classes'}
+  optional={true}
+/>
+
+See how to create a utility function for this as shown [here](/snippets/merge-tailwind-classnames/)
+
+<Step number={2} title={'Create the component'} />
+
+```tsx
+import classNames from 'lib/classnames';
+import React, { FunctionComponent } from 'react';
+
+interface IGradientTextProps {
+  className?: string;
+}
+
+const GradientText: FunctionComponent<IGradientTextProps> = ({
+  children,
+  className = '',
+  ...rest
+}): JSX.Element => {
+  const elementClassName = classNames(
+    'bg-clip-text text-transparent bg-gradient-to-r font-extrabold from-pink-600 to-sky-600 dark:from-pink-400 dark:to-sky-400 selection:text-gray-800 dark:selection:text-gray-200',
+    className,
+  );
+  return (
+    <span className={elementClassName} {...rest}>
+      {children}
+    </span>
+  );
+};
+
+export default GradientText;
+```
+
+<Step number={3} title={'Use it'} />
+
+```tsx
+import React, { FunctionComponent } from 'react';
+import GradientText from 'components/GradientText';
+
+const Headline: FunctionComponent = () => {
+  return (
+    <div>
+      <GradientText>Catchy headline here</GradientText>
+    </div>
+  );
+};
+
+export default Headline;
+```
+
+<Step number={4} title={'Example'} />
+
+<GradientText class='text-2xl'>Catchy headline here</GradientText>

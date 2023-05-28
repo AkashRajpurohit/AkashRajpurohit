@@ -7,8 +7,8 @@
 - [x] Blogs
   - [ ] Individual blogs
 - [ ] Projects
-- [ ] Snippets
-  - [ ] Individual snippets
+- [x] Snippets
+  - [x] Individual snippets
 - [x] Uses
 - [ ] Resume
 - [ ] Newsletter

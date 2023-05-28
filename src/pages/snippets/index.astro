@@ -1,6 +1,10 @@
 ---
 import { pageWiseMeta } from '@lib/config';
 import SimpleLayout from '@layouts/SimpleLayout.astro';
+import { getCollection } from 'astro:content';
+import SnippetCard from '@components/ui/SnippetCard';
+
+const snippets = await getCollection('snippets');
 
 const { title, description } = pageWiseMeta.snippets;
 ---
@@ -18,5 +22,14 @@ const { title, description } = pageWiseMeta.snippets;
       snippets and some might require setup instructions.
     </p>
   </div>
-  <main>Hello from snippets</main>
+  <main class='mt-12'>
+    <section>
+      <ul
+        role='list'
+        class='grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3'
+      >
+        {snippets.map((snippet) => <SnippetCard {...snippet} />)}
+      </ul>
+    </section>
+  </main>
 </SimpleLayout>
