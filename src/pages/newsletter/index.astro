@@ -45,7 +45,7 @@ const from_url = Astro.url.toString();
         Meanwhile you can still subscribe to the newsletter and you will be notified
         when I start sending out newsletter once again.
       </p>
-      <NewsletterForm from_url={from_url} client:visible />
+      <NewsletterForm from_url={from_url} client:idle />
     </div>
   </div>
 </SimpleLayout>

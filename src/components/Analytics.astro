@@ -1,6 +1,6 @@
 ---
 import { siteMetadata } from '@lib/config';
-
+// TODO: post migration mark this to only prod to avoid tracking local data
 const isProduction = import.meta.env.PROD || true;
 const { umamiHost, umamiWebsiteId } = siteMetadata.analytics;
 ---

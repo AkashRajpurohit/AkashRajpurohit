@@ -13,6 +13,7 @@ import ArrowLeft from '@astropub/icons/ArrowLeft';
 import { getSocialImageForBlog } from '@lib/opengraph';
 import TagsList from '@components/TagsList.astro';
 import ViewCount from '@components/ViewCount';
+import NewsletterForm from '@components/NewsletterForm';
 
 type Props = {
   data: CollectionEntry<'blog'>['data'];
@@ -23,6 +24,7 @@ const { data, slug } = Astro.props;
 const { title, summary, date, lastmod, minutesRead, tags } = data;
 
 const ogImage = getSocialImageForBlog(data);
+const from_url = Astro.url.toString();
 ---
 
 <!DOCTYPE html>
@@ -83,6 +85,9 @@ const ogImage = getSocialImageForBlog(data);
           <article class='mt-8 prose prose-slate dark:prose-invert'>
             <slot />
           </article>
+          <div class='mt-8'>
+            <NewsletterForm from_url={from_url} client:visible />
+          </div>
         </div>
       </Container>
     </div>
