@@ -1,11 +1,6 @@
 ---
 import { siteMetadata } from '@lib/config';
 import SocialLink from './SocialLink.astro';
-import GithubIcon from './ui/icons/GithubIcon.astro';
-import TwitterIcon from './ui/icons/TwitterIcon.astro';
-import LinkedinIcon from './ui/icons/LinkedinIcon.astro';
-import InstagramIcon from './ui/icons/InstagramIcon.astro';
-import MailIcon from './ui/icons/MailIcon.astro';
 import NewsletterForm from './NewsletterForm';
 
 type Item = {
@@ -112,11 +107,11 @@ const from_url = Astro.url.toString();
       class='flex flex-col gap-4 md:flex-row items-center justify-between mt-12'
     >
       <ul role='list' class='flex items-center md:order-2 order-1 space-x-2'>
-        <SocialLink href={siteMetadata.github} Icon={GithubIcon} />
-        <SocialLink href={siteMetadata.twitter} Icon={TwitterIcon} />
-        <SocialLink href={siteMetadata.linkedin} Icon={LinkedinIcon} />
-        <SocialLink href={siteMetadata.instagram} Icon={InstagramIcon} />
-        <SocialLink href={`mailto:${siteMetadata.email}`} Icon={MailIcon} />
+        <SocialLink href={siteMetadata.github} type='github' />
+        <SocialLink href={siteMetadata.twitter} type='twitter' />
+        <SocialLink href={siteMetadata.linkedin} type='linkedin' />
+        <SocialLink href={siteMetadata.instagram} type='instagram' />
+        <SocialLink href={`mailto:${siteMetadata.email}`} type='email' />
       </ul>
       <p class='md:order-1 order-2 text-base'>
         &copy; {today.getFullYear()}{' '}

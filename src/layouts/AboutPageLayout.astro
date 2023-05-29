@@ -7,11 +7,6 @@ import Footer from '@components/Footer.astro';
 import BaseHead from '@components/BaseHead.astro';
 import { siteMetadata, pageWiseMeta } from '@lib/config';
 import SocialLink from '@components/SocialLink.astro';
-import TwitterIcon from '@components/ui/icons/TwitterIcon.astro';
-import InstagramIcon from '@components/ui/icons/InstagramIcon.astro';
-import GithubIcon from '@components/ui/icons/GithubIcon.astro';
-import LinkedinIcon from '@components/ui/icons/LinkedinIcon.astro';
-import MailIcon from '@components/ui/icons/MailIcon.astro';
 
 type Props = {
   frontmatter: {
@@ -73,22 +68,22 @@ const {
           </div>
           <div class='lg:pl-20'>
             <ul role='list' class='space-y-4'>
-              <SocialLink href={siteMetadata.github} Icon={GithubIcon}>
+              <SocialLink href={siteMetadata.github} type='github'>
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href={siteMetadata.twitter} Icon={TwitterIcon}>
+              <SocialLink href={siteMetadata.twitter} type='twitter'>
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href={siteMetadata.linkedin} Icon={LinkedinIcon}>
+              <SocialLink href={siteMetadata.linkedin} type='linkedin'>
                 Follow on LinkedIn
               </SocialLink>
-              <SocialLink href={siteMetadata.instagram} Icon={InstagramIcon}>
+              <SocialLink href={siteMetadata.instagram} type='instagram'>
                 Follow on Instagram
               </SocialLink>
               <SocialLink
                 href={`mailto:${siteMetadata.email}`}
-                Icon={MailIcon}
                 class='border-t border-zinc-100 pt-4 dark:border-zinc-700/40'
+                type='email'
               >
                 {siteMetadata.email}
               </SocialLink>

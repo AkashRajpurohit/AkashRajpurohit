@@ -2,10 +2,6 @@
 import { pageWiseMeta, siteMetadata } from '@lib/config';
 import SimpleLayout from '@layouts/SimpleLayout.astro';
 import SocialLink from '@components/SocialLink.astro';
-import TwitterIcon from '@components/ui/icons/TwitterIcon.astro';
-import InstagramIcon from '@components/ui/icons/InstagramIcon.astro';
-import GithubIcon from '@components/ui/icons/GithubIcon.astro';
-import LinkedinIcon from '@components/ui/icons/LinkedinIcon.astro';
 import { getAllTagsMap, getPublishedAndSortedPosts } from '@lib/utils';
 import { getCollection } from 'astro:content';
 import { recentPostsLimit } from '@lib/constants';
@@ -44,22 +40,22 @@ const from_url = Astro.url.toString();
       <SocialLink
         href={siteMetadata.twitter}
         aria-label='Follow on Twitter'
-        Icon={TwitterIcon}
+        type='twitter'
       />
       <SocialLink
         href={siteMetadata.github}
         aria-label='Follow on GitHub'
-        Icon={GithubIcon}
+        type='github'
       />
       <SocialLink
         href={siteMetadata.linkedin}
         aria-label='Follow on LinkedIn'
-        Icon={LinkedinIcon}
+        type='linkedin'
       />
       <SocialLink
         href={siteMetadata.instagram}
         aria-label='Follow on Instagram'
-        Icon={InstagramIcon}
+        type='instagram'
       />
     </ul>
   </div>

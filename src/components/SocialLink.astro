@@ -1,13 +1,29 @@
 ---
 import { twJoin } from 'tailwind-merge';
+import type { SocialType } from '@lib/constants';
+
+import TwitterIcon from '@components/ui/icons/TwitterIcon.astro';
+import InstagramIcon from '@components/ui/icons/InstagramIcon.astro';
+import GithubIcon from '@components/ui/icons/GithubIcon.astro';
+import LinkedinIcon from '@components/ui/icons/LinkedinIcon.astro';
+import MailIcon from '@components/ui/icons/MailIcon.astro';
+
+const iconsMap = {
+  twitter: TwitterIcon,
+  linkedin: LinkedinIcon,
+  instagram: InstagramIcon,
+  github: GithubIcon,
+  email: MailIcon,
+};
 
 type Props = {
   href: string;
-  Icon: any;
+  type: SocialType;
   class?: string;
 };
 
-const { href, Icon, class: className } = Astro.props;
+const { href, type, class: className } = Astro.props;
+const Icon = iconsMap[type] || null;
 ---
 
 <li class={twJoin('flex', className)}>
@@ -16,9 +32,11 @@ const { href, Icon, class: className } = Astro.props;
     target='_blank'
     class='group flex gap-2 items-center text-sm font-medium text-zinc-800 transition hover:text-primary-500 dark:text-zinc-200 dark:hover:text-primary-500'
   >
-    <Icon
-      class='h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-primary-500'
-    />
+    {
+      Icon && (
+        <Icon class='h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-primary-500' />
+      )
+    }
     <span>
       <slot />
     </span>
