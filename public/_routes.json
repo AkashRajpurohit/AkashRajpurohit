@@ -1,26 +1,7 @@
 {
 	"version": 1,
 	"include": [
-		"/*"
+		"/api/*"
 	],
-	"exclude": [
-		"/_astro/*",
-		"/_worker.js",
-		"/",
-		"/index.html",
-		"/*.xml",
-		"/static/*",
-		"/fonts/*",
-		"/blogs/*",
-		"/projects/*",
-		"/about/*",
-		"/snippets/*",
-		"/tag/*",
-		"/resume/*",
-		"/uses/*",
-		"/tweets/*",
-		"/privacy-policy/*",
-		"/newsletter/*",
-		"/blog/*"
-	]
+	"exclude": []
 }
