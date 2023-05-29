@@ -45,7 +45,6 @@ export default defineConfig({
       ],
     ],
   },
-  trailingSlash: 'always',
   integrations: [mdx(), sitemap(), tailwind(), solidJs(), partytown({})],
   output: 'hybrid',
   experimental: {
