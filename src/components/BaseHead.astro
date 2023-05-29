@@ -1,6 +1,7 @@
 ---
 import '@styles/global.css';
 import { siteMetadata } from '@lib/config';
+import Analytics from './Analytics.astro';
 
 export interface Props {
   title: string;
@@ -69,3 +70,6 @@ const {
 <meta property='twitter:title' content={title} />
 <meta property='twitter:description' content={description} />
 <meta property='twitter:image' content={image} />
+
+<!-- Analytics -->
+<Analytics />

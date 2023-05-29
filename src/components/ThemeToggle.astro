@@ -71,8 +71,10 @@ import MoonIcon from '@astropub/icons/Moon';
 
     if (isDarkMode === isSystemDarkMode) {
       delete window.localStorage.isDarkMode;
+      window.umami.track('Theme Changed', { mode: 'light' });
     } else {
       window.localStorage.isDarkMode = isDarkMode;
+      window.umami.track('Theme Changed', { mode: 'dark' });
     }
   }
 </script>

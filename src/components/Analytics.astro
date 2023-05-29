@@ -1,0 +1,18 @@
+---
+import { siteMetadata } from '@lib/config';
+
+const isProduction = import.meta.env.PROD || true;
+const { umamiHost, umamiWebsiteId } = siteMetadata.analytics;
+---
+
+{
+  isProduction && (
+    <script
+      async
+      defer
+      data-cache
+      data-website-id={umamiWebsiteId}
+      src={umamiHost}
+    />
+  )
+}

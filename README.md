@@ -5,7 +5,7 @@
 - [x] Home
 - [x] About
 - [x] Blogs
-  - [ ] Individual blogs
+  - [x] Individual blogs
 - [ ] Projects
 - [x] Snippets
   - [x] Individual snippets
@@ -34,7 +34,7 @@
 - [x] Mobile Navbar
 - [ ] Custom Link component with hover placeholder
 - [ ] Twitter Card + Tweets data from notion -> Look into [this](https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter#readme)
-- [ ] View Counter
+- [x] View Counter
 - [ ] Like Counter
 - [ ] Share with others buttons
 - [ ] Comments? Don't have any on current blog

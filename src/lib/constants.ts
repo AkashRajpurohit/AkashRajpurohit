@@ -49,3 +49,10 @@ export type ViewInput = {
 };
 
 export type ViewType = 'blog' | 'page' | 'project' | 'snippet';
+
+export type SocialType =
+  | 'twitter'
+  | 'linkedin'
+  | 'instagram'
+  | 'github'
+  | 'email';

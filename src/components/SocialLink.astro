@@ -24,12 +24,15 @@ type Props = {
 
 const { href, type, class: className } = Astro.props;
 const Icon = iconsMap[type] || null;
+const from_url = Astro.url.toString();
 ---
 
 <li class={twJoin('flex', className)}>
   <a
     href={href}
     target='_blank'
+    data-umami-event={`Social - ${type}`}
+    data-umami-event-fromUrl={from_url}
     class='group flex gap-2 items-center text-sm font-medium text-zinc-800 transition hover:text-primary-500 dark:text-zinc-200 dark:hover:text-primary-500'
   >
     {

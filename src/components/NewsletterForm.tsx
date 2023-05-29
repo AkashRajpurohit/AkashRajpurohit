@@ -15,6 +15,8 @@ const postFormData = async (
   });
   const data = await response.json();
 
+  window.umami.track('Newsletter', { success: !data.error });
+
   return data;
 };
 
