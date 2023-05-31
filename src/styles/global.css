@@ -34,3 +34,30 @@
     @apply scroll-mt-6;
   }
 }
+
+#carbonads {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  @apply w-full;
+}
+
+#carbonads > span {
+  @apply relative block w-full rounded-2xl border border-zinc-100 p-4 dark:border-zinc-700/40;
+}
+
+#carbonads .carbon-wrap {
+  @apply flex;
+}
+
+#carbonads .carbon-img img {
+  @apply mr-3 rounded-md;
+}
+
+#carbonads .carbon-text {
+  @apply mb-3 text-sm leading-6 text-zinc-900 dark:text-zinc-100 xl:text-xs;
+}
+
+#carbonads .carbon-poweredby {
+  @apply absolute bottom-2 right-2 flex justify-end p-2 text-[8px] uppercase tracking-wider text-zinc-800 dark:text-zinc-200 font-semibold;
+}

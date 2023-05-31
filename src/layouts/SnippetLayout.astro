@@ -10,6 +10,7 @@ import Container from '@components/Container.astro';
 import { siteMetadata } from '@lib/config';
 // @ts-ignore
 import ArrowLeft from '@astropub/icons/ArrowLeft';
+import CarbonAd from '@components/CarbonAd.astro';
 
 type Props = {
   snippet: CollectionEntry<'snippets'>['data'];
@@ -60,6 +61,7 @@ const { title, summary, date } = snippet;
             <div class='flex gap-2 font-light text-zinc-600 dark:text-zinc-400'>
               📆 <FormattedDate date={date} />
             </div>
+            <CarbonAd />
           </header>
           <article class='mt-8 prose prose-slate dark:prose-invert'>
             <slot />

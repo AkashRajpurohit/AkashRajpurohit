@@ -14,6 +14,7 @@ import { getSocialImageForBlog } from '@lib/opengraph';
 import TagsList from '@components/TagsList.astro';
 import ViewCount from '@components/ViewCount';
 import NewsletterForm from '@components/NewsletterForm';
+import CarbonAd from '@components/CarbonAd.astro';
 
 type Props = {
   data: CollectionEntry<'blog'>['data'];
@@ -81,6 +82,7 @@ const from_url = Astro.url.toString();
               👀 <ViewCount client:idle slug={slug} type='blog' />{' · '}
               <TagsList tags={tags} />
             </div>
+            <CarbonAd />
           </header>
           <article class='mt-8 prose prose-slate dark:prose-invert'>
             <slot />

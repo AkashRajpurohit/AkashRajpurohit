@@ -6,5 +6,8 @@
   },
   "[mdx]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[postcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

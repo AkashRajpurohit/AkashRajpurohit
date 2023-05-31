@@ -1,0 +1,12 @@
+---
+import { siteMetadata } from '@lib/config';
+
+const isProduction = import.meta.env.PROD;
+const adSrc = `https://cdn.carbonads.com/carbon.js?serve=${siteMetadata.ad.carbonCode}&placement=${siteMetadata.ad.carbonPlacement}`;
+---
+
+{
+  isProduction && (
+    <script is:inline async defer id='_carbonads_js' src={adSrc} />
+  )
+}
