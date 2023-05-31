@@ -47,7 +47,10 @@ export default defineConfig({
   },
   integrations: [
     mdx({ optimize: true }),
-    sitemap(),
+    sitemap({
+      // This actually does not work at all, but on 1.2.2 it somehow is not generating /api/ routes
+      filter: (page) => !page.includes('/api/'),
+    }),
     tailwind(),
     solidJs(),
     partytown(),
