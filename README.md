@@ -38,7 +38,7 @@
 - [ ] Like Counter
 - [ ] Share with others buttons
 - [ ] Comments? Don't have any on current blog
-- [ ] Umami Analytics with Events
+- [x] Umami Analytics with Events
 - [ ] Carbon Ads
 - [ ] Command + K
 - [ ] Helpful scripts
