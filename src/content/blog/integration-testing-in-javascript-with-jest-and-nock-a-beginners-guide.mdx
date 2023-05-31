@@ -1,20 +1,18 @@
 ---
 title: "Integration Testing in JavaScript with Jest and Nock: A Beginner's Guide"
-date: '2023-03-19'
+date: 2023-05-31
 tags: ['javascript']
-draft: true
+draft: false
 summary: "Integration testing is an essential part of the software development process, and it ensures that all the components of your application work together as expected. In this article, we'll explore the basics of integration testing in JavaScript and show you how to use Jest and Nock to write effective tests that simulate real-world scenarios."
 ---
 
 # Introduction
 
-Integration testing is the process of testing the interaction between different components or modules of an application to ensure that they function together as expected.
-
 In JavaScript, integration testing involves testing the integration between different parts of your application, such as modules, APIs, and databases.
 
-One of the most popular testing frameworks for JavaScript is Jest, which allows you to write and run tests in a simple and efficient way.
+One of the most popular testing frameworks for JavaScript is [Jest](https://jestjs.io/), which allows you to write and run tests in a simple and efficient way.
 
-Another tool that can be used in conjunction with Jest for integration testing is Nock, a library that intercepts HTTP requests and allows you to mock responses from APIs.
+Another tool that is used in conjunction with Jest for integration testing is [Nock](https://github.com/nock/nock), a library that intercepts HTTP requests and allows you to mock responses from APIs.
 
 In this article, we'll cover the basics of integration testing in JavaScript, explore how Jest and Nock can be used together to test APIs and modules, and provide examples of how to write effective integration tests.
 
@@ -33,7 +31,9 @@ const nock = require('nock');
 describe('API Integration Test', () => {
   beforeEach(() => {
     // Set up a mock API server
-    nock('https://api.example.com').get('/users/1').reply(200, { id: 1, name: 'John Doe' });
+    nock('https://api.example.com')
+      .get('/users/1')
+      .reply(200, { id: 1, name: 'John Doe' });
   });
 
   it('should return data from the API', async () => {
@@ -62,7 +62,9 @@ const myModule = require('./myModule');
 describe('Module Integration Test', () => {
   beforeEach(() => {
     // Set up a mock API server
-    nock('https://api.example.com').get('/users/1').reply(200, { id: 1, name: 'John Doe' });
+    nock('https://api.example.com')
+      .get('/users/1')
+      .reply(200, { id: 1, name: 'John Doe' });
   });
 
   it('should return data from the API', async () => {
