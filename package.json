@@ -15,7 +15,6 @@
   "dependencies": {
     "@astrojs/cloudflare": "^6.3.0",
     "@astrojs/mdx": "^0.19.5",
-    "@astrojs/partytown": "^1.2.3",
     "@astrojs/rss": "^2.4.3",
     "@astrojs/sitemap": "^1.2.2",
     "@astrojs/solid-js": "^2.2.0",

@@ -9,8 +9,6 @@ import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import { remarkReadingTime } from './src/lib/plugins/remark-reading-time';
 
-import partytown from '@astrojs/partytown';
-
 // https://astro.build/config
 export default defineConfig({
   site: 'https://akashrajpurohit.com',
@@ -53,7 +51,6 @@ export default defineConfig({
     }),
     tailwind(),
     solidJs(),
-    partytown(),
   ],
   output: 'hybrid',
   experimental: {
