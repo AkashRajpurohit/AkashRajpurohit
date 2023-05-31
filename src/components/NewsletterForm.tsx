@@ -93,7 +93,7 @@ export default function NewsletterForm({ from_url = '' }: Props) {
         >
           {!response() && totalSubscribers() && (
             <p class='text-sm font-light text-zinc-600 dark:text-zinc-400'>
-              Join other {totalSubscribers()} subscribers.
+              Join {totalSubscribers()} other subscribers.
             </p>
           )}
           {response() && (
