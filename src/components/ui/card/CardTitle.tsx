@@ -1,4 +1,4 @@
-import { twJoin } from 'tailwind-merge';
+import { twMerge } from 'tailwind-merge';
 import type { JSXElement } from 'solid-js';
 import CardLink from './CardLink';
 
@@ -11,7 +11,7 @@ type Props = {
 export default function CardTitle(props: Props): JSXElement {
   return (
     <h2
-      class={twJoin(
+      class={twMerge(
         'text-lg font-semibold tracking-tight text-zinc-800 dark:text-zinc-100',
         props.class,
       )}

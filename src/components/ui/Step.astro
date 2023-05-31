@@ -1,5 +1,5 @@
 ---
-import { twJoin } from 'tailwind-merge';
+import { twMerge } from 'tailwind-merge';
 
 type Props = {
   number: string;
@@ -12,7 +12,7 @@ const { number, title, optional } = Astro.props;
 
 <div class='step flex items-center py-4'>
   <div
-    class={twJoin(
+    class={twMerge(
       'flex items-center justify-center border-2 border-gray-300 p-1 font-bold dark:border-gray-700 rounded-full h-8 w-8',
       optional ? 'text-rose-500' : 'text-secondary-500',
     )}

@@ -1,5 +1,5 @@
 ---
-import { twJoin } from 'tailwind-merge';
+import { twMerge } from 'tailwind-merge';
 import { slugifyTag } from '@lib/utils';
 
 type Props = {
@@ -11,11 +11,11 @@ type Props = {
 const { tags, selectedTag = '', class: className } = Astro.props;
 ---
 
-<div class={twJoin('flex flex-wrap gap-2', className)}>
+<div class={twMerge('flex flex-wrap gap-2', className)}>
   {
     tags.map((tag) => (
       <a
-        class={twJoin(
+        class={twMerge(
           'hover:text-primary-500',
           selectedTag === tag && 'text-primary-600 dark:text-primary-400',
         )}

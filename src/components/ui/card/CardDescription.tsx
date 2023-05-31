@@ -1,4 +1,4 @@
-import { twJoin } from 'tailwind-merge';
+import { twMerge } from 'tailwind-merge';
 import type { JSXElement } from 'solid-js';
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 export default function CardDescription(props: Props): JSXElement {
   return (
     <p
-      class={twJoin(
+      class={twMerge(
         'relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400',
         props.class,
       )}

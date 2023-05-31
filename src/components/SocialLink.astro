@@ -1,5 +1,5 @@
 ---
-import { twJoin } from 'tailwind-merge';
+import { twMerge } from 'tailwind-merge';
 import type { SocialType } from '@lib/constants';
 
 import TwitterIcon from '@components/ui/icons/TwitterIcon.astro';
@@ -27,7 +27,7 @@ const Icon = iconsMap[type] || null;
 const from_url = Astro.url.toString();
 ---
 
-<li class={twJoin('flex', className)}>
+<li class={twMerge('flex', className)}>
   <a
     href={href}
     target='_blank'

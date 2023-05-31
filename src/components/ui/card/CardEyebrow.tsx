@@ -1,4 +1,4 @@
-import { twJoin } from 'tailwind-merge';
+import { twMerge } from 'tailwind-merge';
 import type { JSXElement } from 'solid-js';
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
 export default function CardEyebrow(props: Props): JSXElement {
   return (
     <p
-      class={twJoin(
+      class={twMerge(
         'relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500',
         props.decorate && 'pl-3.5',
         props.class,

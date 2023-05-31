@@ -1,5 +1,5 @@
 ---
-import { twJoin } from 'tailwind-merge';
+import { twMerge } from 'tailwind-merge';
 
 const styles = {
   info: {
@@ -29,19 +29,19 @@ if (type === 'warning') {
 }
 ---
 
-<div class={twJoin('my-8 flex rounded-3xl p-6', styles[type].container)}>
+<div class={twMerge('my-8 flex rounded-3xl p-6', styles[type].container)}>
   {emoji && <span class='text-2xl flex-none'>{emoji}</span>}
   <div class='ml-4 flex-auto'>
     {
       title && title.trim() !== '' && (
         <p
-          class={twJoin('m-0 mb-2.5 font-display text-xl', styles[type].title)}
+          class={twMerge('m-0 mb-2.5 font-display text-xl', styles[type].title)}
         >
           {title}
         </p>
       )
     }
-    <div class={twJoin('prose', styles[type].body)}>
+    <div class={twMerge('prose', styles[type].body)}>
       <slot />
     </div>
   </div>

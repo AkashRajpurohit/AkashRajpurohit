@@ -1,5 +1,5 @@
 ---
-import { twJoin } from 'tailwind-merge';
+import { twMerge } from 'tailwind-merge';
 
 type Props = {
   class?: string;
@@ -8,7 +8,7 @@ type Props = {
 const { class: className } = Astro.props;
 ---
 
-<div class={twJoin('sm:px-8', className)}>
+<div class={twMerge('sm:px-8', className)}>
   <div class='mx-auto max-w-7xl lg:px-8'>
     <div class='relative px-4 sm:px-8 lg:px-12'>
       <div class='mx-auto max-w-2xl lg:max-w-5xl'>

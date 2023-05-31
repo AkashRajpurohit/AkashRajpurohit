@@ -1,4 +1,4 @@
-import { twJoin } from 'tailwind-merge';
+import { twMerge } from 'tailwind-merge';
 import type { CollectionEntry } from 'astro:content';
 import type { JSXElement } from 'solid-js';
 import Card from '@components/ui/card/Card';
@@ -13,7 +13,7 @@ type Props = CollectionEntry<'blog'> & {
 
 export default function ArticleCard(props: Props): JSXElement {
   return (
-    <div class={twJoin('flex flex-col gap-16', props.class)}>
+    <div class={twMerge('flex flex-col gap-16', props.class)}>
       <Card class='h-full'>
         <CardEyebrow class='text-primary-400 dark:text-primary-500'>
           {props.data.tags.map((tag) => (

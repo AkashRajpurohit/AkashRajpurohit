@@ -1,5 +1,5 @@
 import { createSignal, createResource, Suspense } from 'solid-js';
-import { twJoin } from 'tailwind-merge';
+import { twMerge } from 'tailwind-merge';
 import { RiBusinessMailSendLine } from 'solid-icons/ri';
 import { FiLoader } from 'solid-icons/fi';
 
@@ -98,7 +98,7 @@ export default function NewsletterForm({ from_url = '' }: Props) {
           )}
           {response() && (
             <p
-              class={twJoin(
+              class={twMerge(
                 'ml-2 text-sm font-medium',
                 response()?.error
                   ? 'text-red-500 dark:text-red-400'
