@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://akashrajpurohit.com/sitemap-index.xml
+Host: https://akashrajpurohit.com
