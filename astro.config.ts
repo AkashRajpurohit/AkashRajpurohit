@@ -45,7 +45,13 @@ export default defineConfig({
       ],
     ],
   },
-  integrations: [mdx(), sitemap(), tailwind(), solidJs(), partytown({})],
+  integrations: [
+    mdx({ optimize: true }),
+    sitemap(),
+    tailwind(),
+    solidJs(),
+    partytown(),
+  ],
   output: 'hybrid',
   experimental: {
     hybridOutput: true,
