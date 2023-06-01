@@ -50,3 +50,4 @@
 - [ ] fix sitemap showing /api/ urls as well
 - [x] Rehype autolink headers icon is not showing up anymore
 - [ ] Try Swup for page animations
+- [ ] Replace solid-icons and use SVGs instead directly

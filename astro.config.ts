@@ -4,6 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import cloudflare from '@astrojs/cloudflare';
 import solidJs from '@astrojs/solid-js';
+import partytown from '@astrojs/partytown';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
@@ -44,13 +45,16 @@ export default defineConfig({
     ],
   },
   integrations: [
-    mdx({ optimize: true }),
+    mdx({
+      optimize: true,
+    }),
     sitemap({
       // This actually does not work at all, but on 1.2.2 it somehow is not generating /api/ routes
       filter: (page) => !page.includes('/api/'),
     }),
     tailwind(),
     solidJs(),
+    partytown(),
   ],
   output: 'hybrid',
   experimental: {
