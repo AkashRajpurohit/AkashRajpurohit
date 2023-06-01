@@ -5,3 +5,6 @@
 
 /_astro/*
 	Cache-Control: public, max-age=31536000, immutable
+
+https://fonts.googleapis.com/*
+	Cache-Control: public, max-age=31536000, immutable

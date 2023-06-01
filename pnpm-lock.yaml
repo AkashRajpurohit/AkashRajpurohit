@@ -25,12 +25,6 @@ dependencies:
   '@astropub/icons':
     specifier: ^0.2.0
     version: 0.2.0(astro@2.5.6)
-  '@fontsource/ibm-plex-mono':
-    specifier: ^5.0.1
-    version: 5.0.1
-  '@fontsource/inter':
-    specifier: ^5.0.1
-    version: 5.0.1
   astro:
     specifier: ^2.5.6
     version: 2.5.6
@@ -717,14 +711,6 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
-
-  /@fontsource/ibm-plex-mono@5.0.1:
-    resolution: {integrity: sha512-KyNIhL67Ek+BiLqjoCpc11T4+EhGr/VAtcYHlI0T5JxGpRD4yTEmwh8+ozl9WU6x73qTqGcaRb/zJju57svNfg==}
-    dev: false
-
-  /@fontsource/inter@5.0.1:
-    resolution: {integrity: sha512-jezFhHp0HcVy2t6M6r89EcxkT30vx0ofGauveQWQ81j70N/wNDYs4zI+sedeend6zF9GXIEqpOTO2D1k7VQX4w==}
-    dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
