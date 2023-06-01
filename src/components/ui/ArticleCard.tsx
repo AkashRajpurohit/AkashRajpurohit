@@ -15,7 +15,7 @@ export default function ArticleCard(props: Props): JSXElement {
   return (
     <div class={twMerge('flex flex-col gap-16', props.class)}>
       <Card class='h-full'>
-        <CardEyebrow class='text-primary-400 dark:text-primary-500'>
+        <CardEyebrow>
           {props.data.tags.map((tag) => (
             <span class='mr-2'># {tag}</span>
           ))}
