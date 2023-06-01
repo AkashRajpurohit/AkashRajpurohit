@@ -54,7 +54,12 @@ export default defineConfig({
     }),
     tailwind(),
     solidJs(),
-    partytown(),
+    partytown({
+      config: {
+        debug: true,
+        forward: ['umami.track'],
+      },
+    }),
   ],
   output: 'hybrid',
   experimental: {
