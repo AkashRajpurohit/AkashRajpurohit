@@ -42,7 +42,7 @@ export const siteMetadata = {
   analytics: {
     // TODO: swap these with real values before migration
     umamiWebsiteId: '3d716936-d4bb-49c6-b4bc-ecf147b09154',
-    umamiHost: 'https://analytics.umami.is/script.js',
+    umamiHost: 'https://analytics.umami.is',
   },
   comment: {
     // Select a provider and use the environment variables associated to it
