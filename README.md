@@ -37,7 +37,7 @@
 - [x] View Counter
 - [ ] Like Counter
 - [ ] Share with others buttons
-- [ ] Comments? Don't have any on current blog
+- [x] Comments? Don't have any on current blog
 - [x] Umami Analytics with Events
 - [x] Carbon Ads
 - [ ] Command + K

@@ -1,7 +1,7 @@
 import { createSignal, createResource, Suspense } from 'solid-js';
 import { twMerge } from 'tailwind-merge';
-import { RiBusinessMailSendLine } from 'solid-icons/ri';
-import { FiLoader } from 'solid-icons/fi';
+import EnvelopeOpenIcon from './ui/icons/EnvelopeOpenIcon';
+import RefreshIcon from './ui/icons/RefreshIcon';
 
 const postFormData = async (
   formData: FormData,
@@ -52,7 +52,7 @@ export default function NewsletterForm({ from_url = '' }: Props) {
       class='rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40'
     >
       <h2 class='flex text-sm font-semibold text-zinc-900 dark:text-zinc-100'>
-        <RiBusinessMailSendLine class='h-6 w-6 flex-none' />
+        <EnvelopeOpenIcon class='h-5 w-5 flex-none' />
         <span class='ml-3'>Stay up to date</span>
       </h2>
       <p class='mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
@@ -75,7 +75,7 @@ export default function NewsletterForm({ from_url = '' }: Props) {
         >
           {response.loading ? (
             <span class='px-1 text-primary-500'>
-              <FiLoader class='animate-spin h-5 w-5' />
+              <RefreshIcon class='animate-spin h-5 w-5' />
             </span>
           ) : (
             'Join'

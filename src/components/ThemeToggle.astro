@@ -1,8 +1,6 @@
 ---
-// @ts-ignore
-import SunIcon from '@astropub/icons/Sun';
-// @ts-ignore
-import MoonIcon from '@astropub/icons/Moon';
+import SunIcon from '@components/ui/icons/SunIcon';
+import MoonIcon from '@components/ui/icons/MoonIcon';
 ---
 
 <div>
@@ -13,10 +11,10 @@ import MoonIcon from '@astropub/icons/Moon';
     class='group rounded-full bg-white/90 p-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20'
   >
     <SunIcon
-      className='h-5 w-5 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-primary-50 [@media(prefers-color-scheme:dark)]:stroke-primary-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-primary-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-primary-600'
+      class='h-5 w-5 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-primary-50 [@media(prefers-color-scheme:dark)]:stroke-primary-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-primary-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-primary-600'
     />
     <MoonIcon
-      className='hidden h-5 w-5 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-primary-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-primary-500'
+      class='hidden h-5 w-5 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-primary-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-primary-500'
     />
   </button>
 </div>

@@ -1,7 +1,6 @@
 ---
 import TagsList from '@components/TagsList.astro';
-// @ts-ignore
-import DrawingPin from '@astropub/icons/DrawingPinFilled';
+import FunnelIcon from '@components/ui/icons/FunnelIcon';
 
 type Props = {
   tagsList: string[];
@@ -13,7 +12,7 @@ const { tagsList, selectedTag } = Astro.props;
 
 <div class='rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40'>
   <h2 class='flex text-sm font-semibold text-zinc-800 dark:text-zinc-100'>
-    <DrawingPin class='h-6 w-6 flex-none' />
+    <FunnelIcon class='h-6 w-6 flex-none' />
     <span class='ml-3'>Filter by Tags</span>
   </h2>
   <div class='mt-4'>
