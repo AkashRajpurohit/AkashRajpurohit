@@ -56,7 +56,6 @@ export default defineConfig({
     solidJs(),
     partytown({
       config: {
-        debug: true,
         forward: ['umami.track'],
       },
     }),
