@@ -48,8 +48,5 @@
 
 ## TODO
 - [ ] fix sitemap showing /api/ urls as well
-- [x] Rehype autolink headers icon is not showing up anymore
 - [ ] Try Swup for page animations
-- [ ] Replace solid-icons and use SVGs instead directly
-- [x] Use fonts from google directly
 - [ ] Use audio interactions? Theme toggle -> read more [here](https://github.com/solidjs-community/solid-primitives/tree/main/packages/audio#readme)

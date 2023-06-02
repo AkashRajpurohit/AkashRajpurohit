@@ -34,7 +34,7 @@ export default function ArticleCard(props: Props): JSXElement {
             {props.data.summary}
           </CardDescription>
         </div>
-        <CardCta class='font-thin text-zinc-400 dark:text-zinc-500'>
+        <CardCta class='font-light text-zinc-400 dark:text-zinc-500'>
           <time datetime={props.data.date.toISOString()}>
             {props.data.date.toLocaleDateString('en-us', {
               year: 'numeric',
