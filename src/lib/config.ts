@@ -40,9 +40,18 @@ export const siteMetadata = {
     carbonPlacement: 'akashrajpurohitcom',
   },
   analytics: {
-    // TODO: swap these with real values before migration
-    umamiWebsiteId: '3d716936-d4bb-49c6-b4bc-ecf147b09154',
-    umamiHost: 'https://analytics.umami.is',
+    dev: {
+      umamiWebsiteId: '3d716936-d4bb-49c6-b4bc-ecf147b09154',
+      umamiHost: 'https://analytics.umami.is',
+    },
+    prod: {
+      // TODO: swap these with correct ones once migrated
+      umamiWebsiteId: '3d716936-d4bb-49c6-b4bc-ecf147b09154',
+      umamiHost: 'https://analytics.umami.is',
+      // Correct ones
+      // umamiWebsiteId: 'c8b4d9e8-0135-4b58-bbac-cf0895d5a470',
+      // umamiHost: 'https://tanjiro.akashrajpurohit.com',
+    },
   },
   comment: {
     // Select a provider and use the environment variables associated to it

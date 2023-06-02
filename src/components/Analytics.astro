@@ -1,21 +1,160 @@
 ---
 import { siteMetadata } from '@lib/config';
-// TODO: post migration mark this to only prod to avoid tracking local data
-const isProduction = import.meta.env.PROD || true;
-const { umamiHost, umamiWebsiteId } = siteMetadata.analytics;
+
+const isProduction = import.meta.env.PROD;
+const { dev, prod } = siteMetadata.analytics;
+let umamiHost, umamiWebsiteId;
+
+if (isProduction) {
+  umamiHost = prod.umamiHost;
+  umamiWebsiteId = prod.umamiWebsiteId;
+} else {
+  umamiHost = dev.umamiHost;
+  umamiWebsiteId = dev.umamiWebsiteId;
+}
 ---
 
-{
-  isProduction && (
-    <script
-      type="text/partytown"
-      async
-      defer
-      data-cache
-      data-host-url={umamiHost}
-      data-website-id={umamiWebsiteId}
-    >
-      (e=>{let{screen:{width:t,height:r},navigator:{language:a},location:i,localStorage:n,document:l}=e,{hostname:o,pathname:u,search:c}=i,{currentScript:d}=l;if(!d)return;let s="data-",m=d.getAttribute.bind(d),f=m(s+"website-id"),b=m(s+"host-url"),p="false"!==m(s+"auto-track"),g=m(s+"do-not-track"),y=m(s+"domains")||"",h=y.split(",").map(e=>e.trim()),v=b?b.replace(/\/$/,""):d.src.split("/").slice(0,-1).join("/"),$=`${v}/api/send`,k=`${t}x${r}`,A=/data-umami-event-([\w-_]+)/,E=s+"umami-event",N=()=>({website:f,hostname:o,screen:k,language:a,title:S,url:K,referrer:L}),T=()=>{let{doNotTrack:t,navigator:r,external:a}=e,i="msTrackingProtectionEnabled",n=()=>a&&i in a&&a[i](),l=t||r.doNotTrack||r.msDoNotTrack||n();return"1"==l||"yes"===l},_=()=>n&&n.getItem("umami.disabled")||g&&T()||y&&!h.includes(o),j=()=>{let e=e=>{let t=e.getAttribute.bind(e),r=t(E);if(r){let a={};return e.getAttributeNames().forEach(e=>{let r=e.match(A);r&&(a[r[1]]=t(e))}),D(r,{data:a})}return Promise.resolve()},t=t=>{let r=(e,t)=>{let r=e;for(let a=0;a<t;a++){if("A"===r.tagName)return r;if(!(r=r.parentElement))break}return null},a=t.target,n="A"===a.tagName?a:r(a,10);if(n){let{href:l,target:o}=n,u="_blank"===o||t.ctrlKey||t.shiftKey||t.metaKey||t.button&&1===t.button,c=n.getAttribute(E);if(c&&l)return u||t.preventDefault(),e(n).then(()=>{u||(i.href=l)})}else e(a)};l.addEventListener("click",t,!0)},x=()=>{let e=([e])=>{S=e&&e.target?e.target.text:void 0},t=new MutationObserver(e),r=l.querySelector("head > title");r&&t.observe(r,{subtree:!0,characterData:!0,childList:!0})},w=e=>{if(_())return;let t={"Content-Type":"application/json"};return void 0!==P&&(t["x-umami-cache"]=P),fetch($,{method:"POST",body:JSON.stringify({type:"event",payload:e}),headers:t}).then(e=>e.text()).then(e=>P=e)},D=(e,t)=>"string"==typeof e?w({...N(),name:e,data:"object"==typeof t?t:void 0}):"object"==typeof e?w(e):"function"==typeof e?w(e(N())):w(N());e.umami||(e.umami={track:D});let K=`${u}${c}`,L=l.referrer,S=l.title,P,q;if(p&&!_()){j(),x();let C=()=>{"complete"!==l.readyState||q||(D(),q=!0)};l.addEventListener("readystatechange",C,!0),C()}})(window);
-    </script>
-  )
-}
+<script
+  type='text/partytown'
+  async
+  defer
+  data-cache
+  data-host-url={umamiHost}
+  data-website-id={umamiWebsiteId}
+>
+  ((e) => {
+    let {
+        screen: { width: t, height: r },
+        navigator: { language: a },
+        location: i,
+        localStorage: n,
+        document: l,
+      } = e,
+      { hostname: o, pathname: u, search: c } = i,
+      { currentScript: d } = l;
+    if (!d) return;
+    let s = 'data-',
+      m = d.getAttribute.bind(d),
+      f = m(s + 'website-id'),
+      b = m(s + 'host-url'),
+      p = 'false' !== m(s + 'auto-track'),
+      g = m(s + 'do-not-track'),
+      y = m(s + 'domains') || '',
+      h = y.split(',').map((e) => e.trim()),
+      v = b ? b.replace(/\/$/, '') : d.src.split('/').slice(0, -1).join('/'),
+      $ = `${v}/api/send`,
+      k = `${t}x${r}`,
+      A = /data-umami-event-([\w-_]+)/,
+      E = s + 'umami-event',
+      N = () => ({
+        website: f,
+        hostname: o,
+        screen: k,
+        language: a,
+        title: S,
+        url: K,
+        referrer: L,
+      }),
+      T = () => {
+        let { doNotTrack: t, navigator: r, external: a } = e,
+          i = 'msTrackingProtectionEnabled',
+          n = () => a && i in a && a[i](),
+          l = t || r.doNotTrack || r.msDoNotTrack || n();
+        return '1' == l || 'yes' === l;
+      },
+      _ = () =>
+        (n && n.getItem('umami.disabled')) ||
+        (g && T()) ||
+        (y && !h.includes(o)),
+      j = () => {
+        let e = (e) => {
+            let t = e.getAttribute.bind(e),
+              r = t(E);
+            if (r) {
+              let a = {};
+              return (
+                e.getAttributeNames().forEach((e) => {
+                  let r = e.match(A);
+                  r && (a[r[1]] = t(e));
+                }),
+                D(r, { data: a })
+              );
+            }
+            return Promise.resolve();
+          },
+          t = (t) => {
+            let r = (e, t) => {
+                let r = e;
+                for (let a = 0; a < t; a++) {
+                  if ('A' === r.tagName) return r;
+                  if (!(r = r.parentElement)) break;
+                }
+                return null;
+              },
+              a = t.target,
+              n = 'A' === a.tagName ? a : r(a, 10);
+            if (n) {
+              let { href: l, target: o } = n,
+                u =
+                  '_blank' === o ||
+                  t.ctrlKey ||
+                  t.shiftKey ||
+                  t.metaKey ||
+                  (t.button && 1 === t.button),
+                c = n.getAttribute(E);
+              if (c && l)
+                return (
+                  u || t.preventDefault(),
+                  e(n).then(() => {
+                    u || (i.href = l);
+                  })
+                );
+            } else e(a);
+          };
+        l.addEventListener('click', t, !0);
+      },
+      x = () => {
+        let e = ([e]) => {
+            S = e && e.target ? e.target.text : void 0;
+          },
+          t = new MutationObserver(e),
+          r = l.querySelector('head > title');
+        r && t.observe(r, { subtree: !0, characterData: !0, childList: !0 });
+      },
+      w = (e) => {
+        if (_()) return;
+        let t = { 'Content-Type': 'application/json' };
+        return (
+          void 0 !== P && (t['x-umami-cache'] = P),
+          fetch($, {
+            method: 'POST',
+            body: JSON.stringify({ type: 'event', payload: e }),
+            headers: t,
+          })
+            .then((e) => e.text())
+            .then((e) => (P = e))
+        );
+      },
+      D = (e, t) =>
+        'string' == typeof e
+          ? w({ ...N(), name: e, data: 'object' == typeof t ? t : void 0 })
+          : 'object' == typeof e
+          ? w(e)
+          : 'function' == typeof e
+          ? w(e(N()))
+          : w(N());
+    e.umami || (e.umami = { track: D });
+    let K = `${u}${c}`,
+      L = l.referrer,
+      S = l.title,
+      P,
+      q;
+    if (p && !_()) {
+      j(), x();
+      let C = () => {
+        'complete' !== l.readyState || q || (D(), (q = !0));
+      };
+      l.addEventListener('readystatechange', C, !0), C();
+    }
+  })(window);
+</script>
