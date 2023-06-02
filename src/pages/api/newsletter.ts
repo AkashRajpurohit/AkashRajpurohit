@@ -8,11 +8,6 @@ import type { APIRoute } from 'astro';
 export const prerender = false;
 
 export const get: APIRoute = async ({ request }) => {
-  if (import.meta.env.PROD) {
-    const cache = await caches.open('newsletter');
-    console.log(await cache.keys(request, { ignoreSearch: true }));
-  }
-
   const totalSubscribers = await getTotalNewsletterSubscribersCount(request);
 
   const response = {
