@@ -53,33 +53,6 @@ export const siteMetadata = {
       // umamiHost: 'https://tanjiro.akashrajpurohit.com',
     },
   },
-  comment: {
-    // Select a provider and use the environment variables associated to it
-    provider: 'giscus', // supported providers: giscus, utterances
-    giscusConfig: {
-      // Visit the link below, and follow the steps in the 'configuration' section
-      // https://giscus.app/
-      repo: import.meta.env.PUBLIC_GISCUS_REPO,
-      repositoryId: import.meta.env.PUBLIC_GISCUS_REPOSITORY_ID,
-      category: import.meta.env.PUBLIC_GISCUS_CATEGORY,
-      categoryId: import.meta.env.PUBLIC_GISCUS_CATEGORY_ID,
-      mapping: 'pathname', // supported options: pathname, url, title
-      reactions: '1', // Emoji reactions: 1 = enable / 0 = disable
-      // Send discussion metadata periodically to the parent window: 1 = enable / 0 = disable
-      metadata: '1',
-      // Comment box input position
-      inputPosition: 'top', // top, bottom
-      // theme example: light, dark, dark_dimmed, dark_high_contrast
-      // transparent_dark, preferred_color_scheme, custom
-      theme: 'light',
-      // theme when dark mode
-      darkTheme: 'dark',
-      // If the theme option above is set to 'custom`
-      // please provide a link below to your custom theme css file.
-      // example: https://giscus.app/themes/custom_example.css
-      themeURL: '',
-    },
-  },
 };
 
 export const headerNavLinks = [
