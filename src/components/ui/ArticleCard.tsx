@@ -6,9 +6,11 @@ import CardTitle from '@components/ui/card/CardTitle';
 import CardEyebrow from '@components/ui/card/CardEyebrow';
 import CardDescription from '@components/ui/card/CardDescription';
 import CardCta from '@components/ui/card/CardCta';
+import type { PostClickedFrom } from '@lib/constants';
 
 type Props = CollectionEntry<'blog'> & {
   class?: string;
+  from?: PostClickedFrom;
 };
 
 export default function ArticleCard(props: Props): JSXElement {
@@ -23,6 +25,7 @@ export default function ArticleCard(props: Props): JSXElement {
         <div class='flex-1'>
           <CardTitle
             href={`/blog/${props.slug}/`}
+            from={props.from}
             class='group-hover:text-primary-500'
           >
             {props.data.title}

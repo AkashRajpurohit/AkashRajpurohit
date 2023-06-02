@@ -47,7 +47,13 @@ const data = {
               Previous Article
             </h2>
             <div class='text-primary-700 dark:text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'>
-              <a href={`/blog/${prevPost.slug}/`}>{prevPost.data.title}</a>
+              <a
+                data-umami-event='Post Navigation - previous'
+                data-umami-event-toUrl={`/blog/${prevPost.slug}/`}
+                href={`/blog/${prevPost.slug}/`}
+              >
+                {prevPost.data.title}
+              </a>
             </div>
           </div>
         )
@@ -59,7 +65,13 @@ const data = {
               Next Article
             </h2>
             <div class='text-primary-700 dark:text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'>
-              <a href={`/blog/${nextPost.slug}/`}>{nextPost.data.title}</a>
+              <a
+                data-umami-event='Post Navigation - next'
+                data-umami-event-toUrl={`/blog/${nextPost.slug}/`}
+                href={`/blog/${nextPost.slug}/`}
+              >
+                {nextPost.data.title}
+              </a>
             </div>
           </div>
         )
@@ -76,7 +88,11 @@ const data = {
         role='list'
         class='grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3'
       >
-        {suggestedPosts.map((post) => <ArticleCard {...post} />)}
+        {
+          suggestedPosts.map((post) => (
+            <ArticleCard from='suggested' {...post} />
+          ))
+        }
       </div>
     </div>
   </section>

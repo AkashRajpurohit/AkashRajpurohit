@@ -39,7 +39,7 @@
 - [ ] Share with others buttons
 - [ ] Comments? Don't have any on current blog
 - [x] Umami Analytics with Events
-- [ ] Carbon Ads
+- [x] Carbon Ads
 - [ ] Command + K
 - [ ] Helpful scripts
   - [ ] Generate blog boilerplate
@@ -52,3 +52,4 @@
 - [ ] Try Swup for page animations
 - [ ] Replace solid-icons and use SVGs instead directly
 - [x] Use fonts from google directly
+- [ ] Use audio interactions? Theme toggle -> read more [here](https://github.com/solidjs-community/solid-primitives/tree/main/packages/audio#readme)

@@ -56,3 +56,5 @@ export type SocialType =
   | 'instagram'
   | 'github'
   | 'email';
+
+export type PostClickedFrom = 'recent' | 'suggested' | 'previous' | 'next';

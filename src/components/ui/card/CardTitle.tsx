@@ -1,10 +1,12 @@
 import { twMerge } from 'tailwind-merge';
 import type { JSXElement } from 'solid-js';
 import CardLink from './CardLink';
+import type { PostClickedFrom } from '@lib/constants';
 
 type Props = {
   href?: string;
   class?: string;
+  from?: PostClickedFrom;
   children: JSXElement;
 };
 
@@ -17,7 +19,9 @@ export default function CardTitle(props: Props): JSXElement {
       )}
     >
       {props.href ? (
-        <CardLink href={props.href}>{props.children}</CardLink>
+        <CardLink href={props.href} from={props.from}>
+          {props.children}
+        </CardLink>
       ) : (
         <>{props.children}</>
       )}
