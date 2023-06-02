@@ -87,12 +87,12 @@ export default function NewsletterForm({ from_url = '' }: Props) {
           fallback={
             <div
               role='status'
-              class='animate-pulse mt-4 h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48'
+              class='animate-pulse mt-3 h-3 bg-gray-200 rounded-full dark:bg-gray-700 w-48'
             />
           }
         >
           {!response() && totalSubscribers() && (
-            <p class='text-sm font-light text-zinc-600 dark:text-zinc-400'>
+            <p class='text-sm font-medium text-zinc-600 dark:text-zinc-400'>
               Join {totalSubscribers()} other subscribers.
             </p>
           )}
