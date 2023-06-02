@@ -27,7 +27,7 @@ const Icon = iconsMap[type] || null;
 const from_url = Astro.url.toString();
 ---
 
-<li class={twMerge('flex', className)}>
+<li role='listitem' class={twMerge('flex', className)}>
   <a
     href={href}
     target='_blank'

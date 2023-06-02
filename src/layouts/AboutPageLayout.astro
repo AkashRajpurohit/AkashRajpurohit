@@ -66,19 +66,36 @@ const {
           </div>
           <div class='lg:pl-20'>
             <ul role='list' class='space-y-4'>
-              <SocialLink href={siteMetadata.github} type='github'>
+              <SocialLink
+                aria-label='Follow on Github'
+                href={siteMetadata.github}
+                type='github'
+              >
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href={siteMetadata.twitter} type='twitter'>
+              <SocialLink
+                aria-label='Follow on Twitter'
+                href={siteMetadata.twitter}
+                type='twitter'
+              >
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href={siteMetadata.linkedin} type='linkedin'>
+              <SocialLink
+                aria-label='Follow on LinkedIn'
+                href={siteMetadata.linkedin}
+                type='linkedin'
+              >
                 Follow on LinkedIn
               </SocialLink>
-              <SocialLink href={siteMetadata.instagram} type='instagram'>
+              <SocialLink
+                aria-label='Follow on Instagram'
+                href={siteMetadata.instagram}
+                type='instagram'
+              >
                 Follow on Instagram
               </SocialLink>
               <SocialLink
+                aria-label='Reach out on Email'
                 href={`mailto:${siteMetadata.email}`}
                 class='border-t border-zinc-100 pt-4 dark:border-zinc-700/40'
                 type='email'
