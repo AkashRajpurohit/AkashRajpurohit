@@ -7,6 +7,7 @@ import {
   createEffect,
   onMount,
 } from 'solid-js';
+import { debounce } from '@solid-primitives/scheduled';
 import ArticleCard from './ui/ArticleCard';
 import { getRandomPostTitle } from '@lib/utils';
 
@@ -30,6 +31,8 @@ export default function SearchList({ searchList }: Props) {
       .go(query(), searchList, options)
       .map((result) => result.obj);
   });
+
+  const debouncedSetQuery = debounce((query: string) => setQuery(query), 400);
 
   // initialize query from URL
   onMount(() => {
@@ -90,7 +93,7 @@ export default function SearchList({ searchList }: Props) {
           required
           id='search'
           autocomplete='off'
-          onInput={(e) => setQuery(e.target.value)}
+          onInput={(e) => debouncedSetQuery(e.target.value)}
           value={query()}
         />
       </div>
