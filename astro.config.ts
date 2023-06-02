@@ -49,8 +49,7 @@ export default defineConfig({
       optimize: true,
     }),
     sitemap({
-      // This actually does not work at all, but on 1.2.2 it somehow is not generating /api/ routes
-      filter: (page) => !page.includes('/api/'),
+      filter: (page) => !(page.includes('/api/') || page.includes('rss.xml')),
     }),
     tailwind(),
     solidJs(),

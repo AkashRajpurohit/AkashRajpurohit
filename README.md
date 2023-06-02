@@ -47,6 +47,5 @@
   - [ ] Newsletter send
 
 ## TODO
-- [ ] fix sitemap showing /api/ urls as well
 - [ ] Try Swup for page animations
 - [ ] Use audio interactions? Theme toggle -> read more [here](https://github.com/solidjs-community/solid-primitives/tree/main/packages/audio#readme)
