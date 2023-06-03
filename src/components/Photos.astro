@@ -17,17 +17,21 @@ const rotations = [
       heroImages.map((image, imageIndex) => (
         <div
           class={twMerge(
-            'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+            'relative aspect-[9/10] w-52 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
             rotations[imageIndex % rotations.length],
           )}
         >
-          <img
-            src={image}
-            alt='headshot photos'
-            width={640}
-            height={480}
-            class='absolute inset-0 h-full w-full object-cover'
-          />
+          <picture>
+            <source type='image/webp' srcset={image.webp} />
+            <source type='image/jpeg' srcset={image.jpg} />
+            <img
+              src={image.jpg}
+              width={640}
+              height={480}
+              alt='headshot photos'
+              class='absolute inset-0 h-full w-full object-cover'
+            />
+          </picture>
         </div>
       ))
     }
