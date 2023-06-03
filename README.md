@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Demystifying Go-URLs: Unleashing the Power of Shortened URLs](https://akashrajpurohit.com/blog/demystifying-gourls-unleashing-the-power-of-shortened-urls/)
 - [Integration Testing in JavaScript with Jest and Nock: A Beginner&#39;s Guide](https://akashrajpurohit.com/blog/integration-testing-in-javascript-with-jest-and-nock-a-beginners-guide/)
 - [Unit Testing in JavaScript: How to Ensure Code Quality and Catch Bugs Early](https://akashrajpurohit.com/blog/unit-testing-in-javascript-how-to-ensure-code-quality-and-catch-bugs-early/)
 - [Building and Publishing TypeScript NPM Packages: A Step-by-Step Guide](https://akashrajpurohit.com/blog/building-and-publishing-typescript-npm-packages-a-stepbystep-guide/)
@@ -136,7 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Demystifying Closures and Lexical Scopes in JavaScript](https://akashrajpurohit.com/blog/demystifying-closures-and-lexical-scopes-in-javascript/)
 - [How to Use the Linux Socat Command for Bidirectional Data Transfer Between Network Connections](https://akashrajpurohit.com/blog/how-to-use-the-linux-socat-command-for-bidirectional-data-transfer-between-network-connections/)
 - [How to Use the Linux Shred Command for Secure File Deletion](https://akashrajpurohit.com/blog/how-to-use-the-linux-shred-command-for-secure-file-deletion/)
-- [How to Use the Linux Netcat Command for Network Communication and Testing](https://akashrajpurohit.com/blog/how-to-use-the-linux-netcat-command-for-network-communication-and-testing/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
