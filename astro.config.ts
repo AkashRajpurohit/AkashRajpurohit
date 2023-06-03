@@ -4,7 +4,6 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import cloudflare from '@astrojs/cloudflare';
 import solidJs from '@astrojs/solid-js';
-import partytown from '@astrojs/partytown';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
@@ -53,11 +52,6 @@ export default defineConfig({
     }),
     tailwind(),
     solidJs(),
-    partytown({
-      config: {
-        forward: ['umami.track'],
-      },
-    }),
   ],
   output: 'hybrid',
   experimental: {
