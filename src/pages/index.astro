@@ -69,9 +69,9 @@ const from_url = Astro.url.toString();
           <Pencil class='h-5 w-5 flex-none' />
           <span class='ml-3'>Recent articles</span>
         </h2>
-        <div class='flex flex-col gap-16'>
+        <ul role='list' class='flex flex-col gap-16'>
           {recentPosts.map((post) => <ArticleCard from='recent' {...post} />)}
-        </div>
+        </ul>
         <div class='mt-4 flex justify-end'>
           <a
             href='/blogs/'
