@@ -44,6 +44,13 @@ const blog = defineCollection({
       .refine((values) => difference(values, allowedBlogTags).length === 0, {
         message: 'Invalid tag value',
       }),
+    discuss: z
+      .object({
+        id: z.enum(['hackernews', 'reddit', 'twitter']),
+        url: z.string(),
+      })
+      .array()
+      .optional(),
     draft: z.boolean().default(false),
     minutesRead: z.string().optional(),
   }),
