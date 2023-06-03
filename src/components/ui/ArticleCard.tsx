@@ -15,7 +15,7 @@ type Props = CollectionEntry<'blog'> & {
 
 export default function ArticleCard(props: Props): JSXElement {
   return (
-    <div class={twMerge('flex flex-col gap-16', props.class)}>
+    <li role='listitem' class={twMerge('flex flex-col gap-16', props.class)}>
       <Card class='h-full'>
         <CardEyebrow>
           {props.data.tags.map((tag) => (
@@ -44,6 +44,6 @@ export default function ArticleCard(props: Props): JSXElement {
           </time>
         </CardCta>
       </Card>
-    </div>
+    </li>
   );
 }
