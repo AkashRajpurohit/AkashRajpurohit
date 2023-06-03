@@ -2,8 +2,13 @@ import type { JSX } from 'solid-js/jsx-runtime';
 
 export default function RedditIcon(props: JSX.SVGElementTags['svg']) {
   return (
-    <svg viewBox='0 0 429.709 429.709' aria-hidden='true' {...props}>
-      <title class='sr-only'>Reddit Icon</title>
+    <svg
+      viewBox='0 0 429.709 429.709'
+      aria-hidden='true'
+      fill='currentColor'
+      {...props}
+    >
+      <title class='sr-only'>Reddit</title>
       <g>
         <path
           d='M429.709,196.618c0-29.803-24.16-53.962-53.963-53.962c-14.926,0-28.41,6.085-38.176,15.881

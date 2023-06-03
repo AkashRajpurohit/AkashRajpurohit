@@ -6,6 +6,7 @@ import Image from '@components/ui/BlogImage.astro';
 import { getSuggestedPosts, getPublishedAndSortedPosts } from '@lib/utils';
 import ArticleCard from '@components/ui/ArticleCard';
 import DiscussOnBlogButtons from '@components/DiscussOnBlogButtons';
+import ShareArticle from '@components/ShareArticle.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -43,9 +44,14 @@ const data = {
     slot='blog-post-footer'
   >
     <!-- Discuss and Share Buttons -->
-    <div class='flex justify-between py-4'>
-      <div class='flex-1'>
+    <div
+      class='flex flex-col-reverse gap-4 lg:flex-row justify-between items-center py-4'
+    >
+      <div class='flex-grow'>
         <DiscussOnBlogButtons discuss={post.data.discuss} />
+      </div>
+      <div>
+        <ShareArticle title={post.data.title} />
       </div>
     </div>
     <!-- Next/Previous articles section -->

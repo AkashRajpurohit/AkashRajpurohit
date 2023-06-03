@@ -1,0 +1,91 @@
+---
+import HackerNewsIcon from './ui/icons/HackerNewsIcon';
+import LinkedinIcon from './ui/icons/LinkedinIcon';
+import RedditIcon from './ui/icons/RedditIcon';
+import TwitterIcon from './ui/icons/TwitterIcon';
+import WhatsappIcon from './ui/icons/WhatsappIcon';
+
+type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
+const url = Astro.url;
+
+const hackernewsShareUrl = `https://news.ycombinator.com/submitlink?u=${url}&t=${title}`;
+const whatsappShareUrl = `https://api.whatsapp.com/send?text=${title} | ${url}`;
+const twitterShareUrl = `https://twitter.com/share?url=${url}&text=${title}`;
+const linkedinShareUrl = `https://www.linkedin.com/shareArticle?url=${url}&title=${title}`;
+const redditShareUrl = `https://reddit.com/submit?url=${url}&title=${title}`;
+---
+
+<div class='flex flex-row lg:flex-col gap-4 justify-between'>
+  <div class='flex gap-3 items-center'>
+    <a
+      href={hackernewsShareUrl}
+      target='_blank'
+      rel='noreferrer noopener nofollow'
+      title='Share on Hackernews'
+      data-umami-event='Article Share - hackernews'
+      data-umami-event-url={url}
+    >
+      <span class='h-8 w-8 inline-block text-[#ff4000]'>
+        <HackerNewsIcon />
+      </span>
+    </a>
+
+    <a
+      href={redditShareUrl}
+      target='_blank'
+      rel='noreferrer noopener nofollow'
+      title='Share on Reddit'
+      data-umami-event='Article Share - reddit'
+      data-umami-event-url={url}
+    >
+      <span class='h-7 w-7 inline-block text-[#ff4500]'>
+        <RedditIcon />
+      </span>
+    </a>
+
+    <a
+      href={twitterShareUrl}
+      target='_blank'
+      rel='noreferrer noopener nofollow'
+      title='Share on Twitter'
+      data-umami-event='Article Share - twitter'
+      data-umami-event-url={url}
+    >
+      <span class='h-8 w-8 inline-block text-[#1da1f2]'>
+        <TwitterIcon />
+      </span>
+    </a>
+
+    <a
+      href={whatsappShareUrl}
+      target='_blank'
+      rel='noreferrer noopener nofollow'
+      title='Share on Whatsapp'
+      data-umami-event='Article Share - whatsapp'
+      data-umami-event-mode='whatsapp'
+      data-umami-event-url={url}
+    >
+      <span class='h-7 w-7 inline-block text-[#128c7e]'>
+        <WhatsappIcon />
+      </span>
+    </a>
+
+    <a
+      href={linkedinShareUrl}
+      target='_blank'
+      rel='noreferrer noopener nofollow'
+      title='Share on Linkedin'
+      data-umami-event='Article Share - linkedin'
+      data-umami-event-mode='linkedin'
+      data-umami-event-url={url}
+    >
+      <span class='h-8 w-8 inline-block text-[#0a66c2]'>
+        <LinkedinIcon />
+      </span>
+    </a>
+  </div>
+</div>

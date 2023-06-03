@@ -32,15 +32,16 @@
 - [x] Fonts
 - [x] Newsletter Form + API
 - [x] Mobile Navbar
-- [ ] Custom Link component with hover placeholder
-- [ ] Twitter Card + Tweets data from notion -> Look into [this](https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter#readme)
 - [x] View Counter
-- [ ] Like Counter
-- [ ] Share with others buttons
+- [x] Share with others buttons
+- [x] Discuss on blog button
 - [x] Comments? Don't have any on current blog
 - [x] Umami Analytics with Events
 - [x] Carbon Ads
 - [ ] Command + K
+- [ ] Twitter Card + Tweets data from notion -> Look into [this](https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter#readme)
+- [ ] Custom Link component with hover placeholder
+- [ ] Like Counter
 - [ ] Helpful scripts
   - [ ] Generate blog boilerplate
   - [ ] Generate and store tweets data

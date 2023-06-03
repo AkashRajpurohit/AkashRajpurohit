@@ -57,7 +57,7 @@ export default function DiscussOnBlogButtons({ discuss }: Props) {
               metadata.className,
             )}
           >
-            <span class='h-6 w-6 inline-block text-zinc-100'>
+            <span class='h-6 w-6 inline-block'>
               <metadata.Logo />
             </span>
             {metadata.text}
