@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [How to Google like a Pro as a Software Engineer: Beginner&#39;s Guide](https://akashrajpurohit.com/blog/how-to-google-like-a-pro-as-a-software-engineer-beginners-guide/)
 - [Embracing the Future: Migrating from Next.js to Astro](https://akashrajpurohit.com/blog/embracing-the-future-migrating-from-nextjs-to-astro/)
 - [Git Beyond Basics: 7 Uncommon Git Commands Every Developer Should Know](https://akashrajpurohit.com/blog/git-beyond-basics-7-uncommon-git-commands-every-developer-should-know/)
 - [Demystifying Go-URLs: Unleashing the Power of Shortened URLs](https://akashrajpurohit.com/blog/demystifying-gourls-unleashing-the-power-of-shortened-urls/)
@@ -136,7 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Understanding Pure Functions in JavaScript: A Comprehensive Guide](https://akashrajpurohit.com/blog/understanding-pure-functions-in-javascript-a-comprehensive-guide/)
 - [The Power of Immutability in JavaScript](https://akashrajpurohit.com/blog/the-power-of-immutability-in-javascript/)
 - [Demystifying Higher Order Functions in JavaScript](https://akashrajpurohit.com/blog/demystifying-higher-order-functions-in-javascript/)
-- [Demystifying Closures and Lexical Scopes in JavaScript](https://akashrajpurohit.com/blog/demystifying-closures-and-lexical-scopes-in-javascript/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
