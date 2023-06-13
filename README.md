@@ -122,8 +122,8 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
-- [Git Beyond Basics: 7 Uncommon Git Commands Every Developer Should Know](https://akashrajpurohit.com/blog/git-beyond-basics-7-uncommon-git-commands-every-developer-should-know/)
 - [Embracing the Future: Migrating from Next.js to Astro](https://akashrajpurohit.com/blog/embracing-the-future-migrating-from-nextjs-to-astro/)
+- [Git Beyond Basics: 7 Uncommon Git Commands Every Developer Should Know](https://akashrajpurohit.com/blog/git-beyond-basics-7-uncommon-git-commands-every-developer-should-know/)
 - [Demystifying Go-URLs: Unleashing the Power of Shortened URLs](https://akashrajpurohit.com/blog/demystifying-gourls-unleashing-the-power-of-shortened-urls/)
 - [Integration Testing in JavaScript with Jest and Nock: A Beginner&#39;s Guide](https://akashrajpurohit.com/blog/integration-testing-in-javascript-with-jest-and-nock-a-beginners-guide/)
 - [Unit Testing in JavaScript: How to Ensure Code Quality and Catch Bugs Early](https://akashrajpurohit.com/blog/unit-testing-in-javascript-how-to-ensure-code-quality-and-catch-bugs-early/)
