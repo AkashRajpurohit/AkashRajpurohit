@@ -122,6 +122,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
+- [Linux Package Management: A Guide to apt, dnf, and pacman](https://akashrajpurohit.com/blog/linux-package-management-a-guide-to-apt-dnf-and-pacman/)
 - [Mastering Debugging in VSCode: A Beginner&#39;s Guide](https://akashrajpurohit.com/blog/mastering-debugging-in-vscode-a-beginners-guide/)
 - [Mastering Debugging: Tips and Techniques for Software Engineers](https://akashrajpurohit.com/blog/mastering-debugging-tips-and-techniques-for-software-engineers/)
 - [Mastering Google: Advanced Tips for Software Engineers](https://akashrajpurohit.com/blog/mastering-google-advanced-tips-for-software-engineers/)
@@ -136,7 +137,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - [Array and Object Manipulation in JavaScript: Advanced Techniques](https://akashrajpurohit.com/blog/array-and-object-manipulation-in-javascript-advanced-techniques/)
 - [Mastering Iterators and Generators in JavaScript: A Beginner&#39;s Guide](https://akashrajpurohit.com/blog/mastering-iterators-and-generators-in-javascript-a-beginners-guide/)
 - [Mastering the Art of Currying in JavaScript: A Beginner&#39;s Guide](https://akashrajpurohit.com/blog/mastering-the-art-of-currying-in-javascript-a-beginners-guide/)
-- [Functional Programming in JavaScript: An Introduction](https://akashrajpurohit.com/blog/functional-programming-in-javascript-an-introduction/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
