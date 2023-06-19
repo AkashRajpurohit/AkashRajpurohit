@@ -124,19 +124,19 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <!-- BLOG-POST-LIST:START -->
 - [Linux bzip2 and gzip Compression Utilities: An Overview of File Compression](https://akashrajpurohit.com/blog/linux-bzip2-and-gzip-compression-utilities-an-overview-of-file-compression/)
 - [Beyond ext4 — Exploring Linux File Systems Btrfs and ZFS](https://akashrajpurohit.com/blog/beyond-ext4-exploring-linux-file-systems-btrfs-and-zfs/)
-- [Understanding Back Pressure in Message Queues: A Guide for Developers](https://akashrajpurohit.com/blog/understanding-back-pressure-in-message-queues-a-guide-for-developers/)
 - [Linux Package Management: A Guide to apt, dnf, and pacman](https://akashrajpurohit.com/blog/linux-package-management-a-guide-to-apt-dnf-and-pacman/)
 - [Mastering Debugging in VSCode: A Beginner&#39;s Guide](https://akashrajpurohit.com/blog/mastering-debugging-in-vscode-a-beginners-guide/)
 - [Mastering Debugging: Tips and Techniques for Software Engineers](https://akashrajpurohit.com/blog/mastering-debugging-tips-and-techniques-for-software-engineers/)
 - [Mastering Google: Advanced Tips for Software Engineers](https://akashrajpurohit.com/blog/mastering-google-advanced-tips-for-software-engineers/)
 - [How to Google like a Pro as a Software Engineer: Beginner&#39;s Guide](https://akashrajpurohit.com/blog/how-to-google-like-a-pro-as-a-software-engineer-beginners-guide/)
-- [Embracing the Future: Migrating from Next.js to Astro](https://akashrajpurohit.com/blog/embracing-the-future-migrating-from-nextjs-to-astro/)
 - [Git Beyond Basics: 7 Uncommon Git Commands Every Developer Should Know](https://akashrajpurohit.com/blog/git-beyond-basics-7-uncommon-git-commands-every-developer-should-know/)
+- [Embracing the Future: Migrating from Next.js to Astro](https://akashrajpurohit.com/blog/embracing-the-future-migrating-from-nextjs-to-astro/)
 - [Demystifying Go-URLs: Unleashing the Power of Shortened URLs](https://akashrajpurohit.com/blog/demystifying-gourls-unleashing-the-power-of-shortened-urls/)
 - [Integration Testing in JavaScript with Jest and Nock: A Beginner&#39;s Guide](https://akashrajpurohit.com/blog/integration-testing-in-javascript-with-jest-and-nock-a-beginners-guide/)
 - [Unit Testing in JavaScript: How to Ensure Code Quality and Catch Bugs Early](https://akashrajpurohit.com/blog/unit-testing-in-javascript-how-to-ensure-code-quality-and-catch-bugs-early/)
 - [Building and Publishing TypeScript NPM Packages: A Step-by-Step Guide](https://akashrajpurohit.com/blog/building-and-publishing-typescript-npm-packages-a-stepbystep-guide/)
 - [Snowflake ID: Generating Unique IDs for Distributed Systems](https://akashrajpurohit.com/blog/snowflake-id-generating-unique-ids-for-distributed-systems/)
+- [Array and Object Manipulation in JavaScript: Advanced Techniques](https://akashrajpurohit.com/blog/array-and-object-manipulation-in-javascript-advanced-techniques/)
 <!-- BLOG-POST-LIST:END -->  
 
 </details>  
