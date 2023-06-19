@@ -18,4 +18,4 @@ jobs:
           max_post_count: 15
           committer_username: FollowingAkash
           committer_email: bot@akashrajpurohit.com
-          commit_message: "chore: :memo: update blog list"
+          commit_message: "docs: :memo: updated blog list"
