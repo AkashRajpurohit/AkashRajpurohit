@@ -1,4 +1,4 @@
-name: Latest blog post workflow
+name: ✍🏽 Blog posts
 on:
   workflow_dispatch:
   schedule:
@@ -14,8 +14,7 @@ jobs:
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
           feed_list: "https://akashrajpurohit.com/rss.xml"
-          date_format: "dd/mm/yyyy"
-          template: "$newline - $randomEmoji(🔥,🚀,👨‍💻,👀,✍🏽,🥳) <a href='$url?ref=github-desc'>$title</a> | 📆 $date"
+          template: "$newline - $randomEmoji(🔥,🚀,👨‍💻,👀,✍🏽,🥳,⚡️) <a href='$url?ref=github-desc'>$title</a>"
           max_post_count: 15
           committer_username: FollowingAkash
           committer_email: bot@akashrajpurohit.com
