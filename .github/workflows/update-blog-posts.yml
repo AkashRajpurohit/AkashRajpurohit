@@ -1,5 +1,6 @@
 name: Latest blog post workflow
 on:
+  workflow_dispatch:
   schedule:
     # Runs every hour
     - cron: '0 * * * *'
@@ -12,7 +13,8 @@ jobs:
       - uses: actions/checkout@v3
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
-          feed_list: "http://akashrajpurohit.com/rss.xml"
+          feed_list: "https://akashrajpurohit.com/rss.xml"
+          template: "$newline - $randomEmoji(🔥,🚀,👨‍💻,👀,✍🏽,🥳) <a href='$url?ref=github-desc'>$title</a> | 🏷️ **Tags:** $categories"
           max_post_count: 15
           committer_username: FollowingAkash
           committer_email: bot@akashrajpurohit.com
