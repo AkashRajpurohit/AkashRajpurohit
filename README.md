@@ -122,22 +122,21 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
-- [Linux bzip2 and gzip Compression Utilities: An Overview of File Compression](https://akashrajpurohit.com/blog/linux-bzip2-and-gzip-compression-utilities-an-overview-of-file-compression/)
-- [Beyond ext4 — Exploring Linux File Systems Btrfs and ZFS](https://akashrajpurohit.com/blog/beyond-ext4-exploring-linux-file-systems-btrfs-and-zfs/)
-- [Linux Package Management: A Guide to apt, dnf, and pacman](https://akashrajpurohit.com/blog/linux-package-management-a-guide-to-apt-dnf-and-pacman/)
-- [Mastering Debugging in VSCode: A Beginner&#39;s Guide](https://akashrajpurohit.com/blog/mastering-debugging-in-vscode-a-beginners-guide/)
-- [Mastering Debugging: Tips and Techniques for Software Engineers](https://akashrajpurohit.com/blog/mastering-debugging-tips-and-techniques-for-software-engineers/)
-- [Mastering Google: Advanced Tips for Software Engineers](https://akashrajpurohit.com/blog/mastering-google-advanced-tips-for-software-engineers/)
-- [How to Google like a Pro as a Software Engineer: Beginner&#39;s Guide](https://akashrajpurohit.com/blog/how-to-google-like-a-pro-as-a-software-engineer-beginners-guide/)
-- [Git Beyond Basics: 7 Uncommon Git Commands Every Developer Should Know](https://akashrajpurohit.com/blog/git-beyond-basics-7-uncommon-git-commands-every-developer-should-know/)
-- [Embracing the Future: Migrating from Next.js to Astro](https://akashrajpurohit.com/blog/embracing-the-future-migrating-from-nextjs-to-astro/)
-- [Demystifying Go-URLs: Unleashing the Power of Shortened URLs](https://akashrajpurohit.com/blog/demystifying-gourls-unleashing-the-power-of-shortened-urls/)
-- [Integration Testing in JavaScript with Jest and Nock: A Beginner&#39;s Guide](https://akashrajpurohit.com/blog/integration-testing-in-javascript-with-jest-and-nock-a-beginners-guide/)
-- [Unit Testing in JavaScript: How to Ensure Code Quality and Catch Bugs Early](https://akashrajpurohit.com/blog/unit-testing-in-javascript-how-to-ensure-code-quality-and-catch-bugs-early/)
-- [Building and Publishing TypeScript NPM Packages: A Step-by-Step Guide](https://akashrajpurohit.com/blog/building-and-publishing-typescript-npm-packages-a-stepbystep-guide/)
-- [Snowflake ID: Generating Unique IDs for Distributed Systems](https://akashrajpurohit.com/blog/snowflake-id-generating-unique-ids-for-distributed-systems/)
-- [Array and Object Manipulation in JavaScript: Advanced Techniques](https://akashrajpurohit.com/blog/array-and-object-manipulation-in-javascript-advanced-techniques/)
-<!-- BLOG-POST-LIST:END -->  
+ - 🔥 <a href='https://akashrajpurohit.com/blog/linux-bzip2-and-gzip-compression-utilities-an-overview-of-file-compression/?ref=github-desc'>Linux bzip2 and gzip Compression Utilities: An Overview of File Compression</a> | 🏷️ **Tags:** linux
+ - 🔥 <a href='https://akashrajpurohit.com/blog/beyond-ext4-exploring-linux-file-systems-btrfs-and-zfs/?ref=github-desc'>Beyond ext4 — Exploring Linux File Systems Btrfs and ZFS</a> | 🏷️ **Tags:** linux
+ - 👀 <a href='https://akashrajpurohit.com/blog/linux-package-management-a-guide-to-apt-dnf-and-pacman/?ref=github-desc'>Linux Package Management: A Guide to apt, dnf, and pacman</a> | 🏷️ **Tags:** linux
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/mastering-debugging-in-vscode-a-beginners-guide/?ref=github-desc'>Mastering Debugging in VSCode: A Beginner&#39;s Guide</a> | 🏷️ **Tags:** engineering
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/mastering-debugging-tips-and-techniques-for-software-engineers/?ref=github-desc'>Mastering Debugging: Tips and Techniques for Software Engineers</a> | 🏷️ **Tags:** engineering
+ - 🚀 <a href='https://akashrajpurohit.com/blog/mastering-google-advanced-tips-for-software-engineers/?ref=github-desc'>Mastering Google: Advanced Tips for Software Engineers</a> | 🏷️ **Tags:** engineering
+ - 🔥 <a href='https://akashrajpurohit.com/blog/how-to-google-like-a-pro-as-a-software-engineer-beginners-guide/?ref=github-desc'>How to Google like a Pro as a Software Engineer: Beginner&#39;s Guide</a> | 🏷️ **Tags:** engineering
+ - 👀 <a href='https://akashrajpurohit.com/blog/git-beyond-basics-7-uncommon-git-commands-every-developer-should-know/?ref=github-desc'>Git Beyond Basics: 7 Uncommon Git Commands Every Developer Should Know</a> | 🏷️ **Tags:** git, engineering
+ - 🚀 <a href='https://akashrajpurohit.com/blog/embracing-the-future-migrating-from-nextjs-to-astro/?ref=github-desc'>Embracing the Future: Migrating from Next.js to Astro</a> | 🏷️ **Tags:** engineering
+ - 🚀 <a href='https://akashrajpurohit.com/blog/demystifying-gourls-unleashing-the-power-of-shortened-urls/?ref=github-desc'>Demystifying Go-URLs: Unleashing the Power of Shortened URLs</a> | 🏷️ **Tags:** engineering
+ - 🔥 <a href='https://akashrajpurohit.com/blog/integration-testing-in-javascript-with-jest-and-nock-a-beginners-guide/?ref=github-desc'>Integration Testing in JavaScript with Jest and Nock: A Beginner&#39;s Guide</a> | 🏷️ **Tags:** javascript
+ - 👀 <a href='https://akashrajpurohit.com/blog/unit-testing-in-javascript-how-to-ensure-code-quality-and-catch-bugs-early/?ref=github-desc'>Unit Testing in JavaScript: How to Ensure Code Quality and Catch Bugs Early</a> | 🏷️ **Tags:** javascript
+ - 🚀 <a href='https://akashrajpurohit.com/blog/building-and-publishing-typescript-npm-packages-a-stepbystep-guide/?ref=github-desc'>Building and Publishing TypeScript NPM Packages: A Step-by-Step Guide</a> | 🏷️ **Tags:** nodejs
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/snowflake-id-generating-unique-ids-for-distributed-systems/?ref=github-desc'>Snowflake ID: Generating Unique IDs for Distributed Systems</a> | 🏷️ **Tags:** system design
+ - 👀 <a href='https://akashrajpurohit.com/blog/array-and-object-manipulation-in-javascript-advanced-techniques/?ref=github-desc'>Array and Object Manipulation in JavaScript: Advanced Techniques</a> | 🏷️ **Tags:** javascript<!-- BLOG-POST-LIST:END -->  
 
 </details>  
 
