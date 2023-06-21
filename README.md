@@ -122,21 +122,21 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
- - 🚀 <a href='https://akashrajpurohit.com/blog/exploding-your-system-the-deadly-fork-bomb-in-linux/?ref=github-desc'>Exploding your system: The deadly Fork Bomb in Linux</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/linux-bzip2-and-gzip-compression-utilities-an-overview-of-file-compression/?ref=github-desc'>Linux bzip2 and gzip Compression Utilities: An Overview of File Compression</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/beyond-ext4-exploring-linux-file-systems-btrfs-and-zfs/?ref=github-desc'>Beyond ext4 — Exploring Linux File Systems Btrfs and ZFS</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/linux-package-management-a-guide-to-apt-dnf-and-pacman/?ref=github-desc'>Linux Package Management: A Guide to apt, dnf, and pacman</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/mastering-debugging-in-vscode-a-beginners-guide/?ref=github-desc'>Mastering Debugging in VSCode: A Beginner&#39;s Guide</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/mastering-debugging-tips-and-techniques-for-software-engineers/?ref=github-desc'>Mastering Debugging: Tips and Techniques for Software Engineers</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/mastering-google-advanced-tips-for-software-engineers/?ref=github-desc'>Mastering Google: Advanced Tips for Software Engineers</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/how-to-google-like-a-pro-as-a-software-engineer-beginners-guide/?ref=github-desc'>How to Google like a Pro as a Software Engineer: Beginner&#39;s Guide</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/mastering-app-security-7-crucial-risks-every-developer-must-mitigate/?ref=github-desc'>Mastering App Security: 7 Crucial Risks Every Developer Must Mitigate</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/exploding-your-system-the-deadly-fork-bomb-in-linux/?ref=github-desc'>Exploding your system: The deadly Fork Bomb in Linux</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/linux-bzip2-and-gzip-compression-utilities-an-overview-of-file-compression/?ref=github-desc'>Linux bzip2 and gzip Compression Utilities: An Overview of File Compression</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/beyond-ext4-exploring-linux-file-systems-btrfs-and-zfs/?ref=github-desc'>Beyond ext4 — Exploring Linux File Systems Btrfs and ZFS</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/linux-package-management-a-guide-to-apt-dnf-and-pacman/?ref=github-desc'>Linux Package Management: A Guide to apt, dnf, and pacman</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/mastering-debugging-in-vscode-a-beginners-guide/?ref=github-desc'>Mastering Debugging in VSCode: A Beginner&#39;s Guide</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/mastering-debugging-tips-and-techniques-for-software-engineers/?ref=github-desc'>Mastering Debugging: Tips and Techniques for Software Engineers</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/mastering-google-advanced-tips-for-software-engineers/?ref=github-desc'>Mastering Google: Advanced Tips for Software Engineers</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/how-to-google-like-a-pro-as-a-software-engineer-beginners-guide/?ref=github-desc'>How to Google like a Pro as a Software Engineer: Beginner&#39;s Guide</a>
  - 🚀 <a href='https://akashrajpurohit.com/blog/git-beyond-basics-7-uncommon-git-commands-every-developer-should-know/?ref=github-desc'>Git Beyond Basics: 7 Uncommon Git Commands Every Developer Should Know</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/embracing-the-future-migrating-from-nextjs-to-astro/?ref=github-desc'>Embracing the Future: Migrating from Next.js to Astro</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/demystifying-gourls-unleashing-the-power-of-shortened-urls/?ref=github-desc'>Demystifying Go-URLs: Unleashing the Power of Shortened URLs</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/integration-testing-in-javascript-with-jest-and-nock-a-beginners-guide/?ref=github-desc'>Integration Testing in JavaScript with Jest and Nock: A Beginner&#39;s Guide</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/unit-testing-in-javascript-how-to-ensure-code-quality-and-catch-bugs-early/?ref=github-desc'>Unit Testing in JavaScript: How to Ensure Code Quality and Catch Bugs Early</a>
- - 🥳 <a href='https://akashrajpurohit.com/blog/building-and-publishing-typescript-npm-packages-a-stepbystep-guide/?ref=github-desc'>Building and Publishing TypeScript NPM Packages: A Step-by-Step Guide</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/snowflake-id-generating-unique-ids-for-distributed-systems/?ref=github-desc'>Snowflake ID: Generating Unique IDs for Distributed Systems</a><!-- BLOG-POST-LIST:END -->  
+ - 🔥 <a href='https://akashrajpurohit.com/blog/embracing-the-future-migrating-from-nextjs-to-astro/?ref=github-desc'>Embracing the Future: Migrating from Next.js to Astro</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/demystifying-gourls-unleashing-the-power-of-shortened-urls/?ref=github-desc'>Demystifying Go-URLs: Unleashing the Power of Shortened URLs</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/integration-testing-in-javascript-with-jest-and-nock-a-beginners-guide/?ref=github-desc'>Integration Testing in JavaScript with Jest and Nock: A Beginner&#39;s Guide</a>
+ - 🥳 <a href='https://akashrajpurohit.com/blog/unit-testing-in-javascript-how-to-ensure-code-quality-and-catch-bugs-early/?ref=github-desc'>Unit Testing in JavaScript: How to Ensure Code Quality and Catch Bugs Early</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/building-and-publishing-typescript-npm-packages-a-stepbystep-guide/?ref=github-desc'>Building and Publishing TypeScript NPM Packages: A Step-by-Step Guide</a><!-- BLOG-POST-LIST:END -->  
 
 </details>  
 
