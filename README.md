@@ -122,21 +122,21 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
- - 🚀 <a href='https://akashrajpurohit.com/blog/build-your-own-docker-with-linux-namespaces-cgroups-and-chroot-handson-guide/?ref=github-desc'>Build Your Own Docker with Linux Namespaces, cgroups, and chroot: Hands-on Guide</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/how-to-create-a-restricted-environment-with-the-linux-chroot-command/?ref=github-desc'>How to Create a Restricted Environment with the Linux chroot Command</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/linux-control-groups-finetuning-resource-allocation-for-optimal-system-performance/?ref=github-desc'>Linux Control Groups: Fine-Tuning Resource Allocation for Optimal System Performance</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/linux-namespaces-isolating-your-system-for-enhanced-security-and-performance/?ref=github-desc'>Linux Namespaces: Isolating Your System for Enhanced Security and Performance</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/fzf-the-ultimate-linux-productivity-tool/?ref=github-desc'>FZF: The Ultimate Linux Productivity Tool</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/mastering-app-security-7-crucial-risks-every-developer-must-mitigate/?ref=github-desc'>Mastering App Security: 7 Crucial Risks Every Developer Must Mitigate</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/exploding-your-system-the-deadly-fork-bomb-in-linux/?ref=github-desc'>Exploding your system: The deadly Fork Bomb in Linux</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/linux-bzip2-and-gzip-compression-utilities-an-overview-of-file-compression/?ref=github-desc'>Linux bzip2 and gzip Compression Utilities: An Overview of File Compression</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/essential-linux-commands-for-server-maintenance-at-home/?ref=github-desc'>Essential Linux Commands for Server Maintenance at Home</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/build-your-own-docker-with-linux-namespaces-cgroups-and-chroot-handson-guide/?ref=github-desc'>Build Your Own Docker with Linux Namespaces, cgroups, and chroot: Hands-on Guide</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/how-to-create-a-restricted-environment-with-the-linux-chroot-command/?ref=github-desc'>How to Create a Restricted Environment with the Linux chroot Command</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/linux-control-groups-finetuning-resource-allocation-for-optimal-system-performance/?ref=github-desc'>Linux Control Groups: Fine-Tuning Resource Allocation for Optimal System Performance</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/linux-namespaces-isolating-your-system-for-enhanced-security-and-performance/?ref=github-desc'>Linux Namespaces: Isolating Your System for Enhanced Security and Performance</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/fzf-the-ultimate-linux-productivity-tool/?ref=github-desc'>FZF: The Ultimate Linux Productivity Tool</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/mastering-app-security-7-crucial-risks-every-developer-must-mitigate/?ref=github-desc'>Mastering App Security: 7 Crucial Risks Every Developer Must Mitigate</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/exploding-your-system-the-deadly-fork-bomb-in-linux/?ref=github-desc'>Exploding your system: The deadly Fork Bomb in Linux</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/linux-bzip2-and-gzip-compression-utilities-an-overview-of-file-compression/?ref=github-desc'>Linux bzip2 and gzip Compression Utilities: An Overview of File Compression</a>
  - 🚀 <a href='https://akashrajpurohit.com/blog/beyond-ext4-exploring-linux-file-systems-btrfs-and-zfs/?ref=github-desc'>Beyond ext4 — Exploring Linux File Systems Btrfs and ZFS</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/linux-package-management-a-guide-to-apt-dnf-and-pacman/?ref=github-desc'>Linux Package Management: A Guide to apt, dnf, and pacman</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/mastering-debugging-in-vscode-a-beginners-guide/?ref=github-desc'>Mastering Debugging in VSCode: A Beginner&#39;s Guide</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/mastering-debugging-tips-and-techniques-for-software-engineers/?ref=github-desc'>Mastering Debugging: Tips and Techniques for Software Engineers</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/mastering-google-advanced-tips-for-software-engineers/?ref=github-desc'>Mastering Google: Advanced Tips for Software Engineers</a>
- - 🥳 <a href='https://akashrajpurohit.com/blog/how-to-google-like-a-pro-as-a-software-engineer-beginners-guide/?ref=github-desc'>How to Google like a Pro as a Software Engineer: Beginner&#39;s Guide</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/git-beyond-basics-7-uncommon-git-commands-every-developer-should-know/?ref=github-desc'>Git Beyond Basics: 7 Uncommon Git Commands Every Developer Should Know</a><!-- BLOG-POST-LIST:END -->  
+ - 🔥 <a href='https://akashrajpurohit.com/blog/linux-package-management-a-guide-to-apt-dnf-and-pacman/?ref=github-desc'>Linux Package Management: A Guide to apt, dnf, and pacman</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/mastering-debugging-in-vscode-a-beginners-guide/?ref=github-desc'>Mastering Debugging in VSCode: A Beginner&#39;s Guide</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/mastering-debugging-tips-and-techniques-for-software-engineers/?ref=github-desc'>Mastering Debugging: Tips and Techniques for Software Engineers</a>
+ - 🥳 <a href='https://akashrajpurohit.com/blog/mastering-google-advanced-tips-for-software-engineers/?ref=github-desc'>Mastering Google: Advanced Tips for Software Engineers</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/how-to-google-like-a-pro-as-a-software-engineer-beginners-guide/?ref=github-desc'>How to Google like a Pro as a Software Engineer: Beginner&#39;s Guide</a><!-- BLOG-POST-LIST:END -->  
 
 </details>  
 
