@@ -13,7 +13,8 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
       - name: Generate Snake
-        uses: Platane/snk/svg-only@v2
+        # Revert back to "Platane/snk/svg-only@main" after this is merged https://github.com/Platane/snk/pull/77
+        uses: aelassas/snk/svg-only@main
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
