@@ -1,5 +1,5 @@
 # Generates pretty snake animation, using @Platane's awesome snk action
-name: 🐍 Generate Snake Contribution GIF
+name: 🐍 Generate Snake Contribution
 on:
   workflow_dispatch: # Manual dispatch
   schedule:
@@ -19,8 +19,8 @@ jobs:
           outputs: |
             assets/github-snake.svg
             assets/github-snake-dark.svg?palette=github-dark   
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # Commit and push the changes
       - name: Publish package
         uses: stefanzweifel/git-auto-commit-action@v4.16.0
