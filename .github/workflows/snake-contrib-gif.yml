@@ -13,13 +13,14 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
       - name: Generate Snake
-        # Revert back to "Platane/snk/svg-only@main" after this is merged https://github.com/Platane/snk/pull/77
-        uses: aelassas/snk/svg-only@main
+        uses: Platane/snk/svg-only@main
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             assets/github-snake.svg
-            assets/github-snake-dark.svg?palette=github-dark        
+            assets/github-snake-dark.svg?palette=github-dark   
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # Commit and push the changes
       - name: Publish package
         uses: stefanzweifel/git-auto-commit-action@v4.16.0
