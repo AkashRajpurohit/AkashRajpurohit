@@ -122,21 +122,21 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
- - 🚀 <a href='https://akashrajpurohit.com/blog/seamless-error-tracking-integrating-sentry-with-astro/?ref=github-desc'>Seamless Error Tracking: Integrating Sentry with Astro</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/finding-your-way-understanding-service-discovery-and-service-mesh/?ref=github-desc'>Finding Your Way: Understanding Service Discovery and Service Mesh</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/building-resilient-systems-a-guide-to-designing-for-fault-tolerance/?ref=github-desc'>Building Resilient Systems: A Guide to Designing for Fault Tolerance</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/designing-for-scalability-building-a-flexible-and-futureproof-system/?ref=github-desc'>Designing for Scalability: Building a Flexible and Future-Proof System</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/high-availability-architectures-uninterrupted-services-for-a-seamless-experience/?ref=github-desc'>High Availability Architectures: Uninterrupted Services for a Seamless Experience</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/distributed-tracing-and-observability-in-your-system/?ref=github-desc'>Distributed Tracing and Observability in Your System</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/observability-and-monitoring-illuminating-the-inner-workings-of-large-systems/?ref=github-desc'>Observability and Monitoring: Illuminating the Inner Workings of Large Systems</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/consistent-hashing-in-distributed-systems-navigating-data-distribution-with-finesse/?ref=github-desc'>Consistent Hashing in Distributed Systems: Navigating Data Distribution with Finesse</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/boosting-your-websites-performance-with-javascript-code-optimization/?ref=github-desc'>Boosting Your Website&#39;s Performance with JavaScript Code Optimization</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/seamless-error-tracking-integrating-sentry-with-astro/?ref=github-desc'>Seamless Error Tracking: Integrating Sentry with Astro</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/finding-your-way-understanding-service-discovery-and-service-mesh/?ref=github-desc'>Finding Your Way: Understanding Service Discovery and Service Mesh</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/building-resilient-systems-a-guide-to-designing-for-fault-tolerance/?ref=github-desc'>Building Resilient Systems: A Guide to Designing for Fault Tolerance</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/designing-for-scalability-building-a-flexible-and-futureproof-system/?ref=github-desc'>Designing for Scalability: Building a Flexible and Future-Proof System</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/high-availability-architectures-uninterrupted-services-for-a-seamless-experience/?ref=github-desc'>High Availability Architectures: Uninterrupted Services for a Seamless Experience</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/distributed-tracing-and-observability-in-your-system/?ref=github-desc'>Distributed Tracing and Observability in Your System</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/observability-and-monitoring-illuminating-the-inner-workings-of-large-systems/?ref=github-desc'>Observability and Monitoring: Illuminating the Inner Workings of Large Systems</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/consistent-hashing-in-distributed-systems-navigating-data-distribution-with-finesse/?ref=github-desc'>Consistent Hashing in Distributed Systems: Navigating Data Distribution with Finesse</a>
  - 🚀 <a href='https://akashrajpurohit.com/blog/exploring-the-event-driven-architecture/?ref=github-desc'>Exploring the Event-Driven Architecture</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/understanding-pubsub-messaging/?ref=github-desc'>Understanding Pub-Sub Messaging</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/solving-the-n1-select-query-problem-in-database/?ref=github-desc'>Solving the N+1 Select Query Problem in Database</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/maximizing-query-speed-with-database-indexes/?ref=github-desc'>Maximizing Query Speed with Database Indexes</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/mastering-intermediate-linux-commands-for-efficient-server-management/?ref=github-desc'>Mastering Intermediate Linux Commands for Efficient Server Management</a>
- - 🥳 <a href='https://akashrajpurohit.com/blog/essential-linux-commands-for-server-maintenance-at-home/?ref=github-desc'>Essential Linux Commands for Server Maintenance at Home</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/build-your-own-docker-with-linux-namespaces-cgroups-and-chroot-handson-guide/?ref=github-desc'>Build Your Own Docker with Linux Namespaces, cgroups, and chroot: Hands-on Guide</a><!-- BLOG-POST-LIST:END -->  
+ - 🔥 <a href='https://akashrajpurohit.com/blog/understanding-pubsub-messaging/?ref=github-desc'>Understanding Pub-Sub Messaging</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/solving-the-n1-select-query-problem-in-database/?ref=github-desc'>Solving the N+1 Select Query Problem in Database</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/maximizing-query-speed-with-database-indexes/?ref=github-desc'>Maximizing Query Speed with Database Indexes</a>
+ - 🥳 <a href='https://akashrajpurohit.com/blog/mastering-intermediate-linux-commands-for-efficient-server-management/?ref=github-desc'>Mastering Intermediate Linux Commands for Efficient Server Management</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/essential-linux-commands-for-server-maintenance-at-home/?ref=github-desc'>Essential Linux Commands for Server Maintenance at Home</a><!-- BLOG-POST-LIST:END -->  
 
 </details>  
 
