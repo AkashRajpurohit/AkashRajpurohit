@@ -122,21 +122,21 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
- - 🚀 <a href='https://akashrajpurohit.com/blog/asynchronous-javascript-programming-a-guide-to-promises-async-await-and-generators/?ref=github-desc'>Asynchronous JavaScript Programming: A Guide to Promises, Async/Await, and Generators</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/event-handling-in-javascript-understanding-delegation-and-propagation/?ref=github-desc'>Event Handling in JavaScript: Understanding Delegation and Propagation</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/partial-application-in-javascript/?ref=github-desc'>Partial Application in JavaScript</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/javascript-design-patterns-for-better-code-organization-and-maintainability/?ref=github-desc'>JavaScript Design Patterns for Better Code Organization and Maintainability</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/boosting-your-websites-performance-with-javascript-code-optimization/?ref=github-desc'>Boosting Your Website&#39;s Performance with JavaScript Code Optimization</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/seamless-error-tracking-integrating-sentry-with-astro/?ref=github-desc'>Seamless Error Tracking: Integrating Sentry with Astro</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/finding-your-way-understanding-service-discovery-and-service-mesh/?ref=github-desc'>Finding Your Way: Understanding Service Discovery and Service Mesh</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/building-resilient-systems-a-guide-to-designing-for-fault-tolerance/?ref=github-desc'>Building Resilient Systems: A Guide to Designing for Fault Tolerance</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/multithreaded-javascript-with-web-workers/?ref=github-desc'>Multi-Threaded JavaScript with Web Workers</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/asynchronous-javascript-programming-a-guide-to-promises-async-await-and-generators/?ref=github-desc'>Asynchronous JavaScript Programming: A Guide to Promises, Async/Await, and Generators</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/event-handling-in-javascript-understanding-delegation-and-propagation/?ref=github-desc'>Event Handling in JavaScript: Understanding Delegation and Propagation</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/partial-application-in-javascript/?ref=github-desc'>Partial Application in JavaScript</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/javascript-design-patterns-for-better-code-organization-and-maintainability/?ref=github-desc'>JavaScript Design Patterns for Better Code Organization and Maintainability</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/boosting-your-websites-performance-with-javascript-code-optimization/?ref=github-desc'>Boosting Your Website&#39;s Performance with JavaScript Code Optimization</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/seamless-error-tracking-integrating-sentry-with-astro/?ref=github-desc'>Seamless Error Tracking: Integrating Sentry with Astro</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/finding-your-way-understanding-service-discovery-and-service-mesh/?ref=github-desc'>Finding Your Way: Understanding Service Discovery and Service Mesh</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/building-resilient-systems-a-guide-to-designing-for-fault-tolerance/?ref=github-desc'>Building Resilient Systems: A Guide to Designing for Fault Tolerance</a>
  - 🚀 <a href='https://akashrajpurohit.com/blog/designing-for-scalability-building-a-flexible-and-futureproof-system/?ref=github-desc'>Designing for Scalability: Building a Flexible and Future-Proof System</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/high-availability-architectures-uninterrupted-services-for-a-seamless-experience/?ref=github-desc'>High Availability Architectures: Uninterrupted Services for a Seamless Experience</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/distributed-tracing-and-observability-in-your-system/?ref=github-desc'>Distributed Tracing and Observability in Your System</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/observability-and-monitoring-illuminating-the-inner-workings-of-large-systems/?ref=github-desc'>Observability and Monitoring: Illuminating the Inner Workings of Large Systems</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/consistent-hashing-in-distributed-systems-navigating-data-distribution-with-finesse/?ref=github-desc'>Consistent Hashing in Distributed Systems: Navigating Data Distribution with Finesse</a>
- - 🥳 <a href='https://akashrajpurohit.com/blog/exploring-the-event-driven-architecture/?ref=github-desc'>Exploring the Event-Driven Architecture</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/understanding-pubsub-messaging/?ref=github-desc'>Understanding Pub-Sub Messaging</a><!-- BLOG-POST-LIST:END -->  
+ - 🔥 <a href='https://akashrajpurohit.com/blog/high-availability-architectures-uninterrupted-services-for-a-seamless-experience/?ref=github-desc'>High Availability Architectures: Uninterrupted Services for a Seamless Experience</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/distributed-tracing-and-observability-in-your-system/?ref=github-desc'>Distributed Tracing and Observability in Your System</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/observability-and-monitoring-illuminating-the-inner-workings-of-large-systems/?ref=github-desc'>Observability and Monitoring: Illuminating the Inner Workings of Large Systems</a>
+ - 🥳 <a href='https://akashrajpurohit.com/blog/consistent-hashing-in-distributed-systems-navigating-data-distribution-with-finesse/?ref=github-desc'>Consistent Hashing in Distributed Systems: Navigating Data Distribution with Finesse</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/exploring-the-event-driven-architecture/?ref=github-desc'>Exploring the Event-Driven Architecture</a><!-- BLOG-POST-LIST:END -->  
 
 </details>  
 
