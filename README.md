@@ -122,10 +122,10 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
- - 🚀 <a href='https://akashrajpurohit.com/blog/the-dangers-lurking-in-free-public-wifi/?ref=github-desc'>The Dangers Lurking in Free Public WiFi</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/set-up-draft-pages-effectively-in-astro-with-configdriven-content-authoring/?ref=github-desc'>Set Up Draft Pages Effectively in Astro with Config-Driven Content Authoring</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/write-secure-javascript-applications/?ref=github-desc'>Write Secure JavaScript Applications</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/whats-the-best-programming-language-for-game-development/?ref=github-desc'>What&#39;s the Best Programming Language for Game Development?</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/reduce-docker-image-size-like-a-pro/?ref=github-desc'>Reduce Docker Image Size Like a Pro</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/the-dangers-lurking-in-free-public-wifi/?ref=github-desc'>The Dangers Lurking in Free Public WiFi</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/set-up-draft-pages-effectively-in-astro-with-configdriven-content-authoring/?ref=github-desc'>Set Up Draft Pages Effectively in Astro with Config-Driven Content Authoring</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/write-secure-javascript-applications/?ref=github-desc'>Write Secure JavaScript Applications</a>
  - ✍🏽 <a href='https://akashrajpurohit.com/blog/multithreaded-javascript-with-web-workers/?ref=github-desc'>Multi-Threaded JavaScript with Web Workers</a>
  - 👨‍💻 <a href='https://akashrajpurohit.com/blog/asynchronous-javascript-programming-a-guide-to-promises-async-await-and-generators/?ref=github-desc'>Asynchronous JavaScript Programming: A Guide to Promises, Async/Await, and Generators</a>
  - 🔥 <a href='https://akashrajpurohit.com/blog/event-handling-in-javascript-understanding-delegation-and-propagation/?ref=github-desc'>Event Handling in JavaScript: Understanding Delegation and Propagation</a>
