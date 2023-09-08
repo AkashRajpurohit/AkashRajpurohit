@@ -18,7 +18,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 ### Talking about Personal Stuffs:
 
 - 🛠 &nbsp; I'm currently developing stuff with JavaScript/TypeScript, Node.js, React, Next.js, Mongodb, PostgreSQL, MySQL.
-- 🚀 &nbsp; I’m currently exploring [Astro](https://astro.build/), [Cloudflare](https://www.cloudflare.com/) services and learning about Linux and networking.
+- 🚀 &nbsp; I’m currently learning about Linux, Networking and playing around with Raspberry Pi's.
 - 👨🏻‍💻 &nbsp; Most of my projects are available on [Github](https://github.com/AkashRajpurohit).
 - 💬 &nbsp; I occasionally write blogs [here](https://akashrajpurohit.com/blogs/?ref=github-desc)!
 - 👾 &nbsp; Fun fact: I use tabs over spaces.
@@ -111,7 +111,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   	<ul>
   	  <li><b>OS:</b> MacOS / Linux</li>
   	  <li><b>Browser: </b> Firefox / Brave Browser</li>
-	  <li><b>Code Editor:</b> Visual Studio Code</li>
+	  <li><b>Code Editor:</b> Visual Studio Code / Neovim </li>
 	  <li><b>To Stay Updated:</b> Dev.to, Medium, Twitter and Tech YouTube Channels</li>
 	</ul>
 	<b>Read more about it <a target="_blank" rel="norefferer noopener" href="https://akashrajpurohit.com/uses/?ref=github-desc">here</a></b>
