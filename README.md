@@ -20,7 +20,8 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 - 🛠 &nbsp; I'm currently developing stuff with JavaScript/TypeScript, Node.js, React, Next.js, Mongodb, PostgreSQL, MySQL.
 - 🚀 &nbsp; I’m currently learning about Linux, Networking and playing around with Raspberry Pi's.
 - 👨🏻‍💻 &nbsp; Most of my projects are available on [Github](https://github.com/AkashRajpurohit).
-- 💬 &nbsp; I occasionally write blogs [here](https://akashrajpurohit.com/blogs/?ref=github-desc)!
+- 💬 &nbsp; I write blogs [here](https://akashrajpurohit.com/blogs/?ref=github-desc)!
+- 📰 &nbsp; I have started sending out newsletters, subscribe it [here](https://akashrajpurohit.com/newsletter/?ref=github-desc)
 - 👾 &nbsp; Fun fact: I use tabs over spaces.
 - 📫 &nbsp; How to reach me: me@akashrajpurohit.com 
 
