@@ -123,21 +123,21 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
- - 🚀 <a href='https://akashrajpurohit.com/blog/incremental-static-regeneration-dynamic-websites-with-ssr-and-cache-headers/?ref=github-profile-readme'>Incremental Static Regeneration: Dynamic Websites with SSR and Cache Headers</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/running-ssl-on-localhost/?ref=github-profile-readme'>Running SSL on Localhost</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/reduce-docker-image-size-like-a-pro/?ref=github-profile-readme'>Reduce Docker Image Size Like a Pro</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/the-dangers-lurking-in-free-public-wifi/?ref=github-profile-readme'>The Dangers Lurking in Free Public WiFi</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/set-up-draft-pages-effectively-in-astro-with-configdriven-content-authoring/?ref=github-profile-readme'>Set Up Draft Pages Effectively in Astro with Config-Driven Content Authoring</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/write-secure-javascript-applications/?ref=github-profile-readme'>Write Secure JavaScript Applications</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/multithreaded-javascript-with-web-workers/?ref=github-profile-readme'>Multi-Threaded JavaScript with Web Workers</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/asynchronous-javascript-programming-a-guide-to-promises-async-await-and-generators/?ref=github-profile-readme'>Asynchronous JavaScript Programming: A Guide to Promises, Async/Await, and Generators</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/systemd-timers-vs-cron-jobs/?ref=github-profile-readme'>SystemD Timers vs. Cron Jobs</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/incremental-static-regeneration-dynamic-websites-with-ssr-and-cache-headers/?ref=github-profile-readme'>Incremental Static Regeneration: Dynamic Websites with SSR and Cache Headers</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/running-ssl-on-localhost/?ref=github-profile-readme'>Running SSL on Localhost</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/reduce-docker-image-size-like-a-pro/?ref=github-profile-readme'>Reduce Docker Image Size Like a Pro</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/the-dangers-lurking-in-free-public-wifi/?ref=github-profile-readme'>The Dangers Lurking in Free Public WiFi</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/set-up-draft-pages-effectively-in-astro-with-configdriven-content-authoring/?ref=github-profile-readme'>Set Up Draft Pages Effectively in Astro with Config-Driven Content Authoring</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/write-secure-javascript-applications/?ref=github-profile-readme'>Write Secure JavaScript Applications</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/multithreaded-javascript-with-web-workers/?ref=github-profile-readme'>Multi-Threaded JavaScript with Web Workers</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/asynchronous-javascript-programming-a-guide-to-promises-async-await-and-generators/?ref=github-profile-readme'>Asynchronous JavaScript Programming: A Guide to Promises, Async/Await, and Generators</a>
  - 🚀 <a href='https://akashrajpurohit.com/blog/event-handling-in-javascript-understanding-delegation-and-propagation/?ref=github-profile-readme'>Event Handling in JavaScript: Understanding Delegation and Propagation</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/partial-application-in-javascript/?ref=github-profile-readme'>Partial Application in JavaScript</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/javascript-design-patterns-for-better-code-organization-and-maintainability/?ref=github-profile-readme'>JavaScript Design Patterns for Better Code Organization and Maintainability</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/boosting-your-websites-performance-with-javascript-code-optimization/?ref=github-profile-readme'>Boosting Your Website&#39;s Performance with JavaScript Code Optimization</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/seamless-error-tracking-integrating-sentry-with-astro/?ref=github-profile-readme'>Seamless Error Tracking: Integrating Sentry with Astro</a>
- - 🥳 <a href='https://akashrajpurohit.com/blog/finding-your-way-understanding-service-discovery-and-service-mesh/?ref=github-profile-readme'>Finding Your Way: Understanding Service Discovery and Service Mesh</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/building-resilient-systems-a-guide-to-designing-for-fault-tolerance/?ref=github-profile-readme'>Building Resilient Systems: A Guide to Designing for Fault Tolerance</a><!-- BLOG-POST-LIST:END -->  
+ - 🔥 <a href='https://akashrajpurohit.com/blog/partial-application-in-javascript/?ref=github-profile-readme'>Partial Application in JavaScript</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/javascript-design-patterns-for-better-code-organization-and-maintainability/?ref=github-profile-readme'>JavaScript Design Patterns for Better Code Organization and Maintainability</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/boosting-your-websites-performance-with-javascript-code-optimization/?ref=github-profile-readme'>Boosting Your Website&#39;s Performance with JavaScript Code Optimization</a>
+ - 🥳 <a href='https://akashrajpurohit.com/blog/seamless-error-tracking-integrating-sentry-with-astro/?ref=github-profile-readme'>Seamless Error Tracking: Integrating Sentry with Astro</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/finding-your-way-understanding-service-discovery-and-service-mesh/?ref=github-profile-readme'>Finding Your Way: Understanding Service Discovery and Service Mesh</a><!-- BLOG-POST-LIST:END -->  
 
 </details>  
 
