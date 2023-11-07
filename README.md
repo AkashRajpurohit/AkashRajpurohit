@@ -123,21 +123,21 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
- - 🚀 <a href='https://akashrajpurohit.com/blog/exploring-the-linux-file-system/?ref=github-profile-readme'>Exploring the Linux File System</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/choosing-the-right-data-storage-solution-sql-vs-nosql-databases/?ref=github-profile-readme'>Choosing the Right Data Storage Solution: SQL vs. NoSQL Databases</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/raft-and-paxos-distributed-consensus-algorithms/?ref=github-profile-readme'>Raft and Paxos: Distributed Consensus Algorithms</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/understanding-load-balancing-algorithms-roundrobin-and-consistent-hashing/?ref=github-profile-readme'>Understanding Load Balancing Algorithms: Round-robin and Consistent Hashing</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/dealing-with-cache-avalanche-to-safeguard-your-system/?ref=github-profile-readme'>Dealing with Cache Avalanche to Safeguard Your System</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/caching-strategies-understand-writethrough-writebehind-readthrough-and-readmiss/?ref=github-profile-readme'>Caching Strategies: Understand Write-Through, Write-Behind, Read-Through, and Read-Miss</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/fair-resource-allocation-understand-rate-limiting-and-throttling/?ref=github-profile-readme'>Fair Resource Allocation: Understand Rate Limiting and Throttling</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/eventual-consistency-and-consistency-models-in-distributed-systems/?ref=github-profile-readme'>Eventual Consistency and Consistency Models in Distributed Systems</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/how-i-setup-ssh-config-for-effectively-managing-multiple-servers/?ref=github-profile-readme'>How I setup SSH config for effectively managing multiple servers</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/exploring-the-linux-file-system/?ref=github-profile-readme'>Exploring the Linux File System</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/choosing-the-right-data-storage-solution-sql-vs-nosql-databases/?ref=github-profile-readme'>Choosing the Right Data Storage Solution: SQL vs. NoSQL Databases</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/raft-and-paxos-distributed-consensus-algorithms/?ref=github-profile-readme'>Raft and Paxos: Distributed Consensus Algorithms</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/understanding-load-balancing-algorithms-roundrobin-and-consistent-hashing/?ref=github-profile-readme'>Understanding Load Balancing Algorithms: Round-robin and Consistent Hashing</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/dealing-with-cache-avalanche-to-safeguard-your-system/?ref=github-profile-readme'>Dealing with Cache Avalanche to Safeguard Your System</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/caching-strategies-understand-writethrough-writebehind-readthrough-and-readmiss/?ref=github-profile-readme'>Caching Strategies: Understand Write-Through, Write-Behind, Read-Through, and Read-Miss</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/fair-resource-allocation-understand-rate-limiting-and-throttling/?ref=github-profile-readme'>Fair Resource Allocation: Understand Rate Limiting and Throttling</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/eventual-consistency-and-consistency-models-in-distributed-systems/?ref=github-profile-readme'>Eventual Consistency and Consistency Models in Distributed Systems</a>
  - 🚀 <a href='https://akashrajpurohit.com/blog/distributed-transactions-navigating-the-complex-world-of-data-consistency/?ref=github-profile-readme'>Distributed Transactions: Navigating the Complex World of Data Consistency</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/handling-failures-in-distributed-systems-the-circuit-breaker-pattern-explained/?ref=github-profile-readme'>Handling Failures in Distributed Systems: The Circuit Breaker Pattern Explained</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/should-you-selfhost-password-managers-onpremises/?ref=github-profile-readme'>Should You Self-Host Password Managers On-Premises?</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/selecting-the-right-git-merging-strategy-merge-commit-squash-and-merge-or-rebase-and-merge/?ref=github-profile-readme'>Selecting the Right Git Merging Strategy: Merge Commit, Squash and Merge, or Rebase and Merge</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/i-built-my-own-inhouse-newsletter-system/?ref=github-profile-readme'>I built my own in-house Newsletter system</a>
- - 🥳 <a href='https://akashrajpurohit.com/blog/systemd-timers-vs-cron-jobs/?ref=github-profile-readme'>SystemD Timers vs. Cron Jobs</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/incremental-static-regeneration-dynamic-websites-with-ssr-and-cache-headers/?ref=github-profile-readme'>Incremental Static Regeneration: Dynamic Websites with SSR and Cache Headers</a><!-- BLOG-POST-LIST:END -->  
+ - 🔥 <a href='https://akashrajpurohit.com/blog/handling-failures-in-distributed-systems-the-circuit-breaker-pattern-explained/?ref=github-profile-readme'>Handling Failures in Distributed Systems: The Circuit Breaker Pattern Explained</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/should-you-selfhost-password-managers-onpremises/?ref=github-profile-readme'>Should You Self-Host Password Managers On-Premises?</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/selecting-the-right-git-merging-strategy-merge-commit-squash-and-merge-or-rebase-and-merge/?ref=github-profile-readme'>Selecting the Right Git Merging Strategy: Merge Commit, Squash and Merge, or Rebase and Merge</a>
+ - 🥳 <a href='https://akashrajpurohit.com/blog/i-built-my-own-inhouse-newsletter-system/?ref=github-profile-readme'>I built my own in-house Newsletter system</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/systemd-timers-vs-cron-jobs/?ref=github-profile-readme'>SystemD Timers vs. Cron Jobs</a><!-- BLOG-POST-LIST:END -->  
 
 </details>  
 
