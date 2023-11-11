@@ -139,12 +139,4 @@ Software Engineering is something which coincides with my passion and hobby. Alw
  - 🥳 <a href='https://akashrajpurohit.com/blog/selecting-the-right-git-merging-strategy-merge-commit-squash-and-merge-or-rebase-and-merge/?ref=github-profile-readme'>Selecting the Right Git Merging Strategy: Merge Commit, Squash and Merge, or Rebase and Merge</a>
  - ✍🏽 <a href='https://akashrajpurohit.com/blog/i-built-my-own-inhouse-newsletter-system/?ref=github-profile-readme'>I built my own in-house Newsletter system</a><!-- BLOG-POST-LIST:END -->  
 
-</details>  
-
----
-
-<div align="center">
-
-### Thank you for reading, Share your ❤️ by starring some of the repositories! 🌟
-
-</div>
+</details>
