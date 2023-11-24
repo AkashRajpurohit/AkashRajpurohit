@@ -123,20 +123,20 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
- - 🚀 <a href='https://akashrajpurohit.com/blog/how-i-safeguard-essential-data-in-my-homelab-with-offsite-backup-on-cloud/?ref=github-profile-readme'>How I Safeguard Essential Data in My Homelab with Off-site Backup on Cloud</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/easily-backup-your-local-data-to-the-cloud-in-linux/?ref=github-profile-readme'>Easily Backup your Local Data to the Cloud in Linux</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/linux-system-logs-an-overview-of-system-logs-and-how-to-read-them/?ref=github-profile-readme'>Linux System Logs: An Overview of System Logs and How to Read Them</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/linux-raid-configurations-for-data-redundancy-and-performance/?ref=github-profile-readme'>Linux RAID Configurations for Data Redundancy and Performance</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/how-i-setup-ssh-config-for-effectively-managing-multiple-servers/?ref=github-profile-readme'>How I setup SSH config for effectively managing multiple servers</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/exploring-the-linux-file-system/?ref=github-profile-readme'>Exploring the Linux File System</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/choosing-the-right-data-storage-solution-sql-vs-nosql-databases/?ref=github-profile-readme'>Choosing the Right Data Storage Solution: SQL vs. NoSQL Databases</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/raft-and-paxos-distributed-consensus-algorithms/?ref=github-profile-readme'>Raft and Paxos: Distributed Consensus Algorithms</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/adguard-home-tailscale-erase-ads-on-the-go/?ref=github-profile-readme'>AdGuard Home + Tailscale = Erase Ads on the Go</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/how-i-safeguard-essential-data-in-my-homelab-with-offsite-backup-on-cloud/?ref=github-profile-readme'>How I Safeguard Essential Data in My Homelab with Off-site Backup on Cloud</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/easily-backup-your-local-data-to-the-cloud-in-linux/?ref=github-profile-readme'>Easily Backup your Local Data to the Cloud in Linux</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/linux-system-logs-an-overview-of-system-logs-and-how-to-read-them/?ref=github-profile-readme'>Linux System Logs: An Overview of System Logs and How to Read Them</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/linux-raid-configurations-for-data-redundancy-and-performance/?ref=github-profile-readme'>Linux RAID Configurations for Data Redundancy and Performance</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/how-i-setup-ssh-config-for-effectively-managing-multiple-servers/?ref=github-profile-readme'>How I setup SSH config for effectively managing multiple servers</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/exploring-the-linux-file-system/?ref=github-profile-readme'>Exploring the Linux File System</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/choosing-the-right-data-storage-solution-sql-vs-nosql-databases/?ref=github-profile-readme'>Choosing the Right Data Storage Solution: SQL vs. NoSQL Databases</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/raft-and-paxos-distributed-consensus-algorithms/?ref=github-profile-readme'>Raft and Paxos: Distributed Consensus Algorithms</a>
  - 🚀 <a href='https://akashrajpurohit.com/blog/understanding-load-balancing-algorithms-roundrobin-and-consistent-hashing/?ref=github-profile-readme'>Understanding Load Balancing Algorithms: Round-robin and Consistent Hashing</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/dealing-with-cache-avalanche-to-safeguard-your-system/?ref=github-profile-readme'>Dealing with Cache Avalanche to Safeguard Your System</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/caching-strategies-understand-writethrough-writebehind-readthrough-and-cacheaside/?ref=github-profile-readme'>Caching Strategies: Understand Write-Through, Write-Behind, Read-Through, and Cache Aside</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/fair-resource-allocation-understand-rate-limiting-and-throttling/?ref=github-profile-readme'>Fair Resource Allocation: Understand Rate Limiting and Throttling</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/eventual-consistency-and-consistency-models-in-distributed-systems/?ref=github-profile-readme'>Eventual Consistency and Consistency Models in Distributed Systems</a>
- - 🥳 <a href='https://akashrajpurohit.com/blog/distributed-transactions-navigating-the-complex-world-of-data-consistency/?ref=github-profile-readme'>Distributed Transactions: Navigating the Complex World of Data Consistency</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/handling-failures-in-distributed-systems-the-circuit-breaker-pattern-explained/?ref=github-profile-readme'>Handling Failures in Distributed Systems: The Circuit Breaker Pattern Explained</a><!-- BLOG-POST-LIST:END -->  
+ - 🔥 <a href='https://akashrajpurohit.com/blog/dealing-with-cache-avalanche-to-safeguard-your-system/?ref=github-profile-readme'>Dealing with Cache Avalanche to Safeguard Your System</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/caching-strategies-understand-writethrough-writebehind-readthrough-and-cacheaside/?ref=github-profile-readme'>Caching Strategies: Understand Write-Through, Write-Behind, Read-Through, and Cache Aside</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/fair-resource-allocation-understand-rate-limiting-and-throttling/?ref=github-profile-readme'>Fair Resource Allocation: Understand Rate Limiting and Throttling</a>
+ - 🥳 <a href='https://akashrajpurohit.com/blog/eventual-consistency-and-consistency-models-in-distributed-systems/?ref=github-profile-readme'>Eventual Consistency and Consistency Models in Distributed Systems</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/distributed-transactions-navigating-the-complex-world-of-data-consistency/?ref=github-profile-readme'>Distributed Transactions: Navigating the Complex World of Data Consistency</a><!-- BLOG-POST-LIST:END -->  
 
 </details>
