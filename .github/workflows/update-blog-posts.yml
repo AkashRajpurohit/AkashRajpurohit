@@ -10,7 +10,7 @@ jobs:
     name: Update this repo's README with latest blog posts
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
           feed_list: "http://akashrajpurohit.com/rss.xml"
