@@ -123,20 +123,20 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
- - 🚀 <a href='https://akashrajpurohit.com/blog/2023-unwrapped/?ref=github-profile-readme'>2023 Unwrapped</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/my-self-hosting-journey-in-2023/?ref=github-profile-readme'>My self hosting journey in 2023</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-9-to-level-10-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 9 to Level 10 - Bandit Challenge</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-8-to-level-9-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 8 to Level 9 - Bandit Challenge</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-7-to-level-8-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 7 to Level 8 - Bandit Challenge</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-6-to-level-7-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 6 to Level 7 - Bandit Challenge</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-5-to-level-6-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 5 to Level 6 - Bandit Challenge</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-4-to-level-5-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 4 to Level 5 - Bandit Challenge</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/update-wifi-password-on-raspberry-pi/?ref=github-profile-readme'>Update Wifi Password on Raspberry Pi</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/2023-unwrapped/?ref=github-profile-readme'>2023 Unwrapped</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/my-self-hosting-journey-in-2023/?ref=github-profile-readme'>My self hosting journey in 2023</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-9-to-level-10-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 9 to Level 10 - Bandit Challenge</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-8-to-level-9-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 8 to Level 9 - Bandit Challenge</a>
+ - 👨‍💻 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-7-to-level-8-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 7 to Level 8 - Bandit Challenge</a>
+ - 🔥 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-6-to-level-7-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 6 to Level 7 - Bandit Challenge</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-5-to-level-6-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 5 to Level 6 - Bandit Challenge</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-4-to-level-5-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 4 to Level 5 - Bandit Challenge</a>
  - 🚀 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-3-to-level-4-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 3 to Level 4 - Bandit Challenge</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-2-to-level-3-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 2 to Level 3 - Bandit Challenge</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-1-to-level-2-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 1 to Level 2 - Bandit Challenge</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-0-to-level-1-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 0 to Level 1 - Bandit Challenge</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-0-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 0 - Bandit Challenge</a>
- - 🥳 <a href='https://akashrajpurohit.com/blog/adguard-home-tailscale-erase-ads-on-the-go/?ref=github-profile-readme'>AdGuard Home + Tailscale = Erase Ads on the Go</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/how-i-safeguard-essential-data-in-my-homelab-with-offsite-backup-on-cloud/?ref=github-profile-readme'>How I Safeguard Essential Data in My Homelab with Off-site Backup on Cloud</a><!-- BLOG-POST-LIST:END -->  
+ - 🔥 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-2-to-level-3-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 2 to Level 3 - Bandit Challenge</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-1-to-level-2-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 1 to Level 2 - Bandit Challenge</a>
+ - 🚀 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-0-to-level-1-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 0 to Level 1 - Bandit Challenge</a>
+ - 🥳 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-0-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 0 - Bandit Challenge</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/adguard-home-tailscale-erase-ads-on-the-go/?ref=github-profile-readme'>AdGuard Home + Tailscale = Erase Ads on the Go</a><!-- BLOG-POST-LIST:END -->  
 
 </details>
