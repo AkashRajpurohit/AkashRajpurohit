@@ -125,7 +125,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <!-- BLOG-POST-LIST:START -->
  - 🚀 <a href='https://akashrajpurohit.com/blog/fix-sudo-not-asking-password-on-raspberry-pi/?ref=github-profile-readme'>Fix Sudo not asking Password on Raspberry Pi</a>
  - 🔥 <a href='https://akashrajpurohit.com/blog/increase-swap-memory-on-raspberry-pi/?ref=github-profile-readme'>Increase Swap Memory on Raspberry Pi</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/update-wifi-password-on-raspberry-pi/?ref=github-profile-readme'>Update Wifi Password on Raspberry Pi</a>
+ - ✍🏽 <a href='https://akashrajpurohit.com/blog/update-wifi-password-on-raspberry-pi/?ref=github-profile-readme'>Update Wifi Password on Raspberry Pi in Headless Mode</a>
  - 👨‍💻 <a href='https://akashrajpurohit.com/blog/2023-unwrapped/?ref=github-profile-readme'>2023 Unwrapped</a>
  - ✍🏽 <a href='https://akashrajpurohit.com/blog/my-self-hosting-journey-in-2023/?ref=github-profile-readme'>My self hosting journey in 2023</a>
  - 👨‍💻 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-9-to-level-10-bandit-challenge/?ref=github-profile-readme'>Exploring OverTheWire: Level 9 to Level 10 - Bandit Challenge</a>
