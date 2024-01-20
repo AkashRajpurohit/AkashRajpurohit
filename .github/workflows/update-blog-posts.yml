@@ -14,7 +14,7 @@ jobs:
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
           feed_list: "http://akashrajpurohit.com/rss.xml"
-          template: "$newline - $randomEmoji(🔥,🚀,👨‍💻,👀,✍🏽,🥳,⚡️) <a href='$url?ref=github-profile-readme'>$title</a>"
+          template: "$newline - $randomEmoji(🔥,🚀,👨‍💻,👀,✍🏽,🥳,⚡️) <a href='$url&via=github-profile-readme'>$title</a>"
           max_post_count: 15
           committer_username: FollowingAkash
           committer_email: bot@akashrajpurohit.com
