@@ -123,20 +123,20 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
- - 🚀 <a href='https://akashrajpurohit.com/blog/https-with-selfsigned-certificates-for-your-homelab-services/?ref=rss&via=github-profile-readme'>HTTPS with self-signed certificates for your Homelab services</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/setup-shareable-drive-with-samba-in-linux/?ref=rss&via=github-profile-readme'>Setup Shareable Drive with Samba in Linux</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/setup-shareable-drive-with-nfs-in-linux/?ref=rss&via=github-profile-readme'>Setup Shareable Drive with NFS in Linux</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/linkding-self-hosted-bookmark-manager/?ref=rss&via=github-profile-readme'>Linkding: Self Hosted Bookmark Manager</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/safely-backup-postgresql-database-in-docker-podman-containers/?ref=rss&via=github-profile-readme'>Safely Backup PostgreSQL Database in Docker / Podman Containers</a>
- - 👨‍💻 <a href='https://akashrajpurohit.com/blog/fix-sudo-not-asking-password-on-raspberry-pi/?ref=rss&via=github-profile-readme'>Fix Sudo not asking Password on Raspberry Pi</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/increase-swap-memory-on-raspberry-pi/?ref=rss&via=github-profile-readme'>Increase Swap Memory on Raspberry Pi</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/update-wifi-password-on-raspberry-pi/?ref=rss&via=github-profile-readme'>Update Wifi Password on Raspberry Pi in Headless Mode</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/2023-unwrapped/?ref=rss&via=github-profile-readme'>2023 Unwrapped</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/my-self-hosting-journey-in-2023/?ref=rss&via=github-profile-readme'>My self hosting journey in 2023</a>
- - 🔥 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-9-to-level-10-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 9 to Level 10 - Bandit Challenge</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-8-to-level-9-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 8 to Level 9 - Bandit Challenge</a>
- - 🚀 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-7-to-level-8-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 7 to Level 8 - Bandit Challenge</a>
- - 🥳 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-6-to-level-7-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 6 to Level 7 - Bandit Challenge</a>
- - ✍🏽 <a href='https://akashrajpurohit.com/blog/exploring-overthewire-level-5-to-level-6-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 5 to Level 6 - Bandit Challenge</a><!-- BLOG-POST-LIST:END -->  
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/https-with-selfsigned-certificates-for-your-homelab-services/?ref=rss&via=github-profile-readme'>HTTPS with self-signed certificates for your Homelab services</a>
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/setup-shareable-drive-with-samba-in-linux/?ref=rss&via=github-profile-readme'>Setup Shareable Drive with Samba in Linux</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/setup-shareable-drive-with-nfs-in-linux/?ref=rss&via=github-profile-readme'>Setup Shareable Drive with NFS in Linux</a>
+ - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/linkding-self-hosted-bookmark-manager/?ref=rss&via=github-profile-readme'>Linkding: Self Hosted Bookmark Manager</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/safely-backup-postgresql-database-in-docker-podman-containers/?ref=rss&via=github-profile-readme'>Safely Backup PostgreSQL Database in Docker / Podman Containers</a>
+ - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/fix-sudo-not-asking-password-on-raspberry-pi/?ref=rss&via=github-profile-readme'>Fix Sudo not asking Password on Raspberry Pi</a>
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/increase-swap-memory-on-raspberry-pi/?ref=rss&via=github-profile-readme'>Increase Swap Memory on Raspberry Pi</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/update-wifi-password-on-raspberry-pi/?ref=rss&via=github-profile-readme'>Update Wifi Password on Raspberry Pi in Headless Mode</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/2023-unwrapped/?ref=rss&via=github-profile-readme'>2023 Unwrapped</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/my-self-hosting-journey-in-2023/?ref=rss&via=github-profile-readme'>My self hosting journey in 2023</a>
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-9-to-level-10-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 9 to Level 10 - Bandit Challenge</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-8-to-level-9-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 8 to Level 9 - Bandit Challenge</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-7-to-level-8-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 7 to Level 8 - Bandit Challenge</a>
+ - 🥳 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-6-to-level-7-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 6 to Level 7 - Bandit Challenge</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-5-to-level-6-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 5 to Level 6 - Bandit Challenge</a><!-- BLOG-POST-LIST:END -->  
 
 </details>
