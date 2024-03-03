@@ -123,20 +123,20 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
- - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-16-to-level-17-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 16 to Level 17 - Bandit Challenge</a>
- - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-15-to-level-16-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 15 to Level 16 - Bandit Challenge</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-14-to-level-15-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 14 to Level 15 - Bandit Challenge</a>
- - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-13-to-level-14-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 13 to Level 14 - Bandit Challenge</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-12-to-level-13-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 12 to Level 13 - Bandit Challenge</a>
- - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-11-to-level-12-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 11 to Level 12 - Bandit Challenge</a>
- - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-10-to-level-11-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 10 to Level 11 - Bandit Challenge</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/selfhost-vaultwarden-with-scheduled-backups/?ref=rss&via=github-profile-readme'>Self-Host Vaultwarden with Scheduled Backups</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-17-to-level-18-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 17 to Level 18 - Bandit Challenge</a>
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-16-to-level-17-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 16 to Level 17 - Bandit Challenge</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-15-to-level-16-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 15 to Level 16 - Bandit Challenge</a>
+ - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-14-to-level-15-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 14 to Level 15 - Bandit Challenge</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-13-to-level-14-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 13 to Level 14 - Bandit Challenge</a>
+ - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-12-to-level-13-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 12 to Level 13 - Bandit Challenge</a>
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-11-to-level-12-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 11 to Level 12 - Bandit Challenge</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-10-to-level-11-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 10 to Level 11 - Bandit Challenge</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/selfhost-vaultwarden-with-scheduled-backups/?ref=rss&via=github-profile-readme'>Self-Host Vaultwarden with Scheduled Backups</a>
  - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/https-with-selfsigned-certificates-for-your-homelab-services/?ref=rss&via=github-profile-readme'>HTTPS with self-signed certificates for your Homelab services</a>
- - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/setup-shareable-drive-with-samba-in-linux/?ref=rss&via=github-profile-readme'>Setup Shareable Drive with Samba in Linux</a>
- - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/setup-shareable-drive-with-nfs-in-linux/?ref=rss&via=github-profile-readme'>Setup Shareable Drive with NFS in Linux</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/linkding-self-hosted-bookmark-manager/?ref=rss&via=github-profile-readme'>Linkding: Self Hosted Bookmark Manager</a>
- - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/safely-backup-postgresql-database-in-docker-podman-containers/?ref=rss&via=github-profile-readme'>Safely Backup PostgreSQL Database in Docker / Podman Containers</a>
- - 🥳 <a target='_blank' href='https://akashrajpurohit.com/blog/fix-sudo-not-asking-password-on-raspberry-pi/?ref=rss&via=github-profile-readme'>Fix Sudo not asking Password on Raspberry Pi</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/increase-swap-memory-on-raspberry-pi/?ref=rss&via=github-profile-readme'>Increase Swap Memory on Raspberry Pi</a><!-- BLOG-POST-LIST:END -->  
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/setup-shareable-drive-with-samba-in-linux/?ref=rss&via=github-profile-readme'>Setup Shareable Drive with Samba in Linux</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/setup-shareable-drive-with-nfs-in-linux/?ref=rss&via=github-profile-readme'>Setup Shareable Drive with NFS in Linux</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/linkding-self-hosted-bookmark-manager/?ref=rss&via=github-profile-readme'>Linkding: Self Hosted Bookmark Manager</a>
+ - 🥳 <a target='_blank' href='https://akashrajpurohit.com/blog/safely-backup-postgresql-database-in-docker-podman-containers/?ref=rss&via=github-profile-readme'>Safely Backup PostgreSQL Database in Docker / Podman Containers</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/fix-sudo-not-asking-password-on-raspberry-pi/?ref=rss&via=github-profile-readme'>Fix Sudo not asking Password on Raspberry Pi</a><!-- BLOG-POST-LIST:END -->  
 
 </details>
