@@ -94,12 +94,28 @@ Software Engineering is something which coincides with my passion and hobby. Alw
         <td><img alt="Language" src="https://img.shields.io/github/languages/top/AkashRajpurohit/github-emojis?style=flat-square"/></td>
       </tr>
       <tr>
-	<td><a href="https://github.com/AkashRajpurohit/Spell-IT"><b>👨🏻‍💻 Spell-IT</b></a></td>
+	<td><a href="https://github.com/AkashRajpurohit/Spell-IT"><b>🧮 Spell-IT</b></a></td>
         <td><img alt="Stars" src="https://img.shields.io/github/stars/AkashRajpurohit/Spell-IT?style=flat-square&labelColor=343b41"/></td>
         <td><img alt="Forks" src="https://img.shields.io/github/forks/AkashRajpurohit/Spell-IT?style=flat-square&labelColor=343b41"/></td>
         <td><img alt="Issues" src="https://img.shields.io/github/issues/AkashRajpurohit/Spell-IT?style=flat-square"/></td>
         <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/AkashRajpurohit/Spell-IT?style=flat-square"/></td>
         <td><img alt="Language" src="https://img.shields.io/github/languages/top/AkashRajpurohit/Spell-IT?style=flat-square"/></td> 
+      </tr>
+      <tr>
+	<td><a href="https://github.com/AkashRajpurohit/ts-npm-template"><b>📦 ts-npm-template</b></a></td>
+        <td><img alt="Stars" src="https://img.shields.io/github/stars/AkashRajpurohit/ts-npm-template?style=flat-square&labelColor=343b41"/></td>
+        <td><img alt="Forks" src="https://img.shields.io/github/forks/AkashRajpurohit/ts-npm-template?style=flat-square&labelColor=343b41"/></td>
+        <td><img alt="Issues" src="https://img.shields.io/github/issues/AkashRajpurohit/ts-npm-template?style=flat-square"/></td>
+        <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/AkashRajpurohit/ts-npm-template?style=flat-square"/></td>
+        <td><img alt="Language" src="https://img.shields.io/github/languages/top/AkashRajpurohit/ts-npm-template?style=flat-square"/></td> 
+      </tr>
+      <tr>
+	<td><a href="https://github.com/AkashRajpurohit/time-to-go"><b>🔗 time-to-go</b></a></td>
+        <td><img alt="Stars" src="https://img.shields.io/github/stars/AkashRajpurohit/time-to-go?style=flat-square&labelColor=343b41"/></td>
+        <td><img alt="Forks" src="https://img.shields.io/github/forks/AkashRajpurohit/time-to-go?style=flat-square&labelColor=343b41"/></td>
+        <td><img alt="Issues" src="https://img.shields.io/github/issues/AkashRajpurohit/time-to-go?style=flat-square"/></td>
+        <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/AkashRajpurohit/time-to-go?style=flat-square"/></td>
+        <td><img alt="Language" src="https://img.shields.io/github/languages/top/AkashRajpurohit/time-to-go?style=flat-square"/></td> 
       </tr>
     </tbody>
   </table>
