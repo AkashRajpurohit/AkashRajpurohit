@@ -139,20 +139,20 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
- - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/nginx-the-reverse-proxy-in-my-homelab/?ref=rss&via=github-profile-readme'>Nginx — The reverse proxy in my Homelab</a>
- - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/resolving-missing-memory-stats-in-docker-stats-on-raspberry-pi/?ref=rss&via=github-profile-readme'>Resolving Missing Memory Stats in Docker Stats on Raspberry Pi</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/building-a-readheavy-system-key-considerations-for-success/?ref=rss&via=github-profile-readme'>Building a Read-Heavy System: Key Considerations for Success</a>
- - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/building-a-writeheavy-system-key-considerations-for-success/?ref=rss&via=github-profile-readme'>Building a Write-Heavy System: Key Considerations for Success</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/tackling-thundering-herd-problem-effectively/?ref=rss&via=github-profile-readme'>Tackling Thundering Herd Problem effectively</a>
- - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/how-the-bulkhead-pattern-can-fortify-your-system/?ref=rss&via=github-profile-readme'>How the Bulkhead Pattern Can Fortify Your System</a>
- - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-20-to-level-21-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 20 to Level 21 - Bandit Challenge</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-19-to-level-20-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 19 to Level 20 - Bandit Challenge</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/adguard-home-network-wide-ad-blocking-in-your-homelab/?ref=rss&via=github-profile-readme'>AdGuard Home — Network Wide Ad Blocking in your Homelab</a>
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/nginx-the-reverse-proxy-in-my-homelab/?ref=rss&via=github-profile-readme'>Nginx — The reverse proxy in my Homelab</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/resolving-missing-memory-stats-in-docker-stats-on-raspberry-pi/?ref=rss&via=github-profile-readme'>Resolving Missing Memory Stats in Docker Stats on Raspberry Pi</a>
+ - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/building-a-readheavy-system-key-considerations-for-success/?ref=rss&via=github-profile-readme'>Building a Read-Heavy System: Key Considerations for Success</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/building-a-writeheavy-system-key-considerations-for-success/?ref=rss&via=github-profile-readme'>Building a Write-Heavy System: Key Considerations for Success</a>
+ - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/tackling-thundering-herd-problem-effectively/?ref=rss&via=github-profile-readme'>Tackling Thundering Herd Problem effectively</a>
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/how-the-bulkhead-pattern-can-fortify-your-system/?ref=rss&via=github-profile-readme'>How the Bulkhead Pattern Can Fortify Your System</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-20-to-level-21-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 20 to Level 21 - Bandit Challenge</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-19-to-level-20-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 19 to Level 20 - Bandit Challenge</a>
  - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-18-to-level-19-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 18 to Level 19 - Bandit Challenge</a>
- - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-17-to-level-18-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 17 to Level 18 - Bandit Challenge</a>
- - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-16-to-level-17-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 16 to Level 17 - Bandit Challenge</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-15-to-level-16-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 15 to Level 16 - Bandit Challenge</a>
- - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-14-to-level-15-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 14 to Level 15 - Bandit Challenge</a>
- - 🥳 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-13-to-level-14-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 13 to Level 14 - Bandit Challenge</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-12-to-level-13-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 12 to Level 13 - Bandit Challenge</a><!-- BLOG-POST-LIST:END -->  
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-17-to-level-18-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 17 to Level 18 - Bandit Challenge</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-16-to-level-17-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 16 to Level 17 - Bandit Challenge</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-15-to-level-16-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 15 to Level 16 - Bandit Challenge</a>
+ - 🥳 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-14-to-level-15-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 14 to Level 15 - Bandit Challenge</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-13-to-level-14-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 13 to Level 14 - Bandit Challenge</a><!-- BLOG-POST-LIST:END -->  
 
 </details>
