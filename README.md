@@ -139,7 +139,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
- - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/ansible-infrastructure-as-a-code-for-building-up-my-homelab/?ref=rss&via=github-profile-readme'>Ansible — Infrastructure as Code for building up my Homelab</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/ansible-infrastructure-as-a-code-for-building-up-my-homelab/?ref=rss&via=github-profile-readme'>Ansible — Configuration as Code for building up my Homelab</a>
  - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/adguard-home-network-wide-ad-blocking-in-your-homelab/?ref=rss&via=github-profile-readme'>AdGuard Home — Network Wide Ad Blocking in your Homelab</a>
  - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/nginx-the-reverse-proxy-in-my-homelab/?ref=rss&via=github-profile-readme'>Nginx — The reverse proxy in my Homelab</a>
  - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/resolving-missing-memory-stats-in-docker-stats-on-raspberry-pi/?ref=rss&via=github-profile-readme'>Resolving Missing Memory Stats in Docker Stats on Raspberry Pi</a>
