@@ -139,20 +139,20 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
- - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/optimizing-cadvisor-for-lower-cpu-usage/?ref=rss&via=github-profile-readme'>Optimizing cAdvisor for Lower CPU Usage</a>
- - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/welcoming-a-new-member-to-my-homelab-a-orange-pi-5-plus/?ref=rss&via=github-profile-readme'>Welcoming a new member to my Homelab — A Orange Pi 5 Plus</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/tailscale-accessing-homelab-services-outside-my-network/?ref=rss&via=github-profile-readme'>Tailscale — Accessing Homelab services outside my network</a>
- - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/how-i-use-gpg-in-my-day-to-day-workflows/?ref=rss&via=github-profile-readme'>How I use GPG in my day to day workflows</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/what-is-gpg-and-why-you-should-start-using-it/?ref=rss&via=github-profile-readme'>What is GPG and why you should start using it</a>
- - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/ansible-infrastructure-as-a-code-for-building-up-my-homelab/?ref=rss&via=github-profile-readme'>Ansible — Configuration as Code for building up my Homelab</a>
- - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/adguard-home-network-wide-ad-blocking-in-your-homelab/?ref=rss&via=github-profile-readme'>AdGuard Home — Network Wide Ad Blocking in your Homelab</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/nginx-the-reverse-proxy-in-my-homelab/?ref=rss&via=github-profile-readme'>Nginx — The reverse proxy in my Homelab</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/syncing-made-easy-with-syncthing/?ref=rss&via=github-profile-readme'>Syncing made easy with Syncthing</a>
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/optimizing-cadvisor-for-lower-cpu-usage/?ref=rss&via=github-profile-readme'>Optimizing cAdvisor for Lower CPU Usage</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/welcoming-a-new-member-to-my-homelab-a-orange-pi-5-plus/?ref=rss&via=github-profile-readme'>Welcoming a new member to my Homelab — A Orange Pi 5 Plus</a>
+ - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/tailscale-accessing-homelab-services-outside-my-network/?ref=rss&via=github-profile-readme'>Tailscale — Accessing Homelab services outside my network</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/how-i-use-gpg-in-my-day-to-day-workflows/?ref=rss&via=github-profile-readme'>How I use GPG in my day to day workflows</a>
+ - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/what-is-gpg-and-why-you-should-start-using-it/?ref=rss&via=github-profile-readme'>What is GPG and why you should start using it</a>
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/ansible-infrastructure-as-a-code-for-building-up-my-homelab/?ref=rss&via=github-profile-readme'>Ansible — Configuration as Code for building up my Homelab</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/adguard-home-network-wide-ad-blocking-in-your-homelab/?ref=rss&via=github-profile-readme'>AdGuard Home — Network Wide Ad Blocking in your Homelab</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/nginx-the-reverse-proxy-in-my-homelab/?ref=rss&via=github-profile-readme'>Nginx — The reverse proxy in my Homelab</a>
  - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/resolving-missing-memory-stats-in-docker-stats-on-raspberry-pi/?ref=rss&via=github-profile-readme'>Resolving Missing Memory Stats in Docker Stats on Raspberry Pi</a>
- - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/building-a-readheavy-system-key-considerations-for-success/?ref=rss&via=github-profile-readme'>Building a Read-Heavy System: Key Considerations for Success</a>
- - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/building-a-writeheavy-system-key-considerations-for-success/?ref=rss&via=github-profile-readme'>Building a Write-Heavy System: Key Considerations for Success</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/tackling-thundering-herd-problem-effectively/?ref=rss&via=github-profile-readme'>Tackling Thundering Herd Problem effectively</a>
- - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/how-the-bulkhead-pattern-can-fortify-your-system/?ref=rss&via=github-profile-readme'>How the Bulkhead Pattern Can Fortify Your System</a>
- - 🥳 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-20-to-level-21-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 20 to Level 21 - Bandit Challenge</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-19-to-level-20-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 19 to Level 20 - Bandit Challenge</a><!-- BLOG-POST-LIST:END -->  
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/building-a-readheavy-system-key-considerations-for-success/?ref=rss&via=github-profile-readme'>Building a Read-Heavy System: Key Considerations for Success</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/building-a-writeheavy-system-key-considerations-for-success/?ref=rss&via=github-profile-readme'>Building a Write-Heavy System: Key Considerations for Success</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/tackling-thundering-herd-problem-effectively/?ref=rss&via=github-profile-readme'>Tackling Thundering Herd Problem effectively</a>
+ - 🥳 <a target='_blank' href='https://akashrajpurohit.com/blog/how-the-bulkhead-pattern-can-fortify-your-system/?ref=rss&via=github-profile-readme'>How the Bulkhead Pattern Can Fortify Your System</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/exploring-overthewire-level-20-to-level-21-bandit-challenge/?ref=rss&via=github-profile-readme'>Exploring OverTheWire: Level 20 to Level 21 - Bandit Challenge</a><!-- BLOG-POST-LIST:END -->  
 
 </details>
