@@ -1,11 +1,10 @@
 ## Hey <img alt="Hi" src="./assets/Hi.gif" width="30px" height="30px" />, I'm Akash Rajpurohit — a Software Engineer 👨‍💻
 
+[![Website Badge](https://img.shields.io/badge/-akashrajpurohit.com-3b5998?style=flat&logo=google-chrome&logoColor=white)](https://akashrajpurohit.com/?ref=github-profile-readme-badge)
 [![Linkedin Badge](https://img.shields.io/badge/-@AkashRajpurohit-0e76a8?style=flat&logo=Linkedin&logoColor=white)](https://linkedin.com/in/AkashRajpurohit)
-[![Website Badge](https://img.shields.io/badge/-akashrajpurohit.com-3b5998?style=flat&logo=google-chrome&logoColor=white)](https://akashrajpurohit.com/)
-[![Twitter Badge](https://img.shields.io/badge/-@akashwhocodes-00acee?style=flat&logo=Twitter&logoColor=white)](https://twitter.com/AkashWhoCodes)
-[![Instagram Badge](https://img.shields.io/badge/-@akashwho.codes-e4405f?style=flat&logo=Instagram&logoColor=white)](https://instagram.com/akashwho.codes/)
-[![Telegram Badge](https://img.shields.io/badge/-@AkashRajpurohit-0088cc?style=flat&logo=Telegram&logoColor=white)](https://t.me/AkashRajpurohit)
 ![](https://visitor-badge.laobi.icu/badge?page_id=akashrajpurohit.visitor-badge&color=0088cc)
+[![Twitter Badge](https://img.shields.io/twitter/follow/akashwhocodes)](https://twitter.com/AkashWhoCodes)
+[![Mastodon Follow](https://img.shields.io/mastodon/follow/112372456922065040)](https://mastodon.social/@akashrajpurohit)
 
 <img src="https://raw.githubusercontent.com/AkashRajpurohit/AkashRajpurohit/master/assets/github-snake-dark.svg" />
   
