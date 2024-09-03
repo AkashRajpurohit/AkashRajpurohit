@@ -77,6 +77,14 @@ Software Engineering is something which coincides with my passion and hobby. Alw
         <td><img alt="Language" src="https://img.shields.io/github/languages/top/AkashRajpurohit/howtoprofessionallysay?style=flat-square"/></td>
       </tr>
       <tr>
+	<td><a href="https://github.com/AkashRajpurohit/git-sync"><b>🔄 git-sync</b></a></td>
+        <td><img alt="Stars" src="https://img.shields.io/github/stars/AkashRajpurohit/git-sync?style=flat-square&labelColor=343b41"/></td>
+        <td><img alt="Forks" src="https://img.shields.io/github/forks/AkashRajpurohit/git-sync?style=flat-square&labelColor=343b41"/></td>
+        <td><img alt="Issues" src="https://img.shields.io/github/issues/AkashRajpurohit/git-sync?style=flat-square"/></td>
+        <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/AkashRajpurohit/git-sync?style=flat-square"/></td>
+        <td><img alt="Language" src="https://img.shields.io/github/languages/top/AkashRajpurohit/git-sync?style=flat-square"/></td> 
+      </tr>
+      <tr>
 	<td><a href="https://github.com/AkashRajpurohit/clipper"><b>📋 Clipper</b></a></td>
         <td><img alt="Stars" src="https://img.shields.io/github/stars/AkashRajpurohit/clipper?style=flat-square&labelColor=343b41"/></td>
         <td><img alt="Forks" src="https://img.shields.io/github/forks/AkashRajpurohit/clipper?style=flat-square&labelColor=343b41"/></td>
@@ -107,14 +115,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
         <td><img alt="Issues" src="https://img.shields.io/github/issues/AkashRajpurohit/ts-npm-template?style=flat-square"/></td>
         <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/AkashRajpurohit/ts-npm-template?style=flat-square"/></td>
         <td><img alt="Language" src="https://img.shields.io/github/languages/top/AkashRajpurohit/ts-npm-template?style=flat-square"/></td> 
-      </tr>
-      <tr>
-	<td><a href="https://github.com/AkashRajpurohit/git-sync"><b>🔄 git-sync</b></a></td>
-        <td><img alt="Stars" src="https://img.shields.io/github/stars/AkashRajpurohit/git-sync?style=flat-square&labelColor=343b41"/></td>
-        <td><img alt="Forks" src="https://img.shields.io/github/forks/AkashRajpurohit/git-sync?style=flat-square&labelColor=343b41"/></td>
-        <td><img alt="Issues" src="https://img.shields.io/github/issues/AkashRajpurohit/git-sync?style=flat-square"/></td>
-        <td><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/AkashRajpurohit/git-sync?style=flat-square"/></td>
-        <td><img alt="Language" src="https://img.shields.io/github/languages/top/AkashRajpurohit/git-sync?style=flat-square"/></td> 
       </tr>
       <tr>
 	<td><a href="https://github.com/AkashRajpurohit/time-to-go"><b>🔗 time-to-go</b></a></td>
