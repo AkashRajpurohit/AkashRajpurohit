@@ -166,7 +166,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 
 <details>
 <br />
-<summary>❝ While you are here, here’s an Office quote for you</summary>
+<summary><b>❝ While you are here, here’s an Office quote for you</b></summary>
 
  ![](https://officeapi.akashrajpurohit.com/quote/random?responseType=svg)
 
