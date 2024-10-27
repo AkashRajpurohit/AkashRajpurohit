@@ -163,3 +163,10 @@ Software Engineering is something which coincides with my passion and hobby. Alw
  - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/resolving-missing-memory-stats-in-docker-stats-on-raspberry-pi/?ref=rss&via=github-profile-readme'>Resolving Missing Memory Stats in Docker Stats on Raspberry Pi</a><!-- BLOG-POST-LIST:END -->  
 
 </details>
+
+<details>
+<br />
+<summary>❝ While you are here, here’s an Office quote for you</summary>
+
+ ![](https://officeapi.akashrajpurohit.com/quote/random?responseType=svg)
+</details>
