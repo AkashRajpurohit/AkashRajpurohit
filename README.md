@@ -169,4 +169,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 <summary>❝ While you are here, here’s an Office quote for you</summary>
 
  ![](https://officeapi.akashrajpurohit.com/quote/random?responseType=svg)
+
+ > The quote is powered by ["The Office API"](https://github.com/AkashRajpurohit/the-office-api) project
 </details>
