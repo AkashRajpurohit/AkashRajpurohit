@@ -146,21 +146,21 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
- - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/automatically-update-aws-security-group-with-your-dynamic-ip/?ref=rss&via=github-profile-readme'>Automatically Update AWS Security Group with Your Dynamic IP</a>
- - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/pairdrop-transfer-files-between-devices-seamlessly/?ref=rss&via=github-profile-readme'>PairDrop — Transfer files between devices seamlessly</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/mount-a-drive-permanently-with-fstab-in-linux/?ref=rss&via=github-profile-readme'>Mount a drive permanently with fstab in Linux</a>
- - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/learning-through-building-engineering-advices/?ref=rss&via=github-profile-readme'>Learning Through Building — Engineering Advices</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/setup-jellyfin-with-hardware-acceleration-on-orange-pi-5-rockchip-rk3558/?ref=rss&via=github-profile-readme'>Setup Jellyfin with Hardware Acceleration on Orange Pi 5 &lpar;Rockchip RK3558&rpar;</a>
- - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/jellyfin-arr-stack-selfhosted-media-streaming-in-my-homelab/?ref=rss&via=github-profile-readme'>Jellyfin + arr stack — Self-hosted media streaming in my Homelab</a>
- - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/syncing-made-easy-with-syncthing/?ref=rss&via=github-profile-readme'>Syncing made easy with Syncthing</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/optimizing-cadvisor-for-lower-cpu-usage/?ref=rss&via=github-profile-readme'>Optimizing cAdvisor for Lower CPU Usage</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/setup-caddy-with-automatic-ssl-certificates-with-cloudflare/?ref=rss&via=github-profile-readme'>Setup Caddy with automatic SSL certificates with Cloudflare</a>
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/automatically-update-aws-security-group-with-your-dynamic-ip/?ref=rss&via=github-profile-readme'>Automatically Update AWS Security Group with Your Dynamic IP</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/pairdrop-transfer-files-between-devices-seamlessly/?ref=rss&via=github-profile-readme'>PairDrop — Transfer files between devices seamlessly</a>
+ - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/mount-a-drive-permanently-with-fstab-in-linux/?ref=rss&via=github-profile-readme'>Mount a drive permanently with fstab in Linux</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/learning-through-building-engineering-advices/?ref=rss&via=github-profile-readme'>Learning Through Building — Engineering Advices</a>
+ - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/setup-jellyfin-with-hardware-acceleration-on-orange-pi-5-rockchip-rk3558/?ref=rss&via=github-profile-readme'>Setup Jellyfin with Hardware Acceleration on Orange Pi 5 &lpar;Rockchip RK3558&rpar;</a>
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/jellyfin-arr-stack-selfhosted-media-streaming-in-my-homelab/?ref=rss&via=github-profile-readme'>Jellyfin + arr stack — Self-hosted media streaming in my Homelab</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/syncing-made-easy-with-syncthing/?ref=rss&via=github-profile-readme'>Syncing made easy with Syncthing</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/optimizing-cadvisor-for-lower-cpu-usage/?ref=rss&via=github-profile-readme'>Optimizing cAdvisor for Lower CPU Usage</a>
  - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/welcoming-a-new-member-to-my-homelab-a-orange-pi-5-plus/?ref=rss&via=github-profile-readme'>Welcoming a new member to my Homelab — A Orange Pi 5 Plus</a>
- - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/tailscale-accessing-homelab-services-outside-my-network/?ref=rss&via=github-profile-readme'>Tailscale — Accessing Homelab services outside my network</a>
- - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/how-i-use-gpg-in-my-day-to-day-workflows/?ref=rss&via=github-profile-readme'>How I use GPG in my day to day workflows</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/what-is-gpg-and-why-you-should-start-using-it/?ref=rss&via=github-profile-readme'>What is GPG and why you should start using it</a>
- - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/ansible-infrastructure-as-a-code-for-building-up-my-homelab/?ref=rss&via=github-profile-readme'>Ansible — Configuration as Code for building up my Homelab</a>
- - 🥳 <a target='_blank' href='https://akashrajpurohit.com/blog/adguard-home-network-wide-ad-blocking-in-your-homelab/?ref=rss&via=github-profile-readme'>AdGuard Home — Network Wide Ad Blocking in your Homelab</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/nginx-the-reverse-proxy-in-my-homelab/?ref=rss&via=github-profile-readme'>Nginx — The reverse proxy in my Homelab</a><!-- BLOG-POST-LIST:END -->  
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/tailscale-accessing-homelab-services-outside-my-network/?ref=rss&via=github-profile-readme'>Tailscale — Accessing Homelab services outside my network</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/how-i-use-gpg-in-my-day-to-day-workflows/?ref=rss&via=github-profile-readme'>How I use GPG in my day to day workflows</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/what-is-gpg-and-why-you-should-start-using-it/?ref=rss&via=github-profile-readme'>What is GPG and why you should start using it</a>
+ - 🥳 <a target='_blank' href='https://akashrajpurohit.com/blog/ansible-infrastructure-as-a-code-for-building-up-my-homelab/?ref=rss&via=github-profile-readme'>Ansible — Configuration as Code for building up my Homelab</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/adguard-home-network-wide-ad-blocking-in-your-homelab/?ref=rss&via=github-profile-readme'>AdGuard Home — Network Wide Ad Blocking in your Homelab</a><!-- BLOG-POST-LIST:END -->  
 
 </details>
 
