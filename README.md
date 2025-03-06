@@ -145,21 +145,21 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
- - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/selfhost-immich-your-personal-google-photos-alternative/?ref=rss&via=github-profile-readme'>Immich — Self-hosted Google Photos alternative that actually works</a>
- - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/getting-paid-in-foreign-currency-as-a-software-developer-in-india/?ref=rss&via=github-profile-readme'>Getting paid in foreign currency as a software developer in India</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/setup-authelia-for-sso-authentication/?ref=rss&via=github-profile-readme'>Authelia — Self-hosted Single Sign-On &lpar;SSO&rpar; for your homelab services</a>
- - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/monitor-internet-speed-with-speedtest-tracker/?ref=rss&via=github-profile-readme'>Speedtest Tracker — Monitor your internet speed with beautiful graphs</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/selfhost-ntfy-for-push-notifications/?ref=rss&via=github-profile-readme'>Ntfy — Self-hosted push notification server for all your services</a>
- - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/my-self-hosting-journey-in-2024/?ref=rss&via=github-profile-readme'>My self hosting journey in 2024</a>
- - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/metube-selfhosted-youtube-downloader-with-a-sleek-web-interface/?ref=rss&via=github-profile-readme'>MeTube — Self-hosted YouTube downloader with a sleek web interface</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/setup-caddy-with-automatic-ssl-certificates-with-cloudflare/?ref=rss&via=github-profile-readme'>Setup Caddy with automatic SSL certificates with Cloudflare</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/selfhost-paperless-ngx-for-document-management/?ref=rss&via=github-profile-readme'>Paperless-ngx — Self-hosted document management that actually makes sense</a>
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/selfhost-immich-your-personal-google-photos-alternative/?ref=rss&via=github-profile-readme'>Immich — Self-hosted Google Photos alternative that actually works</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/getting-paid-in-foreign-currency-as-a-software-developer-in-india/?ref=rss&via=github-profile-readme'>Getting paid in foreign currency as a software developer in India</a>
+ - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/setup-authelia-for-sso-authentication/?ref=rss&via=github-profile-readme'>Authelia — Self-hosted Single Sign-On &lpar;SSO&rpar; for your homelab services</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/monitor-internet-speed-with-speedtest-tracker/?ref=rss&via=github-profile-readme'>Speedtest Tracker — Monitor your internet speed with beautiful graphs</a>
+ - 👨‍💻 <a target='_blank' href='https://akashrajpurohit.com/blog/selfhost-ntfy-for-push-notifications/?ref=rss&via=github-profile-readme'>Ntfy — Self-hosted push notification server for all your services</a>
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/my-self-hosting-journey-in-2024/?ref=rss&via=github-profile-readme'>My self hosting journey in 2024</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/metube-selfhosted-youtube-downloader-with-a-sleek-web-interface/?ref=rss&via=github-profile-readme'>MeTube — Self-hosted YouTube downloader with a sleek web interface</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/setup-caddy-with-automatic-ssl-certificates-with-cloudflare/?ref=rss&via=github-profile-readme'>Setup Caddy with automatic SSL certificates with Cloudflare</a>
  - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/automatically-update-aws-security-group-with-your-dynamic-ip/?ref=rss&via=github-profile-readme'>Automatically Update AWS Security Group with Your Dynamic IP</a>
- - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/pairdrop-transfer-files-between-devices-seamlessly/?ref=rss&via=github-profile-readme'>PairDrop — Transfer files between devices seamlessly</a>
- - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/mount-a-drive-permanently-with-fstab-in-linux/?ref=rss&via=github-profile-readme'>Mount a drive permanently with fstab in Linux</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/learning-through-building-engineering-advices/?ref=rss&via=github-profile-readme'>Learning Through Building — Engineering Advices</a>
- - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/setup-jellyfin-with-hardware-acceleration-on-orange-pi-5-rockchip-rk3558/?ref=rss&via=github-profile-readme'>Setup Jellyfin with Hardware Acceleration on Orange Pi 5 &lpar;Rockchip RK3558&rpar;</a>
- - 🥳 <a target='_blank' href='https://akashrajpurohit.com/blog/jellyfin-arr-stack-selfhosted-media-streaming-in-my-homelab/?ref=rss&via=github-profile-readme'>Jellyfin + arr stack — Self-hosted media streaming in my Homelab</a>
- - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/syncing-made-easy-with-syncthing/?ref=rss&via=github-profile-readme'>Syncing made easy with Syncthing</a><!-- BLOG-POST-LIST:END -->  
+ - 🔥 <a target='_blank' href='https://akashrajpurohit.com/blog/pairdrop-transfer-files-between-devices-seamlessly/?ref=rss&via=github-profile-readme'>PairDrop — Transfer files between devices seamlessly</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/mount-a-drive-permanently-with-fstab-in-linux/?ref=rss&via=github-profile-readme'>Mount a drive permanently with fstab in Linux</a>
+ - 🚀 <a target='_blank' href='https://akashrajpurohit.com/blog/learning-through-building-engineering-advices/?ref=rss&via=github-profile-readme'>Learning Through Building — Engineering Advices</a>
+ - 🥳 <a target='_blank' href='https://akashrajpurohit.com/blog/setup-jellyfin-with-hardware-acceleration-on-orange-pi-5-rockchip-rk3558/?ref=rss&via=github-profile-readme'>Setup Jellyfin with Hardware Acceleration on Orange Pi 5 &lpar;Rockchip RK3558&rpar;</a>
+ - ✍🏽 <a target='_blank' href='https://akashrajpurohit.com/blog/jellyfin-arr-stack-selfhosted-media-streaming-in-my-homelab/?ref=rss&via=github-profile-readme'>Jellyfin + arr stack — Self-hosted media streaming in my Homelab</a><!-- BLOG-POST-LIST:END -->  
 
 </details>
 
