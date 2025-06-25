@@ -15,7 +15,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 
 ### Talking about Personal Stuffs:
 
-- 🛠 &nbsp; I'm currently developing stuff with JavaScript/TypeScript.
+- 🛠 &nbsp; I'm currently building [Eternal Vault](https://eternalvault.app?ref=github-readme) - The secure bridge between your life and your loved ones.
 - 🚀 &nbsp; I’m currently learning about Go, Linux, Networking, Ansible and playing around with Raspberry Pi's.
 - 💬 &nbsp; I write blogs [here](https://akashrajpurohit.com/blogs/?ref=github-profile-readme)!
 - 📰 &nbsp; I have started sending out newsletters, subscribe it [here](https://akashrajpurohit.com/newsletter/?ref=github-profile-readme)
