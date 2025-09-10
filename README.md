@@ -15,10 +15,10 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 
 ### Talking about Personal Stuffs:
 
-- 🛠 &nbsp; I'm currently building [Eternal Vault](https://eternalvault.app?ref=github-readme) - The secure bridge between your life and your loved ones.
+- 🛠 &nbsp; I'm currently building [Eternal Vault](https://eternalvault.app?utm_source=github&utm_medium=readme) - The secure bridge between your life and your loved ones.
 - 🚀 &nbsp; I’m currently learning about Go, Linux, Networking, Ansible and playing around with Raspberry Pi's.
-- 💬 &nbsp; I write blogs [here](https://akashrajpurohit.com/blogs/?ref=github-profile-readme)!
-- 📰 &nbsp; I have started sending out newsletters, subscribe it [here](https://akashrajpurohit.com/newsletter/?ref=github-profile-readme)
+- 💬 &nbsp; I write blogs [here](https://akashrajpurohit.com/blogs/?utm_source=github&utm_medium=readme)!
+- 📰 &nbsp; I have started sending out newsletters, subscribe it [here](https://akashrajpurohit.com/newsletter/?utm_source=github&utm_medium=readme)
 - 👾 &nbsp; Fun fact: I use tabs over spaces.
 - 📫 &nbsp; How to reach me: me@akashrajpurohit.com 
 
