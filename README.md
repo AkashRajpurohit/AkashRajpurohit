@@ -128,8 +128,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
   <br />
 </details>
  
-<details>	
-  <br />
+<details>
   <summary><b>⚙️ Things I use to get stuff done</b></summary>
   	<ul>
   	  <li><b>OS:</b> MacOS / Linux</li>
@@ -141,7 +140,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 </details> 
 
 <details>	
-  <br />
   <summary><b>✍🏼 Recent Published Blogs</b></summary>
 
   <!-- BLOG-POST-LIST:START -->
@@ -164,7 +162,6 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 </details>
 
 <details>
-<br />
 <summary><b>❝ While you are here, here’s an Office quote for you</b></summary>
 
  ![](https://officeapi.akashrajpurohit.com/quote/random?responseType=svg)
