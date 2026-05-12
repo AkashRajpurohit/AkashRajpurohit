@@ -15,7 +15,7 @@ Software Engineering is something which coincides with my passion and hobby. Alw
 
 ### Talking about Personal Stuffs:
 
-- 🛠 &nbsp; I'm currently building [CatchIntent](https://catchintent.com?utm_source=github&utm_medium=readme) - Turn social conversations into qualified leads.
+- 🛠 &nbsp; I'm currently building [CatchIntent](https://catchintent.com?utm_source=github&utm_medium=readme) - The intent layer for B2B outbound.
 - 🚀 &nbsp; I’m currently learning about Go, Linux, Networking, Ansible and playing around with Raspberry Pi's.
 - 💬 &nbsp; I write blogs [here](https://akashrajpurohit.com/blogs/?utm_source=github&utm_medium=readme)!
 - 📰 &nbsp; I have started sending out newsletters, subscribe it [here](https://akashrajpurohit.com/newsletter/?utm_source=github&utm_medium=readme)
