@@ -1,4 +1,4 @@
-## Hey <img alt="Hi" src="./assets/Hi.gif" width="30px" height="30px" />, I'm Akash Rajpurohit — a Software Engineer 👨‍💻
+## Hey <img alt="Hi" src="./assets/Hi.gif" width="30px" height="30px" />, I'm Akash Rajpurohit — an Engineer 👨‍💻
 
 [![Website Badge](https://img.shields.io/badge/-akashrajpurohit.com-3b5998?style=flat&logo=google-chrome&logoColor=white)](https://akashrajpurohit.com/?ref=github-profile-readme-badge)
 [![Linkedin Badge](https://img.shields.io/badge/-@AkashRajpurohit-0e76a8?style=flat&logo=Linkedin&logoColor=white)](https://linkedin.com/in/AkashRajpurohit)
@@ -9,14 +9,14 @@
   
 ### Glad to see you here!
 
-Software Engineering is something which coincides with my passion and hobby. Always up for a discussion on softwares, business and other opportunity. I'm currently into Web Development 🕸️ and building my home lab 🚀.
+Engineering is something which coincides with my passion and hobby. Always up for a discussion on softwares, business and other opportunity. I'm currently building [SaaS apps](https://akashrajpurohit.com/projects/) and building my home lab 🚀.
   
 <img align="right" alt="Coding Cat" src="./assets/coding.webp" />
 
 ### Talking about Personal Stuffs:
 
-- 🛠 &nbsp; I'm currently building [CatchIntent](https://catchintent.com?utm_source=github&utm_medium=readme) - The intent layer for B2B outbound.
-- 🚀 &nbsp; I’m currently learning about Go, Linux, Networking, Ansible and playing around with Raspberry Pi's.
+- 🛠 &nbsp; I'm currently building [Hydrafetch](https://hydrafetch.com?utm_source=github&utm_medium=readme) & [Datahyena](https://datahyena.com?utm_source=github&utm_medium=readme).
+- 🚀 &nbsp; I’m learning Go, Linux, Networking, Ansible and playing around with Raspberry Pi's.
 - 💬 &nbsp; I write blogs [here](https://akashrajpurohit.com/blogs/?utm_source=github&utm_medium=readme)!
 - 📰 &nbsp; I have started sending out newsletters, subscribe it [here](https://akashrajpurohit.com/newsletter/?utm_source=github&utm_medium=readme)
 - 👾 &nbsp; Fun fact: I use tabs over spaces.
